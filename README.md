@@ -1,2 +1,2 @@
-# foundatio
-O3DE Foundation 
+# foundation
+Open 3D Engine Foundation 
