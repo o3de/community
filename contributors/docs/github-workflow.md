@@ -7,7 +7,7 @@ description: |
   sync with upstream and commit hygiene.
 ---
 
-![Git workflow](git-workflow.png)
+![Git workflow](/contributors/docs/images/git-workflow.png)
 
 A detailed explanation and troubleshooting guide can be found here:
 https://o3deorg.netlify.app/docs/welcome-guide/setup/setup-from-github/
@@ -48,11 +48,11 @@ git clone https://github.com/%user%/o3de.git
 
 You may also see the following popups. Use your username and personal access token for these as well:
 
-![GitHub Signin](github-sign-in.png)
+![GitHub Signin](/contributors/docs/images/github-sign-in.png)
 
 Followed by:
 
-![Git Credential Manager](git-cred-mgr.png)
+![Git Credential Manager](/contributors/docs/images/git-cred-mgr.png)
 
 You should no longer receive credential prompts if you setup the credential manager for git
 If you get stuck on a step that looks like the following, press <enter> to get prompted for a password, at which point you enter your Github token again:
@@ -209,7 +209,7 @@ git push
 
 Submit a Pull Request
 
-- Check out the pull request [process](/contributors/guide/pull-requests.md) for more details and advice.
+- Check out the pull request [process](/contributors/docs/pull-requests.md) for more details and advice.
 
 1. Go to your Github fork > Pull Requests tab: https://github.com/TestUser/o3de/pulls
 2. Click **New Pull Request**
@@ -217,7 +217,7 @@ Submit a Pull Request
 4. Click **Create pull request**
    a. Only submit Pull Requests to aws-lumberyard:main (not to the fork's main in TestUser)
 
-![Pull Request](pull-request-ex.png)
+![Pull Request](/contributors/docs/images/pull-request-ex.png)
 
 5. Add details.
    a. Enter title and description
