@@ -122,10 +122,10 @@ Run the following command to verify your workspace is pointing to the correct re
 git remote -v
  
 # Result
-origin    https://github.com/aws-lumberyard/o3de.git (fetch)
-origin    https://github.com/aws-lumberyard/o3de.git (push)
-upstream    https://github.com/TestUser/o3de.git (fetch)
-upstream    https://github.com/TestUser/o3de.git (push)
+origin    https://github.com/TestUser/o3de.git (fetch)
+origin    https://github.com/TestUser/o3de.git (push)
+upstream    https://github.com/aws-lumberyard/o3de.git (fetch)
+upstream    https://github.com/aws-lumberyard/o3de.git (push)
 ```
 Note:
 
