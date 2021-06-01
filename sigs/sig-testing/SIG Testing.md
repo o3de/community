@@ -35,18 +35,17 @@ Two concise lines explaining what this SIG does with bullet points of the major 
 * Design and maintain scripts executed by jenkins for the framework (Move to Contrib/Dev Workflow?)
 * Define KPI and SLAs for test metrics
 * Creation and reporting of metrics to devstats dashboard and related systems related to QA stats
-
-++ Documentation of prioritization of test cases, define categories and actions for each
-++ Perform Testing across platforms in both automated or manual forms, but not responsible for development of invocation scripts per platform.
-++ Provide performance and ensure meets the minimum defined accepted quality bar
-++ Define and provide guardraids of minimum accepted quality experience and performance 
-++ Define SLA of action on discovery of issues found.
-++ Maintain bug test database for purposes of test cases and bugs.
-++ Maintain and define stabilization of test cases to ensure tech debt limits are not exceeded. 
-++ Periodic reviews of test cases and collateral
-++ SLA to define frequance of maintance of test stabilization
-++ Define quality bar of branch marked for release potential
-++ Responsible for all other forms not defined in functional testing in or out of automation, but not responsible for the test code written by other SIGs or community (or maintain / write)
+  * Documentation of prioritization of test cases, define categories and actions for each
+  * Perform Testing across platforms in both automated or manual forms, but not responsible for development of invocation scripts per platform.
+  * Provide performance and ensure meets the minimum defined accepted quality bar
+  * Define and provide guardraids of minimum accepted quality experience and performance 
+  * Define SLA of action on discovery of issues found.
+  * Maintain bug test database for purposes of test cases and bugs.
+  * Maintain and define stabilization of test cases to ensure tech debt limits are not exceeded. 
+  * Periodic reviews of test cases and collateral
+  * SLA to define frequance of maintance of test stabilization
+  * Define quality bar of branch marked for release potential
+  * Responsible for all other forms not defined in functional testing in or out of automation, but not responsible for the test code written by other SIGs or community (or maintain / write)
 
 **Cross-cutting Processes**
 
