@@ -1,63 +1,63 @@
-**SIG <Template> Charter**
+# SIG Core Charter 
 
-This charter adheres to the Roles and Organization Management specified in <sig-governance>.
- Team information may be found in the <readme.md>
+This charter adheres to the Roles and Organization Management specified in "<sig-governance.md>".
 
-**Overview of SIG**
+Team information may be found in the "<readme.md>"
+
+# Overview of SIG #
 
 Two concise lines explaining what this SIG does with bullet points of the major responsibilities
 
 - Responsibility 1
 
-**Goals**
+# Goals #
 
 
 - Major goals that SIG seeks to generally achieve
 
-**Scope**
-Responsible for the keybind and controller framework system
-Design and implement localization framework for editor and project runtime.
-Publish and maintain localization data format structure
+# Scope 
 
-Maintain behavior context, edit context, serialization contexts, and code reflections frameworks and systems.
+* Responsible for the keybind and controller framework system
+* Design and implement localization framework for editor and project runtime.
+* Publish and maintain localization data format structure
 
-Create framework for exposing profiling and metrics data that can be collected 
-Maintain generic node based scripting framework and data representation model 
+* Maintain behavior context, edit context, serialization contexts, and code reflections frameworks and systems.
 
-Maintain asset catalog, asset processor, and builder systems and framework 
-Maintain Packaging artifact and catalog system
-Design and Maintain asynchronous loading stream system
+* Create framework for exposing profiling and metrics data that can be collected 
+* Maintain generic node based scripting framework and data representation model 
 
-Maintain Prefab system 
-Maintain Core system libraries AZCore, and AZFramework libraries
-Maintain Editor python bindings framework
-Maintain Physics API, and integration of physics related gems
-Maintain EmotionFX and Animation systems 
-Maintain Logging and Trace systems and frameworks
+* Maintain asset catalog, asset processor, and builder systems and framework 
+* Maintain Packaging artifact and catalog system
+* Design and Maintain asynchronous loading stream system
 
-Publish and maintain list of use case examples for each subssystem of AZCore. 
+* Maintain Prefab system 
+* Maintain Core system libraries AZCore, and AZFramework libraries
+* Maintain Editor python bindings framework
+* Maintain Physics API, and integration of physics related gems
+* Maintain EmotionFX and Animation systems 
+* Maintain Logging and Trace systems and frameworks
 
-- Generalized overall scope of work
+* Publish and maintain list of use case examples for each subssystem of AZCore. 
 
-**In scope**
+# Generalized overall scope of work 
 
-- Items that are the core responsibilities of SIG
+## In scope
 
-**Cross-cutting Processes**
 
-Support and collaborate with all SIGs in relation to changed and updates to underlying frameworks 
-Publish procedure for the intake of requests from SIGs in relation to changes and needs to core systems
-Provide consultation, discovery, and guidance for new feature support brought forth by other SIGs
-Publish and matinain best practices, usability examples, and feature documentation.
+## Cross-cutting Processes
 
-- Items that span or require other SIGs or groups and how it relates to this SIG’s responsibilities
+* Support and collaborate with all SIGs in relation to changed and updates to underlying frameworks 
+* Publish procedure for the intake of requests from SIGs in relation to changes and needs to core systems
+* Provide consultation, discovery, and guidance for new feature support brought forth by other SIGs
+* Publish and matinain best practices, usability examples, and feature documentation.
 
-**Out of Scope**
-Not responsible for building bespoke solutions to meet individual needs, but may be consulted with from time to time without obligation.
 
-- Items that are optional or are not the responsibility of this SIG.
+## Out of Scope ##
 
-**SIG Links and lists:**
+ * Not responsible for building bespoke solutions to meet individual needs, but may be consulted with from time to time without obligation.
+
+
+# SIG Links and lists: 
 
 - Joining this SIG
 - Slack/Discord
@@ -65,28 +65,28 @@ Not responsible for building bespoke solutions to meet individual needs, but may
 - Issues/PRs
 - Meeting agenda & Notes
 
-**Roles and Organization Management**
+# Roles and Organization Management 
 
 SIG Docs adheres to the standards for roles and organization management as specified by <sig-governance>. This SIG opts in to updates and modifications to <sig-governance>
 
-**Individual Contributors**
+## Individual Contributors 
 Must provide a report of performance and blast radius impact of direct and indirectly affected systems
 
 Additional information not found in the sig-governance related to contributors.
 
-**Maintainers**
+## Maintainers 
  
 Additional information not found in the sig-governance related to contributors
 
-**Additional responsibilities of Chairs**
+## Additional responsibilities of Chairs 
 
 Additional information not found in the sig-governance related to SIG Chairs
 
-**Subproject Creation**
+## Subproject Creation 
 
 Additional information not found in the sig-governance related to subproject creation
 
-**Deviations from sig-governance**
+## Deviations from sig-governance 
 SIG will elect 4 Chairmembers due to vast interaction across all SIGs
 
-Explicit Deviations from the sig-governance
+## Explicit Deviations from the sig-governance 
