@@ -1,4 +1,4 @@
-# SIG-CORE Charter #
+# SIG Core Charter 
 
 This charter adheres to the Roles and Organization Management specified in "<sig-governance.md>".
 
@@ -15,7 +15,8 @@ Two concise lines explaining what this SIG does with bullet points of the major 
 
 - Major goals that SIG seeks to generally achieve
 
-# Scope #
+# Scope 
+
 * Responsible for the keybind and controller framework system
 * Design and implement localization framework for editor and project runtime.
 * Publish and maintain localization data format structure
@@ -40,26 +41,23 @@ Two concise lines explaining what this SIG does with bullet points of the major 
 
 # Generalized overall scope of work 
 
-## In scope ##
+## In scope
 
-Items that are the core responsibilities of SIG
 
-**Cross-cutting Processes**
+## Cross-cutting Processes
 
 * Support and collaborate with all SIGs in relation to changed and updates to underlying frameworks 
 * Publish procedure for the intake of requests from SIGs in relation to changes and needs to core systems
 * Provide consultation, discovery, and guidance for new feature support brought forth by other SIGs
 * Publish and matinain best practices, usability examples, and feature documentation.
 
-- Items that span or require other SIGs or groups and how it relates to this SIG’s responsibilities
 
 ## Out of Scope ##
 
  * Not responsible for building bespoke solutions to meet individual needs, but may be consulted with from time to time without obligation.
 
-- Items that are optional or are not the responsibility of this SIG.
 
-# SIG Links and lists: #
+# SIG Links and lists: 
 
 - Joining this SIG
 - Slack/Discord
@@ -67,28 +65,28 @@ Items that are the core responsibilities of SIG
 - Issues/PRs
 - Meeting agenda & Notes
 
-# Roles and Organization Management #
+# Roles and Organization Management 
 
 SIG Docs adheres to the standards for roles and organization management as specified by <sig-governance>. This SIG opts in to updates and modifications to <sig-governance>
 
-## Individual Contributors ##
+## Individual Contributors 
 Must provide a report of performance and blast radius impact of direct and indirectly affected systems
 
 Additional information not found in the sig-governance related to contributors.
 
-## Maintainers ##
+## Maintainers 
  
 Additional information not found in the sig-governance related to contributors
 
-## Additional responsibilities of Chairs ##
+## Additional responsibilities of Chairs 
 
 Additional information not found in the sig-governance related to SIG Chairs
 
-## Subproject Creation ##
+## Subproject Creation 
 
 Additional information not found in the sig-governance related to subproject creation
 
-## Deviations from sig-governance ##
+## Deviations from sig-governance 
 SIG will elect 4 Chairmembers due to vast interaction across all SIGs
 
-## Explicit Deviations from the sig-governance ##
+## Explicit Deviations from the sig-governance 
