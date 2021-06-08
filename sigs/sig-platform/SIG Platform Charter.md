@@ -20,8 +20,6 @@ Sets the standards and practices for maintenance and development on cross-platfo
 * Define platforms supported.
 * Define how the Platform Abstraction Layer works
 * Define structuring of codebase for platform specific elements
-* Define all platform codenames to be used in code base
-* Responsible for ensuring noncompliant code for restricted platforms is accepted.
 * Define, update, and ensure compatibility of SDKs, toolchains, and versioning to be used for compiling platform code
 * Define Operating System and OS version support for each platforms
 * Define minimum required drivers and libraries compatibility for each platform.
@@ -42,7 +40,7 @@ Sets the standards and practices for maintenance and development on cross-platfo
 
 ## Out of Scope 
 
-* Not responsible for system abstraction of device/os implementations per platform.
+* Not responsible for system abstraction of device/OS implementations per platform.
 * May advise but not responsible for fixing code incompatibility per compiler or platform.
 
 # SIG Links and lists: 
