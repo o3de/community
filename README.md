@@ -4,7 +4,7 @@ Open 3D Engine Foundation
 ## Table of Contents
 
 <!-- TOC -->
-- [O3DE Resources]((https://o3de.github.io/foundation/)
+- [O3DE Resources](https://o3de.github.io/foundation/)
 - [SIG Meetings]
   - [SIG-Build](https://o3de.github.io/foundation/sigs/sig-build/)
   - [SIG-Content](https://o3de.github.io/foundation/sigs/sig-content/)
