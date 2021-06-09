@@ -1,5 +1,6 @@
-# foundation
-Open 3D Engine Foundation 
+# O3DE Foundation Resources
+
+Foundation related resources like charters and code of conducts.
 
 ## Table of Contents
 
