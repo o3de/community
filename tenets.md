@@ -1,6 +1,6 @@
-# Open 3D Community Tenets
+# Open 3D Community Values
 
-Our Open 3D community culture is key to the project's success. The following tenets are to help provide an overall understanding of how to push our peers and project forward with continual improvement.
+Our Open 3D community culture is key to the project's success. The following values are to help provide an overall understanding of how to push our peers and project forward with continual improvement.
 
 
 ### Keep communication public
