@@ -55,7 +55,7 @@ as Meetups) program by email (meetups@cncf.io)
 
 ## Contibuting code
 
-Before submitting code to the O3DE project, you will need to acknowledge  the Developer Certificate of Origin [DCO](https://developercertificate.org/) on Pull Requests.
+Before submitting code to the O3DE project, you will need to acknowledge the Developer Certificate of Origin [DCO](https://developercertificate.org/) on Pull Requests.  By making a submission, you license your submission under the Apache 2.0 and MIT licenses.
 
 
 ## Code of Conduct
