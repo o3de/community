@@ -45,13 +45,12 @@ up the contributor ladder!
 
 ### Events
 
-Open 3D Engine participates in O3DECon and related Industry events. Information about these and other community events is available on the CNCF [Events](https://www.cncf.io/events/) pages.
+Open 3D Engine participates in O3DECon and related Industry events. Information about these and other community events is available on the O3DE [Event Calendar](https://lists.o3de.org/g/o3de-calendar/calendar) page.
 
 ### Meetups
 
 All Open 3D Engine meetups follow the general [Cloud Native Computing Foundation Guidelines](https://github.com/cncf/communitygroups)
-You may also contact CNCF Staff driving the Community Groups  (previously known
-as Meetups) program by email (meetups@cncf.io)
+You may also contact O3DE Staff driving the Community Groups program by email (meetups@o3de.org)
 
 ## Contibuting code
 
