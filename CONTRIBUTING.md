@@ -9,9 +9,8 @@ You do not need to write code to contribute to this project. Tests, documentatio
 ## Getting Started
 
 We have full documentation on how to get started contributing here:
+- [O3DE Contributor Guide](https://o3de.org/docs/contributing/) - Main contributor documentation
 
-- [O3DE Contributor Guide](http://github.com/o3de/community/contributors/guide) - Main contributor documentation
-- [Contributor Cheat Sheet](github.com/o3de/community/contributors/guide/contributor-cheatsheet/) - Common resources for existing developers
 
 This project has many different disciplines represented by special interest groups (SIGs). If you have a speciality, or just want to contribute to a certain area, please look through the SIGs and their respective charters here:
 
