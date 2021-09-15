@@ -1,4 +1,4 @@
-# Agenda for meeting on September 21st 2021
+# Agenda for September 2021 meeting
 
 1. Intros
 2. Mission statement discussion
