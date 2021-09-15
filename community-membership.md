@@ -8,13 +8,14 @@ To contribute, please review our [Code of Conduct](https://github.com/o3de/o3de/
 
 ## How to become a reviewer
 
-Requirements to become a reviewer
+Requirements to become a reviewer for a given Special Interest Group
 * 6+ contributions successfully submitted to O3DE
 * 100+ lines of code changed across all contributions submitted to O3DE
 * 2+ O3DE Reviewers or Maintainers that support promotion from Contributor to Reviewer
 
 You must be nominated (self-nomination is allowed) for promotion from Contributor to Reviewer.
-To do this, a [Pull Request](https://github.com/o3de/community/pulls) should be created on the community repo for the supportive Reviewers and Maintainers to comment and add their support.
+To do this, an issue should be created on the SIG's repo for the supportive Reviewers and Maintainers to comment and add their support. For example, to nominate a reviewer on behalf of sig-content, an Issue should be created in the [sig-content repository](https://github.com/o3de/sig-content/issues/new/choose).
+
 Once you have the requisite support, the nomination Pull Request needs to be reviewed and approved during a SIG meeting.  The nominee should plan to attend and add it to the agenda for the SIG to review and, if appropriate, approve.
 Nomination Pull Requests that do not have the necessary support will be closed after 4 weeks of inactivity.
 
@@ -25,14 +26,15 @@ If a Reviewer fails to meet the requirements, they will be given a 1 month grace
 
 ## How to become a maintainer
 
-Requirements to become a maintainer
+Requirements to become a maintainer for a given Special Interest Group
 * Has been a Reviewer for 2+ months
 * 8+ reviewed Pull Requests in the previous 2 months
 * 200+ lines of code changed across all reviewed Pull Requests
 * 2+ O3DE Maintainers that support the promotion from Reviewer to Maintainer
 
 You must be nominated (self-nomination is allowed) for promotion from Reviewer to Maintainer.
-To do this, a [Pull Request](https://github.com/o3de/community/pulls) should be created on the community repo for the supportive Maintainers to comment and add their support.
+To do this, an issue should be created on the community repo for the supportive Maintainers to comment and add their support. For example, to nominate a maintainer on behalf of sig-content, an Issue should be created in the [sig-content repository](https://github.com/o3de/sig-content/issues/new/choose).
+
 Once you have the requisite support, the nomination Pull Request needs to be reviewed and approved during a SIG meeting.  The nominee should plan to attend and add it to the agenda for the SIG to review and, if appropriate, approve.
 Nomination Pull Requests that do not have the necessary support will be closed after 4 weeks of inactivity.
 
