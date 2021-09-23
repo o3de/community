@@ -16,14 +16,19 @@ As we head towards O3DECon and the new calendar year, it’s critically importan
 
 O3DE would love your contribution in this capacity. The initial agenda will cover:
 
-* Quick introductions
-* The charter and overall goals of the O3DE Marketing Committee
-* Define the top current priorities for O3DE Marketing
-* General leadership voting or volunteering (if needed)
-* How we collaborate (communications and channels, file sharing, etc)
+* Quick introductions (0:10)
+* State/Context of O3D Foundation: Royal time! (0:30)
+* How we collaborate (communications and channels, file sharing, etc) (0:45)
+  * Meeting date/time (timezone)/cadence
+  * General leadership voting or volunteering (if needed)
+* Urgent O3DE needs: O3DECon, blogs, general comms cadence / Next steps (1:00)
+
+If we have time:
+
+* Define the charter and overall goals of the O3DE Marketing Committee
 * Discuss overall press strategy
 * Discuss perceived gaps
-* Urgent O3DE needs: O3DECon, blogs, general comms cadence
+* Define the top current priorities for O3DE Marketing
 
 This committee will be responsible for a number of critical parts of the overall public-facing O3DE experience, including:
 
