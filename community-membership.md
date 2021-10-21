@@ -20,7 +20,7 @@ Once you have the requisite support, the nomination Issue needs to be reviewed a
 Nomination Issues that do not have the necessary support will be closed after 4 weeks of inactivity.
 
 Requirements to continue to be a Reviewer
-* 4+ Pull Requestss reviewed per month
+* 4+ Pull Requests reviewed per month
 
 If a Reviewer fails to meet the requirements, they will be given a 1 month grace period to get back to the required number of Pull Requests per month.  After the 2nd month, if they haven't returned to the required number of reviews, they will be returned to Contributor status.
 
