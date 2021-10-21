@@ -38,7 +38,7 @@ Each SIG has scheduled meetings that may be found on the [O3DE calendar](https:/
 
 ## Community
 
-The Open 3D Engine is a large, lively, friendly open-source community. As many open source projects often do, it depends on new people becoming members and regular code contributors. The [Community Membership Document](http://github.com/o3de/community/community-membership.md) covers membership
+The Open 3D Engine is a large, lively, friendly open-source community. As many open source projects often do, it depends on new people becoming members and regular code contributors. The [Community Membership Document](https://github.com/o3de/community/blob/main/community-membership.md) covers membership
 processes and roles. Please consider joining Open 3D Engine, and making your way
 up the contributor ladder!
 
