@@ -6,7 +6,19 @@ The [O3DE community repo](https://github.com/o3de/community) contains informatio
 
 To contribute, please review our [Code of Conduct](https://github.com/o3de/o3de/blob/development/CODE_OF_CONDUCT.md) first. 
 
-## How to become a reviewer
+## Contributing to Open 3D Engine
+
+Everyone is invited and welcome to contribute to Open 3D Engine by filing issues, pull requests, asking questions, participating in discussions and feature reviews, and engaging with _any_ public work. All you need to do is agree to the [Code of Conduct](https://github.com/o3de/o3de/blob/development/CODE_OF_CONDUCT.md), ensure that your contribution is valid under the [Developer Certificate of Origin](https://www.dita-ot.org/dco) and sign your commits. Discussion requires no such agreement.
+
+For contributors who are interested in working more in-depth on features or writing specifications, providing specific content types like videos or blogs, or managing groups of work, contact the appropriate [O3DE Special Interest Group]() to find out about their process and how to meet any requirements for official contributions.
+
+## Reviewers 
+
+A *Reviewer* is a role where a contributor is responsible for reviewing Pull Requests on GitHub and providing appropriate feedback. Reviewers are expected to be kind, courteous, and fair to submitters to any Open 3D Foundation project. We have three types of Reviewers:
+
+* *Code Reviewers*, responsible for reviewing source code submitted to repositories maintained by the Open 3D Foundation.
+* *Documentation Reviewers*, responsible for reviewing items under the [Documentation & Community Special Interest Group charter](https://github.com/o3de/sig-docs-community/blob/main/governance/charter.md).
+* *Technical Reviewers*, code reviewers who also review documentation for technical accuracy.
 
 You must be nominated (self-nomination is allowed) for promotion from Contributor to Reviewer. To do this, an issue should be created on the SIG's repo for the supportive Reviewers and Maintainers to comment and add their support. For example, to nominate a reviewer on behalf of sig-content, an Issue should be created in the [sig-content repository](https://github.com/o3de/sig-content/issues/new/choose).
 
@@ -48,7 +60,9 @@ Requirements to continue to be a Reviewer:
 
 If a Reviewer fails to meet the requirements, they will be given a 1 month grace period.  After the 2nd month, if they haven't returned to the required number of reviews, they will be returned to Contributor status.
 
-## How to become a maintainer
+## Maintainers
+
+A *Maintainer* role is an increased level of responsibility for a Reviewer. Maintainers aren't just responsible for performing review - they also have the ability to merge pull requests into the appropriate branch. Maintainers are high-quality Reviewers who take extra care when looking at a pull request, and are willing to trust the other Reviewers who approve work.
 
 You must be nominated (self-nomination is allowed) for promotion from Reviewer to Maintainer. To do this, an issue should be created on the community repo for the supportive Maintainers to comment and add their support. Once you have the requisite support, the nomination Pull Request needs to be reviewed and approved during a SIG meeting.  The nominee should plan to attend and add it to the agenda for the SIG to review and, if appropriate, approve. Nomination Pull Requests that do not have the necessary support will be closed after 4 weeks of inactivity.
 
