@@ -38,7 +38,7 @@ Each SIG has scheduled meetings that may be found on the [O3DE calendar](https:/
 
 ## Community
 
-The Open 3D Engine is a large, lively, friendly open-source community. As many open source projects often do, it depends on new people becoming members and regular code contributors. The [Community Membership Document](http://github.com/o3de/community/community-membership.md) covers membership
+The Open 3D Engine is a large, lively, friendly open-source community. As many open source projects often do, it depends on new people becoming members and regular code contributors. The [Community Membership Document](https://github.com/o3de/community/blob/main/community-membership.md) covers membership
 processes and roles. Please consider joining Open 3D Engine, and making your way
 up the contributor ladder!
 
@@ -51,7 +51,7 @@ Open 3D Engine participates in O3DECon and related Industry events. Information 
 All Open 3D Engine meetups follow the general [Cloud Native Computing Foundation Guidelines](https://github.com/cncf/communitygroups)
 You may also contact O3DE Staff driving the Community Groups program by email (meetups@o3de.org)
 
-## Contibuting code
+## Contributing code
 
 Before submitting code to the O3DE project, you will need to acknowledge the Developer Certificate of Origin [DCO](https://developercertificate.org/) on Pull Requests.  By making a submission, you license your submission under the Apache 2.0 and MIT licenses.
 
