@@ -31,3 +31,38 @@ Other means of spreading the word might include:
 - Other items...?
 
 ## Notes
+
+* **ELECTION RESULTS**
+  - Chair: BenG
+  - Co-chair: angelic13
+
+* Only 8 articles about O3DE out there; about half were just short "clarifications". We need a press strategy?
+
+**LET'S GET PEOPLE TALKING!**
+
+* Get voices who love features posting about them and discussing O3DE in terms of great features 
+
+## Action Items (BenG and angelic13 to chase down owners/deliverers from community)
+
+* Need to update Reddit r/gamedev and r/ama info to add O3DE: Rex, Mr_Squarepeg (we have official O3DE reddit account)
+  * Sort out account sharing and moderation (Stramer, Doug Erickson need to track down)
+* Wikipedia as well? Has a limited page; poor coverage in game engine related topics: TBD
+  * Also GitHub game engine list: TBD
+  * Need to work with Wikipedia moderators: TBD
+  * Need review of existing Wikipedia content: Finite_State
+  * FreeGameDev forum: Mr_Squarepeg
+* Better social media coverage? Need more "engagement" and "adoption" focused materials. Get community to follow to start?: angelic13
+  * We have Instagram and Twitch accounts reserved: Rex
+  * LinkedIn account: share O3DE account with Royal and Doug
+  * Art/webcomic sites might be an oppo: Rex
+* Twitch stream: Mr_Squarepeg, angelic13 (twitch.tv/o3de, Royal has credentials/account)
+* Podcast? Join another podcast? (Like PCMag)
+  * Weekly podcast series ("Ask an O3DE Dev"): Ben, some corp rules for AWS (talk to Royal and Stramer)
+  * Blog series to drive engagement with each podcast: angelic13
+  * AWS side: sync with Chanelle and Alex Damarjian
+* Goals "working" doc: high-level goals + timeframe, potential activities for each: BenG, angelic13, Royal
+  * Working docs on opportunities and volunteers to tackle them
+* Publicizing roadmap! (work with sig-release and TAC): TBD, keep discussion alive
+* Release notes: work with Doug Erickson for now
+* Collection of events -- calendar/schedule needed. Start a discussion thread with Marketing committee: Finite_State
+* PRESS KIT (dopresskit.com, from Vlambeer): Mr_Squarepeg 
