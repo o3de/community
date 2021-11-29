@@ -6,100 +6,80 @@ Use this folder in o3de/community to store meeting notes and planning artifacts,
 
 ## Meeting Agendas and Notes
 
-### Kick-off Meeting: 9/23/2021
+### Upcoming meetings
 
-**Attendees**: Doug Erickson (AWS), ROyal O'Brien (LF), Deb Giles (LF), angelic13 (LF), Ruth Suehle (RedHat), JT, Boatlander, daimini (AWS), Lorvul, AMZN_Lee (AWS), AMZN_Micron, charleslo, MobS1024, Pinfil, Spotz, stramer (AWS), AMZN-AlexPete, AMZN_Liv, na2axl (Sparky Studio), jruis, vrid
+TODO: Schedule next meeting.
 
-Notes: Boatlander
+### Past meetings
 
-**Agenda:**
+* [10/25/2001 Election Results Meeting](meeting-notes/meeting-agenda-2021-10-25.md)
+* [10/4/2001 Meeting](meeting-notes/meeting-agenda-2021-10-4.md)
+* [9/23/2001 Kickoff Meeting](meeting-notes/meeting-agenda-2021-9-23.md)
 
-As we head towards O3DECon and the new calendar year, it's critically important that we start planning and delivering marketing strategies, calendars, and materials for the O3DE governing board to potentially fund and resource. O3DE has a marketing budget, but we need technically savvy, diverse leaders to, well, determine how it should be used by making informed recommendations and plans to use it.
+## Marketing goals
 
-O3DE would love your contribution in this capacity. The initial agenda will cover:
+TODO: Define role of marketing goals.
 
-* Quick introductions (0:10)
-* State/Context of O3D Foundation: Royal time! (0:30)
-* How we collaborate (communications and channels, file sharing, etc) (0:45)
-  * Meeting date/time (timezone)/cadence
-  * General leadership voting or volunteering (if needed)
-* Urgent O3DE needs: O3DECon, blogs, general comms cadence / Next steps (1:00)
+### 3-month
 
-If we have time:
+### 6-month
 
-* Define the charter and overall goals of the O3DE Marketing Committee
-* Discuss overall press strategy
-* Discuss perceived gaps
-* Define the top current priorities for O3DE Marketing
+### 1-year
 
-This committee will be responsible for a number of critical parts of the overall public-facing O3DE experience, including:
+## Metrics
 
-* Defining o3de.org website needs (messaging and technical)
-* Events and calendar(s): Scheduling, management, publicization, and support
-* Recruitment from the community for contributions, such as blogs, videos, speaking engagements, training, etc
-* Development of marketing materials or the planning of them
-* Press releases and press-friendly materials
-* General public communications about the current state and future of O3DE and the community
-* Release Notes and technical announcements
-* \<any others? I discussed this briefly with Royal as a charter starting point, but we should come together as a committee to lock this down\>
+TODO: Define and track engagement metrics.
 
-**Notes**
+## Channels
 
-Next Meeting:
+TODO:  Assign points of contact
 
-* Chair/co-chair election (results?)
-* Review any charter drafts
-* O3DE Game Jam (week after O3DECon) -- tactics?
-* Review the PPT templates for O3DE presentations
+| Channel | Official account/user | Point of contact(s) | Credential point of contact(s) | Notes |
+|-|-|-|-|-|
+| [Twitter](https://twitter.com/o3dengine) | O3DE | | | | 
+| [Youtube](https://www.youtube.com/channel/UCTC8GDw1XidOTUBEFRbN-sA) | | | | | 
+| [Twitch](https://www.twitch.tv/o3de) | o3de | | |  |
+| [reddit r/o3de](https://www.reddit.com/r/O3DE/) | | | | | 
+| [reddit r/ama](https://www.reddit.com/r/AMA/) |  | |  | 
+| [reddit r/gamedev](https://www.reddit.com/r/gamedev/) | | |  | 
+| [moddb.com](https://www.moddb.com/) |  |  |  |
+| [Wikipedia](https://en.wikipedia.org/wiki/Open_3D_Engine) | | |  | 
 
---
+## Calendar
 
-TO DO's:
+| - | 2022 | - | 
+|-|-|-|
+| Dec | Nov | Oct |
+||||
+| Sep | Aug | Jul |
+||||
+| Jun | May | Apr |
+||||
+| Mar | Feb | Jan |
 
-* Elect Marketing Chair & Co-Chair
-  * Doug will host until then
-* Promote O3DE Game Jam
-* Promote O3DECon
-  * Amplify NewWorld O3DE recommendation
-    * JT O3DE Reddit & Meetup Post (8,000 folks)
-    * Redhat: Opensource streams
-* Finalize Assets: Testimonials & Visual Examples:
-  * PopCorn FX
-  * New World
-  * Apocalypse (Dennis Dyack)
-  * Carbonated (Travis Boatman)
-  * Community examples (TBD)
+| - | 2021 | - | 
+|-|-|-|
+| Dec | Nov | Oct |
+|| <p>Oct 18-Nov 15th - [Event](https://itch.io/jam/o3de-jam-1) O3DE Jam Ends.</p><p>Nov 29th - [PR] Planned date of next release.</p><p>Nov 29th - [Blog] Planned date of next release.</p><p>Nov 29th - [Release Notes] Planned date of next release.</p> | <p>Oct 11-12th - [Event](https://events.linuxfoundation.org/o3decon/) O3DECon</p><p>Oct 18-Nov 15th - [Event](https://itch.io/jam/o3de-jam-1) O3DE Jam Begins.</p> |
+| Sep | Aug | Jul |
+||| <p>July 6th - [Blog](https://o3de.org/blog/posts/welcome-post/) Announcing Open 3D Engine!</p><p>July 6th - [PR](https://www.linuxfoundation.org/press-release/linux-foundation-to-form-new-open-3d-foundation/) Linux Foundation to Form New Open 3D Foundation</p> |
 
-MARKETING CALENDAR
+## Resources
 
-* Marketing Meetings (internal)
-* Events
-  * Event Criteria
-    * Why this one?
-    * How to amplify?
-  * Event Types
-    * OpenSource: SCaLE (largest? OSS convention)
-    * Defense: ITSec
-    * Games: Nordic Games / Pocket Games / etc.
-    * Community: Reddit & Meetups
-    * University / Educational
-  * Metrics / Outcomes
-    * Website analytics
-    * Git data
-    * People engaged
-    * Caution: Bots tend to skew data
+TODO: Press Kit
 
-MARKETING GROUP
+## Proto-projects
 
-* More of a think tank
-* Generate Ideas
-* Financials: Where & How to spend
-* Leadership:
-  * Like Other SIGS // Do open election
-  * CHAIR
-  * Co-Chair
+TODO: Podcast
+TODO: Define marketing goals
 
-THEMES / TONE
+## Procedures
 
-* Show work (later say it was O3DE)
-* Well-documented use cases
+TODO: Event Procedure
+TODO: Blog Procedure
+TODO: PR Procedure
+TODO: Release Notes Procedure
+
+## Past Events
+
+TODO: Add links to pre-event discussions, docs, post-event breakdowns.

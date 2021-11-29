@@ -38,7 +38,7 @@ Automation tools for testing is key to help reduce human error and set the minim
 Gaining contributors is a key to bringing a project to life and reducing the workload. Recognizing contributors that collaborate with others, make numerous contributions, and offer more responsibility can create a greater sense of accomplishment and belonging. Provide the tools that can allow others to grow into leadership roles if they desire.
 
 
-### Never be be afraid to take a break
+### Never be afraid to take a break
 
 Life commitments and burnout are real and it can be hard to take a break when everybody needs you. Communicate when you are and are not available to set communication expectations and avoid any confusion caused by unresponsiveness. Try to find support for your community when you are away from a project.
 
