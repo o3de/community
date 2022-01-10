@@ -52,6 +52,6 @@ Records of decision:
 - Lee to share upcoming UI/UX blog posts with Doug.
 - Create RFP request for funding analytics solutions (Doug).
 - Incorporate information on service providers (and intermediary data formats) to analytics budget request (Ben).
-- Prior to 1/17 Meeting on release naming, review current GH discussions on topic (All).
+- Prior to 1/17 Meeting on release naming, review current GH discussions on topic (All). [O3DE Release naming thread](https://github.com/o3de/community/discussions/109)
 - Create GH thread to discuss other marketing requirements for releases in general (JoeB).
-- Create GH thread for Moderator/Leadership guidelines (Royal).
+- Create GH thread for Moderator/Leadership guidelines (Royal). [How to best respond to community questions](https://github.com/o3de/community/discussions/110)
