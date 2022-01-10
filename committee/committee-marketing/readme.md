@@ -8,10 +8,11 @@ Use this folder in o3de/community to store meeting notes and planning artifacts,
 
 ### Upcoming meetings
 
-[01/10/2022 21.11.2 Point Release Meeting](https://github.com/o3de/community/issues/107)
+01/17/2022 Meeting on release naming
 
 ### Past meetings
 
+* [01/10/2022 Meeting](meeting-notes/meeting-agenda-2022-01-10.md)
 * [10/25/2021 Election Results Meeting](meeting-notes/meeting-agenda-2021-10-25.md)
 * [10/4/2021 Meeting](meeting-notes/meeting-agenda-2021-10-4.md)
 * [9/23/2021 Kickoff Meeting](meeting-notes/meeting-agenda-2021-9-23.md)
