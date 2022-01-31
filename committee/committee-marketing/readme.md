@@ -14,3 +14,7 @@ Use this folder in o3de/community to store meeting notes and planning artifacts,
 
 * [10/4/2001 Meeting](meeting-notes/meeting-agenda-2021-10-4.md)
 * [9/23/2001 Kickoff Meeting](meeting-notes/meeting-agenda-2021-9-23.md)
+
+### Notes:
+
+* 
