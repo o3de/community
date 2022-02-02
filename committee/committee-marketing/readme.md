@@ -16,6 +16,9 @@ TODO: Schedule next meeting.
 * [10/4/2001 Meeting](meeting-notes/meeting-agenda-2021-10-4.md)
 * [9/23/2001 Kickoff Meeting](meeting-notes/meeting-agenda-2021-9-23.md)
 
+### Notes:
+
+* 
 ## Marketing goals
 
 TODO: Define role of marketing goals.
