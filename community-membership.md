@@ -16,11 +16,11 @@ Requirements to become a reviewer for a given Special Interest Group
 You must be nominated (self-nomination is allowed) for promotion from Contributor to Reviewer.
 To do this, an issue should be created on the SIG's repo for the supportive Reviewers and Maintainers to comment and add their support. For example, to nominate a reviewer on behalf of sig-content, an Issue should be created in the [sig-content repository](https://github.com/o3de/sig-content/issues/new/choose).
 
-Once you have the requisite support, the nomination Pull Request needs to be reviewed and approved during a SIG meeting.  The nominee should plan to attend and add it to the agenda for the SIG to review and, if appropriate, approve.
-Nomination Pull Requests that do not have the necessary support will be closed after 4 weeks of inactivity.
+Once you have the requisite support, the nomination Issue needs to be reviewed and approved during a SIG meeting.  The nominee should plan to attend and add it to the agenda for the SIG to review and, if appropriate, approve.
+Nomination Issues that do not have the necessary support will be closed after 4 weeks of inactivity.
 
 Requirements to continue to be a Reviewer
-* 4+ Pull Requestss reviewed per month
+* 4+ Pull Requests reviewed per month
 
 If a Reviewer fails to meet the requirements, they will be given a 1 month grace period to get back to the required number of Pull Requests per month.  After the 2nd month, if they haven't returned to the required number of reviews, they will be returned to Contributor status.
 
@@ -35,8 +35,8 @@ Requirements to become a maintainer for a given Special Interest Group
 You must be nominated (self-nomination is allowed) for promotion from Reviewer to Maintainer.
 To do this, an issue should be created on the community repo for the supportive Maintainers to comment and add their support. For example, to nominate a maintainer on behalf of sig-content, an Issue should be created in the [sig-content repository](https://github.com/o3de/sig-content/issues/new/choose).
 
-Once you have the requisite support, the nomination Pull Request needs to be reviewed and approved during a SIG meeting.  The nominee should plan to attend and add it to the agenda for the SIG to review and, if appropriate, approve.
-Nomination Pull Requests that do not have the necessary support will be closed after 4 weeks of inactivity.
+Once you have the requisite support, the nomination Issue needs to be reviewed and approved during a SIG meeting.  The nominee should plan to attend and add it to the agenda for the SIG to review and, if appropriate, approve.
+Nomination Issues that do not have the necessary support will be closed after 4 weeks of inactivity.
 
 Requirements to continue to be a Maintainer
 * 8+ Pull Requests reviewed per month
