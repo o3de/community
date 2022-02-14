@@ -1,0 +1,133 @@
+{
+   "BuildBranch": "Development",
+   "BuildVersion": "21.11.2",
+   "SIG": "SIG-Graphics-Audio",
+   "Subsystems": {
+      "Lighting": [
+         {
+            "Module": "Directional",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "0",
+            "Link": "url link to additional information",
+            "Doc": "documentation URL for usage notes",
+            "Description": "Brief note describing what this does"
+         },
+         {
+            "Module": "Point",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "0",
+            "Link": "url link to additional information",
+            "Doc": "documentation URL for usage notes",
+            "Description": "Brief note describing what this does"
+         },
+         {
+            "Module": "Global Sky",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "0",
+            "Link": "url link to additional information",
+            "Doc": "documentation URL for usage notes",
+            "Description": "Brief note describing what this does"
+         }
+      ],
+      "Render Hardware Interface": [
+         {
+            "Module": "Sparse Textures",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "<span style=\"color: var(--jexcel_content_color); font-size: 0.875rem; letter-spacing: 0.2px;\">documentation URL for usage notes</span>",
+            "Description": "Brief note describing what this does"
+         },
+         {
+            "Module": "DirectX 12",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "<a href=\"https://github.com/o3de/o3de/issues/1847\">Github Issue</a>",
+            "Doc": "<div><a href=\"\\&quot;https://www.o3de.org/docs/atom-guide/features</div\"></a></div><div><div>https://www.o3de.org/docs/atom-guide/features/</div></div>",
+            "Description": "DirectX 12 Renderer"
+         },
+         {
+            "Module": "Vulkan",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "<a href=\"https://www.o3de.org/docs/atom-guide/features\">O3DE DOCS</a>",
+            "Description": "Vulkan Renderer"
+         },
+         {
+            "Module": "Metal",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "<a href=\"https://www.o3de.org/docs/atom-guide/features\">O3DE DOCS</a>",
+            "Description": "Metal renderer"
+         }
+      ],
+      "Shaders": [
+         {
+            "Module": "HLSL",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "0",
+            "Link": "url link to additional information",
+            "Doc": "documentation URL for usage notes",
+            "Description": "Brief note describing what this does"
+         },
+         {
+            "Module": "AZSL",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "0",
+            "Link": "url link to additional information",
+            "Doc": "documentation URL for usage notes",
+            "Description": "Brief note describing what this does"
+         },
+         {
+            "Module": "OLDZSL",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "0",
+            "Link": "url link to additional information",
+            "Doc": "documentation URL for usage notes",
+            "Description": "0"
+         }
+      ]
+   }
+}

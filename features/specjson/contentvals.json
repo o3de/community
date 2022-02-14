@@ -1,0 +1,18 @@
+{
+   "Version":"development",
+   "SIG":"sig-graphics-audio",
+   "Subsystems":{
+      "Render Hardware Interface":{
+         "Sparse Textures":{
+            "MacOS":false,
+            "Description":"Brief note describing what this does",
+            "Content":0,
+            "Functional":0,
+            "Code/API":0,
+            "Performance":0,
+            "Link":"url link to additional information",
+            "Doc":"documentation URL for usage notes"
+         }
+      }
+   }
+}

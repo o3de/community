@@ -1,0 +1,16 @@
+[
+{ "name": "None", "url": "" },
+{ "name": "sig-build", "url": "sigjson/sig-build-features.json" },
+{ "name": "sig-content", "url": "sigjson/sig-content-features.json" },
+{ "name": "sig-core", "url": "sigjson/sig-core-features.json" },
+{ "name": "sig-docs-community", "url": "sigjson/sig-docs-community-features.json" },
+{ "name": "sig-graphics-audio", "url": "sigjson/sig-graphics-audio-features.json" },
+{ "name": "sig-network", "url": "sigjson/sig-network-features.json" },
+{ "name": "sig-operations", "url": "sigjson/sig-operations-features.json" },
+{ "name": "sig-platform", "url": "sigjson/sig-platform-features.json" },
+{ "name": "sig-release", "url": "sigjson/sig-release-features.json" },
+{ "name": "sig-security", "url": "sigjson/sig-security-features.json" },
+{ "name": "sig-security-reports", "url": "sigjson/sig-security-reports-features.json" },
+{ "name": "sig-testing", "url": "sigjson/sig-testing-features.json" },
+{ "name": "sig-ui-ux", "url": "sigjson/sig-ui-ux-features.json" }
+]

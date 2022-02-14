@@ -1,0 +1,21 @@
+{
+   "BuildBranch":"Development",
+   "BuildVersion":"21.11.2",
+   "SIG": "SIG-Build",
+   "Subsystems": {
+      "NewSubsystem": [
+         {
+            "Module": "New Module",
+            "Feature": "",
+            "Content": "",
+            "Functional": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Description": ""
+         }
+      ]
+   }
+}
