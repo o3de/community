@@ -12,16 +12,15 @@
     <class id="buildbranch">Branch: Uknown</class>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <class id="buildversion">Version: Unknown</class>
 </h1>
+Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></select> or <input id='btnLoadFileJson' type='button' value='Load JSON from File' onclick="loadJsonFromFile()" disabled> >>
+<input type="file" id="fileinput" name="FileInput" accept="text/json">
 <h2>
-    <input id='btnMakeSubsys' type='button' value='Create Subsystem' onclick="createSubsys()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id='btnMakeSubsys' type='button' value='Create new Subsystem' onclick="createSubsys()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id='btnDownJson' type='button' value='Download JSON' onclick="exportJSon()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id='btnSendGithub' type='button' value='Send to Github' onclick="exportToGithub()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </h2>
 
 <body>
-Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></select> or <input id='btnLoadFileJson' type='button' value='Load JSON from File' onclick="loadJsonFromFile()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-
 <div id="debuganchor"></div>
 <div id="reloadModal">
     <center>
@@ -67,7 +66,16 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
     });
 
     const sigurl = "sigjson/sig-list.json"
-    
+
+    const fileCheckElement = document.getElementById("fileinput");
+    fileCheckElement.addEventListener("change", handleFiles, false);
+    function handleFiles() {
+        const fileList = this.files; /* now you can work with the file list */
+        if (fileList.length > 0) {
+            document.getElementById('btnLoadFileJson').disabled = false
+        }
+    }
+
     function confirmNewLoad() {
         modCancel = false;
         reloadModal.close();
@@ -165,8 +173,9 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         var rv = {};
         rv[renval] = vv[0]
         tblist[id] = rv
-        tagText = document.getElementById('sstag'+vk)
-        tagText.textContent = 'Subsystem: ' + renval + '   '
+        tagEle = document.getElementById('sstag'+vk)
+        tagEle.textContent = 'Subsystem: ' + renval
+        tagEle.id = 'sstag' + renval 
     }
 
     function moveSubsysUp(event) {
@@ -215,7 +224,7 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
             h2ent.textContent = 'Subsystem: ' + subsys + "   ";
             h2ent.id = 'sstag' + subsys
             
-            var renBtn = makeButton("Rename", renameSubsys)
+            var renBtn = makeButton("Rename Subsystem", renameSubsys)
             var moveUpBtn = makeButton("Move Up", moveSubsysUp)
             var moveDnBtn = makeButton("Move Down", moveSubsysDn)
             var delSubsysBtn = makeButton("Delete Subsystem", delSubsys)
@@ -223,6 +232,8 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
             
             arButton.id = 'btn' + subsys
             delSubsysBtn.disabled = true
+            moveUpBtn.disabled = true
+            moveDnBtn.disabled = true
             
             jsdiv.appendChild(h2ent);
             jsdiv.appendChild(arButton);
@@ -401,6 +412,34 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
 
     function loadJsonFromFile() {
         console.log('Load json from a file')
+        var input, file, fr;
+
+        if (typeof window.FileReader !== 'function') {
+            alert("The file API isn't supported on this browser yet.");
+            return;
+        }
+
+        input = document.getElementById('fileinput');
+        if (!input) {
+            alert("Um, couldn't find the fileinput element.");
+        } else if (!input.files) {
+            alert("This browser doesn't seem to support the `files` property of file inputs.");
+        } else if (!input.files[0]) {
+            alert("Please select a file before clicking 'Load'");
+        } else {
+            file = input.files[0];
+            fr = new FileReader();
+            fr.onload = receivedText;
+            fr.readAsText(file);
+        }
+    }
+
+    function receivedText(e) {
+        let lines = e.target.result;
+        document.getElementById('sigdrop').selectedIndex = 0
+        clearSheets()
+        parseJson(JSON.parse(lines));
+        sigLoaded = true;
     }
 
     const loadWebFile = async (url, callback) => {
