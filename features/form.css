@@ -3,6 +3,10 @@ body {
   color: white;
 }
 
+select, textarea{
+  color: white;
+}
+
 a:link {
 	color: #99e6ff
 }
@@ -31,7 +35,7 @@ hr {
     --jexcel_header_color_highlighted: #444;
     --jexcel_header_background: #202020;
     --jexcel_header_background_highlighted: #777;
-    --jexcel_content_color: #aaa;
+    --jexcel_content_color: #888;
     --jexcel_content_color_highlighted: #333;
     --jexcel_content_background: #3e3e3e;
     --jexcel_content_background_highlighted: #666;
