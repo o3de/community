@@ -439,6 +439,7 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         document.getElementById('sigdrop').selectedIndex = 0
         clearSheets()
         parseJson(JSON.parse(lines));
+        enableButtons()
         sigLoaded = true;
     }
 
