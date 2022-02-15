@@ -31,10 +31,10 @@ hr {
     --jexcel_header_color_highlighted: #444;
     --jexcel_header_background: #202020;
     --jexcel_header_background_highlighted: #777;
-    --jexcel_content_color: #888;
+    --jexcel_content_color: #aaa;
     --jexcel_content_color_highlighted: #333;
     --jexcel_content_background: #3e3e3e;
-    --jexcel_content_background_highlighted: #333;
+    --jexcel_content_background_highlighted: #666;
     --jexcel_menu_background: #7e7e7e;
     --jexcel_menu_background_highlighted: #ebebeb;
     --jexcel_menu_color: #ddd;
