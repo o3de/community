@@ -1,5 +1,5 @@
 <html>
-<script src="https://bossanova.uk/jspreadsheet/v4/jexcel.js"></script>
+<script src="jexcel/jexcel.js"></script>
 <link rel="stylesheet" href="https://bossanova.uk/jspreadsheet/v4/jexcel.css" type="text/css" />
 <link rel="stylesheet" href="https://bossanova.uk/jspreadsheet/v4/jexcel.themes.css" type="text/css" />
    
@@ -55,6 +55,7 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
     var sigLoaded = false;
     var modCancel = true;
     var prevSig;
+    var tipJson;
 
     var reloadModal = jSuites.modal(document.getElementById('reloadModal'), {
         width: '600px',
@@ -65,6 +66,7 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         }
     });
 
+    const tipurl = 'sigjson/tiptext.json'
     const sigurl = "sigjson/sig-list.json"
 
     const fileCheckElement = document.getElementById("fileinput");
@@ -96,17 +98,18 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
     function clearSheets() {
         tbcnt = tblist.length-1;
         for (; tbcnt > -1; tbcnt--) {
-            var tbl = Object.values(tblist[tbcnt])[0]
+            var tbl = Object.values(tblist[tbcnt])[0];
             tbl.destroy();
-            tblist.pop()
-            document.getElementById('sheet'+ tbcnt).remove()
+            tblist.pop();
+            document.getElementById('sheet'+ tbcnt).remove();
         }
     }
 
     function enableButtons() {
-        document.getElementById('btnMakeSubsys').disabled = false
-        document.getElementById('btnDownJson').disabled = false
-        //document.getElementById('btnSendGithub').disabled = false
+        document.getElementById('btnMakeSubsys').disabled = false;
+        document.getElementById('btnDownJson').disabled = false;
+        //document.getElementById('btnSendGithub').disabled = false;
+        document.getElementById('btnSendGithub').visibility = 'hidden';
     }
 
     function changeSig() {
@@ -124,6 +127,12 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         enableButtons()
     }
 
+    function loadTipVale(jsonData)
+    {
+        for (var cnt = 0; cnt < jsonData.length; cnt++) {
+
+        }
+    }
     function loadSigDrop(jsonData) {
         dropEle = document.getElementById('sigdrop')
         iter = 0 ;
@@ -234,6 +243,12 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
             delSubsysBtn.disabled = true
             moveUpBtn.disabled = true
             moveDnBtn.disabled = true
+
+            renBtn.title = 'Rename the ' + subsys + ' subsystem to something else'
+            moveUpBtn.title = 'Move the ' + subsys + ' subsystem up one level'
+            moveDnBtn.title = 'Move the ' + subsys + ' subsystem down one level'
+            arButton.title = 'Add a row to the ' + subsys + ' subsystem table'
+            delSubsysBtn.title = 'Delete the ' + subsys + ' subsystem table'
             
             jsdiv.appendChild(h2ent);
             jsdiv.appendChild(arButton);
@@ -271,14 +286,14 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         jstable.insertRow( [
             returnIfProperty(specs, 'Module'),    
             returnIfProperty(specs, 'Feature'),
-            returnIfProperty(specs, 'Content'),
             returnIfProperty(specs, 'Functional'),
+            returnIfProperty(specs, 'Content'),
             returnIfProperty(specs, 'Code/API'),
             returnIfProperty(specs, 'Performance'), 
             returnIfProperty(specs, 'Platform'), 
             returnIfProperty(specs, 'Link'), 
             returnIfProperty(specs, 'Doc'), 
-            returnIfProperty(specs, 'Description') ]
+            returnIfProperty(specs, 'Notes') ]
         );
     }
 
@@ -325,6 +340,13 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
     }
     
     function afterInitSS(obj) {
+        for (cnt = 0; cnt < obj.options.columns.length; cnt++)
+        {
+            var colTitle = obj.options.columns[cnt].title
+            if (tipJson.hasOwnProperty(colTitle)) {
+                obj.setHeader(cnt, colTitle, tipJson[colTitle])
+            }
+        }
         return
     }
 
@@ -334,15 +356,15 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
             data:empdata,
             columns: [
                 { type:'text', width:'250', title:'Module', name:'Module', wordWrap:true },    
-                { type:'dropdown', width:'160', title:'Feature', name: 'Feature', url: 'specjson/featurevals.json', autocomplete:true },
-                { type:'dropdown', width:'160', title:'Content', name: 'Content', url: 'specjson/statevals.json', autocomplete:true },
-                { type:'dropdown', width:'160', title:'Functional', name: 'Functional', url: 'specjson/statevals.json', autocomplete:true },
+                { type:'dropdown', width:'150', title:'Feature', name: 'Feature', url: 'specjson/featurevals.json', autocomplete:true },
+                { type:'dropdown', width:'140', title:'Functional', name: 'Functional', url: 'specjson/functionalvals.json', autocomplete:true },
+                { type:'dropdown', width:'160', title:'Content', name: 'Content', url: 'specjson/contentvals.json', autocomplete:true },
                 { type:'dropdown', width:'160', title:'Code/API', name:'Code/API', title:'Code/API', url: 'specjson/statevals.json', autocomplete:true },
-                { type:'dropdown', width:'160', title:'Performance', name:'Performance', url:  'specjson/perfvals.json', autocomplete:true },
-                { type:'dropdown', width:'100', title:'Platform', name:'Platform', url:  'specjson/platformvals.json', autocomplete:true },
+                { type:'dropdown', width:'185', title:'Performance', name:'Performance', url: 'specjson/perfvals.json', autocomplete:true },
+                { type:'dropdown', width:'100', title:'Platform', name:'Platform', url: 'specjson/platformvals.json', autocomplete:true, multiple:true },
                 { type:'html', width:'150', title:'Link', name:'Link', wordWrap:true },
                 { type:'html', width:'150', title:'Doc Link', name:'Doc', wordWrap:true },
-                { type:'text', width:'400', title:'Description', name:'Description', wordWrap:true },
+                { type:'text', width:'400', title:'Notes', name:'Notes', wordWrap:true },
             ],
             rowResize: true,
             columnDrag: true,
@@ -377,7 +399,7 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
     }
 
     function exportToGithub() {
-        uploadToGithub('','keepguessing-glhf', 'main', 'obwando/featurestate', 'sig-test.json', 'Update file' )
+        uploadToGithub('','keepguessing-glhf', 'main', 'o3de/featurestate', 'sig-test.json', 'Update file' )
     }
 
     function createSubsys() {
@@ -450,6 +472,11 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         return webJson
     }
 
+    const loadTips = async(url) => {
+        tipJson = await loadWebFile(url)
+        console.log(tipJson.text)
+    }
+
     const loadWebSigs = async(url) => {
         let jsonData = await loadWebFile(url)
         loadSigDrop(jsonData)
@@ -459,6 +486,7 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         parseJson(jsonData)
     }
 
+    loadTips(tipurl)
     loadWebSigs(sigurl)
 
     console.log('done')

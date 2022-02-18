@@ -1,5 +1,5 @@
 [
-{ "name": "❌ Unsupported", "id": 1},
+{ "name": "❌ Unproven", "id": 1},
 { "name": "⭕ Deprecated", "id": 2},
 { "name": "🟡 Experimental", "id": 3},
 { "name": "🟠 Volatile", "id": 4},
