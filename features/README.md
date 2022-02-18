@@ -61,7 +61,10 @@ If you have suggestions or want to work on the code, let someone know or reach o
 	Needs Testing: Feature requires testing to determine stability
 	Needs Optimization: Feature does not crash and is stable and but needs optimizations
 	Optimized: Feature is stable, does not crash and is optimized for use
-  
+
+### Platform: The platforms that are supported by this feature. 
+	You can select multiple platforms from the pulldown
+	
 ### Link: Link to Github Issue or Discussion for the feature
 
 ### Doc Link: Link to the documentation of the feature
