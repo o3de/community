@@ -50,7 +50,7 @@ If you have suggestions or want to work on the code, let someone know or reach o
 	Complete: Feature has complete as defined in documentation.
 	
 ### Code/API: The state of the code operation and its API
-	Unproven: Code or API is working but has had insufficient use to really harden any corner cases or identify potential pathological issues.
+	Unproven: Code/API working but has had insufficient use to really harden any corner cases or identify potential pathological issues
 	Deprecated: Code or API is slated to go away (accompanied with some indication of what the system will be replaced by)
 	Experimental: Code is unstable or API is likely to change
 	Volatile: Code works, but may crash or API is fixed, but may possibly change
