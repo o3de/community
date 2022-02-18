@@ -28,7 +28,7 @@ If you have suggestions or want to work on the code, let someone know or reach o
 
 ### Feature: This is the production state of the feature 
 	Unscheduled: The feature has not been scheduled, it is something that is wanted, but thats about it.
-	Deprecated: Feature has been deprecated
+	Deprecated: Feature has been deprecated and slated to go away (accompanied with some indication of replacement)deprecated
 	Backlogged: Feature has been moved to the backlog
 	Planned: Feature is actively being planned and/or in design phase.
 	Active: Feature is actively in development
@@ -43,18 +43,18 @@ If you have suggestions or want to work on the code, let someone know or reach o
 	
 ### Functional: The state of the functionality of the feature as defined by documentation.
 	None: There is no defined documentation for the functionality of this feature.
-	Deprecated: The feature has been deprecated
+	Deprecated: The feature has been deprecated and slated to go away (accompanied with some indication of replacement)
 	In-Design:  Feature functionality is actively being planned and/or in design phase.
 	Minimal: Feature meets minimal functional requirements
 	Partial: Feature has greater than minimal functionality
 	Complete: Feature has complete as defined in documentation.
 	
 ### Code/API: The state of the code operation and its API
-	Unproven: Code or API has not been proven operational or functional.
-	Deprecated: Code or API has been deprecated
+	Unproven: Code or API is working but has had insufficient use to really harden any corner cases or identify potential pathological issues.
+	Deprecated: Code or API is slated to go away (accompanied with some indication of what the system will be replaced by)
 	Experimental: Code is unstable or API is likely to change
 	Volatile: Code works, but may crash or API is fixed, but may possibly change
-	Stable: Code is stable and API is not likely to change.
+	Stable: Code/API is actively used without any serious impediments and has no immediate upgrades planned.
 
 ### Performance: The performance state of the feature
 	Untested: Feature is untested and may be unstable.
