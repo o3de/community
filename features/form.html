@@ -109,7 +109,6 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         document.getElementById('btnMakeSubsys').disabled = false;
         document.getElementById('btnDownJson').disabled = false;
         //document.getElementById('btnSendGithub').disabled = false;
-        document.getElementById('btnSendGithub').visibility = 'hidden';
     }
 
     function changeSig() {
@@ -488,7 +487,8 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
 
     loadTips(tipurl)
     loadWebSigs(sigurl)
-
+    document.getElementById('btnSendGithub').style.visibility = 'hidden';
+    
     console.log('done')
     
 </script>
