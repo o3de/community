@@ -111,6 +111,30 @@
             "Link": "",
             "Doc": "",
             "Notes": ""
+         },
+         {
+            "Module": "Profiling",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Opimised standard library",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
          }
       ]
    }
