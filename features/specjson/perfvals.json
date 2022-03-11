@@ -2,6 +2,6 @@
 { "name": "❌ Unsupported", "id": 1},
 { "name": "🔴 Needs Testing", "id": 2},
 { "name": "🟡 Needs Optimization", "id": 3},
-{ "name": "🔵 In Process", "id": 4},
+{ "name": "🔵 In Progress", "id": 4},
 { "name": "🟢 Optimized", "id": 5}
 ]
