@@ -336,6 +336,178 @@
             "Doc": "",
             "Notes": ""
          }
+      ],
+      "Viewport": [
+         {
+            "Module": "Manipulators",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Manipulators for interacting with entities and components in the viewport"
+         },
+         {
+            "Module": "Component Mode",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "6",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Editing mode for Components in the main viewport"
+         },
+         {
+            "Module": "Viewport UI",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "6",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Qt UI elements that can be dynamically added/removed from the viewport"
+         },
+         {
+            "Module": "Interaction Model",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Interaction Model for working with Entities and Prefabs in the viewport"
+         },
+         {
+            "Module": "Camera",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "CameraInput and ModularViewportCameraController for adjusting and interacting with the camera in the Editor"
+         },
+         {
+            "Module": "View Bookmarks",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "3",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Support for storing view transforms in the Editor"
+         },
+         {
+            "Module": "Manipulator Test Framework",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Provides ability to write integration tests for manipulator interactions (screen-space to world-space transformations)"
+         },
+         {
+            "Module": "Visibility",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Visibility system to determine entities that fall inside the editor view frustum"
+         },
+         {
+            "Module": "Editor Mode Visual Feedback",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "3",
+            "Performance": "4",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Covers screen space effects to communicate viewport state (e.g. Selection, Focus Mode etc..)"
+         }
+      ],
+      "White Box Tool": [
+         {
+            "Module": "Atom Integration",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;5;6;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Atom rendering support for the White Box Tool"
+         },
+         {
+            "Module": "Viewport Editing",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Interaction Model for White Box Tool viewport editing"
+         },
+         {
+            "Module": "Triangulation",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Boolean Operations",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Custom UV Mapping",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
       ]
    }
 }
