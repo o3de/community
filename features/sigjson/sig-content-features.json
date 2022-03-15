@@ -130,19 +130,6 @@
          "Doc": "",
          "Notes": ""
  
-      },
-      { 
-         "Module": "Whitebox",
-         "Feature": "",
-         "Functional": "",
-         "Content": "",
-         "Code/API": "",
-         "Performance": "",
-         "Platform": "",
-         "Link": "",
-         "Doc": "",
-         "Notes": ""
- 
       }
       ],
       "Canvas Tools": [
@@ -314,24 +301,24 @@
       "World Building": [
          { 
             "Module": "Terrain",
-            "Feature": "",
-            "Functional": "",
-            "Content": "",
-            "Code/API": "",
-            "Performance": "",
-            "Platform": "",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "1",
+            "Code/API": "3",
+            "Performance": "3",
+            "Platform": "2",
             "Link": "",
             "Doc": "",
             "Notes": ""
          },
          { 
             "Module": "Dynamic Vegetation",
-            "Feature": "",
-            "Functional": "",
-            "Content": "",
-            "Code/API": "",
-            "Performance": "",
-            "Platform": "",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "5",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "1",
             "Link": "",
             "Doc": "",
             "Notes": ""
