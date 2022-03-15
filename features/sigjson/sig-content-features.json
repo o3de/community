@@ -3,27 +3,322 @@
    "BuildVersion": "21.11.2",
    "SIG": "SIG-Content",
    "Subsystems": {
+      "Frameworks": [
+      {
+         "Module": "AzToolsFramework",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+      },
+      {
+         "Module": "Lua",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+      },
+      {
+         "Module": "Prefabs",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+      },
+      {
+         "Module": "Qt for Python",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+      }
+      ],
+      "Editor": [
+      { 
+         "Module": "Asset Browser",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+      },
+      { 
+         "Module": "Framework",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+ 
+      },
+      { 
+         "Module": "Localization",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+ 
+      },
+      { 
+         "Module": "Undo / Redo",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+ 
+      },
+      { 
+         "Module": "Asset Browser",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+ 
+      },
+      { 
+         "Module": "Asset Editor",
+         "Feature": "",
+         "Functional": "",
+         "Content": "",
+         "Code/API": "",
+         "Performance": "",
+         "Platform": "",
+         "Link": "",
+         "Doc": "",
+         "Notes": ""
+ 
+      }
+      ],
+      "Canvas Tools": [
+         { 
+            "Module": "Graph Model",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         },
+         { 
+            "Module": "Graph Canvas",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         },
+         { 
+            "Module": "Landscape Canvas",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         }
+      ],
+      "Project Manager": [
+         { 
+            "Module": "Project Manager",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         }
+      ],
+      "Scripting": [
+         { 
+            "Module": "Expression Evaluation",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         },
+         { 
+            "Module": "Script Canvas",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         },
+         { 
+            "Module": "Script Canvas Developer",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         },
+         { 
+            "Module": "Script Events",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         },
+         { 
+            "Module": "Script Canvas Testing",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         },
+         { 
+            "Module": "Lua IDE",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": "" 
+         }
+      ],
+      "User Interface": [
+         { 
+            "Module": "LyShine (2D Render)",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "Animation": [
+         { 
+            "Module": "Character (EmotionFX)",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         { 
+            "Module": "Track View",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
       "World Building": [
-         {
+         { 
             "Module": "Terrain",
             "Feature": "5",
             "Functional": "4",
             "Content": "1",
             "Code/API": "3",
             "Performance": "3",
-            "Platform": "2;",
+            "Platform": "2",
             "Link": "",
             "Doc": "",
             "Notes": ""
          },
-         {
+         { 
             "Module": "Dynamic Vegetation",
             "Feature": "6",
             "Functional": "6",
             "Content": "5",
             "Code/API": "5",
             "Performance": "3",
-            "Platform": "1;",
+            "Platform": "1",
             "Link": "",
             "Doc": "",
             "Notes": ""
