@@ -3,19 +3,91 @@
    "BuildVersion":"21.11.2",
    "SIG": "SIG-Testing",
    "Subsystems": {
-      "NewSubsystem": [
+      "AutomatedReview": [
          {
-            "Module": "Automated Review",
+            "Module": "Early Warning",
             "Feature": "Complete",
             "Content": "Complete",
-            "Functional": "Partial",
+            "Functional": "Complete",
             "Code/API": "Complete",
-            "Performance": "Needs Optimization",
+            "Performance": "Complete",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": "The Automated Review systems runs automated tests as part of the review process to submit a pull request."
-         }
+            "Description": ""
+         },
+          {
+            "Module": "CTest",
+            "Feature": "Complete",
+            "Content": "Complete",
+            "Functional": "Complete",
+            "Code/API": "Complete",
+            "Performance": "Complete",
+            "Platform": "",
+            "Link": "https://github.com/o3de/sig-testing",
+            "Doc": "https://www.o3de.org/docs/user-guide/testing/",
+            "Description": ""
+         },
+         {
+            "Module": "GoogleTest",
+            "Feature": "Complete",
+            "Content": "Complete",
+            "Functional": "Complete",
+            "Code/API": "Complete",
+            "Performance": "Complete",
+            "Platform": "",
+            "Link": "https://github.com/o3de/sig-testing",
+            "Doc": "https://www.o3de.org/docs/user-guide/testing/",
+            "Description": ""
+         },
+         {
+            "Module": "GoogleBenchmark",
+            "Feature": "Complete",
+            "Content": "Complete",
+            "Functional": "Complete",
+            "Code/API": "Complete",
+            "Performance": "Complete",
+            "Platform": "",
+            "Link": "https://github.com/o3de/sig-testing",
+            "Doc": "https://www.o3de.org/docs/user-guide/testing/",
+            "Description": ""
+         },
+         {
+            "Module": "PyTest",
+            "Feature": "Complete",
+            "Content": "Complete",
+            "Functional": "Complete",
+            "Code/API": "Complete",
+            "Performance": "Complete",
+            "Platform": "",
+            "Link": "https://github.com/o3de/sig-testing",
+            "Doc": "https://www.o3de.org/docs/user-guide/testing/",
+            "Description": ""
+         },
+         {
+            "Module": "O3DE EditorTest",
+            "Feature": "Complete",
+            "Content": "Complete",
+            "Functional": "Complete",
+            "Code/API": "Complete",
+            "Performance": "Complete",
+            "Platform": "",
+            "Link": "https://github.com/o3de/sig-testing",
+            "Doc": "https://www.o3de.org/docs/user-guide/testing/",
+            "Description": ""
+         },
+         {
+            "Module": "Test Metrics",
+            "Feature": "Complete",
+            "Content": "Complete",
+            "Functional": "Complete",
+            "Code/API": "Complete",
+            "Performance": "Complete",
+            "Platform": "",
+            "Link": "https://github.com/o3de/sig-testing",
+            "Doc": "https://www.o3de.org/docs/user-guide/testing/",
+            "Description": ""
+         },
       ]
    }
 }
