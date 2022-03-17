@@ -16,7 +16,7 @@
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
             "Description": ""
          },
-          {
+         {
             "Module": "CTest",
             "Feature": "Complete",
             "Content": "Complete",
