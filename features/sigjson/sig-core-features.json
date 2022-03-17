@@ -3,6 +3,140 @@
    "BuildVersion": "21.11.2",
    "SIG": "SIG-Core",
    "Subsystems": {
+      "Core features":[
+         {
+            "Module": "AzCore",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "AzFramework",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Math libraries",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "SDK Build",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Reflection frameworks",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Streaming system",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Input system",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Logging and tracing",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Profiling",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Opimised standard library",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
       "Physics API (minimal, non-backend specific)": [
          {
             "Module": "Collision Filtering",
