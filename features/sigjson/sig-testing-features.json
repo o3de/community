@@ -5,16 +5,16 @@
    "Subsystems": {
       "NewSubsystem": [
          {
-            "Module": "New Module",
-            "Feature": "",
-            "Content": "",
-            "Functional": "",
-            "Code/API": "",
-            "Performance": "",
+            "Module": "Automated Review",
+            "Feature": "Complete",
+            "Content": "Complete",
+            "Functional": "Partial",
+            "Code/API": "Complete",
+            "Performance": "Needs Optimization",
             "Platform": "",
-            "Link": "",
-            "Doc": "",
-            "Description": ""
+            "Link": "https://github.com/o3de/sig-testing",
+            "Doc": "https://www.o3de.org/docs/user-guide/testing/",
+            "Description": "The Automated Review systems runs automated tests as part of the review process to submit a pull request."
          }
       ]
    }
