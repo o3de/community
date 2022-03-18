@@ -615,6 +615,30 @@
             "Link": "",
             "Doc": "",
             "Notes": ""
+         },
+         {
+            "Module": "Full-body IK",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "1;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Live Debugging",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "1;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
          }
       ],
       "World Building": [
