@@ -281,6 +281,19 @@
             "Link": "",
             "Doc": "https://www.o3de.org/docs/atom-guide/dev-guide/rhi/",
             "Notes": ""
+         },
+         "Audio": [
+         {
+            "Module": "Wwyse Integration",
+            "Feature": "Complete",
+            "Functional": "Partial",
+            "Content": "Not required",
+            "Code/API": "Stable",
+            "Performance": "Optimized",
+            "Platform": "",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/dev-guide/rhi/",
+            "Notes": ""
          }
       ]
    }
