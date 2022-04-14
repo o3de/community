@@ -6,6 +6,8 @@ The [O3DE community repo](https://github.com/o3de/community) contains informatio
 
 To contribute, please review our [Code of Conduct](https://github.com/o3de/o3de/blob/development/CODE_OF_CONDUCT.md) first. 
 
+**NOTE:** These reviewer and maintainer roles are for the code repository, `o3de/o3de`. Roles on `o3de/o3de.org` have different requirements, and are maintained by the Documentation and Community Special Interest Group. For information on the D&C SIG maintainer, reviewer, technical reviewer, and editor roles, read [SIG D&C Reviewer and Maintainer roles](https://github.com/o3de/sig-docs-community/blob/main/governance/reviewers-maintainers.md).
+
 ## How to become a reviewer
 
 Requirements to become a reviewer for a given Special Interest Group
