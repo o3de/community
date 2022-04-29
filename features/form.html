@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="form.css" type="text/css" />
 
 <h1><class id="signame">SIG: Unspecified</class> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <class id="buildbranch">Branch: Uknown</class>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <class id="buildbranch">Branch: Unknown</class>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <class id="buildversion">Version: Unknown</class>
 </h1>
 Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></select> or <input id='btnLoadFileJson' type='button' value='Load JSON from File' onclick="loadJsonFromFile()" disabled> >>
@@ -17,6 +17,7 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
 <h2>
     <input id='btnMakeSubsys' type='button' value='Create new Subsystem' onclick="createSubsys()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id='btnDownJson' type='button' value='Download JSON' onclick="exportJSon()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id='btnDownJson' type='button' value='Create Release Markdown' onclick="createRelMarkdown()" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id='btnSendGithub' type='button' value='Send to Github' onclick="exportToGithub()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </h2>
 
@@ -56,6 +57,18 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
     var modCancel = true;
     var prevSig;
     var tipJson;
+    var luRefs = [
+        { name:"Module", ref:[] },
+        { name:"Feature", url: 'specjson/featurevals.json', ref:[] },
+        { name:"Functional", url: 'specjson/functionalvals.json', ref:[] },
+        { name:"Content", url: 'specjson/contentvals.json', ref:[] },
+        { name:"Code/API", url: 'specjson/statevals.json', ref:[] },
+        { name:"Performance", url: 'specjson/perfvals.json', ref:[] },
+        { name:"Platform", url: 'specjson/platformvals.json', ref:[] },
+        { name:"Link", ref:[] },
+        { name:"Doc", ref:[] }, 
+        { name:"Notes", ref:[]}
+    ]
 
     var reloadModal = jSuites.modal(document.getElementById('reloadModal'), {
         width: '600px',
@@ -147,9 +160,10 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
 
     function parseJson(jsdata) {
         parseJSHead(jsdata);
+       
         for (var key in jsdata) {
-            if (key == "Subsystems") {
-                parseJSubSys(jsdata[key])
+            if (key == "Subsystems" && typeof(jsdata[key]) == "object" ) {
+                createSheet(jsdata[key]);
             }
         }
     }
@@ -164,6 +178,16 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         downloadAnchorNode.remove();
     }
     
+    function downloadObjectAsMD(exportObj, exportName){
+        var dataStr = "data:text/text;charset=utf-8," + encodeURIComponent(exportObj);
+        var downloadAnchorNode = document.createElement('a');
+        downloadAnchorNode.setAttribute("href",     dataStr);
+        downloadAnchorNode.setAttribute("download", exportName + ".md");
+        document.body.appendChild(downloadAnchorNode); // required for firefox
+        downloadAnchorNode.click();
+        downloadAnchorNode.remove();
+    }
+
     function addFeatRow(event) {
         console.log(event.srcElement.id);
         event.currentTarget.parentElement.jspreadsheet.insertRow()
@@ -200,14 +224,6 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         tblist.splice(id,1)
         document.getElementById('sheet'+ id).remove()
         event.currentTarget.parentElement.jspreadsheet.destroy()
-    }
-
-    function parseJSubSys(data) {
-        if (typeof(data) != "object" ) {
-            return;
-        }
-
-        createSheet(data);
     }
 
     function makeButton(btnName, btnFunc) {
@@ -485,8 +501,126 @@ Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></
         parseJson(jsonData)
     }
 
+    function makeJsonText(jsonData) {
+        for (var key in jsonData) {
+            if (key == "Subsystems") {
+                console.log(jsdata[key])
+            }
+        }
+    }
+        
+    function createRelMarkdown() {
+        var droplist = document.getElementById('sigdrop'); 
+        var buildVer = prompt("Please provide the Release number (YY.MM.P)", "00.00.0");
+        doMarkdown(droplist, buildVer)
+    }
+
+    function addMDHeaders() {
+        var tV  = "| Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link | Notes |\r\n"
+        tV = tV + "| :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\r\n"
+        return tV
+    }
+
+    const doMarkdown = async(droplist, buildVer) => {
+        var mdat = "# Open 3D Engine Release: " + buildVer + '\r\n\r\n'
+        for (var cnt = 1; cnt < droplist.length; cnt++) {
+            var dropPick = droplist.options[cnt].value;
+            let jsdata = await loadAsyncJson(dropPick)
+
+            for (var key in jsdata) {
+                if (key == 'SIG') {
+                    mdat = mdat + "## " + jsdata[key] + ' \r\n\r\n'
+                }
+                if (key == "Subsystems" && typeof(jsdata[key]) == "object" ) {
+                    mdat = mdat + parseMd(jsdata[key]);
+                }
+            }
+        }
+        downloadObjectAsMD(mdat, buildVer + "-FeatureState.md")
+    }
+
+    function parseMd(jsdata) {
+        var mdata = ""
+        for (var subsys in jsdata) {
+            mdata = mdata + '### ' + subsys + ' \r\n'
+            mdata = mdata + parseMdEnt(jsdata[subsys])
+        }
+        return mdata
+    }
+
+    function parseMdEnt(data) {
+        var totDat = ""
+        totDat = totDat + addMDHeaders()
+        for (var feature in data) {
+            var specs = data[feature]
+            totDat = totDat + doMd(feature, specs)
+        }
+        return totDat
+    }
+
+    function doMd(feature, specData) {
+        var lineTxt = ""
+        var refTxt = ""
+        luRefs.forEach((refVal) => {
+            if (returnIfProperty(specData, refVal['name']) == "") {
+                lineTxt = lineTxt + '| |'
+                return;
+            }
+
+            refTxt = specData[refVal['name']] 
+            if (refVal['ref'].length > 0) {
+                refEnt = refVal['ref'].find(itm => {return itm.id == specData[refVal['name']]})
+                if (refEnt != undefined) {
+                    refTxt = refEnt['name']
+                } else {
+                    if (refVal['name'] == 'Platform') {
+                        refChk = doPlatLookups(refVal, specData[refVal['name']])
+                        if (refChk != "") {
+                            refTxt = refChk
+                        }
+                    }
+                }
+            }
+            refTxt = refTxt.replace(/(\r\n|\n|\r)/gm,"")
+            lineTxt = lineTxt + '| ' + refTxt + ' '
+        })
+        lineTxt = lineTxt + ' |\r\n'
+        console.log(lineTxt)
+        return lineTxt
+    }
+
+    function doPlatLookups(refVal, platData) {
+        txtRet = ""
+        plats = platData.split(";")
+        plats.forEach((plt) => {
+            refEnt = refVal['ref'].find(itm => {return itm.id == plt})
+            if (refEnt != undefined) {
+                txtRet = txtRet + refEnt['name'] + ' '
+            }
+        })
+        return txtRet
+    }
+
+    const loadLookups = async() => {
+        luRefs.forEach((lu) => {
+            if (lu.hasOwnProperty('url')) {
+                getLookups(lu) 
+            }
+        });
+    }
+
+    const getLookups = async(lu) => {
+        lu['ref'] = await loadWebFile(lu['url']) 
+    }
+    
+    const loadAsyncJson = async(url) => {
+        let jsonData = await loadWebFile(url)
+        return jsonData;
+    }
+
     loadTips(tipurl)
     loadWebSigs(sigurl)
+    loadLookups()
     document.getElementById('btnSendGithub').style.visibility = 'hidden';
     
     console.log('done')
