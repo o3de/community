@@ -17,6 +17,7 @@ Foundation related resources like charters and code of conducts.
   - [SIG-Graphics-Audio](https://github.com/o3de/sig-graphics-audio)
   - [SIG-Release](https://github.com/o3de/sig-release)
   - [SIG-Security](https://github.com/o3de/sig-security)
+  - [SIG-Simulation](https://github.com/o3de/sig-simulation)
   - [SIG-Testing](https://github.com/o3de/sig-testing)
   - [SIG-UI-UX](https://github.com/o3de/sig-ui-ux)
 - [Committee Repositories]
