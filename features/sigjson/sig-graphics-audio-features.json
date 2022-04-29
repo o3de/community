@@ -281,7 +281,7 @@
             "Link": "",
             "Doc": "https://www.o3de.org/docs/atom-guide/dev-guide/rhi/",
             "Notes": ""
-         },
+         }],
          "Audio": [
          {
             "Module": "Wwyse Integration",
