@@ -1,92 +1,92 @@
 {
-   "BuildBranch":"Development",
-   "BuildVersion":"21.11.2",
+   "BuildBranch": "Development",
+   "BuildVersion": "21.11.2",
    "SIG": "SIG-Testing",
    "Subsystems": {
       "AutomatedReview": [
          {
             "Module": "Early Warning",
-            "Feature": "Complete",
-            "Content": "Complete",
-            "Functional": "Complete",
-            "Code/API": "Complete",
-            "Performance": "Complete",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "CTest",
-            "Feature": "Complete",
-            "Content": "Complete",
-            "Functional": "Complete",
-            "Code/API": "Complete",
-            "Performance": "Complete",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "GoogleTest",
-            "Feature": "Complete",
-            "Content": "Complete",
-            "Functional": "Complete",
-            "Code/API": "Complete",
-            "Performance": "Complete",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "GoogleBenchmark",
-            "Feature": "Complete",
-            "Content": "Complete",
-            "Functional": "Complete",
-            "Code/API": "Complete",
-            "Performance": "Complete",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "PyTest",
-            "Feature": "Complete",
-            "Content": "Complete",
-            "Functional": "Complete",
-            "Code/API": "Complete",
-            "Performance": "Complete",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "O3DE EditorTest",
-            "Feature": "Complete",
-            "Content": "Complete",
-            "Functional": "Complete",
-            "Code/API": "Complete",
-            "Performance": "Complete",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Test Metrics",
-            "Feature": "Complete",
-            "Content": "Complete",
-            "Functional": "Complete",
-            "Code/API": "Complete",
-            "Performance": "Complete",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "",
             "Link": "https://github.com/o3de/sig-testing",
             "Doc": "https://www.o3de.org/docs/user-guide/testing/",
-            "Description": ""
+            "Notes": ""
          }
       ]
    }
