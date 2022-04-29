@@ -2,8 +2,10 @@
 
 jump to [Feature State Form](https://o3de.github.io/community/features/form.html)
 
-Please use this tool to create and update the feature list.
+Please use this tool to create, update, and produce the release feature list.
 ## Each column has a tooltip to explain its usage, finer details are explained below.
+
+## To produce a release report, click on the "Create Release Markdown", then enter the Release version, and it will download a compiled markdown file.
 
 The SIG pulldown is loaded from here: https://github.com/o3de/community/tree/main/features/sigjson
 
