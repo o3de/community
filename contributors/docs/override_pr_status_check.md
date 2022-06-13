@@ -1,4 +1,4 @@
-# How to bypasst the automatated review status check on a pull request
+# Guide for bypassing the automated review status check on a pull request
 
 When the merge of your pull request (PR) is blocked by known automated review (AR) failures from target branch and the AR build failure is irrelevant to your change, you can follow below process to bypass the AR build status check for the pull request.
 
