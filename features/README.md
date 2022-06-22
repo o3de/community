@@ -1,9 +1,17 @@
 # O3DE SIG Features Editing tool
-
-jump to [Feature State Form](https://o3de.github.io/community/features/form.html)
+# Update form here: [Feature State Form](https://o3de.github.io/community/features/form.html)
 
 Please use this tool to create, update, and produce the release feature list.
 ## Each column has a tooltip to explain its usage, finer details are explained below.
+
+### TLDR: 
+1. Go to the form: [Feature State Form](https://o3de.github.io/community/features/form.html)
+2. Select the SIG from the dropdown at the top
+3. Click on the pulldown or add/update text to updated feature
+4. Click Download JSON button at the top
+5. Submit a PR with the downloaded JSON to this repo (folder is here: https://github.com/o3de/community/tree/main/features/sigjson)
+
+Live feature form will self update in 5 minutes once PR has been merged.
 
 #### To produce a release report, click on the "Create Release Markdown", then enter the Release version, and it will download a compiled markdown file ([sample here](Sample-FeatureMarkdown.md))
 
