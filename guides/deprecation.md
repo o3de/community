@@ -85,7 +85,7 @@ An overview of how to make breaking System/Feature changes/removals
 
 ## Migrations/Backwards Compatibility
 
-- For changes to underlying data formats, it is the developers responsibility (where possible) to provide a migration/upgrade process to allow customers to move to the new format with as little overhead as possible (e.g. Version converters used with the Serialize Context and Object Stream in C++).
+- For changes to underlying data formats, it is the developer's responsibility (where possible) to provide a migration/upgrade process to allow customers to move to the new format with as little overhead as possible (e.g. Version converters used with the Serialize Context and Object Stream in C++).
 - Note: This advice applies for changes as opposed to total removals. If it is not practical or possible to provide an automated conversion, guidance/steps should be documented to help users adjust to the change manually.
 - *Note: Additional information on data migrations is lacking and will be added in future.*
 
