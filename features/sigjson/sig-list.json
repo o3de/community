@@ -11,6 +11,7 @@
 { "name": "sig-release", "url": "sigjson/sig-release-features.json" },
 { "name": "sig-security", "url": "sigjson/sig-security-features.json" },
 { "name": "sig-security-reports", "url": "sigjson/sig-security-reports-features.json" },
+{ "name": "sig-simulation", "url": "sigjson/sig-simulation-features.json" },
 { "name": "sig-testing", "url": "sigjson/sig-testing-features.json" },
 { "name": "sig-ui-ux", "url": "sigjson/sig-ui-ux-features.json" }
 ]
