@@ -16,7 +16,7 @@
 
 ## API Deprecation
 
-An overview of how to make breaking API changes/removals
+An overview of how to make breaking API changes/removals.
 
 ### API Deprecation - Examples
 
@@ -27,12 +27,14 @@ An overview of how to make breaking API changes/removals
 
 ### API Deprecation - Initial Steps
 
-- Identify the code to be deprecated (something resembling one of the API deprecation examples above)
-  - Create a new GitHub issue with the name *"Deprecate \<Function/Type Name\>"*
-    - Add the `"kind/deprecation"` label
-    - In the description, add a preliminary release note (what do you want to say to the customer about this change)
-      - (if available) Add a milestone label for which release this deprecation will be part of
-  - In the code, add an `O3DE_DEPRECATION_NOTICE(<GHI Number>)` comment right above the API call
+1. Identify the code to be deprecated (something resembling one of the API deprecation examples above).
+
+    - Create a new GitHub issue with the name *"Deprecate \<Function/Type Name\>"*.
+    - Add the `"kind/deprecation"` label.
+    - In the description, add a preliminary release note (what do you want to say to the customer about this change).
+      - (If available) Add a milestone label for which release this deprecation will be part of.
+
+2. In the code, add an `O3DE_DEPRECATION_NOTICE(<GHI Number>)` comment right above the API call.
 
     ```c++
     // e.g.
@@ -40,22 +42,25 @@ An overview of how to make breaking API changes/removals
     AZ::Entity* CreateEditorEntity(const char* name) = 0;
     ```
 
-    - Add an announcement to the Discord Impactful Change channel
-      - Note: If you do not have permissions for this, please contact the sig your deprecation applies to and someone will post the impactful change announcement on your behalf
+3. Create a pull request referencing the GitHub issue. Code owners will be notified of this change. (Check the [CODEOWNERS](https://github.com/o3de/o3de/blob/development/.github/CODEOWNERS) file to verify which sig the deprecation applies to).
+
+4. Once the PR is approved, add an announcement to the Discord Impactful Change channel and relevant sig channel.
+
+   - *Note: If you do not have permissions for this, please contact the sig your deprecation applies to and someone will post the impactful change announcement on your behalf.*
 
 ### Tracking
 
-- sig-release can filter GHIs by date and label (e.g. `"kind/deprecation"`) to author Release Notes
+- [sig-release](https://github.com/o3de/sig-release) can filter GitHub issues by date and label (e.g. `"kind/deprecation"`) to author release notes.
 
 ### Advice
 
-- Use of the `AZ_DEPRECATED` macro is not allowed when first deprecating an API
-  - It is required to first use the comment identifier `O3DE_DEPRECATION_NOTICE`, and as a second pass, add `AZ_DEPRECATED`
-  - Note: In C++ code, `@deprecated` may be used to highlight deprecation changes in the API reference. This is not widely supported and is not a requirement at this time
+- Use of the `AZ_DEPRECATED` macro should not be used when first deprecating an API.
+  - It is required to first use the comment identifier `O3DE_DEPRECATION_NOTICE`, and as a second pass, add `AZ_DEPRECATED` (applies to mature APIs - see [Stable vs Volatile APIs](#stable-vs-volatile-apis)).
+  - Note: In C++ code, `@deprecated` may be used to highlight deprecation changes in the API reference. This is not widely supported and is not a requirement at this time.
 
 ## System/Feature Deprecation
 
-An overview of how to make breaking System/Feature changes/removals
+An overview of how to make breaking System/Feature changes/removals.
 
 ### System/Feature Deprecation Examples
 
@@ -65,23 +70,28 @@ An overview of how to make breaking System/Feature changes/removals
 
 ### System/Feature Deprecation - Initial Steps
 
-1. Create an RFC in the appropriate sig (e.g. [sig-content](https://github.com/o3de/sig-content), [sig-simulation](https://github.com/o3de/sig-simulation)) to notify the community of the system to be deprecated
-  - Include why it's being removed and identify alternatives if customers depend on 'X' feature
-  - As part of the RFC determine a deprecation schedule
-  - Add who (e.g. sig responsible) to contact
-2. Add an announcement to the Discord Impactful Change or relevant sig channel (when publishing the RFC and when it is either approved or rejected)
-  - Note: If you do not have permissions for this, please contact the sig your deprecation applies to and someone will post the impactful change announcement on your behalf
-  - Include an announcement at initial proposal time and at the time of removal
-3. Create a GitHub issue with the title *"Deprecate \<Feature/System Name\>"*
-  - Doing this will help ensure that the deprecation becomes part of the next set of release notes, and is highlighted in the feature documentation
-  - In the GitHub issue, add the `"kind/deprecation"` label
-  - In the description, add a preliminary release note (what do you want to say to the customer about this change)
-  - (If available) Add a milestone label corresponding to the release that this deprecation will be part of
+1. Create an RFC in the appropriate sig (e.g. [sig-content](https://github.com/o3de/sig-content), [sig-simulation](https://github.com/o3de/sig-simulation)) to notify the community of the system to be deprecated. (Check the [CODEOWNERS](https://github.com/o3de/o3de/blob/development/.github/CODEOWNERS) file if you're unsure which sig the deprecation belongs to)
+
+   - Include why it's being removed and identify alternatives if customers depend on 'X' feature.
+   - As part of the RFC determine a deprecation schedule.
+   - Add who (e.g. sig responsible) to contact.
+  
+2. Add an announcement to the Discord Impactful Change or relevant sig channel (when publishing the RFC and when it is either approved or rejected).
+
+    - Note: If you do not have permissions for this, please contact the sig your deprecation applies to and someone will post the impactful change announcement on your behalf.
+    - Include an announcement at initial proposal time and at the time of removal.
+
+3. Create a GitHub issue with the title *"Deprecate \<Feature/System Name\>"*.
+
+     - Doing this will help ensure that the deprecation becomes part of the next set of release notes, and is highlighted in the feature documentation.
+     - In the GitHub issue, add the `"kind/deprecation"` label.
+     - In the description, add a preliminary release note (what do you want to say to the customer about this change).
+     - (If available) Add a milestone label corresponding to the release that this deprecation will be part of.
 
 ## Philosophy
 
-- When modifying existing code that external customers rely on, we should strive wherever possible to not break them when making changes
-- If code is to be changed or removed, we should let customers know ahead of time with a reasonable notice period (approximately 1 release (2-3 months))
+- When modifying existing code that external customers rely on, we should strive wherever possible to not break them when making changes.
+- If code is to be changed or removed, we should let customers know ahead of time with a reasonable notice period (currently 1 full release cycle).
 
 ## Migrations/Backwards Compatibility
 
@@ -92,5 +102,5 @@ An overview of how to make breaking System/Feature changes/removals
 ## Stable vs Volatile APIs
 
 - For new code with few users depending on it, much weaker guarantees can be made about breaking changes.
-- The source of truth for this is the [sig feature matrix](https://github.com/o3de/community/tree/main/features/sigjson) for a given feature. If a new feature is under active development and no promises have yet been made about API stability, the deprecation policy does not apply. If however an API is mature and widely used, an unannounced breaking change is not acceptable. The policy of first documenting/announcing a deprecation, and then following-up with a change in future to give customers time to upgrade is required
-- Note: For improved visibility, owners of the sig feature matrix should include file paths in the notes section that are explicitly excluded from the deprecation policy if the API is volatile
+- The source of truth for this is the [sig feature matrix](https://github.com/o3de/community/tree/main/features/sigjson) for a given feature. If a new feature is under active development and no promises have yet been made about API stability, the deprecation policy does not apply. If however an API is mature and widely used, an unannounced breaking change is not acceptable. The policy of first documenting/announcing a deprecation, and then following-up with a change in future to give customers time to upgrade is required.
+- Note: For improved visibility, owners of the sig feature matrix should include file paths in the notes section that are explicitly excluded from the deprecation policy if the API is volatile.
