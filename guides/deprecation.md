@@ -70,7 +70,7 @@ An overview of how to make breaking System/Feature changes/removals.
 
 ### System/Feature Deprecation - Initial Steps
 
-1. Create an RFC in the appropriate sig (e.g. [sig-content](https://github.com/o3de/sig-content), [sig-simulation](https://github.com/o3de/sig-simulation)) to notify the community of the system to be deprecated. (Check the [CODEOWNERS](https://github.com/o3de/o3de/blob/development/.github/CODEOWNERS) file if you're unsure which sig the deprecation belongs to)
+1. Create an RFC in the appropriate sig (e.g. [sig-content](https://github.com/o3de/sig-content), [sig-simulation](https://github.com/o3de/sig-simulation)) to notify the community of the system to be deprecated. (Check the [CODEOWNERS](https://github.com/o3de/o3de/blob/development/.github/CODEOWNERS) file if you're unsure which sig the deprecation belongs to).
 
    - Include why it's being removed and identify alternatives if customers depend on 'X' feature.
    - As part of the RFC determine a deprecation schedule.
