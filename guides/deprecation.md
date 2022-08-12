@@ -14,6 +14,8 @@
 - API Deprecation
 - Feature/System Deprecation
 
+> **Note:** *All breaking changes are deprecation changes*.
+
 ## API Deprecation
 
 An overview of how to make breaking API changes/removals.
@@ -74,8 +76,10 @@ An overview of how to make breaking System/Feature changes/removals.
 
    - Include why it's being removed and identify alternatives if customers depend on 'X' feature.
    - As part of the RFC determine a deprecation schedule.
-   - Add who (e.g. sig responsible) to contact.
-  
+   - Add who (e.g. the sig responsible) to contact.
+
+   > **Note:** If consensus within a sig cannot be reached, then escalate the discussion to the Technical Steering Committee ([TSC](https://github.com/o3de/tsc)) for review.
+
 2. Add an announcement to the Discord Impactful Change or relevant sig channel (when publishing the RFC and when it is either approved or rejected).
 
     - Note: If you do not have permissions for this, please contact the sig your deprecation applies to and someone will post the impactful change announcement on your behalf.
@@ -91,6 +95,7 @@ An overview of how to make breaking System/Feature changes/removals.
 ## Philosophy
 
 - When modifying existing code that external customers rely on, we should strive wherever possible to not break them when making changes.
+  - To avoid this, plan to deprecate the existing code/feature and introduce the new code/feature whether its an API, system or data format, at the same time.
 - If code is to be changed or removed, we should let customers know ahead of time with a reasonable notice period (currently 1 full release cycle).
 
 ## Migrations/Backwards Compatibility
