@@ -9,6 +9,8 @@ This document contains a set of guidelines for code reviewers and change authors
 
 ## Change Author Guidelines
 
+A set of guidelines for those making changes and creating PRs (the PR author)
+
 ### Keep it short
 
 This of course isn't always possible, there will be exceptions, but to get a PR approved and merged in a reasonable time-frame, try to keep changes as contained and atomic as possible. Small incremental progress is much safer and simpler than a single large change that contains a many modifed lines and files.
@@ -21,9 +23,9 @@ The best way to catch simple mistakes and small oversights is to read through yo
 
 Try not to publish something for review when still making changes. This can lead to reviewers needing to re-review changes or confusion in what has changed or not. Try to only make requested changes in a PR to avoid unnecessary churn.
 
-**Draft PRs**: _Note: This does not apply to 'Draft' PRs which are great to use to share early ideas/designs. The reviewer knows they aren't yet 'reviewing' the code, they're just giving initial feedback. Keeping a PR in a draft state also ensures it cannot accidentally be merged._
+**Note**: Draft PRs - _This does not apply to 'Draft' PRs which are great to use to share early ideas/designs. The reviewer knows they aren't yet 'reviewing' the code, they're just giving initial feedback. Keeping a PR in a draft state also ensures it cannot accidentally be merged._
 
-### Acknowledge/respond to comments
+### Respond to comments
 
 It's good practice to acknowledge you've read the reviewer's feedback. This can be as simple as leaving a 👍 or a brief comment and then resolving the conversation. If the comment was simple and has been fixed, it's usually fine to resolve the conversation. Try to avoid resolving conversations without acknowledging or responding to them either with a reply or emoji.
 
@@ -37,7 +39,7 @@ When making updates to the code, try to avoid making numerous formatting only ch
 
 ### A picture is worth a thousand words
 
-If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, favor including screenshots and/or videos/gifs of the change in action (before/after is also very useful). This helps frame the change and can make reviewers lives much easier to see what the effect of the change is.
+If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, favor including screenshots and/or videos/gifs of the change in action (before/after is also very useful). This helps frame the change and can make reviewers lives much easier to see what the effect of the change is. This goes for test output too.
 
 ### Engage UI/UX when needed
 
@@ -51,7 +53,11 @@ If your PR requires changes to the O3DE documentation or tutorials, ensure you'v
 
 If your PR has been waiting a while and no one has looked at it, it's okay to start using gentle nudges to ask for feedback. This most likely will be on Discord but it's possible to also tag people in the PR comments and politely ask them to take a look. Code owners will be automatically notified but sometimes things can be missed.
 
+> It's inevitable people get busy or will be away too, it happens. When faced with this, try and switch to something else or look for another code owner with domain knowledge who can approve the PR.
+
 ## Code Reviewer Guidelines
+
+A set of guidelines for those reviewing changes and commenting on/approving PRs (the PR reviewer)
 
 ### Be kind
 
@@ -65,12 +71,12 @@ When writing review feedback focus on what the code is doing, not what the chang
 
 e.g.
 
-Avoid: _"You should use a vector here has it will lead to better cache locality"_
+Avoid: _"You should use a vector here has it will lead to better cache locality"_  
 Prefer: _"A vector might be a good idea to use here to get better cache locality"_
 
 ### Include the _why_
 
-When suggesting a change (unless it's something really trivial) it's helpful to include the reason _why_ such a change is being proposed. This gives context to the request and can often act as a learning opportunity for the code author and other contributors who may be reviewing or observing the PR.
+When suggesting a change (unless it's something trivial) it's helpful to include the reason _why_ such a change is being proposed. This gives context to the request and can often act as a learning opportunity for the code author and other contributors who may be reviewing or observing the PR.
 
 ### Don't be late to the party
 
@@ -78,7 +84,7 @@ If a PR already has two approvals (from at least one code owner) be conscious th
 
 ### Keep feedback focused
 
-Ensure feedback is targeted at the changed lines of code and not surrounding code. It isn't the changes authors responsibility to fix a problem a reviewer sees that happens to be in that area of code. If something is spotted, make an issue, and follow-up with a separate PR.
+Ensure feedback is targeted at the changed lines of code and not surrounding code. It isn't the change authors responsibility to fix a problem a reviewer sees that happens to be in that area of code. If something is spotted, make an issue, and follow-up with a separate PR.
 
 ### Be judicious with 'Request Changes'
 
