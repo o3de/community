@@ -1,6 +1,6 @@
 # O3DE Code Review Guidelines
 
-This document contains a set of guidelines for code reviewers and change authors when contributing to Open 3D Engine (O3DE). The intention is to help pull requests (PRs) go smoothly and help the community share best practices/lessons learned when it comes to changes and reviews.
+This document contains a set of guidelines for code reviewers and Pull Request (PR) authors when contributing to Open 3D Engine (O3DE). The intention is to help PRs go smoothly and help the community share best practices and lessons learned when it comes to changes and reviews.
 
 ## Useful Related Material
 
