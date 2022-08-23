@@ -19,7 +19,7 @@ This of course isn't always possible, there will be exceptions, but to get a PR 
 
 The best way to catch simple mistakes and small oversights is to read through your own PR in the GitHub UI before hitting the publish button. Viewing your own code through this slightly different lens often uncovers a lot more issues than you'd expect and can help save other reviewers time.
 
-### PRs are complete
+### Ensure PRs are ready for review
 
 Try not to publish something for review when still making changes. This can lead to reviewers needing to re-review changes or confusion in what has changed or not. Try to only make requested changes in a PR to avoid unnecessary churn.
 
