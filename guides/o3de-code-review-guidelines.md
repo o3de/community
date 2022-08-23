@@ -51,7 +51,7 @@ If your PR requires changes to the O3DE documentation or tutorials, ensure you'v
 
 ### Nudges are okay
 
-If your PR has been waiting a while and no one has looked at it, it's okay to start using gentle nudges to ask for feedback. This most likely will be on Discord but it's possible to also tag people in the PR comments and politely ask them to take a look. Code owners will be automatically notified but sometimes things can be missed.
+If your PR has been waiting a while and no one has looked at it, it's okay to start using gentle nudges to ask for feedback. This most likely will be on Discord but it's possible to also tag people in the PR comments (using the [@mention feature](https://github.blog/2011-03-23-mention-somebody-they-re-notified/)) and politely ask them to take a look. Code owners will be automatically notified but sometimes things can be missed.
 
 > It's inevitable people get busy or will be away too, it happens. When faced with this, try and switch to something else or look for another code owner with domain knowledge who can approve the PR.
 
