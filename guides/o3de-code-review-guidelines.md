@@ -39,7 +39,7 @@ When making updates to the code, try to avoid making numerous formatting only ch
 
 ### A picture is worth a thousand words
 
-If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, favor including screenshots and/or videos/gifs of the change in action (before/after is also very useful). This helps frame the change and can make reviewers lives much easier to see what the effect of the change is. This goes for test output too.
+If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, please attach screenshots and/or videos/gifs of the change in action (including before/after is also very useful). This helps frame the change and can make reviewers lives much easier to see what the effect of the change is. This goes for test output too.
 
 ### Engage UI/UX when needed
 
