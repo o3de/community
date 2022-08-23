@@ -1,13 +1,13 @@
-# O3DE Code Review Guidelines
+# O3DE code review guidelines
 
 This document contains a set of guidelines for code reviewers and Pull Request (PR) authors when contributing to Open 3D Engine (O3DE). The intention is to help PRs go smoothly and help the community share best practices and lessons learned when it comes to changes and reviews.
 
-## Useful Related Material
+## Useful related material
 
 - [O3DE C++ Coding Standards](https://github.com/o3de/sig-core/blob/main/governance/Coding-Standards-and-Style-Guide.md#o3de-c-coding-standards-)
 - [O3DE API Ref Guidelines](https://github.com/o3de/sig-core/blob/main/governance/API-Ref-Guidelines-Update.md)
 
-## Change Author Guidelines
+## Change author guidelines
 
 A set of guidelines for those making changes and creating PRs (the PR author)
 
@@ -55,7 +55,7 @@ If your PR has been waiting a while and no one has looked at it, it's okay to st
 
 > It's inevitable people get busy or will be away too, it happens. When faced with this, try and switch to something else or look for another code owner with domain knowledge who can approve the PR.
 
-## Code Reviewer Guidelines
+## Code reviewer guidelines
 
 A set of guidelines for those reviewing changes and commenting on/approving PRs (the PR reviewer)
 
@@ -71,7 +71,7 @@ When writing review feedback focus on what the code is doing, not what the chang
 
 e.g.
 
-Avoid: _"You should use a vector here has it will lead to better cache locality"_  
+Avoid: _"You should use a vector here has it will lead to better cache locality"_
 Prefer: _"A vector might be a good idea to use here to get better cache locality"_
 
 ### Include the _why_
@@ -106,6 +106,6 @@ It's inevitable all changes will not get everything right, but if what is there 
 
 If there is a point of discussion on a PR that cannot be quickly resolved, consider reaching out directly to the change author to talk it over (either over Discord, a separate GitHub discussion or even an RFC - sometimes a voice call is even better if possible). In our experience this leads to better outcomes for both parties and avoids potential misunderstandings. Leaving a brief update on the PR with the resolution afterwards is good practice too.
 
-## Contributors, Reviewers and Maintainers
+## Contributors, reviewers and maintainers
 
 Once a PR is approved by two or more reviewers, an AR run can commence. Currently only [maintainers](https://github.com/orgs/o3de/teams/maintainers) can initiate builds so please feel free to ask for someone with access to start a build. The list of PRs can be found here - [Change Requests](https://jenkins.build.o3de.org/job/O3DE/view/change-requests/). Search for the PR number to review the current status of the build. Once AR has completed and there are no failures, a PR can be merged by a maintainer.
