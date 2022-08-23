@@ -100,7 +100,7 @@ After reviewing a PR, keep an eye on when the change author has responded and do
 
 _In general, reviewers should favor approving a [PR] once it is in a state where it definitely improves the overall code health of the system being worked on, even if the [PR] isn’t perfect._
 
-It's inevitable all changes will not get everything right, but if what is there improves the software while keeping it maintainable and efficient, a reviewer should feel empowered to approve.
+It's inevitable all changes will not get everything right, but if what is there improves the software while keeping it maintainable and efficient, a reviewer should feel empowered to approve (don't let [perfect be the enemy of good](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good)).
 
 ### If you can't approve, take things offline
 
