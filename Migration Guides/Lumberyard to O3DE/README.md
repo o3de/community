@@ -54,4 +54,10 @@ This document covers high level considerations when transitioning a document fro
 
 (Link to /Misc Documents/Lumberyard-Features.md)
 
+### Pending to add
+
+- Table of contents to other files. 
+- Images
+- Links to other pages.
+
 ##### Updated Aug 2022
