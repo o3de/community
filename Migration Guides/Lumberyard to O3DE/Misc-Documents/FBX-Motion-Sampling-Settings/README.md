@@ -26,8 +26,15 @@ This is the exact reason why we added an "Automatic" mode, so that we pick the h
 
 Here is an image that shows the difference between uniform and non uniform sampling:
 
-| Uniform (Evenly Spaced) | ![image](/Images/Image2.png) |
-| Non-Uniform(Reduced Keyframes) | ![image](/Images/Image3.png) |
+<table>
+  <tr>
+    <th>Uniform (Evenly Spaced)</th>
+    <td>![image](/Images/Image2.png)</td>
+  </tr>
+  <tr>
+    <th>Non-Uniform(Reduced Keyframes)</th>
+    <td>![image](/Images/Image3.png)</td>
+  </tr>
 
 The "**quality**" settings basically tell how aggressively the non-uniform reduced keyframe method should remove samples. It will measure the error introduced when removing a given sample. If it is within limits it will remove that sample, otherwise it will keep it. The quality sliders basically allow you to set the values within a given range. This is easier than entering some values like 0.004 or so, which is the reason why we used a quality percentage. If you want smaller files and less memory usage you can try reducing the quality. Most memory is typically used by rotations, so the rotation quality is likely what you will be mostly interested in.
 
