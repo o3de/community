@@ -54,6 +54,71 @@ This document covers high level considerations when transitioning a document fro
 
 (Link to /Misc Documents/Lumberyard-Features.md)
 
+## Network systems LY to O3DE
+
+There is no path to port anything from Gridmate → Networing 2.0 its an entirely brand new systems so document will really take some work as you have to port the “concepts”
+
+Link document /networking/README.MD
+
+## Script Canvas
+
+Pending 
+
+## Material Conversions
+
+Pending
+
+Differences in the Engines (note we should pull the data into the doc)
+https://wiki.agscollab.com/display/ATOM/Notes+on+Converting+Other+Graphics+Components
+
+Any Texture and Material will be required to be re-witten due to the change in the rendering system. The best way to do this would to use the source files and import them into O3DE and build new materials. See below for guides on this topic
+<u>Materials:</u> https://www.o3de.org/docs/atom-guide/look-dev/materials/
+<u>Textures:</u> https://www.o3de.org/docs/atom-guide/look-dev/textures/
+
+
+## EMFX
+
+Link to Document /EMFX/
+
+**Actor Asset**
+The most significant change to the actor asset from Lumberyard 1.28 to O3DE is that `EMotionFX::Mesh` has been deprecated and replaced with the Atom mesh format (`Atom::Model`). Previously in Lumberyard 1.28, all export settings related to actor (skinned mesh) can be found under the actor tab in fbx settings. In O3DE, due to the usage of the atom mesh format, export settings related to the mesh have moved under the mesh tab. This step currently has to be performed manually following the steps below.
+
+**Motion Asset**
+The most noticeable improvement from Lumberyard 1.28 to O3DE around motion is that the system behind sampling motion has been re-written from scratch. This change has significantly improved the efficiency and quality of motion sampling. It offers both uniform and non-uniform sampling method options. If you want to learn more about the in-depth technical aspect of motion sampling improvement, see this article.  (Link to Misc-Documents/FBX-Motion-Sampling-Settings/)
+
+**Animation Editor**
+Since Lumberyard 1.28 we have removed all OpenGL rendering inside of the animation editor and replaced it with the Atom renderer. The new Atom render window has replaced the OpenGL render viewport. As a result, any user custom layout that still references the OpenGL render window will report a warning when opening and will not load any viewport window. We also made many more UX/UI improvements throughout the animation editor.
+
+## Project Conversion (WAF to CMake)
+
+Considerations for building when moving from Lumberyard to O3DE
+Lumberyard uses WAF, O3DE uses Cmake therefor does not map 1:1
+
+To learn more about the new CMake and how to best utilize it, checkout this dev series;
+[CMake Essentials - Part 1](https://www.o3de.org/blog/posts/cmake-essentials-series-part-1/ )
+[CMake Essentials - Part 2](https://www.o3de.org/blog/posts/cmake-essentials-series-part-2/ )
+[CMake Essentials - Part 3](https://www.o3de.org/blog/posts/cmake-essentials-series-part-3/ )
+[CMake Essentials - Part 4](https://www.o3de.org/blog/posts/cmake-essentials-series-part-4/ )
+
+## Particle Systems
+
+Particle system does not exist in O3DE, therefor you will need to use a 3rd party solution such as PopcornFX.
+
+**PopcornFX - Gem **
+
+ Real-time FX solution for particle effects Multi-platform & cross engine for games, films & AR/VR/MR Source code of the gem is available for everyone, can be freely used, modified and shared under the Community License terms.
+
+<u>Website:</u> https://www.popcornfx.com/
+<u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin
+<u>Example Project:</u> https://github.com/PopcornFX/O3DEPopcornFXExamples
+<u>Installation:</u> https://www.popcornfx.com/docs/plugins/o3de-gem/gem-installation/
+<u>Discord:</u> https://discord.gg/4ka27cVrsf
+Version and Specs O3DE Version: 21.11, 21.11.2 or greater
+
+## Prefabs
+
+Pending
+
 ### Pending to add
 
 - Table of contents to other files. 
