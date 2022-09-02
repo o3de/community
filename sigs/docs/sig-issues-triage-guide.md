@@ -19,7 +19,7 @@ SIG Triage should occur with the community present via a meeting in the SIG's [D
 Labels
 ======
 
-Github uses labels to categorize issues. Only a subset of the labels in the O3DE repo are used during triage, as indicated in the "Process" section below. A full list of labels, and their definitions, can be found [here](https://github.com/o3de/o3de/labels).
+GitHub uses labels to categorize issues. Only a subset of the labels in the O3DE repo are used during triage, as indicated in the "Process" section below. A full list of labels, and their definitions, can be found [here](https://github.com/o3de/o3de/labels).
 
 Process
 =======
@@ -37,15 +37,15 @@ For each issue:
     3.  Do NOT remove the "**needs-triage**" label.
 2.  Review the issue details and comments to determine if the issue should be declined or accepted into your SIG's backlog, or if more information is required prior to making this determination.  
     1.  To accept an issue into your backlog  
-        1.  Add the "**triage/accepted**" label to indicate the issue has been triaged and accepted into your backlog.
-        3.  Add a "**feature/**" label (e.g. feature/atom, feature/editor, feature/physics, etc.) to indicate the feature impacted.
-        4.  Add a "**priority/**" label (e.g. priority/minor, priority/major, etc.) to indicate the relative priority of the item with respect to other items in the backlog.
-        5.  (Optional) If the issue is a feature request, add a "**feature-need/**" label (e.g. feature-need/immediate, feature-need/important-soon, feature-need/important-longterm, etc.) to indicate the relative timeframe the SIG would like the feature to be delivered.
-        6.  If the issue is low complexity and a good issue for first time contributors, add the "**good-first-issue**" label.
-        7.  If your SIG would like help on this issue from a contributor, add the "**help-wanted**" label.
-        8.  If you are the only SIG impacted by the issue (i.e. if the only "sig/" label on the issue is for your SIG), or if you are the last SIG to triage the issue:
+        1. Add the "**triage/accepted**" label to indicate the issue has been triaged and accepted into your backlog.
+        2. Add a "**feature/**" label (e.g. feature/atom, feature/editor, feature/physics, etc.) to indicate the feature impacted.
+        3. Add a "**priority/**" label (e.g. priority/minor, priority/major, etc.) to indicate the relative priority of the item with respect to other items in the backlog.
+        4. (Optional) If the issue is a feature request, add a "**feature-need/**" label (e.g. feature-need/immediate, feature-need/important-soon, feature-need/important-longterm, etc.) to indicate the relative timeframe the SIG would like the feature to be delivered.
+        5. If the issue is low complexity and a good issue for first time contributors, add the "**good-first-issue**" label.
+        6. If your SIG would like help on this issue from a contributor, add the "**help-wanted**" label.
+        7. If you are the only SIG impacted by the issue (i.e. if the only "sig/" label on the issue is for your SIG), or if you are the last SIG to triage the issue:
             1.  Remove the "**needs-triage**" label.   
-        9.  Otherwise, if another SIG is impacted by the issue and hasn't completed triage:
+        8. Otherwise, if another SIG is impacted by the issue and hasn't completed triage:
             1.  Do NOT remove the "**needs-triage**" label.
             2.  Add a comment for the other SIGs indicating you have completed your triage, and they can remove the 'needs-triage' label once they have completed their triage.
     2.  To decline an issue:  
