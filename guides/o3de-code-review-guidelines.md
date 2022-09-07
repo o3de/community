@@ -1,15 +1,15 @@
-# O3DE Code Review Guidelines
+# O3DE code review guidelines
 
-This document contains a set of guidelines for code reviewers and change authors when contributing to Open 3D Engine (O3DE). The intention is to help pull requests (PRs) go smoothly and help the community share best practices/lessons learned when it comes to changes and reviews.
+This document contains a set of guidelines for code reviewers and change authors when contributing to Open 3D Engine (O3DE). The intention is to help pull requests (PRs) go smoothly and help the community share best practices and lessons learned when it comes to changes and reviews.
 
 > Note: The guidance here applies primarily to PRs targeting the `development` branch.
 
-## Useful Related Material
+## Useful related material
 
 - [O3DE C++ Coding Standards](https://github.com/o3de/sig-core/blob/main/governance/Coding-Standards-and-Style-Guide.md#o3de-c-coding-standards-)
 - [O3DE API Ref Guidelines](https://github.com/o3de/sig-core/blob/main/governance/API-Ref-Guidelines-Update.md)
 
-## Change Author Guidelines
+## Change author guidelines
 
 A set of guidelines for those making changes and creating PRs (the PR author).
 
@@ -23,7 +23,7 @@ This of course isn't always possible, there will be exceptions, but to get a PR 
 
 The best way to catch simple mistakes and small oversights is to read through your own PR in the GitHub UI before hitting the publish button. Viewing your own code through this slightly different lens often uncovers a lot more issues than you'd expect and can help save other reviewers time.
 
-### PRs are complete
+### Ensure PRs are ready for review
 
 Try not to publish something for review when still making changes. This can lead to reviewers needing to re-review changes or confusion in what has changed or not. Try to only make requested changes in a PR to avoid unnecessary churn.
 
@@ -43,7 +43,7 @@ When making updates to the code, try to avoid making numerous formatting only ch
 
 ### A picture is worth a thousand words
 
-If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, favor including screenshots and/or videos/gifs of the change in action (before/after is also very useful). This helps frame the change and can make reviewers lives much easier to see what the effect of the change is. This goes for test output too.
+If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, please attach screenshots and/or videos/gifs of the change in action (including before/after is also very useful). This helps frame the change and can make reviewers lives much easier to see what the effect of the change is. This goes for test output too.
 
 ### Engage UI/UX when needed
 
@@ -55,11 +55,11 @@ If your PR requires changes to the O3DE documentation or tutorials, ensure you'v
 
 ### Nudges are okay
 
-If your PR has been waiting a while and no one has looked at it, it's okay to start using gentle nudges to ask for feedback. This most likely will be on Discord but it's possible to also tag people in the PR comments and politely ask them to take a look. Code owners will be automatically notified but sometimes things can be missed.
+If your PR has been waiting a while and no one has looked at it, it's okay to start using gentle nudges to ask for feedback. This most likely will be on Discord but it's possible to also tag people in the PR comments (using the [@mention feature](https://github.blog/2011-03-23-mention-somebody-they-re-notified/)) and politely ask them to take a look. Code owners will be automatically notified but sometimes things can be missed.
 
-> It's inevitable people get busy or will be away too, it happens. When faced with this, try and switch to something else or look for another code owner with domain knowledge who can approve the PR.
+> It's inevitable people get busy or will be away too, it happens. When faced with this, try and switch to something else or look for another code owner with domain knowledge who can approve the PR (it's possible to find such people in the relevant SIG channels on Discord).
 
-## Code Reviewer Guidelines
+## Code reviewer guidelines
 
 A set of guidelines for those reviewing changes and commenting on/approving PRs (the PR reviewer)
 
@@ -75,7 +75,7 @@ When writing review feedback focus on what the code is doing, not what the chang
 
 e.g.
 
-Avoid: _"You should use a vector here has it will lead to better cache locality"_  
+Avoid: _"You should use a vector here has it will lead to better cache locality"_
 Prefer: _"A vector might be a good idea to use here to get better cache locality"_
 
 ### Include the _why_
@@ -106,12 +106,12 @@ After reviewing a PR, keep an eye on when the change author has responded and do
 
 _In general, reviewers should favor approving a [PR] once it is in a state where it definitely improves the overall code health of the system being worked on, even if the [PR] isn’t perfect._
 
-It's inevitable all changes will not get everything right, but if what is there improves the software while keeping it maintainable and efficient, a reviewer should feel empowered to approve.
+It's inevitable all changes will not get everything right, but if what is there improves the software while keeping it maintainable and efficient, a reviewer should feel empowered to approve (don't let [perfect be the enemy of good](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good)).
 
 ### If you can't approve, take things offline
 
 If there is a point of discussion on a PR that cannot be quickly resolved, consider reaching out directly to the change author to talk it over (either over Discord, a separate GitHub discussion or even an RFC - sometimes a voice call is even better if possible). In our experience this leads to better outcomes for both parties and avoids potential misunderstandings. Leaving a brief update on the PR with the resolution afterwards is good practice too.
 
-## Contributors, Reviewers and Maintainers
+## Contributors, reviewers and maintainers
 
 Once a PR is approved by two or more reviewers, an AR run can commence. Currently only [maintainers](https://github.com/orgs/o3de/teams/maintainers) can initiate builds so please feel free to ask for someone with access to start a build. The list of PRs can be found here - [Change Requests](https://jenkins.build.o3de.org/job/O3DE/view/change-requests/). Search for the PR number to review the current status of the build. Once AR has completed and there are no failures, a PR can be merged by a maintainer.
