@@ -2,6 +2,8 @@
 
 This document contains a set of guidelines for code reviewers and change authors when contributing to Open 3D Engine (O3DE). The intention is to help pull requests (PRs) go smoothly and help the community share best practices/lessons learned when it comes to changes and reviews.
 
+> Note: The guidance here applies primarily to PRs targeting the `development` branch.
+
 ## Useful Related Material
 
 - [O3DE C++ Coding Standards](https://github.com/o3de/sig-core/blob/main/governance/Coding-Standards-and-Style-Guide.md#o3de-c-coding-standards-)
@@ -9,7 +11,9 @@ This document contains a set of guidelines for code reviewers and change authors
 
 ## Change Author Guidelines
 
-A set of guidelines for those making changes and creating PRs (the PR author)
+A set of guidelines for those making changes and creating PRs (the PR author).
+
+> Note: There may be situations where the responsibility of shepherding a PR through review falls to someone who is not the originator of the change. For the purposes of this document all such roles fall under 'Change Author' as the individual is still responsible for the work being reviewed.
 
 ### Keep it short
 
@@ -80,7 +84,9 @@ When suggesting a change (unless it's something trivial) it's helpful to include
 
 ### Don't be late to the party
 
-If a PR already has two approvals (from at least one code owner) be conscious that additional feedback will interrupt the flow of a PR. Feel free to review and if a serious issue is spotted do feel empowered to take the necessary steps (request changes) but try to avoid lots of additional comments that could be addressed in a follow-up PR.
+If a PR already has two or more approvals (from at least one code owner) be conscious that additional feedback can interrupt the flow of a PR. Feel free to still review, and if a serious issue is spotted do feel empowered to take the necessary steps (request changes), but try to avoid requiring minor changes to be made that could be addressed in a follow-up PR.
+
+> Note: It is fine to leave additional comments, but the reviewer should be comfortable with them being moved to either a specific follow-up PR or grouped into a subsequent change.
 
 ### Keep feedback focused
 
