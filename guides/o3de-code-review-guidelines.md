@@ -17,7 +17,7 @@ A set of guidelines for those making changes and creating PRs (the PR author).
 
 ### Keep it short
 
-This of course isn't always possible, there will be exceptions, but to get a PR approved and merged in a reasonable time-frame, try to keep changes as contained and atomic as possible. Small incremental progress is much safer and simpler than a single large change that contains a many modifed lines and files.
+This of course isn't always possible, there will be exceptions, but to get a PR approved and merged in a reasonable time-frame, try to keep changes as self contained and focused as possible. Small incremental progress is much safer and simpler than a single large change that contains many modified lines and files.
 
 ### Review your own PR
 
@@ -43,7 +43,7 @@ When making updates to the code, try to avoid making numerous formatting only ch
 
 ### A picture is worth a thousand words
 
-If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, please attach screenshots and/or videos/gifs of the change in action (including before/after is also very useful). This helps frame the change and can make reviewers lives much easier to see what the effect of the change is. This goes for test output too.
+If your change results in any kind of visual difference, to help reviewers quickly get context on the PR, please attach screenshots and/or videos/gifs of the change in action (including before/after is also very useful). This helps frame the change and can make reviewers' lives much easier to see what the effect of the change is. This goes for test output and things like Script Canvas graphs too.
 
 ### Engage UI/UX when needed
 
@@ -75,7 +75,7 @@ When writing review feedback focus on what the code is doing, not what the chang
 
 e.g.
 
-Avoid: _"You should use a vector here has it will lead to better cache locality"_
+Avoid: _"You should use a vector here has it will lead to better cache locality"_  
 Prefer: _"A vector might be a good idea to use here to get better cache locality"_
 
 ### Include the _why_
@@ -110,7 +110,9 @@ It's inevitable all changes will not get everything right, but if what is there 
 
 ### If you can't approve, take things offline
 
-If there is a point of discussion on a PR that cannot be quickly resolved, consider reaching out directly to the change author to talk it over (either over Discord, a separate GitHub discussion or even an RFC - sometimes a voice call is even better if possible). In our experience this leads to better outcomes for both parties and avoids potential misunderstandings. Leaving a brief update on the PR with the resolution afterwards is good practice too.
+If there is a point of discussion on a PR that cannot be quickly resolved, consider reaching out directly to the change author to talk it over (either over Discord via a direct message or in the relevant SIG channel, a separate GitHub discussion or even an RFC - sometimes a voice call is even better if possible). In our experience this leads to better outcomes for both parties and avoids potential misunderstandings. Leaving a brief update on the PR with the resolution afterwards is good practice too.
+
+> Note: If a discussion cannot be resolved between contributors it is possible to escalate to SIG chairs either through Discord or the public meetings (also held on Discord). The dates for these can be found [here](https://lists.o3de.org/g/o3de-calendar/calendar).
 
 ## Contributors, reviewers and maintainers
 
