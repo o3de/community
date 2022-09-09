@@ -144,7 +144,7 @@ This tool will currently not handle the following correctly:
  - Slice instances that have entity references that point "forward" to other slice instances that haven't been converted yet.
  - The serialized information about the component order is incorrect. See this PR for what the correct serialized form should look like : https://github.com/o3de/o3de/pull/8146/files
 
- - Levels having entities using SCs might be broken after being converted by the tool if the SCs are having nodes with assigned entity IDs(For example: GetWorldTranslation, GetWorldTransform...). See ticket
+ - Levels having entities using Script Canvases might be broken after being converted by the tool if the Script Canvases have nodes with assigned entity IDs(For example: GetWorldTranslation, GetWorldTransform...).
 
 **Error rendering macro 'jira'**
 null
