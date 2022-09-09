@@ -146,7 +146,5 @@ This tool will currently not handle the following correctly:
 
  - Levels having entities using Script Canvases might be broken after being converted by the tool if the Script Canvases have nodes with assigned entity IDs(For example: GetWorldTranslation, GetWorldTransform...).
 
-**Error rendering macro 'jira'**
-null
 
 ##### Updated Sept. 2022
