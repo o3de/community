@@ -2,7 +2,7 @@
 
 ## Overview
 
-This article is the migration guide for any Lumberyard customer trying to migrate their game to O3DE, with specific focus on animation assets.
+This document aims to be provide an initial migration guide for any Lumberyard customer trying to migrate their game to O3DE, with specific focus on animation assets.
 
 We will be covering assets that are commonly used in the animation editor, including but not limited to: actor, motion, motionset, animgraph and workspace. This article is designed to be the go-to document to collect all the questions and answers for migrating animation related files from Lumberyard 1.28 to O3DE.
 
