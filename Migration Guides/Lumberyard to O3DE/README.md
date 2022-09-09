@@ -3,7 +3,7 @@
 This document covers high level considerations when transitioning a document from Lumberyard to O3DE. This document is living and will grow over time as users add their own transition experiences and advice.
 
 **Requirements:**
-- The project is currently utilizing Lumberyard 1.28. Any conversion tools are authored assuming 1.28. If the project is not on 1.28, please see **In Progress Page** on how to upgrade your project to Lumberyard 1.28. 
+- This guide focuses on the latest Lumberyard version, which is is 1.28. Any conversion tools are authored assuming 1.28. If the project is not on 1.28, please see **In Progress Page** on how to upgrade your project to Lumberyard 1.28. 
 - Transitioning a Lumberyard project to O3DE is best performed utilizing a source code version of O3DE. This is available at https://github.com/o3de/o3de
 
 **Suggested sites (Open 3D Engine documentation, tutorials, downloads):**
