@@ -1,6 +1,6 @@
 # Keystone Slice Converter
 
-As a part of the Keystone effort, we're developing a slice-to-prefab (and level-to-prefab) converter.  This tool is intended to be short-lived, providing a one-time migration for a few white-glove customers.  Once the slice code is removed, this tool will no longer function and should be discarded.
+A slice converter tool exists to convert Lumberyard slices and levels into O3DE prefabs. This tool is intended to be short-lived and will be discarded after slice code is removed from O3DE.
 
 ## Description
 
