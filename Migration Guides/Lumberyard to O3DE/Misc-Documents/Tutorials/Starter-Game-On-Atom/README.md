@@ -85,8 +85,6 @@ If you see a copper material, that means it's something where the conversion scr
 
 Some materials may be black in areas, use Photoshop to make sure opaque materials aren't using any alpha in their base texture.  There's a bug causing base texture maps to use premultiplied alpha.
 
-**Error rendering macro 'jira'**
-null
 
 ### 4. Potential Improvements
 
