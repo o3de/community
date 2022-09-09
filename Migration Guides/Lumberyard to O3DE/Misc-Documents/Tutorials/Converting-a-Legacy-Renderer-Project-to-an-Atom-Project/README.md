@@ -1,171 +1,125 @@
-# Legacy Asset Conversion Utility (StarterGame)
+# Converting a Legacy Renderer Project to an Atom Project
 
-## Overview
+## 1. Conversion Details
+### 1.1. Porting an Existing Project to Atom in O3DE/main
 
-This page covers a work in progress utility for upgrading legacy assets to work with O3DE (Spectra+Atom)
+Example: porting Automated Testing project from legacy graphics to Atom renderer
 
-Why do we need to convert legacy assets?:
+1. Update tools_dependencies and runtime_dependencies in the project as follows: 
+ 1. add Atom targets by mimicking AtomTest project: 
+ 1. in Gem\Code\runtime_dependencies.cmake add these dependencies: 
+	1. <table><tr><td>Gem::Atom_AtomBridge</td></tr></table>
+ 2. in Gem\Code\tool_dependencies.cmake add these dependencies: 
+	1. <table><tr><td>Gem::Atom_AtomBridge.Editor</td></tr></table>
+ 3. There is no need to modify platform specific dependencies, as AtomBridge will pull that in for you.
+ 2. Replace ImageProcessing targets with ImageProcessingAtom targets 
+ 1. Gem::ImageProcessing.Editor →  Gem::ImageProcessingAtom.Editor
+ 3. In CMakeLists.txt for the project gem, add  Gem::Atom_AtomBridge.Static as a build dependency
+<table><tr><td>
+    BUILD_DEPENDENCIES
+           PRIVATE
+                ...
+    Gem::Atom_AtomBridge.Static 
+	)</td></tr></table>
+1. (Windows) Re-Generate Visual Studio: 
+ 1. cmake .. -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLY_3RDPARTY_PATH=C:\p4\3rdparty\lyengine\3rdParty\ -DLY_PROJECTS=AutomatedTesting
+3. Compile Editor project
+4. Copy over basic Atom assets from AtomTest project to AutomatedTesting: 
+   1. dev\AtomTest\Config\AtomImageBuilder\  → dev\AutomatedTesting\Config\AtomImageBuilder\
+ 2. dev\AtomTest\LightingPresets\
+ 3. dev\AtomTest\Materials\
+ 4. dev\AtomTest\ShaderLib\
+ 5. dev\AtomTest\Shaders\
+5. run Asset Processor
+6. run the Editor and things should now work with Atom enabled
 
-- Legacy CryRenderer used .mtl files (materials) and the Illum shader for physically based rendering (PBR)
- - The legacy materials used the 'Specular Gloss workflow'
-- Atom provides a new shader/material system, Atom materials are now assets (.material) and we have a more modern PBR material (StandardPRB)
- - When we started Atom most game teams requested the 'Metallic / Roughness workflow' to be the default standard
-- The convert utility helps bring assets forward to new standard (it also has some extra bells and whistles)
+###1.2. Important Note after the Conversion
 
-## Need to Know
+1. Most legacy slices will be broken due to legacy components no longer being available
+ 1. for example: the legacy Mesh component, which needs to be replaced with Atom's Mesh component
+ 2. legacy Mesh components is equivalent to Atom's Mesh + Material component
+2. Some unsupported legacy systems are disabled when Atom is enabled e.g. Particles and terrain system.
+3. We have a script for converting mesh components and materials to Atom mesh components and materials. It's not one to one, but it's a start. StarterGame on Atom
 
-Before you can run the tool go through this checklist:
+### 2. Automated Testing of Critical Features in the Atom Renderer
 
-1. The script is part of the DccScriptingInterface Gem (DCCsi): C:\Depot\O3DE\Gems\AtomLyIntegration\TechnicalArt\DccScriptingInterface
-2. The DCCsi is mostly python based, make sure python is setup:
- 1. Lumberyard includes a python distribution, the first thing you should do is make sure it's setup
- 2. "C:\Depot\O3DE\python\get_python.bat"
-3. Make sure the DCCsi Gem is enabled in your project
- 1. Command line tool for managing Gems is here: C:\Depot\O3DE\scripts\o3de.bat
-4. The DCCsi is a code-lite Gem:
- 1. It has just enough C++ code to be a compiled Gem
- 2. It is a compiled Gem so that it is scanned for python extensions at boot (this is a pattern related to EdiorPythonBindings)
- 3. The entry-point for the scan is: "Gems\AtomLyIntegration\TechnicalArt\DccScriptingInterface\Editor\Scripts\bootstrap.py"
- 4. This would for example allow us to launch this tool from a Lumberyard menu (we have not done this yet)
-5. The other reason it's a compiled Gem is because of the way python and 3rdParty package dependencies have changed 
- 1. The DCCsi has its own pip dependencies defined in: "C:\Depot\O3DE\Gems\AtomLyIntegration\TechnicalArt\DccScriptingInterface\requirements.txt"
- 2. When a project is built that includes the DCCsi Gem then this requirements.txt will install the package dependencies 
- 3. They will end up somewhere like: C:\Depot\O3DE\python\runtime\python-3.7.10-rev1-windows\python\Lib\site-packages
-6. Non-pip packages: 
- 1. Tools in the DCCsi will occasionally use packages that are not available as a standard pip install, for example OpenImageIO (oiio)
- 2. We build oiio and it gets pulled down with cmake, this includes building the oiiotool.exe and python bindings (pyd)
- 3. Right now I think the only visual studio target that builds this is Atom_utils (I've been building that to make sure that OpenImageIO is handled)
- 4. There is currently a bug and the .pyd is not copied over during a build (so imports in python fail on that module)
- 5. Find the equivalent of this file: "C:\Depot\3rdParty\packages\openimageio-2.1.16.0-rev1-windows\FindOpenImageIO.cmake" add modify 
- a. ${PATH_TO_BINS}/OpenImageIO.pyd
+There are various ways to run Atom Automated tests:
 
-## Validation
+#### 1. Using Lumberyard's CTest script. Automated tests are automatically enabled with Atom (see this CR for more info)
+- Recommended to run this before committing code.
+- This does not display individual Pytest tests that were run.
 
-You can do the following to test of the core functionality of the DCCsi is setup and working properly
+See sample output here: 
 
-Use this .bat file to launch a Windows command-line with a custom environment:  "C:\Depot\O3DE\Gems\AtomLyIntegration\TechnicalArt\DccScriptingInterface\Launchers\Windows\Launch_PyMin_Cmd.bat"
-
-- ^ Sets up some DCCsi envar hooks
-
-From that command line the following should work:
-
- <table>
-  <tr>
-    <th>Command</th>
-    <th>Action</th>
-    <th>Troubleshooting</th>
-  </tr>
-  <tr>
-    <td>> python</td>
-    <td>starts the editor python distribution</td>
-    <td>Should be "Python 3.7.10 (tags/v3.7.10:9b2dd1f, Feb 18 2021, 12:57:19) [MSC v.1916 64 bit (AMD64)] on win32".
-
-If it doesn't launch python, see step 2 above. Make sure the python runtime is set up: C:\Depot\O3DE\python\runtime.
-</td>
-  </tr>
-  <tr>
-    <td>> python config.py</td>
-    <td>tests the DCCsi core configuration</td>
-    <td>This is a procedural/synthetic environment configured using a python package called dynaconf.
-
-you should get some logging and a pyside2 test button labeled "Hello World!" should pop-up.
-
-If nothin happens the logging likely will let us know what failed, generally it's one of these things:
-
-1. if an import fails, the requirements.txt may not be installed.
-2. ^ is the DCCsi enabled as a project gem?
-3. ^ did you build your project?
-4. ^ did you see the DCCsi requirement get installed when you configured your build with cmake?
-
-If you experice any issues or need help, check out https://discord.gg/o3de
-
-</td>
-  </tr>
-  <tr>
-    <td>> python SDK\Maya\Scripts\Python\legacy_asset_converter\main.py</td>
-    <td>launch the Legacy Asset Converter</td>
-    <td>TBD</td>
-  </tr>
-</table>
-
-## Current Status
-
-The scripts can convert Spec/Gloss/.mtl legacy Lumberyard formatted asset directories to the newer StandardPBR Metal/Rough/.material formatting. The script also uses numerical settings found within the mtl file to handle things such as texture rotation and tiling, color settings, and intensity values (such as emissive intensity). Finally, included in the conversion process, companion Maya files are generated for each FBX asset, which have had materials from the original FBX converted to StingrayPBS materials for further look development work.
-
-### Script Output
-
-**Files In (Legacy):**
-
-<u>Texture types:</u>
-- Diffuse
-- Ddna
-- Specular
-- Emissive
-
-<u>Material Definition File:</u>
-
-".mtl"
-
-**Files Out (StandardPBR):**
-
-<u>Texture types:</u>
-
-- BaseColor
-- Roughness
-- Metallic
-- Normal
-- Emissive
-
-<u>Material Definition File:</u>
-
-'.material"
-
-## Steps to Perform a Conversion
-
-### DCCsi Launchers Location:
-
-.../LY/spectra_atom/dev/Gems/AtomLyIntegration/TechnicalArt/DccScriptingInterface/Launchers/Windows
-
-Besides being useful for development these IDE launchers are especially important because a stand alone CLI is not yet available.
-
-The launch .bat files will automatically configure the environment required to run the tool.
-
-![Image](/Images/image1.png)
-
-**PyCharm:**
-
-Use PyCharm Professional 2020.3 -- Launcher file: Launch_PyCharmPro.bat
-
-**Wing:**
-
-Use Wing Pro 7.x -- Launcher file: Launch_WingIDE-7-1.bat
-
-### Scripts Location:
-
-../LY/spectra_atom/dev/Gems/AtomLyIntegration/TechnicalArt/DccScriptingInterface/SDK/Maya/Scripts/Python/legacy_asset_converter
-
-The entry point to the scripts is through "main.py"
-
-![Image](/Images/image2.png)
-
-### The Tool
-
-![Image](/Images/image3.png)
-
-There are only two requirements for running the tool- one is bootstrapping the scripts to Lumberyard using the .bat file setup of the DCCsi (see screenshot above... . The second is setting an input directory/file and an output directory(#1). There are several output options that can be activated or deactivated using the checkboxes next to them (see the "Actions" button group (#2)), but it is recommended that you leave these at their default. Once these items have been addressed, click on the Process Files button (#3).
-
-There are detailed log messages that can help you to get an idea of what assets the script is processing that should be viewable in the output window of the IDE. Once the script completes an audit of all processed files is displayed in the UI (#6). If you have processed multiple asset directories you can filter the audit results using the combobox with the text "Show All" (#5). For the next window, click on the "Asset" tab (#4). This window is for refined information relating to the files that have been processed.
-
-![Image](/Images/image4.png)
-
-To switch information displayed between processed directories, use the "Directory" combobox (#7). Each directory will contain one or more FBX files. The FBX file is what assets like material files and textures relate to- switch between all present in the specified directory using the "FBX File" combobox (#8). Each FBX can have texture files assigned to materials inside them. For a full list of what texture files correspond to the FBX look in the image table below (#9). There are several buttons present to launch selected files or view material files generated as well.
-
-## Remaining Work
-
-1. There was a bug discovered in Maya that prevents the script from assigning file textures to StingrayPBS in an automated fashion. A script was created that will assign those file textures, although in its current state it fuses together surfaces with each respective material into single objects. It was discovered later that this is not ideal, as in several scenarios there are LOD geometry layers that contain the same materials and are getting combined (which is not desirable). The script was originally built using the Maya python API to retrieve material information and assignments directly from each FBX, but this has since been simplified by relying on .assetinfo files which is a much cleaner way to extract needed information. The texture assignment script needs to be modified to leverage geometry assignments gathered from this improved method.
-2. Some investigation is needed to understand why file size grows significantly with each subsequent conversion process run with the tool. With each run the tool should be only updating information that it doesn't already contain. Through testing it was found that there are significant increases to file size with each run, even when the amount of new information would equate to a very small amount of actual data.
-3. Part of the utility of the script should be that in addition to making the initial conversion, it should also facilitate additional help or resources to finalize conversion. Due to the large number of factors involved, a perfect conversion is very unlikely. This means that a user may need to perform additional cleanup work, and this presents an opportunity to further streamline the process. The creation of a Substance Designer file with textures, masks, and node tree setups would be a very valuable addition to the toolset to help facilitate tweaks. The other functionality that would be helpful would be the ability to run scripts and commands from the Standalone QT UI directly to Maya. This would allow users a very seamless bridge, and with a little dedicated time is well within our reach. Both of these proposed features might also benefit our DCCsi toolset beyond the conversion scripts.
-4. Set up Dynaconf to handle the bootstrapping of the scripts to the DCCsi environment settings
+    #This assumes you are in the dev folder
+    .\ctest_scripts\ctest_entrypoint.cmd --build-path .\<your_build_path>\ --suite main --only-gpu --config profile
 
 
-##### Updated Aug 2022
+    #Run all tests via Cmake -
+	.\ctest_scripts\ctest_entrypoint.cmd --build-path .<your_cmake_build_folder>\ --suite main --only-gpu --config profile 
+    
+    PS D:\spectra_atom_9111\dev> .\ctest_scripts\ctest_entrypoint.cmd --build-path .\build\ --suite main --only-gpu --config profile                                                                               Using CTest executable from PATH: C:\Users\rbarrand\Downloads\cmake-3.18.1-win32-x86\cmake-3.18.1-win32-x86\bin\ctest.exe
+    Starting 'main' suite: The default set of tests, covers most of all testing.
+    Executing CTest with command:
+      C:\Downloads\cmake-3.18.1-win32-x86\cmake-3.18.1-win32-x86\bin\ctest.exe --build-config profile --output-on-failure --parallel 16 --label-regex ^(REQUIRES_gpu)$ --label-exclude ^(SUITE_smoke|SUITE_periodic|SUITE_benchmark)$
+    in working directory:
+      .\build\
+    
+    Test project D:/spectra_atom_9111/dev/build
+        Start   2: AutomatedTests_AtomTests.main::TEST_RUN
+    1/2 Test   #2: AutomatedTests_AtomTests.main::TEST_RUN ..........   Passed  235.64 sec
+        Start 193: pytest_sanity_main_requires_gpu.main::TEST_RUN
+    2/2 Test #193: pytest_sanity_main_requires_gpu.main::TEST_RUN ...   Passed    1.04 sec
+    
+    100% tests passed, 0 tests failed out of 2
+    
+    Label Time Summary:
+    REQUIRES_gpu    = 236.68 secproc (2 tests)
+    SUITE_main      = 236.68 secproc (2 tests)
+    
+    Total Test time (real) = 237.21 sec
+
+
+#### 2. Using Pytest Directly
+- This will display all Pytest tests that were run. 
+- Recommended to run if ctest automated test is disabled. 
+See sample output here:
+
+
+    #this assumes you are in the dev folder
+    .\Tools\Python\python3.cmd -m pytest -v --build-directory=".\<your_build_path>\bin\profile" AtomTest\Gem\PythonTests\Automated
+
+    #Add some flags to reduce the log output
+    .\Tools\Python\python3.cmd -m pytest -v --show-capture=no --build-directory=".\<your_build_path>\bin\profile" AtomTest\Gem\PythonTests\Automated
+
+    #Open Beyond Compare when screenshot comparison fails
+    .\Tools\Python\python3.cmd -m pytest -v --open-beyond-compare --show-capture=no --build-directory=".\<your_build_path>\bin\profile" AtomTest\Gem\PythonTests\Automated
+
+
+    #Running Pytest tests
+    
+    PS D:\Perforce\spectra_atom\dev> .\Tools\Python\python3.cmd -m pytest -v --build-directory=".\build2\bin\profile" AtomTest\Gem\PythonTests\Automated
+    ================================================= test session starts =================================================
+    platform win32 -- Python 3.7.5, pytest-5.3.2, py-1.8.1, pluggy-0.13.1 -- D:\Perforce\spectra_atom\dev\Tools\Python\3.7.5\windows\python.exe
+    D:\Perforce\spectra_atom\dev\conftest.py:39: RuntimeWarning: Warning! lmbr_test_pytest.ini is not being used! Use lmbr_test when running pytest tests from the dev directory. (eg. lmbr_test pytest <PATH_TO_TEST>)
+      warnings.warn(INIFILE_WARNING, RuntimeWarning)
+    cachedir: .pytest_cache
+    rootdir: D:\Perforce\spectra_atom\dev
+    plugins: mock-2.0.0, timeout-1.3.4, ly-test-tools-1.0.0
+    collected 7 items
+    
+    AtomTest/Gem/PythonTests/Automated/C18261928_EnterGameMode_test.py::TestAutomation::test_C18261928_EnterGameMode[AtomTest-all-profile-win_x64_vs2017] PASSED [ 14%]
+    AtomTest/Gem/PythonTests/Automated/C18751210_SpotLightIntensity_test.py::TestAutomation::test_C18751210_SpotLightIntensity[AtomTest-all-profile-win_x64_vs2017] PASSED [ 28%]
+    AtomTest/Gem/PythonTests/Automated/C23490360_GridComponent_test.py::TestAutomation::test_C23490360_GridComponent[AtomTest-all-profile-win_x64_vs2017] PASSED [ 42%]
+    AtomTest/Gem/PythonTests/Automated/C30993187_HDRiSkyboxComponent_test.py::TestAutomation::test_C30993187_HDRiSkyboxComponent[AtomTest-all-profile-win_x64_vs2017] PASSED [ 57%]
+    AtomTest/Gem/PythonTests/Automated/C30993188_MaterialComponent_test.py::TestAutomation::test_C30993188_MaterialComponent[AtomTest-all-profile-win_x64_vs2017] PASSED [ 71%]
+    AtomTest/Gem/PythonTests/Automated/C30993189_MeshComponent_test.py::TestAutomation::test_C30993189_MeshComponent[AtomTest-all-profile-win_x64_vs2017] PASSED [ 85%]
+    ...
+
+1. Should there be any issues running automated tests, please manually verify that Atom is working:
+- Atom's Material Editor works
+Image1
+- Editor launches with Atom enabled
+- Atom's Mesh/Material components are functional
+
+##### Updated Sept 2022
