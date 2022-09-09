@@ -78,7 +78,7 @@ This document covers high level considerations when transitioning a document fro
 
 ## Network systems LY to O3DE
 
-There is no path to port anything from Gridmate → Networing 2.0 its an entirely brand new systems so document will really take some work as you have to port the “concepts”
+There is no automated path to port network components and logic from Lumberyard's Gridmate → to O3DE's Networing 2.0. Networking in O3DE is based on brand new systems so migration will require how to port “concepts” and intent, rather than actual assets and code.
 
 Link document /networking/README.MD
 
