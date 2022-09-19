@@ -1,12 +1,17 @@
 # O3DE Foundation Resources
+This repository provides a central location for information related to O3DE as a whole. Here you can find information about O3DE's development process, the processes the project uses and how to contribute.
 
-Foundation related resources like charters and code of conducts.
+## Contribute
+Learn how to [contribute](/contributors) to O3DE.
 
-## Table of Contents
+Ensure you read the [code of conduct](code-of-conduct.md), [values](values.md) and [contributing](CONTRIBUTING.md) guides. Then reach out to SIG(s) that are involved in the areas you want to contribute too.
 
-<!-- TOC -->
+# Special Interest Groups (SIGs)
+O3DE is a very large project. To ease communication and provide clearer ownership, the project has a number of  Special Interest Groups (SIGs) that are responsible for maintaining different areas of the project.
 
-- [SIG Repositories]
+You can use the [contribution](CONTRIBUTING.md) to find out areas of ownership, or see the [SIG readme](/sigs/README.md) for more information.
+
+O3DE has the following active SIGs:
   - [SIG-Build](https://github.com/o3de/sig-build)
   - [SIG-Content](https://github.com/o3de/sig-content)
   - [SIG-Core](https://github.com/o3de/sig-core)
@@ -20,8 +25,11 @@ Foundation related resources like charters and code of conducts.
   - [SIG-Simulation](https://github.com/o3de/sig-simulation)
   - [SIG-Testing](https://github.com/o3de/sig-testing)
   - [SIG-UI-UX](https://github.com/o3de/sig-ui-ux)
-- [Committee Repositories]
+
+## O3DE Committee Repositories
+O3DE also has a number of standing committees that drive improvement and contributions to the project as a whole. 
+
+The current active committees are:
   - [Diversity & Inclusion](https://github.com/o3de/community/tree/main/committee/committee-d-i)
   - [Marketing](https://github.com/o3de/community/tree/main/committee/committee-marketing)
  
-<!-- /TOC -->
