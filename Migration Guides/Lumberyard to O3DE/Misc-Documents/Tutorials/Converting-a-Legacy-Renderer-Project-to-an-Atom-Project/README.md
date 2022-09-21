@@ -58,14 +58,14 @@ See sample output here:
     #Run all tests via Cmake -
 	.\ctest_scripts\ctest_entrypoint.cmd --build-path .<your_cmake_build_folder>\ --suite main --only-gpu --config profile 
     
-    PS D:\spectra_atom_9111\dev> .\ctest_scripts\ctest_entrypoint.cmd --build-path .\build\ --suite main --only-gpu --config profile                                                                               Using CTest executable from PATH: C:\Users\rbarrand\Downloads\cmake-3.18.1-win32-x86\cmake-3.18.1-win32-x86\bin\ctest.exe
+    PS D:\atom_9111\dev> .\ctest_scripts\ctest_entrypoint.cmd --build-path .\build\ --suite main --only-gpu --config profile                                                                               Using CTest executable from PATH: C:\Users\Downloads\cmake-3.18.1-win32-x86\cmake-3.18.1-win32-x86\bin\ctest.exe
     Starting 'main' suite: The default set of tests, covers most of all testing.
     Executing CTest with command:
       C:\Downloads\cmake-3.18.1-win32-x86\cmake-3.18.1-win32-x86\bin\ctest.exe --build-config profile --output-on-failure --parallel 16 --label-regex ^(REQUIRES_gpu)$ --label-exclude ^(SUITE_smoke|SUITE_periodic|SUITE_benchmark)$
     in working directory:
       .\build\
     
-    Test project D:/spectra_atom_9111/dev/build
+    Test project D:/atom_9111/dev/build
         Start   2: AutomatedTests_AtomTests.main::TEST_RUN
     1/2 Test   #2: AutomatedTests_AtomTests.main::TEST_RUN ..........   Passed  235.64 sec
         Start 193: pytest_sanity_main_requires_gpu.main::TEST_RUN
@@ -98,13 +98,13 @@ See sample output here:
 
     #Running Pytest tests
     
-    PS D:\Perforce\spectra_atom\dev> .\Tools\Python\python3.cmd -m pytest -v --build-directory=".\build2\bin\profile" AtomTest\Gem\PythonTests\Automated
+    PS D:\Perforce\atom\dev> .\Tools\Python\python3.cmd -m pytest -v --build-directory=".\build2\bin\profile" AtomTest\Gem\PythonTests\Automated
     ================================================= test session starts =================================================
-    platform win32 -- Python 3.7.5, pytest-5.3.2, py-1.8.1, pluggy-0.13.1 -- D:\Perforce\spectra_atom\dev\Tools\Python\3.7.5\windows\python.exe
-    D:\Perforce\spectra_atom\dev\conftest.py:39: RuntimeWarning: Warning! lmbr_test_pytest.ini is not being used! Use lmbr_test when running pytest tests from the dev directory. (eg. lmbr_test pytest <PATH_TO_TEST>)
+    platform win32 -- Python 3.7.5, pytest-5.3.2, py-1.8.1, pluggy-0.13.1 -- D:\Perforce\atom\dev\Tools\Python\3.7.5\windows\python.exe
+    D:\Perforce\atom\dev\conftest.py:39: RuntimeWarning: Warning! lmbr_test_pytest.ini is not being used! Use lmbr_test when running pytest tests from the dev directory. (eg. lmbr_test pytest <PATH_TO_TEST>)
       warnings.warn(INIFILE_WARNING, RuntimeWarning)
     cachedir: .pytest_cache
-    rootdir: D:\Perforce\spectra_atom\dev
+    rootdir: D:\Perforce\atom\dev
     plugins: mock-2.0.0, timeout-1.3.4, ly-test-tools-1.0.0
     collected 7 items
     

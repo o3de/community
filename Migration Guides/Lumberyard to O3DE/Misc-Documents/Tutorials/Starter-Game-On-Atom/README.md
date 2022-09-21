@@ -5,7 +5,7 @@
 #### 1.1. Requirements
 
 - Python 3.7.5 or Python 3.8
-- The project is currently utilizing Lumberyard 1.28. Any conversion tools are authored assuming 1.28. If the project is not on 1.28, please see https://wiki.agscollab.com/display/lmbr/Migration+Guide+-+Ly1.x+to+O3DE on how to upgrade your project to Lumberyard 1.28. 
+- The project is currently utilizing Lumberyard 1.28. Any conversion tools are authored assuming 1.28. 
 - Transitioning a Lumberyard project to O3DE is best performed utilizing a source code version of O3DE. This is available at https://github.com/o3de/o3de
 
 #### 1.2. Project

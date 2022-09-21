@@ -1,4 +1,4 @@
-# Keystone Slice Converter
+# Slice Converter
 
 A slice converter tool exists to convert Lumberyard slices and levels into O3DE prefabs. This tool is intended to be short-lived and will be discarded after slice code is removed from O3DE.
 
@@ -33,7 +33,6 @@ Unable to open file "D:\github\o3de\AutomatedTesting\Cache\pc\user.cfg"
   </tr>
 </table> 
 
-GridMate Allocator has already started! Ignoring current allocator descriptor!
 
  <table>
   <tr> <td>==================================================================
@@ -147,4 +146,4 @@ This tool will currently not handle the following correctly:
  - Levels having entities using Script Canvases might be broken after being converted by the tool if the Script Canvases have nodes with assigned entity IDs(For example: GetWorldTranslation, GetWorldTransform...).
 
 
-##### Updated Sept. 2022
+##### Updated Sept 2022

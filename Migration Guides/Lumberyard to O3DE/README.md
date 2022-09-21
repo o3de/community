@@ -1,4 +1,4 @@
-# Transitioning a project from LY to O3DE
+# Transitioning a project from Lumberyard (LY) to Open 3D Engine (O3DE)
 
 This document covers high level considerations when transitioning a document from Lumberyard to O3DE. This document is living and will grow over time as users add their own transition experiences and advice.
 
@@ -25,7 +25,7 @@ This document covers high level considerations when transitioning a document fro
 | [Lumberyard 1.X to O3DE Network Migration Guide](/Networking/) |
 | **Other Documents** |
 | [Fbx Motion Sampling Settings](/Misc-Documents/FBX-Motion-Sampling-Settings/) |
-| [Keystone Slice Converter](/Misc-Documents/Keystone-Slice-Converter/) |
+| [Slice Converter](/Misc-Documents/Slice-Converter/) |
 | [Lumberyard features with no equivalent in O3DE](/Misc-Documents/Lumberyard-Features/) |
 | **Scripts** |
 | [convert_physxconfiguration](/Misc-Documents/Scripts/convert_physxconfiguration/) |
