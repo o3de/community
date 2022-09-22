@@ -1,0 +1,301 @@
+{
+   "BuildBranch": "Development",
+   "BuildVersion": "21.11.2",
+   "SIG": "SIG-Graphics-Audio",
+   "Subsystems": {
+      "Features": [
+         {
+            "Module": "Deferred Fog",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://docs.o3de.org/docs/user-guide/components/reference/atom/deferred-fog/",
+            "Notes": ""
+         },
+         {
+            "Module": "Tonemapping",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping",
+            "Notes": ""
+         },
+         {
+            "Module": "Direct Lighting / Area Lights",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/user-guide/components/reference/atom/light/",
+            "Notes": ""
+         },
+         {
+            "Module": "Meshes",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#meshes",
+            "Notes": ""
+         },
+         {
+            "Module": "Skinned Meshes",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#meshes",
+            "Notes": ""
+         },
+         {
+            "Module": "Eye Adaptation",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#lighting",
+            "Notes": ""
+         },
+         {
+            "Module": "Culling",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/user-guide/components/reference/atom/occlusion-culling-plane/",
+            "Notes": ""
+         },
+         {
+            "Module": "HDR Pipeline",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/",
+            "Notes": ""
+         },
+         {
+            "Module": "Shadows",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/user-guide/components/reference/atom/light/",
+            "Notes": ""
+         },
+         {
+            "Module": "Skybox and Physical Sky",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#lighting",
+            "Notes": ""
+         },
+         {
+            "Module": "SSAO",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         },
+         {
+            "Module": "Color Grading",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         },
+         {
+            "Module": "Depth of Field",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         },
+         {
+            "Module": "PBR Materials",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/look-dev/materials/pbr/",
+            "Notes": ""
+         },
+         {
+            "Module": "Post Processing Volumes",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         },
+         {
+            "Module": "Decals",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#lighting",
+            "Notes": ""
+         },
+         {
+            "Module": "Screen Space Reflections",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         },
+         {
+            "Module": "Subsurface Scattering",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         },
+         {
+            "Module": "Motion Vectors",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         },
+         {
+            "Module": "Temporal Anti-aliasing (TAA)",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "3",
+            "Platform": "0;1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/features/#post-processing-effects-postfx",
+            "Notes": ""
+         }
+      ],
+      "Render Hardware Interface": [
+         {
+            "Module": "DirectX 12",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/dev-guide/rhi/",
+            "Notes": ""
+         },
+         {
+            "Module": "Vulkan",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/dev-guide/rhi/",
+            "Notes": ""
+         },
+         {
+            "Module": "Metal",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "4",
+            "Performance": "3",
+            "Platform": "",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/dev-guide/rhi/",
+            "Notes": ""
+         }
+      ],
+      "Audio": [
+         {
+            "Module": "Wwyse Integration",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/atom-guide/dev-guide/rhi/",
+            "Notes": ""
+         }
+      ]
+   }
+}

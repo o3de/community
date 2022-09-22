@@ -1,0 +1,8 @@
+[
+{ "name": "❌ Unproven", "id": 1},
+{ "name": "⭕ Deprecated", "id": 2},
+{ "name": "🟡 Experimental", "id": 3},
+{ "name": "🟠 Volatile", "id": 4},
+{ "name": "🟢 Stable", "id": 5},
+{ "name": "🔵 In Progress", "id": 6}
+]

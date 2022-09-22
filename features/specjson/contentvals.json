@@ -1,0 +1,8 @@
+[
+{ "name": "❌ None", "id": 1},
+{ "name": "⭕ Not Required", "id": 2},
+{ "name": "🔴 Incompatible", "id": 3},
+{ "name": "🟡 Minimal", "id": 4},
+{ "name": "🟠 Partial", "id": 5},
+{ "name": "🟢 Complete", "id": 6}
+]

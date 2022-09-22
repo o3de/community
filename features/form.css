@@ -1,0 +1,59 @@
+body {
+  background-color: #313131;
+  color: white;
+}
+
+textarea{
+  color: white;
+}
+
+a:link {
+	color: #99e6ff
+}
+
+a:visited {
+	color: #33ccff
+}
+
+.jmodal {
+  background-color: #303030;
+}
+
+.jmodal:before {
+  background-color: #303030;
+}
+
+.jmodal_backdrop {
+  background-color: #303030;
+}
+
+hr {
+  border: 2px solid;
+}
+:root {
+    --jexcel_header_color: #999;
+    --jexcel_header_color_highlighted: #444;
+    --jexcel_header_background: #202020;
+    --jexcel_header_background_highlighted: #777;
+    --jexcel_content_color: #888;
+    --jexcel_content_color_highlighted: #333;
+    --jexcel_content_background: #3e3e3e;
+    --jexcel_content_background_highlighted: #666;
+    --jexcel_menu_background: #7e7e7e;
+    --jexcel_menu_background_highlighted: #ebebeb;
+    --jexcel_menu_color: #ddd;
+    --jexcel_menu_color_highlighted: #222;
+    --jexcel_menu_box_shadow: unset;
+    --jexcel_border_color: #5f5f5f;
+    --jexcel_border_color_highlighted: #999;
+    --active_color: #90caf9;
+}
+
+.jspreadsheet tbody tr:nth-child(even) {
+	background-color: #0E09F1 !important;
+}
+
+.jspreadsheet colgroup col:first-child {
+    width: 0 !important;
+}
+

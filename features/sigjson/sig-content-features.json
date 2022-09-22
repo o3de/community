@@ -1,0 +1,517 @@
+{
+   "BuildBranch": "Development",
+   "BuildVersion": "21.11.2",
+   "SIG": "SIG-Content",
+   "Subsystems": {
+      "Frameworks": [
+         {
+            "Module": "AzToolsFramework",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Lua",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/user-guide/scripting/lua/",
+            "Notes": ""
+         },
+         {
+            "Module": "Prefabs",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Qt for Python",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "Editor": [
+         {
+            "Module": "Asset Browser",
+            "Feature": "5",
+            "Functional": "3",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "4",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Framework",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Localization",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Undo / Redo",
+            "Feature": "",
+            "Functional": "",
+            "Content": "",
+            "Code/API": "",
+            "Performance": "",
+            "Platform": "",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Asset Editor",
+            "Feature": "3",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "4",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "Canvas Tools": [
+         {
+            "Module": "Graph Model",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Graph Canvas",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Landscape Canvas",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "Project Manager": [
+         {
+            "Module": "Remote Projects",
+            "Feature": "5",
+            "Functional": "3",
+            "Content": "2",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "2;3;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Still in early design"
+         },
+         {
+            "Module": "Project versioning",
+            "Feature": "5",
+            "Functional": "3",
+            "Content": "2",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "2;3;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Still in early design"
+         },
+         {
+            "Module": "Template Management",
+            "Feature": "4",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Gem Creation Wizard",
+            "Feature": "4",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Remote Gems Improvements (URI vs URL)",
+            "Feature": "4",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Remote Gems (Initial)",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "4",
+            "Platform": "2;3;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "Scripting": [
+         {
+            "Module": "Expression Evaluation",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Script Canvas",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "4",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/user-guide/scripting/script-canvas/",
+            "Notes": ""
+         },
+         {
+            "Module": "Script Canvas Developer",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Script Events",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/user-guide/scripting/script-events/",
+            "Notes": ""
+         },
+         {
+            "Module": "Script Canvas Testing",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "4",
+            "Performance": "5",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Unit Testing framework in Script Canvas"
+         },
+         {
+            "Module": "Lua Editor",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "https://www.o3de.org/docs/user-guide/scripting/lua/",
+            "Notes": ""
+         }
+      ],
+      "User Interface": [
+         {
+            "Module": "LyShine (2D Render)",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "World Building": [
+         {
+            "Module": "Terrain",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "1",
+            "Code/API": "3",
+            "Performance": "3",
+            "Platform": "2",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Dynamic Vegetation",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "5",
+            "Code/API": "5",
+            "Performance": "3",
+            "Platform": "1",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "Viewport": [
+         {
+            "Module": "Manipulators",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Manipulators for interacting with entities and components in the viewport"
+         },
+         {
+            "Module": "Component Mode",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "6",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Editing mode for Components in the main viewport"
+         },
+         {
+            "Module": "Viewport UI",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "6",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Qt UI elements that can be dynamically added/removed from the viewport"
+         },
+         {
+            "Module": "Interaction Model",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Interaction Model for working with Entities and Prefabs in the viewport"
+         },
+         {
+            "Module": "Camera",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "CameraInput and ModularViewportCameraController for adjusting and interacting with the camera in the Editor"
+         },
+         {
+            "Module": "View Bookmarks",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "3",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Support for storing view transforms in the Editor"
+         },
+         {
+            "Module": "Manipulator Test Framework",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Provides ability to write integration tests for manipulator interactions (screen-space to world-space transformations)"
+         },
+         {
+            "Module": "Visibility",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Visibility system to determine entities that fall inside the editor view frustum"
+         },
+         {
+            "Module": "Editor Mode Visual Feedback",
+            "Feature": "5",
+            "Functional": "4",
+            "Content": "2",
+            "Code/API": "3",
+            "Performance": "4",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Covers screen space effects to communicate viewport state (e.g. Selection, Focus Mode etc..)"
+         }
+      ],
+      "White Box Tool": [
+         {
+            "Module": "Atom Integration",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "1;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Atom rendering support for the White Box Tool"
+         },
+         {
+            "Module": "Viewport Editing",
+            "Feature": "5",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "5",
+            "Performance": "2",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "Interaction Model for White Box Tool viewport editing"
+         },
+         {
+            "Module": "Triangulation",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Boolean Operations",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Custom UV Mapping",
+            "Feature": "3",
+            "Functional": "1",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "1",
+            "Platform": "2;3;4;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         }
+      ]
+   }
+}

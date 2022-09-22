@@ -1,0 +1,9 @@
+[
+{ "name": "All", "id": 1},
+{ "name": "Windows", "id": 2},
+{ "name": "Linux", "id": 3},
+{ "name": "MacOS", "id": 4},
+{ "name": "Android", "id": 5},
+{ "name": "iOS", "id": 6},
+{ "name": "Console", "id": 7}
+]

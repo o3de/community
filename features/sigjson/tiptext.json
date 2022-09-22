@@ -1,0 +1,12 @@
+{
+"Module": "Name of the feature module" ,
+"Feature" : "Production state of the feature", 
+"Functional" : "Functionality of feature as defined by docs", 
+"Content" : "Content state necessary for feature use", 
+"Code/API" : "State of the code execution and its API stability", 
+"Performance" : "Performance state of the feature",
+"Platform" : "Platforms supported by this feature",
+"Link" : "Link to Github Issue or Discussion",
+"Doc Link" : "Link to documentation of feature",
+"Notes" : "Notes related to entry"
+}

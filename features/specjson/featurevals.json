@@ -1,0 +1,8 @@
+[
+{ "name": "❌ Unscheduled", "id": 1},
+{ "name": "⭕ Deprecated", "id": 2},
+{ "name": "🔵 Backlogged", "id": 3},
+{ "name": "🟠 Planned", "id": 4},
+{ "name": "🟡 Active", "id": 5},
+{ "name": "🟢 Complete", "id": 6}
+]

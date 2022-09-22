@@ -1,0 +1,630 @@
+<html>
+<script src="jexcel/jexcel.js"></script>
+<link rel="stylesheet" href="https://bossanova.uk/jspreadsheet/v4/jexcel.css" type="text/css" />
+<link rel="stylesheet" href="https://bossanova.uk/jspreadsheet/v4/jexcel.themes.css" type="text/css" />
+   
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+
+<link rel="stylesheet" href="form.css" type="text/css" />
+
+<h1><class id="signame">SIG: Unspecified</class> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <class id="buildbranch">Branch: Unknown</class>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <class id="buildversion">Version: Unknown</class>
+</h1>
+Choose a SIG to edit from GitHub: <select id="sigdrop" onchange="changeSig()"></select> or <input id='btnLoadFileJson' type='button' value='Load JSON from File' onclick="loadJsonFromFile()" disabled> >>
+<input type="file" id="fileinput" name="FileInput" accept="text/json">
+<h2>
+    <input id='btnMakeSubsys' type='button' value='Create new Subsystem' onclick="createSubsys()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id='btnDownJson' type='button' value='Download JSON' onclick="exportJSon()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id='btnDownJson' type='button' value='Create Release Markdown' onclick="createRelMarkdown()" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id='btnSendGithub' type='button' value='Send to Github' onclick="exportToGithub()" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</h2>
+
+<body>
+<div id="debuganchor"></div>
+<div id="reloadModal">
+    <center>
+        <p style="font-size: 22px;">
+        You are requesting to load a new sig<br><br><B><u>If you confirm, your current work will be lost.</u></b><br><br>
+        Click the <u>Download</u> button to receive a copy as a JSON file<br>
+        Click the <u>Confirm Reload</u> button to clear and load the new sig.<br><br>
+        Click anywhere else or close this dialog and cancel.<BR>
+        <BR><BR>
+        <input type='button' value='Download' onclick="exportJSon()" class='plain'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type='button' value='Confirm Reload' onclick="confirmNewLoad()" class='plain'>
+        </p>
+    </center>
+</div>
+</body>
+
+<script type="module">
+    //<script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js">
+    //import { Octokit, App } from "https://cdn.skypack.dev/octokit";
+    //window.OctoKit = Octokit
+    //window.OctoApp = App
+</script>
+
+<script>
+    var jVersion = "Version-NotSpec";
+    var jSig = "SIG-NotSpecified";
+    var jBranch = "Development";
+    var anchor = document.getElementById('sheetanchor');
+    var dbganchor = document.getElementById('debuganchor');
+    var tblist = [];
+    var sigLoaded = false;
+    var modCancel = true;
+    var prevSig;
+    var tipJson;
+    var luRefs = [
+        { name:"Module", ref:[] },
+        { name:"Feature", url: 'specjson/featurevals.json', ref:[] },
+        { name:"Functional", url: 'specjson/functionalvals.json', ref:[] },
+        { name:"Content", url: 'specjson/contentvals.json', ref:[] },
+        { name:"Code/API", url: 'specjson/statevals.json', ref:[] },
+        { name:"Performance", url: 'specjson/perfvals.json', ref:[] },
+        { name:"Platform", url: 'specjson/platformvals.json', ref:[] },
+        { name:"Link", ref:[] },
+        { name:"Doc", ref:[] }, 
+        { name:"Notes", ref:[]}
+    ]
+
+    var reloadModal = jSuites.modal(document.getElementById('reloadModal'), {
+        width: '600px',
+        height: '480px',
+        closed: true,
+        onclose: function() {
+            allowNewLoad()
+        }
+    });
+
+    const tipurl = 'sigjson/tiptext.json'
+    const sigurl = "sigjson/sig-list.json"
+
+    const fileCheckElement = document.getElementById("fileinput");
+    fileCheckElement.addEventListener("change", handleFiles, false);
+    function handleFiles() {
+        const fileList = this.files; /* now you can work with the file list */
+        if (fileList.length > 0) {
+            document.getElementById('btnLoadFileJson').disabled = false
+        }
+    }
+
+    function confirmNewLoad() {
+        modCancel = false;
+        reloadModal.close();
+    }
+
+    function allowNewLoad() {
+        console.log('asking to load new')
+        if (modCancel == false) {
+            sigLoaded = false
+            clearSheets()
+            changeSig()
+        }
+        
+        document.getElementById('sigdrop').selectedIndex = prevSig
+        modCancel = true;
+    }
+
+    function clearSheets() {
+        tbcnt = tblist.length-1;
+        for (; tbcnt > -1; tbcnt--) {
+            var tbl = Object.values(tblist[tbcnt])[0];
+            tbl.destroy();
+            tblist.pop();
+            document.getElementById('sheet'+ tbcnt).remove();
+        }
+    }
+
+    function enableButtons() {
+        document.getElementById('btnMakeSubsys').disabled = false;
+        document.getElementById('btnDownJson').disabled = false;
+        //document.getElementById('btnSendGithub').disabled = false;
+    }
+
+    function changeSig() {
+        var droplist = document.getElementById('sigdrop');  
+        var dropPick = droplist.options[droplist.selectedIndex].value;
+        if (dropPick == "") { return; }
+        if (sigLoaded == true) {
+            reloadModal.open();
+            return;
+        }
+        console.log('loading: '+dropPick)
+        loadWebJson(dropPick);
+        sigLoaded = true;
+        prevSig = droplist.selectedIndex
+        enableButtons()
+    }
+
+    function loadTipVale(jsonData)
+    {
+        for (var cnt = 0; cnt < jsonData.length; cnt++) {
+
+        }
+    }
+    function loadSigDrop(jsonData) {
+        dropEle = document.getElementById('sigdrop')
+        iter = 0 ;
+        for (var cnt = 0; cnt < jsonData.length; cnt++) {
+            docOpt = document.createElement('option')
+            docOpt.index = iter
+            docOpt.text = jsonData[cnt]['name']
+            docOpt.value = jsonData[cnt]['url']
+            dropEle.appendChild(docOpt)
+            iter++;
+        }
+    }
+
+    function parseJson(jsdata) {
+        parseJSHead(jsdata);
+       
+        for (var key in jsdata) {
+            if (key == "Subsystems" && typeof(jsdata[key]) == "object" ) {
+                createSheet(jsdata[key]);
+            }
+        }
+    }
+
+    function downloadObjectAsJson(exportObj, exportName){
+        var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 3));
+        var downloadAnchorNode = document.createElement('a');
+        downloadAnchorNode.setAttribute("href",     dataStr);
+        downloadAnchorNode.setAttribute("download", exportName + ".json");
+        document.body.appendChild(downloadAnchorNode); // required for firefox
+        downloadAnchorNode.click();
+        downloadAnchorNode.remove();
+    }
+    
+    function downloadObjectAsMD(exportObj, exportName){
+        var dataStr = "data:text/text;charset=utf-8," + encodeURIComponent(exportObj);
+        var downloadAnchorNode = document.createElement('a');
+        downloadAnchorNode.setAttribute("href",     dataStr);
+        downloadAnchorNode.setAttribute("download", exportName + ".md");
+        document.body.appendChild(downloadAnchorNode); // required for firefox
+        downloadAnchorNode.click();
+        downloadAnchorNode.remove();
+    }
+
+    function addFeatRow(event) {
+        console.log(event.srcElement.id);
+        event.currentTarget.parentElement.jspreadsheet.insertRow()
+    }
+
+    function renameSubsys(event) {
+        var id = parseInt(event.currentTarget.parentElement.id.substring(5))
+        vk = Object.keys(tblist[id])
+        vv = Object.values(tblist[id])
+        renval = prompt("Please enter a new subsystem name", vk);
+        if (renval == vk || renval == null) {
+            return;
+        }
+        delete tblist[id]
+        var rv = {};
+        rv[renval] = vv[0]
+        tblist[id] = rv
+        tagEle = document.getElementById('sstag'+vk)
+        tagEle.textContent = 'Subsystem: ' + renval
+        tagEle.id = 'sstag' + renval 
+    }
+
+    function moveSubsysUp(event) {
+        console.log(event.srcElement.id + 'moveup');
+    }
+
+    function moveSubsysDn(event) {
+        console.log(event.srcElement.id + 'movedn');
+    }
+
+    function delSubsys(event) {
+        console.log(event.srcElement.id + 'delsubsys');
+        var id = parseInt(event.currentTarget.parentElement.id.substring(5))
+        tblist.splice(id,1)
+        document.getElementById('sheet'+ id).remove()
+        event.currentTarget.parentElement.jspreadsheet.destroy()
+    }
+
+    function makeButton(btnName, btnFunc) {
+        var ret = document.createElement('button');
+        ret.innerHTML = btnName
+        ret.onclick = function(event) {
+            btnFunc(event);
+        }
+        return ret;
+    }
+
+    function createSheet(data) {
+        for (var subsys in data) {
+            var sheetname = 'sheet'+ tblist.length
+            var jsdiv = document.createElement(sheetname);
+            jsdiv.id = sheetname;
+            
+            var hrule = document.createElement('hr');
+            jsdiv.appendChild(hrule);
+
+            var h2ent = document.createElement('h2');
+            h2ent.textContent = 'Subsystem: ' + subsys + "   ";
+            h2ent.id = 'sstag' + subsys
+            
+            var renBtn = makeButton("Rename Subsystem", renameSubsys)
+            var moveUpBtn = makeButton("Move Up", moveSubsysUp)
+            var moveDnBtn = makeButton("Move Down", moveSubsysDn)
+            var delSubsysBtn = makeButton("Delete Subsystem", delSubsys)
+            var arButton = makeButton("Add Row", addFeatRow)
+            
+            arButton.id = 'btn' + subsys
+            delSubsysBtn.disabled = true
+            moveUpBtn.disabled = true
+            moveDnBtn.disabled = true
+
+            renBtn.title = 'Rename the ' + subsys + ' subsystem to something else'
+            moveUpBtn.title = 'Move the ' + subsys + ' subsystem up one level'
+            moveDnBtn.title = 'Move the ' + subsys + ' subsystem down one level'
+            arButton.title = 'Add a row to the ' + subsys + ' subsystem table'
+            delSubsysBtn.title = 'Delete the ' + subsys + ' subsystem table'
+            
+            jsdiv.appendChild(h2ent);
+            jsdiv.appendChild(arButton);
+            jsdiv.appendChild(renBtn)
+            jsdiv.appendChild(moveUpBtn)
+            jsdiv.appendChild(moveDnBtn);
+            jsdiv.appendChild(delSubsysBtn)
+            jsdiv.appendChild(document.createElement("br"));
+
+            document.body.appendChild(jsdiv);
+
+            var jstable = initJspread(sheetname, subsys);
+            var svp = {};
+            svp[subsys] = jstable;
+            tblist.push(svp);
+        
+            if (typeof(data[subsys]) != "object") {
+                continue;
+            }
+            
+            jstable.tbody = document.createElement('tbody');
+
+            makeTableRow(subsys, data[subsys], jstable)
+        }
+    }
+
+    function returnIfProperty(arr, prop) {
+        if (arr.hasOwnProperty(prop)) {
+            return arr[prop];
+        }
+        return ""
+    }
+
+    function addRow(feature, jstable, specs) {
+        jstable.insertRow( [
+            returnIfProperty(specs, 'Module'),    
+            returnIfProperty(specs, 'Feature'),
+            returnIfProperty(specs, 'Functional'),
+            returnIfProperty(specs, 'Content'),
+            returnIfProperty(specs, 'Code/API'),
+            returnIfProperty(specs, 'Performance'), 
+            returnIfProperty(specs, 'Platform'), 
+            returnIfProperty(specs, 'Link'), 
+            returnIfProperty(specs, 'Doc'), 
+            returnIfProperty(specs, 'Notes') ]
+        );
+    }
+
+    function makeTableRow(subsys, features, jstable) {
+        for (var feature in features) {
+                var specs = features[feature]
+                addRow(feature, jstable, specs)
+            }
+
+    }
+
+    function parseJSHead(jsdata) {
+        if (jsdata.hasOwnProperty('BuildBranch')) {
+            jBranch = jsdata['BuildBranch'];
+            var sh = document.getElementById('buildbranch');
+            sh.textContent = 'Build Branch: ' + jBranch
+        }
+        if (jsdata.hasOwnProperty('BuildVersion')) {
+            jVersion = jsdata['BuildVersion'];
+            var sh = document.getElementById('buildversion');
+            sh.textContent = 'Build Version: ' + jVersion
+        }
+        if (jsdata.hasOwnProperty('SIG')) {
+            jSig = jsdata['SIG'];
+            var sh = document.getElementById('signame');
+            sh.textContent = 'SIG: ' + jSig
+        }
+        
+    }
+
+    function showError(err) {
+        var sh = document.getElementById('signame');
+        sh.textContent = 'ERROR: ' + err
+        console.log(err)
+    }
+
+    function readWebFile(url) {
+        fetch(url, {method: 'GET', headers: { 'Cache-Control': 'no-cache'} } )
+            .then(response => response.json())
+            .then(resdata => parseJson(resdata))
+            .catch(error => {
+                showError(error);
+            })
+    }
+    
+    function afterInitSS(obj) {
+        for (cnt = 0; cnt < obj.options.columns.length; cnt++)
+        {
+            var colTitle = obj.options.columns[cnt].title
+            if (tipJson.hasOwnProperty(colTitle)) {
+                obj.setHeader(cnt, colTitle, tipJson[colTitle])
+            }
+        }
+        return
+    }
+
+    function initJspread(id, subsys) {
+        var empdata = []
+        var options = {
+            data:empdata,
+            columns: [
+                { type:'text', width:'250', title:'Module', name:'Module', wordWrap:true },    
+                { type:'dropdown', width:'150', title:'Feature', name: 'Feature', url: 'specjson/featurevals.json', autocomplete:true },
+                { type:'dropdown', width:'140', title:'Functional', name: 'Functional', url: 'specjson/functionalvals.json', autocomplete:true },
+                { type:'dropdown', width:'160', title:'Content', name: 'Content', url: 'specjson/contentvals.json', autocomplete:true },
+                { type:'dropdown', width:'160', title:'Code/API', name:'Code/API', title:'Code/API', url: 'specjson/statevals.json', autocomplete:true },
+                { type:'dropdown', width:'185', title:'Performance', name:'Performance', url: 'specjson/perfvals.json', autocomplete:true },
+                { type:'dropdown', width:'100', title:'Platform', name:'Platform', url: 'specjson/platformvals.json', autocomplete:true, multiple:true },
+                { type:'html', width:'150', title:'Github Link', name:'Link', wordWrap:true },
+                { type:'html', width:'150', title:'Doc Link', name:'Doc', wordWrap:true },
+                { type:'text', width:'400', title:'Notes', name:'Notes', wordWrap:true },
+            ],
+            rowResize: true,
+            columnDrag: true,
+            defaultColAlign: 'left',
+            onload: function (ele, obj) {
+                afterInitSS(obj);
+            }
+        }
+        return jspreadsheet(document.getElementById(id), options);
+
+    }
+
+    function exportJSon() {
+        var jsExport = {
+            BuildBranch : jBranch,
+            BuildVersion : jVersion,
+            SIG : jSig
+        };
+
+        var jsTable = {}
+        for (var cnt = 0; cnt < tblist.length; cnt++) {
+            var tbk = Object.keys(tblist[cnt]);
+            var tbl = Object.values(tblist[cnt])[0];
+            jsTable[tbk] = tbl.getJson()
+        }
+        jsExport['Subsystems'] = jsTable
+        var jsOut;
+        jsOut = JSON.stringify(jsExport, null, 3 );
+        //document.getElementById("debuganchor").textContent = jsOut;
+        downloadObjectAsJson(jsExport, jSig+'-'+jBranch+'-'+jVersion)
+        return jsOut;
+    }
+
+    function exportToGithub() {
+        uploadToGithub('','keepguessing-glhf', 'main', 'o3de/featurestate', 'sig-test.json', 'Update file' )
+    }
+
+    function createSubsys() {
+        data = {}
+        data['NewSubsystem'] = [{ Module: "New Module" }]
+        createSheet(data);
+    }
+
+    function uploadToGithub(usernm, passwd, repo, branch, filename, commitmsg) {
+        jsonstring = exportJSon()
+        const octokit = window.octokit({ auth: `personal-access-token123` });
+        
+        var github = new GitHub({
+            username: usernm,
+            password: passwd,
+            auth: 'basic'
+        });   
+
+        var repository = github.getRepo( usernm, repo);
+        blobdata = new Blob(jsonstring)
+
+        repository.write(
+            branch, // e.g. 'master'
+            filename, // e.g. 'blog/index.md'
+            blobdata, // e.g. 'Hello world, this is my new content'
+            commitmsg, // e.g. 'Created new index'
+            function(err) {
+                console.log('error happened:' + err);
+            }
+        )
+    }
+
+    function loadJsonFromFile() {
+        console.log('Load json from a file')
+        var input, file, fr;
+
+        if (typeof window.FileReader !== 'function') {
+            alert("The file API isn't supported on this browser yet.");
+            return;
+        }
+
+        input = document.getElementById('fileinput');
+        if (!input) {
+            alert("Um, couldn't find the fileinput element.");
+        } else if (!input.files) {
+            alert("This browser doesn't seem to support the `files` property of file inputs.");
+        } else if (!input.files[0]) {
+            alert("Please select a file before clicking 'Load'");
+        } else {
+            file = input.files[0];
+            fr = new FileReader();
+            fr.onload = receivedText;
+            fr.readAsText(file);
+        }
+    }
+
+    function receivedText(e) {
+        let lines = e.target.result;
+        document.getElementById('sigdrop').selectedIndex = 0
+        clearSheets()
+        parseJson(JSON.parse(lines));
+        enableButtons()
+        sigLoaded = true;
+    }
+
+    const loadWebFile = async (url, callback) => {
+        let webReq = await fetch(url, {method: 'GET', headers: { 'Cache-Control': 'no-cache'} } )
+                            .catch(error => { showError(error); })
+        let webJson = await webReq.json()
+        return webJson
+    }
+
+    const loadTips = async(url) => {
+        tipJson = await loadWebFile(url)
+        console.log(tipJson.text)
+    }
+
+    const loadWebSigs = async(url) => {
+        let jsonData = await loadWebFile(url)
+        loadSigDrop(jsonData)
+    }
+    const loadWebJson = async(url) => {
+        let jsonData = await loadWebFile(url)
+        parseJson(jsonData)
+    }
+
+    function makeJsonText(jsonData) {
+        for (var key in jsonData) {
+            if (key == "Subsystems") {
+                console.log(jsdata[key])
+            }
+        }
+    }
+        
+    function createRelMarkdown() {
+        var droplist = document.getElementById('sigdrop'); 
+        var buildVer = prompt("Please provide the Release number (YY.MM.P)", "00.00.0");
+        doMarkdown(droplist, buildVer)
+    }
+
+    function addMDHeaders() {
+        var tV  = "| Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link | Notes |\r\n"
+        tV = tV + "| :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\r\n"
+        return tV
+    }
+
+    const doMarkdown = async(droplist, buildVer) => {
+        var mdat = "# Open 3D Engine Release: " + buildVer + '\r\n\r\n'
+        for (var cnt = 1; cnt < droplist.length; cnt++) {
+            var dropPick = droplist.options[cnt].value;
+            let jsdata = await loadAsyncJson(dropPick)
+
+            for (var key in jsdata) {
+                if (key == 'SIG') {
+                    mdat = mdat + "## " + jsdata[key] + ' \r\n\r\n'
+                }
+                if (key == "Subsystems" && typeof(jsdata[key]) == "object" ) {
+                    mdat = mdat + parseMd(jsdata[key]);
+                }
+            }
+        }
+        downloadObjectAsMD(mdat, buildVer + "-FeatureState")
+    }
+
+    function parseMd(jsdata) {
+        var mdata = ""
+        for (var subsys in jsdata) {
+            mdata = mdata + '### ' + subsys + ' \r\n'
+            mdata = mdata + parseMdEnt(jsdata[subsys])
+        }
+        return mdata
+    }
+
+    function parseMdEnt(data) {
+        var totDat = ""
+        totDat = totDat + addMDHeaders()
+        for (var feature in data) {
+            var specs = data[feature]
+            totDat = totDat + doMd(feature, specs)
+        }
+        return totDat
+    }
+
+    function doMd(feature, specData) {
+        var lineTxt = ""
+        var refTxt = ""
+        luRefs.forEach((refVal) => {
+            if (returnIfProperty(specData, refVal['name']) == "") {
+                lineTxt = lineTxt + '| |'
+                return;
+            }
+
+            refTxt = specData[refVal['name']] 
+            if (refVal['ref'].length > 0) {
+                refEnt = refVal['ref'].find(itm => {return itm.id == specData[refVal['name']]})
+                if (refEnt != undefined) {
+                    refTxt = refEnt['name']
+                } else {
+                    if (refVal['name'] == 'Platform') {
+                        refChk = doPlatLookups(refVal, specData[refVal['name']])
+                        if (refChk != "") {
+                            refTxt = refChk
+                        }
+                    }
+                }
+            }
+            refTxt = refTxt.replace(/(\r\n|\n|\r)/gm,"")
+            lineTxt = lineTxt + '| ' + refTxt + ' '
+        })
+        lineTxt = lineTxt + ' |\r\n'
+        console.log(lineTxt)
+        return lineTxt
+    }
+
+    function doPlatLookups(refVal, platData) {
+        txtRet = ""
+        plats = platData.split(";")
+        plats.forEach((plt) => {
+            refEnt = refVal['ref'].find(itm => {return itm.id == plt})
+            if (refEnt != undefined) {
+                txtRet = txtRet + refEnt['name'] + ' '
+            }
+        })
+        return txtRet
+    }
+
+    const loadLookups = async() => {
+        luRefs.forEach((lu) => {
+            if (lu.hasOwnProperty('url')) {
+                getLookups(lu) 
+            }
+        });
+    }
+
+    const getLookups = async(lu) => {
+        lu['ref'] = await loadWebFile(lu['url']) 
+    }
+    
+    const loadAsyncJson = async(url) => {
+        let jsonData = await loadWebFile(url)
+        return jsonData;
+    }
+
+    loadTips(tipurl)
+    loadWebSigs(sigurl)
+    loadLookups()
+    document.getElementById('btnSendGithub').style.visibility = 'hidden';
+    
+    console.log('done')
+    
+</script>
+
+</html>

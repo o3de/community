@@ -1,0 +1,155 @@
+{
+   "BuildBranch": "Development",
+   "BuildVersion": "21.11.2",
+   "SIG": "SIG-Build",
+   "Subsystems": {
+      "Build Systems": [
+         {
+            "Module": "Github Pipelines",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1;",
+            "Link": "<div>https://github.com/o3de/o3de/tree/development/.github</div>",
+            "Doc": "\nhttps://www.o3de.org/docs/contributing/to-code/git-workflow/\n\n",
+            "Notes": ""
+         },
+         {
+            "Module": "Jenkins Pipelines",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "4",
+            "Platform": "1;",
+            "Link": "<div>https://github.com/o3de/o3de/tree/development/scripts/build/Jenkins</div>",
+            "Doc": "<div><div>https://github.com/o3de/sig-build/blob/main/AutomatedReview/JenkinsPipelineGuide.md</div></div>",
+            "Notes": ""
+         },
+         {
+            "Module": "Installer Builds",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "2;3;",
+            "Link": "<div>https://github.com/o3de/o3de/tree/development/cmake/Platform/Windows</div><div><br></div><div><div>https://github.com/o3de/o3de/tree/development/cmake/Platform/Linux</div></div>",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Build Failure Analysis",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "1;",
+            "Link": "",
+            "Doc": "<div><div>https://github.com/o3de/sig-build/blob/main/AutomatedReview/RootCauseRunbook.md</div></div>",
+            "Notes": ""
+         },
+         {
+            "Module": "Build Scripts",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "1;",
+            "Link": "<div><div>https://github.com/o3de/o3de/tree/development/scripts/build/Platform</div></div>",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Build Environments",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1;",
+            "Link": "<div>https://github.com/o3de/o3de/tree/development/scripts/build/build_node/Platform</div>",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "Build Metrics",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "1;",
+            "Link": "<div>https://github.com/o3de/o3de/tree/development/scripts/build</div>",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "3rd Party System",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "1;",
+            "Link": "<div>https://github.com/o3de/3p-package-source</div>",
+            "Doc": "",
+            "Notes": ""
+         }
+      ],
+      "Infrastructure": [
+         {
+            "Module": "Jenkins",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "1;",
+            "Link": "<div>https://github.com/o3de/o3de/tree/development/scripts/build/Jenkins</div>",
+            "Doc": "<div>https://www.o3de.org/docs/contributing/to-code/git-workflow/</div>",
+            "Notes": ""
+         },
+         {
+            "Module": "Github",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1;",
+            "Link": "\n<div>https://github.com/o3de/o3de/tree/development/.github</div>\n\n",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "LFS",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1;",
+            "Link": "",
+            "Doc": "",
+            "Notes": ""
+         },
+         {
+            "Module": "License Scanning",
+            "Feature": "5",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "6",
+            "Performance": "4",
+            "Platform": "1;",
+            "Link": "<div>https://github.com/o3de/o3de/tree/development/scripts/license_scanner</div>",
+            "Doc": "",
+            "Notes": ""
+         }
+      ]
+   }
+}
