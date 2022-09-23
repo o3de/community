@@ -8,13 +8,14 @@ Use this folder in o3de/community to store meeting notes and planning artifacts,
 
 ### Upcoming meetings
 
-TODO: Schedule next meeting.
+01/17/2022 Meeting on release naming
 
 ### Past meetings
 
-* [10/25/2001 Election Results Meeting](meeting-notes/meeting-agenda-2021-10-25.md)
-* [10/4/2001 Meeting](meeting-notes/meeting-agenda-2021-10-4.md)
-* [9/23/2001 Kickoff Meeting](meeting-notes/meeting-agenda-2021-9-23.md)
+* [01/10/2022 Meeting](meeting-notes/meeting-agenda-2022-01-10.md)
+* [10/25/2021 Election Results Meeting](meeting-notes/meeting-agenda-2021-10-25.md)
+* [10/4/2021 Meeting](meeting-notes/meeting-agenda-2021-10-4.md)
+* [9/23/2021 Kickoff Meeting](meeting-notes/meeting-agenda-2021-9-23.md)
 
 ### Notes:
 
@@ -59,11 +60,12 @@ TODO:  Assign points of contact
 | Jun | May | Apr |
 ||||
 | Mar | Feb | Jan |
+|||<p>Jan 27th - [PR]Planned date of 21.11.2 point release.</p><p>Jan 27th - [Blog]Planned date of 21.11.2 point release.</p><p>Jan 27th - [Release Notes]Planned date of 21.11.2 point release.</p> |
 
 | - | 2021 | - | 
 |-|-|-|
 | Dec | Nov | Oct |
-|| <p>Oct 18-Nov 15th - [Event](https://itch.io/jam/o3de-jam-1) O3DE Jam Ends.</p><p>Nov 29th - [PR] Planned date of next release.</p><p>Nov 29th - [Blog] Planned date of next release.</p><p>Nov 29th - [Release Notes] Planned date of next release.</p> | <p>Oct 11-12th - [Event](https://events.linuxfoundation.org/o3decon/) O3DECon</p><p>Oct 18-Nov 15th - [Event](https://itch.io/jam/o3de-jam-1) O3DE Jam Begins.</p> |
+| <p>Dec 2nd - Release of Stable 21.11.</p> | <p>Oct 18-Nov 15th - [Event](https://itch.io/jam/o3de-jam-1) O3DE Jam Ends.</p><p>Nov 29th - [PR] Planned date of next release.</p><p>Nov 29th - [Blog](https://o3de.org/blog/posts/o3de-2111-announcement/) Planned date of next release.</p><p>Nov 29th - [Release Notes](https://o3de.org/docs/release-notes/archive/21-11-release-notes/) Planned date of next release.</p> | <p>Oct 11-12th - [Event](https://events.linuxfoundation.org/o3decon/) O3DECon</p><p>Oct 18-Nov 15th - [Event](https://itch.io/jam/o3de-jam-1) O3DE Jam Begins.</p> |
 | Sep | Aug | Jul |
 ||| <p>July 6th - [Blog](https://o3de.org/blog/posts/welcome-post/) Announcing Open 3D Engine!</p><p>July 6th - [PR](https://www.linuxfoundation.org/press-release/linux-foundation-to-form-new-open-3d-foundation/) Linux Foundation to Form New Open 3D Foundation</p> |
 
@@ -86,3 +88,10 @@ TODO: Release Notes Procedure
 ## Past Events
 
 TODO: Add links to pre-event discussions, docs, post-event breakdowns.
+
+Dec 02 2021 - Release of Stable 21.11:
+- [AWS Game Tech Blog](https://aws.amazon.com/blogs/gametech/built-for-builders-aws-and-open-3d-engine-stable-21-11-release/)
+- [Phoronix.com](https://www.phoronix.com/scan.php?page=news_item&px=Open-3D-O3DE-21.11)
+- [Heise.de](https://www.heise.de/news/Spieleentwicklung-Open-3D-Engine-erreicht-erste-Hauptversion-6287125.html)
+- [Gamesfromscratch.com](https://gamefromscratch.com/the-o3de-game-engine-has-first-major-release/)
+- [Gamingonlinux.com](https://www.gamingonlinux.com/2021/12/open-3d-engine-o3de-sees-a-first-major-release-linux-support-in-preview/page=2/#r215512)
