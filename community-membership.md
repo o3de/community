@@ -28,7 +28,8 @@ You must be nominated (self-nomination is allowed) for promotion from Reviewer t
 
 ## Becoming a Reviewer or Maintainer
 
-The SIGs maintain their own reviewer and maintainer standards, and have additional types of roles available in some cases. Maintainer standards are maintained in nomination issues, so each link goes to a "New Issue" form for nomination.
+The SIGs maintain their own reviewer and maintainer standards, and have additional types of roles available in some cases. These standards are maintained in nomination issues, so each link goes to a "New Issue" form for nomination.
+
 
 * [SIG-Build](https://github.com/o3de/sig-build/issues/new?assignees=&labels=needs-triage%2Cneeds-sig&template=Reviewer_Maintainer_Nomination.md&title=SIG+Reviewer%2FMaintainer+Nomination)
 * [SIG-Content](https://github.com/o3de/sig-content/issues/new?assignees=&labels=needs-triage%2Cneeds-sig&template=Reviewer_Maintainer_Nomination.md&title=SIG+Reviewer%2FMaintainer+Nomination)
