@@ -31,8 +31,8 @@ O3DE has the following active SIGs:
 
 ## O3DE Committees
 
-O3DE also has a number of standing committees that drive improvement and contributions to the project as a whole. 
+O3DE also has a number of standing committees that drive improvement and contributions to the project:
 
-The current active committees are:
-  - [Diversity & Inclusion](https://github.com/o3de/community/tree/main/committee/committee-d-i)
-  - [Marketing](https://github.com/o3de/community/tree/main/committee/committee-marketing)
+  - [Technical Steering Committee](https://github.com/o3de/tsc) - The TSC is responsible for all technical oversight of O3DE.
+  - [Diversity & Inclusion](https://github.com/o3de/community/tree/main/committee/committee-d-i) - D&I works to ensure O3DE is a welcoming place for all contributors.
+  - [Marketing](https://github.com/o3de/community/tree/main/committee/committee-marketing) - Drives all O3DE marketing initiatives.

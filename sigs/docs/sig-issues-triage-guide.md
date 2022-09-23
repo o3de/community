@@ -12,7 +12,7 @@ SIG issue triage is the process of reviewing issues that are newly assigned to y
 
 We recommend SIGs perform their triage at least once per week, at minimum. This is to ensure issues are reviewed in a timely manner.
 
-SIG Triage should occur with the community present via a meeting in the SIG's [Discord](https://discord.gg/u7rSfSpvz2) voice channel. To schedule a meeting with your SIG, list the meeting on the [O3DE Calendar](https://lists.o3de.org/g/o3de-calendar/calendar). It is also recommended to post a reminder about the upcoming triage in the SIG's Discord text channel the day before triage takes place.
+SIG Triage should occur with the community present via a meeting in the SIG's [Discord](https://discord.gg/o3de) voice channel. To schedule a meeting with your SIG, list the meeting on the [O3DE Calendar](https://lists.o3de.org/g/o3de-calendar/calendar). It is also recommended to post a reminder about the upcoming triage in the SIG's Discord text channel the day before triage takes place.
 
 For example:
 ```

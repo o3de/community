@@ -25,7 +25,7 @@ To identify what a SIG owns or is working on, you can:
 
 ### How do I get involved?
 
-SIGs are open to all. You can join the discussion on [Discord](https://discord.com/invite/o3de) or attend any of the public meetings. Use the [O3DE Calendar](https://lists.o3de.org/g/o3de-calendar/calendar) to find upcoming SIG meetings.
+SIGs are open to all. You can join the discussion on [Discord](https://discord.gg/o3de) or attend any of the public meetings. Use the [O3DE Calendar](https://lists.o3de.org/g/o3de-calendar/calendar) to find upcoming SIG meetings.
 
 Many SIGs have further information in the README files at the root of their repository.
 
