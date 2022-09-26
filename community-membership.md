@@ -24,7 +24,8 @@ A *Reviewer* is a role where a contributor is responsible for reviewing Pull Req
 
 You must be nominated (self-nomination is allowed) for promotion from Contributor to Reviewer. To do this, an issue should be created on the SIG's repo for the supportive Reviewers and Maintainers to comment and add their support. For example, to nominate a reviewer on behalf of sig-content, an issue should be created in the [sig-content repository](https://github.com/o3de/sig-content/issues/new/choose).
 
-Once you have the requisite support, the nomination Issue needs to be reviewed and approved during a SIG meeting. If possible, the nominee should attend and add it to the agenda for the SIG to review and, if appropriate, approve. Nomination Issues that do not have the necessary support will be closed after 4 weeks of inactivity.
+Once you have the requisite support, the nomination issue needs to be reviewed and approved during a SIG meeting. If possible, the nominee should add the issue to the agenda for an upcoming SIG meeting and if possible attend the meeting. The SIG will then review and, if appropriate, approve. Nomination Issues that do not have the necessary support will be closed after 4 weeks of inactivity.
+
 
 ## Maintainers
 
