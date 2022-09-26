@@ -8,7 +8,7 @@ Please ensure you've read the [code of conduct](/code-of-conduct.md), [values](/
 
 ## Getting started
 
-If you do not know where to start in the project but want to contribute, find the [SIG](/sigs) that works in the areas you are interested in. Introduce yourself on [Discord](https://discord.gg/o3de), or at a [SIG meeting](https://lists.o3de.org/g/o3de-calendar/calendar). 
+If you do not know where to start in the project but want to contribute, find the [Special Interest Group](/sigs) (SIG) that works in the areas you are interested in. Introduce yourself on [Discord](https://discord.gg/o3de), or at a [SIG meeting](https://lists.o3de.org/g/o3de-calendar/calendar). 
 
 You can also look for the `good-first-issue` label in the [o3de/o3de](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue) GitHub repository for development, the [o3de/o3de.org](https://github.com/o3de/o3de.org/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue) repository for docs or in the [o3de/extras](https://github.com/o3de/o3de-extras/labels/good-first-issue) repository.
 
