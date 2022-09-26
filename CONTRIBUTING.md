@@ -31,7 +31,7 @@ This project has many different disciplines represented by special interest grou
 
 ## Communication
 
-Members of the community have multiple ways to collaborate on the project. We encourage you to join the community [Discord server](https://discord.gg/F8jjUmpCBG), Mailing list or SIG Discussion area.
+Members of the community have multiple ways to collaborate on the project. We encourage you to join the community [Discord server](https://discord.gg/o3de), Mailing list or SIG Discussion area.
 
 ## Meetings
 
