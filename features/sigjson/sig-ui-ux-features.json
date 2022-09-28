@@ -1,11 +1,11 @@
 {
    "BuildBranch": "Development",
-   "BuildVersion": "22.10.1",
+   "BuildVersion": "21.11.2",
    "SIG": "SIG-UI-UX",
    "Subsystems": {
       "UI Components": [
          {
-            "Module": "Breadcrumb navigation",
+            "Module": "Breadcrumb navigation-1",
             "Feature": "6",
             "Functional": "6",
             "Content": "",
