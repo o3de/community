@@ -5,7 +5,7 @@
    "Subsystems": {
       "UI Components": [
          {
-            "Module": "Breadcrumb navigation-1",
+            "Module": "Breadcrumb navigation",
             "Feature": "6",
             "Functional": "6",
             "Content": "5",
