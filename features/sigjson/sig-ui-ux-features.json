@@ -1,6 +1,6 @@
 {
    "BuildBranch": "Development",
-   "BuildVersion": "21.11.2",
+   "BuildVersion": "22.10.1",
    "SIG": "SIG-UI-UX",
    "Subsystems": {
       "UI Components": [
