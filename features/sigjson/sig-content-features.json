@@ -319,14 +319,14 @@
          {
             "Module": "Terrain",
             "Feature": "5",
-            "Functional": "4",
-            "Content": "1",
-            "Code/API": "3",
-            "Performance": "3",
-            "Platform": "2",
+            "Functional": "6",
+            "Content": "4",
+            "Code/API": "5",
+            "Performance": "5",
+            "Platform": "1",
             "Link": "",
             "Doc": "",
-            "Notes": ""
+            "Notes": "Workflow improvements under development"
          },
          {
             "Module": "Dynamic Vegetation",

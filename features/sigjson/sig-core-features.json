@@ -1,6 +1,6 @@
 {
    "BuildBranch": "Development",
-   "BuildVersion": "21.11.2",
+   "BuildVersion": "22.10.0",
    "SIG": "SIG-Core",
    "Subsystems": {
       "Core features": [
@@ -50,19 +50,19 @@
             "Platform": "2;3;4;",
             "Link": "",
             "Doc": "",
-            "Notes": ""
+            "Notes": "Can be used to build a project for the host platforms(Windows, Linux, MacOS), but cannot target the Mobile platforms yet."
          },
          {
             "Module": "Reflection frameworks",
-            "Feature": "5",
-            "Functional": "5",
+            "Feature": "4",
+            "Functional": "6",
             "Content": "2",
             "Code/API": "5",
             "Performance": "3",
             "Platform": "1;",
             "Link": "",
             "Doc": "",
-            "Notes": ""
+            "Notes": "Current reflection system using SerializeContext is complete, but not optimized."
          },
          {
             "Module": "Streaming system",
@@ -74,7 +74,7 @@
             "Platform": "1;",
             "Link": "",
             "Doc": "",
-            "Notes": ""
+            "Notes": "Only complete for Windows at the moment. Generic implementation used for other platforms."
          },
          {
             "Module": "Input system",
@@ -86,7 +86,7 @@
             "Platform": "1;",
             "Link": "",
             "Doc": "",
-            "Notes": ""
+            "Notes": "No work is being done on it at this time."
          },
          {
             "Module": "Logging and tracing",
@@ -101,36 +101,36 @@
             "Notes": ""
          },
          {
-            "Module": "",
-            "Feature": "",
-            "Functional": "",
-            "Content": "",
-            "Code/API": "",
-            "Performance": "",
-            "Platform": "",
-            "Link": "",
-            "Doc": "",
-            "Notes": ""
-         },
-         {
             "Module": "Profiling",
             "Feature": "5",
-            "Functional": "5",
+            "Functional": "4",
             "Content": "2",
             "Code/API": "4",
             "Performance": "4",
             "Platform": "2;",
             "Link": "",
             "Doc": "",
-            "Notes": ""
+            "Notes": "A new Performance Metrics API is being added that logs metrics events to the Google Trace Event format."
          },
          {
-            "Module": "Opimised standard library",
+            "Module": "Optimized standard library",
             "Feature": "5",
             "Functional": "6",
             "Content": "2",
             "Code/API": "5",
             "Performance": "4",
+            "Platform": "1;",
+            "Link": "",
+            "Doc": "",
+            "Notes": "C++20 and C++23 library features are being added"
+         },
+         {
+            "Module": "Settings Registry",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "6",
+            "Code/API": "5",
+            "Performance": "5",
             "Platform": "1;",
             "Link": "",
             "Doc": "",
