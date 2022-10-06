@@ -1,446 +1,460 @@
 {
    "BuildBranch": "Development",
-   "BuildVersion":"21.11.2",
+   "BuildVersion": "22.10.1",
    "SIG": "SIG-Network",
    "Subsystems": {
       "Core Networking": [
          {
             "Module": "Transport API",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "https://www.o3de.org/docs/user-guide/networking/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Multiple network interface support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "https://www.o3de.org/docs/user-guide/networking/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Compression (TCP/UDP)",
             "Feature": "6",
-            "Content": "1",
             "Functional": "6",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-compression/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Metrics support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "UDP Core",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "UDP: DTLS support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "6",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "https://www.o3de.org/docs/user-guide/networking/encryption/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "UDP: Reliable queue support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "UDP: Fragmented packet support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "TCP",
             "Feature": "6",
-            "Content": "1",
             "Functional": "6",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "https://www.o3de.org/docs/user-guide/networking/packets/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "TCP: TLS Support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "TCP: Ringbuffer support Pkg Xmit",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          }
       ],
       "Multiplayer": [
          {
             "Module": "Multiplayer component API",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Local Prediction",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Server Side Rollback",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Play in Editor Mode",
             "Feature": "5",
-            "Content": "1",
-            "Functional": "5",
+            "Functional": "6",
+            "Content": "5",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/test-in-editor/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Hosting/Joining a Game",
             "Feature": "5",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Network property support",
             "Feature": "6",
-            "Content": "1",
-            "Functional": "5",
+            "Functional": "6",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "https://www.o3de.org/docs/user-guide/networking/autopackets/",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "RPC support",
-            "Feature": "6",
-            "Content": "1",
+            "Feature": "5",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Network Input support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "ScriptBind support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Netbound entity support [NetBindComponent]",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Entity replication support",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Network Prefab Spawning",
-            "Feature": "5",
-            "Content": "1",
-            "Functional": "5",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "2",
             "Platform": "",
             "Link": "",
-            "Doc": "",
-            "Description": ""
+            "Doc": "https://development--o3deorg.netlify.app/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/spawning/",
+            "Notes": ""
          },
          {
             "Module": "Networked Animation",
             "Feature": "1",
-            "Content": "1",
             "Functional": "4",
+            "Content": "1",
             "Code/API": "1",
             "Performance": "2",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Network Audio Support",
             "Feature": "1",
-            "Content": "1",
             "Functional": "1",
+            "Content": "1",
             "Code/API": "1",
             "Performance": "1",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Network Simulation (Physics)",
             "Feature": "6",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Quality of Service",
             "Feature": "5",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Debugging Tools",
             "Feature": "5",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
-            "Doc": "",
-            "Description": ""
+            "Doc": "https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-debug/",
+            "Notes": ""
          },
          {
             "Module": "Metrics",
             "Feature": "5",
-            "Content": "1",
             "Functional": "5",
+            "Content": "2",
             "Code/API": "1",
             "Performance": "3",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          }
       ],
       "AWS Cloud Services": [
          {
             "Module": "HTTPS Support",
             "Feature": "6",
-            "Content": "",
-            "Functional": "",
-            "Code/API": "",
-            "Performance": "",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "2",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "Restful API Support",
-            "Feature": "5",
-            "Content": "",
-            "Functional": "",
-            "Code/API": "",
-            "Performance": "",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "2",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
          },
          {
             "Module": "AWS C++ SDK Support",
             "Feature": "6",
-            "Content": "",
-            "Functional": "",
-            "Code/API": "",
-            "Performance": "",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "2",
             "Platform": "",
             "Link": "",
-            "Doc": "",
-            "Description": ""
+            "Doc": "https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-core/getting-started/",
+            "Notes": ""
          },
          {
             "Module": "Client Side Ident & Auth",
-            "Feature": "5",
-            "Content": "",
-            "Functional": "",
-            "Code/API": "",
-            "Performance": "",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "2",
             "Platform": "",
             "Link": "",
-            "Doc": "",
-            "Description": ""
+            "Doc": "https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-client-auth/",
+            "Notes": ""
          },
          {
             "Module": "Runtime Metrics",
-            "Feature": "5",
-            "Content": "",
-            "Functional": "",
-            "Code/API": "",
-            "Performance": "",
+            "Feature": "6",
+            "Functional": "6",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "2",
             "Platform": "",
             "Link": "",
-            "Doc": "",
-            "Description": ""
+            "Doc": "https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-metrics/",
+            "Notes": ""
          },
          {
             "Module": "Amazon GameLift Support",
             "Feature": "5",
-            "Content": "",
-            "Functional": "",
-            "Code/API": "",
-            "Performance": "",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "2",
             "Platform": "",
             "Link": "",
-            "Doc": "",
-            "Description": ""
+            "Doc": "https://www.o3de.org/docs/user-guide/gems/reference/aws/aws-gamelift/",
+            "Notes": ""
          }
       ],
       "Microsoft Azure Cloud Services": [
          {
             "Module": "Core services",
             "Feature": "1",
-            "Content": "",
             "Functional": "",
+            "Content": "",
             "Code/API": "",
             "Performance": "",
             "Platform": "",
             "Link": "",
             "Doc": "",
-            "Description": ""
+            "Notes": ""
+         }
+      ],
+      "Networking for Tools": [
+         {
+            "Module": "Remote Tools Connect",
+            "Feature": "6",
+            "Functional": "5",
+            "Content": "2",
+            "Code/API": "1",
+            "Performance": "2",
+            "Platform": "",
+            "Link": "",
+            "Doc": "https://development--o3deorg.netlify.app/docs/user-guide/gems/reference/debug/remote-tools/",
+            "Notes": ""
          }
       ]
    }
