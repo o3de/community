@@ -1,7 +1,7 @@
 {
     "BuildBranch": "Development",
     "BuildVersion": "21.11.2",
-    "SIG": "SIG-Content",
+    "SIG": "SIG-Simulation",
     "Subsystems": {
         "Animation": [
             {
