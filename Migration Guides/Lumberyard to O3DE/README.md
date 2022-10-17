@@ -20,22 +20,22 @@ This document covers high level considerations when transitioning a document fro
 | **Table of Contents** |
 | :------------: |
 | **EMFX** |
-| [Migration guideline for animation: From Lumberyard to O3DE](/EMFX/) |
+| [Migration guideline for animation: From Lumberyard to O3DE](/EMFX) |
 | **Networking** |
-| [Lumberyard 1.X to O3DE Network Migration Guide](/Networking/) |
+| [Lumberyard 1.X to O3DE Network Migration Guide](/Networking) |
 | **Other Documents** |
-| [Fbx Motion Sampling Settings](/Misc-Documents/FBX-Motion-Sampling-Settings/) |
-| [Slice Converter](/Misc-Documents/Slice-Converter/) |
-| [Lumberyard features with no equivalent in O3DE](/Misc-Documents/Lumberyard-Features/) |
+| [Fbx Motion Sampling Settings](/Misc-Documents/FBX-Motion-Sampling-Settings) |
+| [Slice Converter](/Misc-Documents/Slice-Converter) |
+| [Lumberyard features with no equivalent in O3DE](/Misc-Documents/Lumberyard-Features) |
 | **Scripts** |
-| [convert_physxconfiguration](/Misc-Documents/Scripts/convert_physxconfiguration/) |
-| [convert_editor_game_xml](/Misc-Documents/Scripts/convert_editor_game_xml/) |
+| [convert_physxconfiguration](/Misc-Documents/Scripts/convert_physxconfiguration) |
+| [convert_editor_game_xml](/Misc-Documents/Scripts/convert_editor_game_xml) |
 | **Tutorials** |
-| [Converting a Legacy Renderer Project to an Atom Project](/Misc-Documents/Tutorials/Converting-a-Legacy-Renderer-Project-to-an-Atom-Project/) |
-| [Legacy Asset Conversion Utility (StarterGame)](/Misc-Documents/Tutorials/Legacy-Asset-Conversion-Utility/) |
-| [StarterGame on Atom](/Misc-Documents/Tutorials/Starter-Game-On-Atom/) |
+| [Converting a Legacy Renderer Project to an Atom Project](/Misc-Documents/Tutorials/Converting-a-Legacy-Renderer-Project-to-an-Atom-Project) |
+| [Legacy Asset Conversion Utility (StarterGame)](/Misc-Documents/Tutorials/Legacy-Asset-Conversion-Utility) |
+| [StarterGame on Atom](/Misc-Documents/Tutorials/Starter-Game-On-Atom) |
 | **Other** |
-| [SerializeContextTools Conversion Scripts](//Misc-Documents/SerializeContextTools-Conversion-Scripts/)
+| [SerializeContextTools Conversion Scripts](//Misc-Documents/SerializeContextTools-Conversion-Scripts)
 
 ## Considerations when transitioning a project from Lumberyard to O3DE
 
@@ -100,13 +100,13 @@ Any Texture and Material will be required to be re-witten due to the change in t
 
 ## EMFX
 
-Link to Document /EMFX/
+See [EMFX](/EMFX) for more information
 
 **Actor Asset**
 The most significant change to the actor asset from Lumberyard 1.28 to O3DE is that `EMotionFX::Mesh` has been deprecated and replaced with the Atom mesh format (`Atom::Model`). Previously in Lumberyard 1.28, all export settings related to actor (skinned mesh) can be found under the actor tab in fbx settings. In O3DE, due to the usage of the atom mesh format, export settings related to the mesh have moved under the mesh tab. This step currently has to be performed manually following the steps below.
 
 **Motion Asset**
-The most noticeable improvement from Lumberyard 1.28 to O3DE around motion is that the system behind sampling motion has been re-written from scratch. This change has significantly improved the efficiency and quality of motion sampling. It offers both uniform and non-uniform sampling method options. If you want to learn more about the in-depth technical aspect of motion sampling improvement, see this article.  (Link to Misc-Documents/FBX-Motion-Sampling-Settings/)
+The most noticeable improvement from Lumberyard 1.28 to O3DE around motion is that the system behind sampling motion has been re-written from scratch. This change has significantly improved the efficiency and quality of motion sampling. It offers both uniform and non-uniform sampling method options. If you want to learn more about the in-depth technical aspect of motion sampling improvement, see this [article](/Misc-Documents/FBX-Motion-Sampling-Settings).
 
 **Animation Editor**
 Since Lumberyard 1.28 we have removed all OpenGL rendering inside of the animation editor and replaced it with the Atom renderer. The new Atom render window has replaced the OpenGL render viewport. As a result, any user custom layout that still references the OpenGL render window will report a warning when opening and will not load any viewport window. We also made many more UX/UI improvements throughout the animation editor.
