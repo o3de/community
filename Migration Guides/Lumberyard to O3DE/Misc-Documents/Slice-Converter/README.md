@@ -122,7 +122,7 @@ This tool will currently not handle the following correctly:
    - There is a separate converter somewhere that can convert legacy rendering components to Atom components, it would need to be run first.
  - Component sort order components (EditorEntitySortComponent / EntityInspectorComponent).  The method of storing component sort order completely changed between slices and prefabs, with the data being stored on different types of components.  The tool doesn't have any specialized logic for converting data from one type of component to another, so while the EntityInspectorComponent itself will be converted, the data won't affect component sort order.
  - Transforms with non-uniform scale in them.  As a part of the conversion, the transforms will be saved out with a single scale value. 
-   - There is a separate converter somewhere that can convert transforms with non-uniform scale into a transform with uniform scale plus a Non Uniform Scale component, it would need to be run first.
+   - There is a separate converter somewhere that can convert transforms with non-uniform scale into a transform with uniform scale plus a Non-Uniform Scale component, it would need to be run first.
  - Any components that can't currently be serialized with the JSON serializer due to use of AZStd::any, AZStd::variant, AZStd::optional, custom serializers, serialization callbacks, etc.
  - Any entity references in the slice file that refer to entities outside of the slice file.  These will get reset to invalid IDs.  This can happen from systems like TrackView that auto-create components on entities being animated that have "backwards references" to the controlling sequence.
 - Current limitations: 

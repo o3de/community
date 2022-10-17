@@ -19,7 +19,7 @@ Script: convert_editor_game_xml.cmd (Link to Scripts file)
 This script is for taking an Editor.xml/Game.xml from a game project ${Project}/Config/ directory and generating three settings registry for each `[${Project}, <Editor|Game>]` combination.
 
 **Ex. Converting Lumberyard projects Editor/Game.xml over to *.setreg**
-REM The The parameter to the convert_physxconfiguration.cmd script is for a directory containing a SerializeContextTools.exe application
+REM The parameter to the convert_physxconfiguration.cmd script is for a directory containing a SerializeContextTools.exe application
 convert_editor_game_xml.cmd windows_vs2019/bin/profile
 
 For example converting just the StarterGame project Config/Editor.xml and Config/Game.xml results in the following files

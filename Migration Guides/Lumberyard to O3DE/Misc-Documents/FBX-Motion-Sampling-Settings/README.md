@@ -1,6 +1,6 @@
 # Fbx Motion Sampling Settings
 
-The motion sampling modifier allows control over the the quality and memory and disk size of our motion assets. This modifier is automatically created for every motion in the Fbx.
+The motion sampling modifier allows control over the quality and memory and disk size of our motion assets. This modifier is automatically created for every motion in the Fbx.
 
 ### Some technical background information
 
@@ -14,17 +14,17 @@ As you can imagine, the more sample points we store, the more accurate our appro
 
 If we uniformly space those samples, so at fixed distances, like 1/30th of a second, we can very quickly sample the motion data, as we can easily find the two samples to interpolate between at runtime. In EMotion FX we call this "**Uniform Motion Data**". Inside the Fbx settings we call it "**Evenly spaced keyframes (faster, mostly larger)**".
 
-![image](/Images/Image1.png)
+![image](./Images/Image1.png)
 
 When the position, rotation, or scale of a given joint does not change, we of course do not store samples for that, but store just one value instead. So this is optimized.
 
 However, now imagine the case where our rotation does not change for a long period during the motion, but then suddenly makes a change near the end. Using the uniformly sampled method we would be storing a lot of samples that will have the same value for a large part of the motion. What if we could just store the first key frame, and another keyframe just before the values start to change? This would reduce the amount of samples quite significantly. This is the method that we call "**Non-Uniform Motion Data**", or "**Reduced keyframes (slower, mostly smaller)**".
 
-Now this generally uses less memory as we can reduce more of those samples. However, it comes at a cost in performance, because now we have to actually do a search to find the samples to interpolate between. Also we store a time value for each sample, which adds some overhead. But most of the times this overhead gets compensated by the reduced number of samples required. This is not always the case though. If you have motions where everything is constantly animating we can't reduce the amount of samples a lot and we still pay for this time value overhead. So there are cases where the high performance uniformly spaced method is faster and uses less memory.
+Now this generally uses less memory as we can reduce more of those samples. However, it comes at a cost in performance, because now we have to actually do a search to find the samples to interpolate between. Also, we store a time value for each sample, which adds some overhead. But most of the times this overhead gets compensated by the reduced number of samples required. This is not always the case though. If you have motions where everything is constantly animating we can't reduce the amount of samples a lot, and we still pay for this time value overhead. So there are cases where the high performance uniformly spaced method is faster and uses less memory.
 
-This is the exact reason why we added an "Automatic" mode, so that we pick the high performance method if it also uses less memory. Sometimes the difference in memory usage can be pretty small, in which case you likely still want to go for higher performance. So we also added a "Allowed memory overhead" option that allows you to control how much extra memory you are willing to pay for in trade for performance. Please keep in mind that a value of say 15% doesn't mean you always use 15% more memory. This could as well be 2% as well. It just means it will stay within 15% maximum. Basically the automatic setting will try to create a motion for both motion data types, and see if the difference in memory and file size is within the specified limits. If so, it will choose the high runtime performance data type, otherwise the one the more memory efficient one.
+This is the exact reason why we added an "Automatic" mode, so that we pick the high performance method if it also uses less memory. Sometimes the difference in memory usage can be pretty small, in which case you likely still want to go for higher performance. So we also added am "Allowed memory overhead" option that allows you to control how much extra memory you are willing to pay for in trade for performance. Please keep in mind that a value of say 15% doesn't mean you always use 15% more memory. This could as well be 2% as well. It just means it will stay within 15% maximum. Basically the automatic setting will try to create a motion for both motion data types, and see if the difference in memory and file size is within the specified limits. If so, it will choose the high runtime performance data type, otherwise the one the more memory efficient one.
 
-Here is an image that shows the difference between uniform and non uniform sampling:
+Here is an image that shows the difference between uniform and non-uniform sampling:
 
 <table>
   <tr>
@@ -43,12 +43,12 @@ The quality settings are not doing anything when we do uniformly spaced sampling
 ### The settings
 
 If you go to the Fbx settings and go to the "Motions" tab, you should see the following modifier:
-![image](/Images/Image4.png)
+![image](./Images/Image4.png)
 
  <table>
   <tr>
     <th>Motion data type</th>
-    <td>**Automatic: **Prefer runtime performance if the memory usage of the high performance method is smaller or within memory overhead limits. Otherwise prefer the slower but more memory efficient data type.
+    <td>**Automatic: **Prefer runtime performance if the memory usage of the high performance method is smaller or within memory overhead limits. Otherwise, prefer the slower but more memory efficient data type.
 
 **Evenly spaced keyframes:** This data type results in the fastest runtime performance, often at the cost of increased memory usage. (UniformMotionData)
 
@@ -101,6 +101,6 @@ To increase performance in trade for memory you can also try increasing the "All
 
 To decrease memory usage and file size in trade for performance you can also decrease the quality for motions. Try decreasing the rotation quality percentage first, and make sure the motion data type saved is the "Reduced keyframes" one, to make sure the quality settings have any effect at all.
 
-![image](/Images/Image5.png)
+![image](./Images/Image5.png)
 
 ##### Updated Aug 2022

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document aims to be provide an initial migration guide for any Lumberyard customer trying to migrate their game to O3DE, with specific focus on animation assets.
+This document aims to provide an initial migration guide for any Lumberyard customer trying to migrate their game to O3DE, with specific focus on animation assets.
 
 This guide will be covering assets that are commonly used in the animation editor, including but not limited to: actor, motion, motionset, animgraph and workspace. This article is designed to be the go-to document to collect all the questions and answers for migrating animation related files from Lumberyard 1.28 to O3DE.
 
@@ -12,10 +12,10 @@ The most significant change to the actor asset from Lumberyard 1.28 to O3DE is t
 
 ## Migration steps
 
-1. Navigate to source file (.fbx). Check if there is an .assetInfo file with the same name of the source file.The assetInfo file contains the meta data for the actor asset. If there isn't any .assetInfo file, it means this asset is exported using the default settings. You can skip these steps.
+1. Navigate to source file (.fbx). Check if there is an .assetInfo file with the same name of the source file. The assetInfo file contains the metadata for the actor asset. If there isn't any .assetInfo file, it means this asset is exported using the default settings. You can skip these steps.
 Image *Migration-1*
 
-2. In the O3DE main editor, right click on the source file → Edit settings. Wait for the process to finish and the setting page pop-up.
+2. In the O3DE main editor, right-click on the source file → Edit settings. Wait for the process to finish and the setting page pop-up.
 3. You should see three tabs created. The actor tab should be opened by default, and you should see a few actor related settings. However, the first thing to do for this asset is to manually add a mesh under the meshes tab. To do that, first click on the Meshes tab.
 Image *Migration-3*
 
@@ -45,9 +45,9 @@ The most noticeable improvement from Lumberyard 1.28 to O3DE around motion is th
 
 1. Navigate to the source fbx file that contains the motion data in the O3DE main editor (under asset browser)
 
-2. Right click on the source file, right click → edit settings
+2. Right-click on the source file, right click → edit settings
 
-3. Wait for the fbx setings page pop up. You should see a Motion sampling rule created by default.
+3. Wait for the fbx settings page pop up. You should see a Motion sampling rule created by default.
 
 4. The motion sampling modifier is an improved version of the "Compression settings", with much more option to explore.
 

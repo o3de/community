@@ -12,7 +12,7 @@
 
 If you are trying to run the Atom version of StarterGame, use the AtomStarterGame project.
 
-If you are trying to convert a different project to use Atom, follow [Converting a Legacy Renderer Project](Link) *Document Pending* to an Atom Project to set up the Atom gems.
+If you are trying to convert a different project to use Atom, follow [Converting a Legacy Renderer Project](./../Converting-a-Legacy-Renderer-Project-to-an-Atom-Project) to an Atom Project to set up the Atom gems.
 
 #### 1.3. Set AssetCatalog to Xml
 
@@ -49,7 +49,7 @@ Install python dependencies in the following in order:
 
 #### 2.2. Fix Material Paths
 
-The legacy renderer allows materials to have invalid paths that refer to a location where there is no texture. In Atom, this will result in a material failing to process. Before running the component conversion, all materials and models must successfully process so they can be added to the asset catalog. After you have fixed the paths in the .mtl files and added any missing textures, you can re-run the material conversion so the atom materials will refer to the correct textures.
+The legacy renderer allows materials to have invalid paths that refer to a location where there is no texture. In Atom, this will result in a material failing to process. Before running the component conversion, all materials and models must successfully process, so they can be added to the asset catalog. After you have fixed the paths in the .mtl files and added any missing textures, you can re-run the material conversion so the atom materials will refer to the correct textures.
 
 #### 2.3. Run Component Conversion
 
@@ -57,7 +57,7 @@ In the Lumberyard engine root folder, run:
 
     python Gems/AtomLyIntegration/CommonFeatures/Assets/Editor/Scripts/LegacyContentConversion/LegacyComponentConverter.py "-project=AtomStarterGame -include_gems -use_p4"
 
-- **note:** the -use_p4 flag can be omitted if on git. this option will attempt to automatically checkout the file to be converted so it's not read only. If the file to be converted is read only, the conversion will fail.
+- **note:** the -use_p4 flag can be omitted if on git. this option will attempt to automatically checkout the file to be converted, so it's not read only. If the file to be converted is read only, the conversion will fail.
 - **note:** using -include_gems will check out and convert all the .slice/.layer/.ly/.cry files in the project and the Gems folder, even for gems that aren't enabled by the project. So you will need to revert changes to gems you do not wish to convert
 - All the options need to be in one big "`<insert all your options here>`" because the script is going to split that string using the - character.
 
@@ -73,7 +73,7 @@ Image
 
 The level is called Game/SinglePlayer.ly. This was changed in 1.25. The old level that's called StarterGame will be empty and grey with some auxgeom stuff but no models.
 
-You will have to add create an entity and add a Global Skylight (IBL) component or some other lighting for the level to be lit. Otherwise the objects are going to appear black. You could also add other lights, but IBL is the easiest way. You can use examplediffusehdr_cm_ibldiffuse and examplediffusehdr_cm_iblspecular, since those already exist in the Atom_Features_Common gem.
+You will have to add create an entity and add a Global Skylight (IBL) component or some other lighting for the level to be lit. Otherwise, the objects are going to appear black. You could also add other lights, but IBL is the easiest way. You can use examplediffusehdr_cm_ibldiffuse and examplediffusehdr_cm_iblspecular, since those already exist in the Atom_Features_Common gem.
 
 Then just run the Editor. The level will take a few minutes to load, even on desktop; longer than legacy. You'll see a white window where any (ignorable) errors/warnings will appear.
 
@@ -88,7 +88,7 @@ Some materials may be black in areas, use Photoshop to make sure opaque material
 
 ### 4. Potential Improvements
 
-#### 4.1.1. Find best solution for diffuse with something in the alpha channel
+#### 4.1.1. Find the best solution for diffuse with something in the alpha channel
 
 For simplicity, when I encounter a diffuse texture with an alpha channel, which does not work properly in Atom, I create a new _basecolor texture without the alpha. It would be better if the diffuse color just worked. Possibly by creating a .imagsettings file with the appropriate settings instead of creating a new texture. And we might want to keep that alpha channel if Atom supports the same thing it was used for in legacy.
 
@@ -133,9 +133,9 @@ During the test and review of the material conversion script a bit during the cu
 1. Scripts need to be centrally located, not in AtomTest project.
 2. Would be nice to have a usage statement when running the scripts with no command line arguments.
 3. For "conversion not supported" we should report the reason why conversion wasn't supported.
-4. Conversion probably needs to unpack roughness from the alpha channel of ddna maps. Currently it apparently defaults to "EngineAssets/TextureMsg/DefaultNoUVs_spec.tif". Or we need to update Atom to support packing ddna.
+4. Conversion probably needs to unpack roughness from the alpha channel of ddna maps. Currently, it apparently defaults to "EngineAssets/TextureMsg/DefaultNoUVs_spec.tif". Or we need to update Atom to support packing ddna.
 5. The material conversion should probably not save values when default values would be appropriate. For example, don't output "specularF0":{ "factor": 1.0,"useTexture": false,"textureMap": ""},
-6. Some of the fields are outdated and will fail to build the resulting .material file. For example, "useBaseColorTextureAlpha" has been replaced with "opacityMode". We need to go through and update everything to work with the latest version of StandardPBR.
+6. Some fields are outdated and will fail to build the resulting .material file. For example, "useBaseColorTextureAlpha" has been replaced with "opacityMode". We need to go through and update everything to work with the latest version of StandardPBR.
 7. Legacy materials may refer to the product .dds files rather than source files. If they reference dds then we probably need to replace that with the source file type. Or we could make the material builder automatically switch the extension and report a warning.
 8. We need hair, skin, and eye shaders. Or at least some way to map those into a StandardPBR.
 9. We should have regression tests for these scripts if we are going to support them, to make sure it stays in sync with the material type definitions.
