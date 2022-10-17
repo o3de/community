@@ -70,14 +70,14 @@ If it doesn't launch python, see step 2 above. Make sure the python runtime is s
 
 you should get some logging and a pyside2 test button labeled "Hello World!" should pop-up.
 
-If nothin happens the logging likely will let us know what failed, generally it's one of these things:
+If nothing happens the logging likely will let us know what failed, generally it's one of these things:
 
 1. if an import fails, the requirements.txt may not be installed.
 2. ^ is the DCCsi enabled as a project gem?
 3. ^ did you build your project?
 4. ^ did you see the DCCsi requirement get installed when you configured your build with cmake?
 
-If you experice any issues or need help, check out https://discord.gg/o3de
+If you experience any issues or need help, check out https://discord.gg/o3de
 
 </td>
   </tr>

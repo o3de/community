@@ -13,14 +13,15 @@ The most significant change to the actor asset from Lumberyard 1.28 to O3DE is t
 ## Migration steps
 
 1. Navigate to source file (.fbx). Check if there is an .assetInfo file with the same name of the source file. The assetInfo file contains the metadata for the actor asset. If there isn't any .assetInfo file, it means this asset is exported using the default settings. You can skip these steps.
-Image *Migration-1*
+
+![Migration 1](./Images/Migration-1.png)
 
 2. In the O3DE main editor, right-click on the source file → Edit settings. Wait for the process to finish and the setting page pop-up.
 3. You should see three tabs created. The actor tab should be opened by default, and you should see a few actor related settings. However, the first thing to do for this asset is to manually add a mesh under the meshes tab. To do that, first click on the Meshes tab.
-Image *Migration-3*
+![Migration 3](./Images/Migration-3.png)
 
 4. Under the mesh tab it should be empty, with only one button says "Add another mesh". Click this button.
-Image *Migration-4*
+![Migration 4](./Images/Migration-4.png)
 
 5. Now that you have both an actor and mesh created for this asset, check if any export rule needs to be moved from the actor tab to the mesh tab. Using the following guidance.
 6. Click update.
@@ -67,7 +68,7 @@ We also made many more UX/UI improvements throughout the animation editor.
 ### Migration steps
 
 We recommend creating your custom layout from the default layout. If you have custom layout you want to bring back in O3DE, you can still use it, but keep in mind that you have to manually add the atom render window if you want a viewport. You can do this by clicking the view menu in the animation editor, and then select the atom render window.
-Image Migration-Steps
+![Migration Steps](./Images/Migration-Steps.png)
 
 ## AnimGraph, MotionSets and Workspaces
 
