@@ -3,7 +3,7 @@
 This document covers high level considerations when transitioning a document from Lumberyard to O3DE. This document is living and will grow over time as users add their own transition experiences and advice.
 
 **Requirements:**
-- This guide focuses on the latest Lumberyard version, which is is 1.28. Any conversion tools are authored assuming 1.28. If the project is not on 1.28, please see **In Progress Page** on how to upgrade your project to Lumberyard 1.28. 
+- This guide focuses on the latest Lumberyard version, which is 1.28. Any conversion tools are authored assuming 1.28. If the project is not on 1.28, please see **In Progress Page** on how to upgrade your project to Lumberyard 1.28. 
 - Transitioning a Lumberyard project to O3DE is best performed utilizing a source code version of O3DE. This is available at https://github.com/o3de/o3de
 
 **Suggested sites (Open 3D Engine documentation, tutorials, downloads):**
@@ -17,25 +17,25 @@ This document covers high level considerations when transitioning a document fro
 
 ## Tutorials and Documents
 
-| **Table of Contents** |
-| :------------: |
-| **EMFX** |
-| [Migration guideline for animation: From Lumberyard to O3DE](/EMFX/) |
-| **Networking** |
-| [Lumberyard 1.X to O3DE Network Migration Guide](/Networking/) |
-| **Other Documents** |
-| [Fbx Motion Sampling Settings](/Misc-Documents/FBX-Motion-Sampling-Settings/) |
-| [Slice Converter](/Misc-Documents/Slice-Converter/) |
-| [Lumberyard features with no equivalent in O3DE](/Misc-Documents/Lumberyard-Features/) |
-| **Scripts** |
-| [convert_physxconfiguration](/Misc-Documents/Scripts/convert_physxconfiguration/) |
-| [convert_editor_game_xml](/Misc-Documents/Scripts/convert_editor_game_xml/) |
-| **Tutorials** |
-| [Converting a Legacy Renderer Project to an Atom Project](/Misc-Documents/Tutorials/Converting-a-Legacy-Renderer-Project-to-an-Atom-Project/) |
-| [Legacy Asset Conversion Utility (StarterGame)](/Misc-Documents/Tutorials/Legacy-Asset-Conversion-Utility/) |
-| [StarterGame on Atom](/Misc-Documents/Tutorials/Starter-Game-On-Atom/) |
-| **Other** |
-| [SerializeContextTools Conversion Scripts](//Misc-Documents/SerializeContextTools-Conversion-Scripts/)
+|                                                             **Table of Contents**                                                             |
+|:---------------------------------------------------------------------------------------------------------------------------------------------:|
+|                                                                   **EMFX**                                                                    |
+|                                     [Migration guideline for animation: From Lumberyard to O3DE](./EMFX)                                      |
+|                                                                **Networking**                                                                 |
+|                                        [Lumberyard 1.X to O3DE Network Migration Guide](./Networking)                                         |
+|                                                              **Other Documents**                                                              |
+|                                 [Fbx Motion Sampling Settings](./Misc-Documents/FBX-Motion-Sampling-Settings)                                 |
+|                                              [Slice Converter](./Misc-Documents/Slice-Converter)                                              |
+|                            [Lumberyard features with no equivalent in O3DE](./Misc-Documents/Lumberyard-Features)                             |
+|                                                                  **Scripts**                                                                  |
+|                               [convert_physxconfiguration](./Misc-Documents/Scripts/convert_physxconfiguration)                               |
+|                                  [convert_editor_game_xml](./Misc-Documents/Scripts/convert_editor_game_xml)                                  |
+|                                                                 **Tutorials**                                                                 |
+| [Converting a Legacy Renderer Project to an Atom Project](./Misc-Documents/Tutorials/Converting-a-Legacy-Renderer-Project-to-an-Atom-Project) |
+|                  [Legacy Asset Conversion Utility (StarterGame)](./Misc-Documents/Tutorials/Legacy-Asset-Conversion-Utility)                  |
+|                                    [StarterGame on Atom](./Misc-Documents/Tutorials/Starter-Game-On-Atom)                                     |
+|                                                                   **Other**                                                                   |
+|                     [SerializeContextTools Conversion Scripts](./Misc-Documents/SerializeContextTools-Conversion-Scripts)                     |
 
 ## Considerations when transitioning a project from Lumberyard to O3DE
 
@@ -59,14 +59,16 @@ This document covers high level considerations when transitioning a document fro
 
 **Terrain:**
 
-**Particles:** O3DE does not have a built in particle system. Conversion will require integrating a 3rd party particle system, usually via a gem. Currently PopcornFX has a 
+**Particles:** O3DE does not have a built-in particle system. Conversion will require integrating a 3rd party particle system, usually via a gem. [PopcornFX](https://www.popcornfx.com/plugin-o3de/) has an integration with O3DE.
 
 **Networking:**
 
 **Asset Processing:**
 
 **PathFinding/AI:**
-`<Other areas I am missing>`
+* [Kythera](https://www.kythera.ai/o3de-download) has an integration with O3DE. 
+
+* O3DE also offers an open-source [navigation gem](https://www.o3de.org/docs/user-guide/gems/reference/ai/recast/recast-navigation/) based on Recast/Detour.
 
 ## Tools available to assist with Lumberyard to O3DE conversion
 
@@ -78,9 +80,9 @@ This document covers high level considerations when transitioning a document fro
 
 ## Network systems LY to O3DE
 
-There is no automated path to port network components and logic from Lumberyard's Gridmate → to O3DE's Networing 2.0. Networking in O3DE is based on brand new systems so migration will require how to port “concepts” and intent, rather than actual assets and code.
+There is no automated path to port network components and logic from Lumberyard's Gridmate → to O3DE's Networking 2.0. Networking in O3DE is based on new systems so migration will require how to port “concepts” and intent, rather than actual assets and code.
 
-Link document /networking/README.MD
+See [Networking migration guide](./Networking/README.md) for more details.
 
 ## Script Canvas
 
@@ -91,7 +93,7 @@ Link document /networking/README.MD
 **In Progress**
 
 Differences in the Engines (note we should pull the data into the doc)
-[Lumberyard features with no equivalent in O3DE](/Misc-Documents/Lumberyard-Features/)
+[Lumberyard features with no equivalent in O3DE](./Misc-Documents/Lumberyard-Features)
 
 Any Texture and Material will be required to be re-witten due to the change in the rendering system. The best way to do this would to use the source files and import them into O3DE and build new materials. See below for guides on this topic
 <u>Materials:</u> https://www.o3de.org/docs/atom-guide/look-dev/materials/
