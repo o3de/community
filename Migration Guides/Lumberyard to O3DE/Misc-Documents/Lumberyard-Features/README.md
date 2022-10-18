@@ -5,7 +5,7 @@
 - Road Component https://docs.aws.amazon.com/lumberyard/latest/userguide/component-road.html
 - Lens Flare Component https://docs.aws.amazon.com/lumberyard/latest/userguide/component-lens-flare.html
 - High Quality Shadow Component https://docs.aws.amazon.com/lumberyard/latest/userguide/component-high-quality-shadow.html
-- Infinite Ocean Componenthttps://docs.aws.amazon.com/lumberyard/latest/userguide/component-infinite-ocean.html
+- Infinite Ocean Component https://docs.aws.amazon.com/lumberyard/latest/userguide/component-infinite-ocean.html
 - Water Volume Component https://docs.aws.amazon.com/lumberyard/latest/userguide/component-water-volume.html
 - Rain Component  https://docs.aws.amazon.com/lumberyard/latest/userguide/component-rain.html
 - Snow Component https://docs.aws.amazon.com/lumberyard/latest/userguide/component-snow.html

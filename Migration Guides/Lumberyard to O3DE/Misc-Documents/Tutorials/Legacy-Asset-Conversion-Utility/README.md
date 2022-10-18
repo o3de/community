@@ -17,7 +17,7 @@ Why do we need to convert legacy assets?:
 Before you can run the tool go through this checklist:
 
 1. The script is part of the DccScriptingInterface Gem (DCCsi): C:\Depot\O3DE\Gems\AtomLyIntegration\TechnicalArt\DccScriptingInterface
-2. The DCCsi is mostly python based, make sure python is setup:
+2. The DCCsi is mostly python based, make sure python is set up:
  1. Lumberyard includes a python distribution, the first thing you should do is make sure it's setup
  2. "C:\Depot\O3DE\python\get_python.bat"
 3. Make sure the DCCsi Gem is enabled in your project
@@ -29,11 +29,11 @@ Before you can run the tool go through this checklist:
  4. This would for example allow us to launch this tool from a Lumberyard menu (we have not done this yet)
 5. The other reason it's a compiled Gem is because of the way python and 3rdParty package dependencies have changed 
  1. The DCCsi has its own pip dependencies defined in: "C:\Depot\O3DE\Gems\AtomLyIntegration\TechnicalArt\DccScriptingInterface\requirements.txt"
- 2. When a project is built that includes the DCCsi Gem then this requirements.txt will install the package dependencies 
+ 2. When a project is built that includes the DCCsi Gem then the requirements.txt will install the package dependencies 
  3. They will end up somewhere like: C:\Depot\O3DE\python\runtime\python-3.7.10-rev1-windows\python\Lib\site-packages
 6. Non-pip packages: 
  1. Tools in the DCCsi will occasionally use packages that are not available as a standard pip install, for example OpenImageIO (oiio)
- 2. We build oiio and it gets pulled down with cmake, this includes building the oiiotool.exe and python bindings (pyd)
+ 2. We build oiio, and it gets pulled down with cmake. This process includes building the oiiotool.exe and python bindings (pyd)
  3. Right now I think the only visual studio target that builds this is Atom_utils (I've been building that to make sure that OpenImageIO is handled)
  4. There is currently a bug and the .pyd is not copied over during a build (so imports in python fail on that module)
  5. Find the equivalent of this file: "C:\Depot\3rdParty\packages\openimageio-2.1.16.0-rev1-windows\FindOpenImageIO.cmake" add modify 
@@ -41,7 +41,7 @@ Before you can run the tool go through this checklist:
 
 ## Validation
 
-You can do the following to test of the core functionality of the DCCsi is setup and working properly
+You can do the following to test of the core functionality of the DCCsi is set up and working properly
 
 Use this .bat file to launch a Windows command-line with a custom environment:  "C:\Depot\O3DE\Gems\AtomLyIntegration\TechnicalArt\DccScriptingInterface\Launchers\Windows\Launch_PyMin_Cmd.bat"
 
@@ -70,14 +70,14 @@ If it doesn't launch python, see step 2 above. Make sure the python runtime is s
 
 you should get some logging and a pyside2 test button labeled "Hello World!" should pop-up.
 
-If nothin happens the logging likely will let us know what failed, generally it's one of these things:
+If nothing happens the logging likely will let us know what failed, generally it's one of these things:
 
 1. if an import fails, the requirements.txt may not be installed.
 2. ^ is the DCCsi enabled as a project gem?
 3. ^ did you build your project?
 4. ^ did you see the DCCsi requirement get installed when you configured your build with cmake?
 
-If you experice any issues or need help, check out https://discord.gg/o3de
+If you experience any issues or need help, check out https://discord.gg/o3de
 
 </td>
   </tr>
@@ -126,11 +126,11 @@ The scripts can convert Spec/Gloss/.mtl legacy Lumberyard formatted asset direct
 
 .../LY/spectra_atom/dev/Gems/AtomLyIntegration/TechnicalArt/DccScriptingInterface/Launchers/Windows
 
-Besides being useful for development these IDE launchers are especially important because a stand alone CLI is not yet available.
+Besides being useful for development these IDE launchers are especially important because a standalone CLI is not yet available.
 
 The launch .bat files will automatically configure the environment required to run the tool.
 
-![Image](/Images/image1.png)
+![Image](./Images/image1.png)
 
 **PyCharm:**
 
@@ -146,24 +146,29 @@ Use Wing Pro 7.x -- Launcher file: Launch_WingIDE-7-1.bat
 
 The entry point to the scripts is through "main.py"
 
-![Image](/Images/image2.png)
+![Image](./Images/image2.png)
 
 ### The Tool
 
-![Image](/Images/image3.png)
+![Image](./Images/image3.png)
 
-There are only two requirements for running the tool- one is bootstrapping the scripts to Lumberyard using the .bat file setup of the DCCsi (see screenshot above... . The second is setting an input directory/file and an output directory(#1). There are several output options that can be activated or deactivated using the checkboxes next to them (see the "Actions" button group (#2)), but it is recommended that you leave these at their default. Once these items have been addressed, click on the Process Files button (#3).
+There are only two requirements for running the tool:
+
+1. Bootstrapping the scripts to Lumberyard using the .bat file setup of the DCCsi (see screenshot above).
+2. Setting an input directory/file and an output directory (#1). 
+
+3. There are several output options that can be activated or deactivated using the checkboxes next to them (see the "Actions" button group (#2)), but it is recommended that you leave these at their default. Once these items have been addressed, click on the Process Files button (#3).
 
 There are detailed log messages that can help you to get an idea of what assets the script is processing that should be viewable in the output window of the IDE. Once the script completes an audit of all processed files is displayed in the UI (#6). If you have processed multiple asset directories you can filter the audit results using the combobox with the text "Show All" (#5). For the next window, click on the "Asset" tab (#4). This window is for refined information relating to the files that have been processed.
 
-![Image](/Images/image4.png)
+![Image](./Images/image4.png)
 
 To switch information displayed between processed directories, use the "Directory" combobox (#7). Each directory will contain one or more FBX files. The FBX file is what assets like material files and textures relate to- switch between all present in the specified directory using the "FBX File" combobox (#8). Each FBX can have texture files assigned to materials inside them. For a full list of what texture files correspond to the FBX look in the image table below (#9). There are several buttons present to launch selected files or view material files generated as well.
 
 ## Remaining Work
 
 1. There was a bug discovered in Maya that prevents the script from assigning file textures to StingrayPBS in an automated fashion. A script was created that will assign those file textures, although in its current state it fuses together surfaces with each respective material into single objects. It was discovered later that this is not ideal, as in several scenarios there are LOD geometry layers that contain the same materials and are getting combined (which is not desirable). The script was originally built using the Maya python API to retrieve material information and assignments directly from each FBX, but this has since been simplified by relying on .assetinfo files which is a much cleaner way to extract needed information. The texture assignment script needs to be modified to leverage geometry assignments gathered from this improved method.
-2. Some investigation is needed to understand why file size grows significantly with each subsequent conversion process run with the tool. With each run the tool should be only updating information that it doesn't already contain. Through testing it was found that there are significant increases to file size with each run, even when the amount of new information would equate to a very small amount of actual data.
+2. Some investigation is needed to understand why file size grows significantly with each subsequent conversion process run with the tool. With each run the tool should be only updating information that it doesn't already contain. Through testing, it was found that there are significant increases to file size with each run, even when the amount of new information would equate to a very small amount of actual data.
 3. Part of the utility of the script should be that in addition to making the initial conversion, it should also facilitate additional help or resources to finalize conversion. Due to the large number of factors involved, a perfect conversion is very unlikely. This means that a user may need to perform additional cleanup work, and this presents an opportunity to further streamline the process. The creation of a Substance Designer file with textures, masks, and node tree setups would be a very valuable addition to the toolset to help facilitate tweaks. The other functionality that would be helpful would be the ability to run scripts and commands from the Standalone QT UI directly to Maya. This would allow users a very seamless bridge, and with a little dedicated time is well within our reach. Both of these proposed features might also benefit our DCCsi toolset beyond the conversion scripts.
 4. Set up Dynaconf to handle the bootstrapping of the scripts to the DCCsi environment settings
 

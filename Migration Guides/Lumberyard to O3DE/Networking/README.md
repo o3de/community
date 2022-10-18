@@ -77,7 +77,7 @@ Here is an example https://github.com/o3de/o3de/blob/5abfb831da4be6da6792fc0f91b
 
 ## GridMate::ReplicaManager → INetworkEntityManager
 
-In the legacy system, a replica manager was a central place to access replica objects. In O3DE a similar object is called a Network Entity Manager, which can be acces via the following global function Multiplayer::GetNetworkEntityManager()
+In the legacy system, a replica manager was a central place to access replica objects. In O3DE a similar object is called a Network Entity Manager, which can be access via the following global function Multiplayer::GetNetworkEntityManager()
 
     // an example of using O3DE's network entity manager
     Multiplayer::GetNetworkEntityManager()->GetEntity(NetEntityId);
