@@ -33,7 +33,7 @@ Before you can run the tool go through this checklist:
  3. They will end up somewhere like: C:\Depot\O3DE\python\runtime\python-3.7.10-rev1-windows\python\Lib\site-packages
 6. Non-pip packages: 
  1. Tools in the DCCsi will occasionally use packages that are not available as a standard pip install, for example OpenImageIO (oiio)
- 2. We build oiio, and it gets pulled down with cmake, this includes building the oiiotool.exe and python bindings (pyd)
+ 2. We build oiio, and it gets pulled down with cmake. This process includes building the oiiotool.exe and python bindings (pyd)
  3. Right now I think the only visual studio target that builds this is Atom_utils (I've been building that to make sure that OpenImageIO is handled)
  4. There is currently a bug and the .pyd is not copied over during a build (so imports in python fail on that module)
  5. Find the equivalent of this file: "C:\Depot\3rdParty\packages\openimageio-2.1.16.0-rev1-windows\FindOpenImageIO.cmake" add modify 
