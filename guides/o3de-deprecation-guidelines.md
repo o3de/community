@@ -31,7 +31,7 @@ An overview of how to make breaking API changes/removals.
 
 1. Identify the code to be deprecated (something resembling one of the API deprecation examples above).
 
-    - Create a new GitHub issue with the name *"Deprecate \<Function/Type Name\>"*, using the [Deprecation Notice](https://github.com/o3de/o3de/issues/new/choose)
+    - Create a new GitHub issue with the name *"Deprecate \<Function/Type Name\>"*, using the [Deprecation Notice](https://github.com/o3de/o3de/issues/new/choose) issue type.
     - Add the `"kind/deprecation"` label.
     - Add the relevant SIG label(s) for code owners ie `SIG/content`
     - In the description, add a preliminary release note (what do you want to say to the customer about this change).
