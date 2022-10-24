@@ -4,7 +4,7 @@
 >
 > **Note**: This is a living document and is subject to change. Please contact [sig-release](https://github.com/o3de/sig-release) via [GitHub](https://github.com/o3de/sig-release/issues) or [Discord](https://discord.gg/crRVGNh9vu) to discuss any updates or amendments to the document.
 >
-> *How to request changes*
+> *How to request changes to this document*
 >
 > - For a small change (e.g. spelling/grammar/formatting), please create a [GitHub issue](https://github.com/o3de/sig-content/issues/new/choose) or [pull request](https://github.com/o3de/sig-content/pulls) against the [Community repo](https://github.com/o3de/community) with the fix).
 > - For a large change (e.g. changes to process), please create an [RFC](https://github.com/o3de/sig-release/issues/new/choose) for sig-release with the proposed change and reasons why (see [RFC suggestion request template](https://github.com/o3de/sig-release/issues/new?assignees=&labels=rfc-suggestion&template=rfc-suggestion.md&title=Proposed+RFC+Suggestion+%3Ddescription%3D) for more details).
@@ -31,10 +31,12 @@ An overview of how to make breaking API changes/removals.
 
 1. Identify the code to be deprecated (something resembling one of the API deprecation examples above).
 
-    - Create a new GitHub issue with the name *"Deprecate \<Function/Type Name\>"*.
+    - Create a new GitHub issue with the name *"Deprecate \<Function/Type Name\>"*, using the [Deprecation Notice](https://github.com/o3de/o3de/issues/new/choose) issue type.
     - Add the `"kind/deprecation"` label.
+    - Add the relevant SIG label(s) for code owners ie `SIG/content`
     - In the description, add a preliminary release note (what do you want to say to the customer about this change).
       - (If available) Add a milestone label for which release this deprecation will be part of.
+    - Ideally, notify the SIG(s) of the deprecation issue in their respective Discord chat channels.
 
 2. In the code, add an `O3DE_DEPRECATION_NOTICE(<GHI Number>)` comment right above the API call.
 
