@@ -51,7 +51,7 @@ See the following links on the documentation:
 
 ## GridMate::DataSet → Network Property in AutoComponent.xml
 
-A DataSet in the legacy system represented a single replicated property. https://docs.aws.amazon.com/lumberyard/latest/userguide/network-replicas-data-sets.html
+A DataSet in the legacy system represented a single replicated property. https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/network-replicas-data-sets.md
 
 In O3DE a single replicated property is defined in XML auto-component using Network Property element. Here is an example at https://github.com/o3de/o3de/blob/5abfb831da4be6da6792fc0f91be377973b5b3ea/Gems/Multiplayer/Code/Source/AutoGen/NetworkTransformComponent.AutoComponent.xml#L16
 
@@ -167,6 +167,6 @@ https://github.com/o3de/o3de/tree/development/Gems/Multiplayer
 https://github.com/o3de/o3de-multiplayersample
 
 Legacy:
-https://docs.aws.amazon.com/lumberyard/latest/userguide/network-intro.html
+https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/network-intro.md
 
 ##### Updated Aug 2022
