@@ -68,6 +68,7 @@ We also made many more UX/UI improvements throughout the animation editor.
 ### Migration steps
 
 We recommend creating your custom layout from the default layout. If you have custom layout you want to bring back in O3DE, you can still use it, but keep in mind that you have to manually add the atom render window if you want a viewport. You can do this by clicking the view menu in the animation editor, and then select the atom render window.
+
 ![Migration Steps](./Images/Migration-Steps.png)
 
 ## AnimGraph, MotionSets and Workspaces
