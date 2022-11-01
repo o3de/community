@@ -145,10 +145,20 @@ Version and Specs O3DE Version: 21.11, 21.11.2 or greater
 
 **In Progress**
 
-### Pending to add
+## Lumberyard Documentation. 
 
-- Table of contents to other files. 
-- Images
-- Links to other pages.
+#### Amazon Lumberyard User Guide
+
+https://github.com/awsdocs/amazon-lumberyard-user-guide
+
+#### Amazon Lumberyard Getting Started Guide
+
+https://github.com/awsdocs/amazon-lumberyard-getting-started-guide
+
+#### Lumberyard Release Notes
+
+https://github.com/awsdocs/amazon-lumberyard-release-notes
+
+##### Updated Sept 2022
 
 ##### Updated Sept 2022
