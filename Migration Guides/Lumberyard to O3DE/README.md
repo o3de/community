@@ -72,11 +72,14 @@ This document covers high level considerations when transitioning a document fro
 
 ## Tools available to assist with Lumberyard to O3DE conversion
 
-**insert tools here**
+[SerializeContextTools Conversion Scripts](./Misc-Documents/SerializeContextTools-Conversion-Scripts.md)
+[Lumberyard features](./Misc-Documents/Scripts/convert_physxconfiguration/README.md)
+[Lumberyard features](./Misc-Documents/Scripts/convert_editor_game_xml/README.md)
+[Lumberyard features](./Misc-Documents/Slice-Converter/README.md)
 
-##Lumberyard features with no equivalent in  O3DE
+## Lumberyard features with no equivalent in  O3DE
 
-(Link to /Misc Documents/Lumberyard-Features.md)
+[Lumberyard features](./Misc Documents/Lumberyard-Features.md)
 
 ## Network systems LY to O3DE
 
@@ -159,6 +162,6 @@ https://github.com/awsdocs/amazon-lumberyard-getting-started-guide
 
 https://github.com/awsdocs/amazon-lumberyard-release-notes
 
-##### Updated Sept 2022
+
 
 ##### Updated Sept 2022
