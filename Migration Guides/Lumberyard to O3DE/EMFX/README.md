@@ -17,7 +17,7 @@ The most significant change to the actor asset from Lumberyard 1.28 to O3DE is t
 ![Migration 1](./Images/Migration-1.png)
 
 2. In the O3DE main editor, right-click on the source file → Edit settings. Wait for the process to finish and the setting page pop-up.
-3. You should see three tabs created. The actor tab should be opened by default, and you should see a few actor related settings. However, the first thing to do for this asset is to manually add a mesh under the meshes tab. To do that, first click on the Meshes tab.<br.
+3. You should see three tabs created. The actor tab should be opened by default, and you should see a few actor related settings. However, the first thing to do for this asset is to manually add a mesh under the meshes tab. To do that, first click on the Meshes tab.<br>
 
 ![Migration 3](./Images/Migration-3.png)
 
