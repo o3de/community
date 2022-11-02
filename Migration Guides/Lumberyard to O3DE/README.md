@@ -144,7 +144,10 @@ Version and Specs O3DE Version: 21.11, 21.11.2 or greater
 
 ## Prefabs
 
-**In Progress**
+Slices cannot be used directly in O3DE. Slices were deprecated in favor of a new prefab system called Prefabs. As a result, users will need to migrate content from Slices to Prefabs to use it in O3DE. An unmaintained conversion tool (SerializeContextTools convert-slice) exists that can convert from Slices to Prefabs but it is likely that it will need to be updated to work properly given that O3DE continues to diverge from Lumberyard.
+
+**Note**: The code for Slices is still present in O3DE but in an inactive and unmaintained state. Slices can be reenabled in O3DE through a hidden setting (EnablePrefabSystem). 
+
 
 ## Lumberyard Documentation. 
 
