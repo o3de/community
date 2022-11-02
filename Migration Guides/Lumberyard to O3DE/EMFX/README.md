@@ -12,16 +12,16 @@ The most significant change to the actor asset from Lumberyard 1.28 to O3DE is t
 
 ## Migration steps
 
-1. Navigate to source file (.fbx). Check if there is an .assetInfo file with the same name of the source file. The assetInfo file contains the metadata for the actor asset. If there isn't any .assetInfo file, it means this asset is exported using the default settings. You can skip these steps.
+1. Navigate to source file (.fbx). Check if there is an .assetInfo file with the same name of the source file. The assetInfo file contains the metadata for the actor asset. If there isn't any .assetInfo file, it means this asset is exported using the default settings. You can skip these steps.<br.
 
 ![Migration 1](./Images/Migration-1.png)
 
 2. In the O3DE main editor, right-click on the source file → Edit settings. Wait for the process to finish and the setting page pop-up.
-3. You should see three tabs created. The actor tab should be opened by default, and you should see a few actor related settings. However, the first thing to do for this asset is to manually add a mesh under the meshes tab. To do that, first click on the Meshes tab.
+3. You should see three tabs created. The actor tab should be opened by default, and you should see a few actor related settings. However, the first thing to do for this asset is to manually add a mesh under the meshes tab. To do that, first click on the Meshes tab.<br.
 
 ![Migration 3](./Images/Migration-3.png)
 
-4. Under the mesh tab it should be empty, with only one button says "Add another mesh". Click this button.
+4. Under the mesh tab it should be empty, with only one button says "Add another mesh". Click this button.<br>
 
 ![Migration 4](./Images/Migration-4.png)
 
