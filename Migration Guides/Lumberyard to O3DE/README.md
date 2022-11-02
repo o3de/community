@@ -135,11 +135,11 @@ Particle system does not exist in O3DE, therefor you will need to use a 3rd part
 
  Real-time FX solution for particle effects Multi-platform & cross engine for games, films & AR/VR/MR Source code of the gem is available for everyone, can be freely used, modified and shared under the Community License terms.
 
-<u>Website:</u> https://www.popcornfx.com/
-<u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin
-<u>Example Project:</u> https://github.com/PopcornFX/O3DEPopcornFXExamples
-<u>Installation:</u> https://www.popcornfx.com/docs/plugins/o3de-gem/gem-installation/
-<u>Discord:</u> https://discord.gg/4ka27cVrsf
+<u>Website:</u> https://www.popcornfx.com/<br>
+<u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin<br>
+<u>Example Project:</u> https://github.com/PopcornFX/O3DEPopcornFXExamples<br>
+<u>Installation:</u> https://www.popcornfx.com/docs/plugins/o3de-gem/gem-installation/<br>
+<u>Discord:</u> https://discord.gg/4ka27cVrsf<br>
 Version and Specs O3DE Version: 21.11, 21.11.2 or greater
 
 ## Prefabs
@@ -162,4 +162,4 @@ https://github.com/awsdocs/amazon-lumberyard-release-notes
 
 
 
-##### Updated Sept 2022
+##### Updated Nov. 2022
