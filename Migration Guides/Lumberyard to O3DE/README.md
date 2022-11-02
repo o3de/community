@@ -73,13 +73,13 @@ This document covers high level considerations when transitioning a document fro
 ## Tools available to assist with Lumberyard to O3DE conversion
 
 [SerializeContextTools Conversion Scripts](./Misc-Documents/SerializeContextTools-Conversion-Scripts/README.md)<br>
-[Lumberyard features](./Misc-Documents/Scripts/convert_physxconfiguration/README.md)<br>
-[Lumberyard features](./Misc-Documents/Scripts/convert_editor_game_xml/README.md)<br>
-[Lumberyard features](./Misc-Documents/Slice-Converter/README.md)<br>
+[Script - convert_physxconfiguration](./Misc-Documents/Scripts/convert_physxconfiguration/README.md)<br>
+[Script - convert_editor_game_xml](./Misc-Documents/Scripts/convert_editor_game_xml/README.md)<br>
+[Slice Converte](./Misc-Documents/Slice-Converter/README.md)<br>
 
 ## Lumberyard features with no equivalent in  O3DE
 
-[Lumberyard features](./Misc Documents/Lumberyard-Features.md)
+[Lumberyard features](./Misc Documents/Lumberyard-Features/README.md)
 
 ## Network systems LY to O3DE
 
@@ -93,8 +93,6 @@ See [Networking migration guide](./Networking/README.md) for more details.
 
 ## Material Conversions
 
-**In Progress**
-
 Differences in the Engines (note we should pull the data into the doc)
 [Lumberyard features with no equivalent in O3DE](./Misc-Documents/Lumberyard-Features)
 
@@ -105,7 +103,7 @@ Any Texture and Material will be required to be re-witten due to the change in t
 
 ## EMFX
 
-Link to Document /EMFX/
+[EMFX](./EMFX/)
 
 **Actor Asset**
 The most significant change to the actor asset from Lumberyard 1.28 to O3DE is that `EMotionFX::Mesh` has been deprecated and replaced with the Atom mesh format (`Atom::Model`). Previously in Lumberyard 1.28, all export settings related to actor (skinned mesh) can be found under the actor tab in fbx settings. In O3DE, due to the usage of the atom mesh format, export settings related to the mesh have moved under the mesh tab. This step currently has to be performed manually following the steps below.
