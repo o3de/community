@@ -34,7 +34,7 @@
 
 - [Particle Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-particle.md)<br>
 
-- Legacy particles and their settings are not supported. Use PopcornFC as a replacement. 
+- Legacy particles and their settings are not supported. Use PopcornFC as a replacement.<br> 
 <u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin<br>
 
 - [Portal Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-portal.md)<br>
