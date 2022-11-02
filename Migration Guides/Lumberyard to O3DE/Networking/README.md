@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In Lumberyard 1.X, the networking and multiplayer layer was provided through the [GridMate](https://docs.aws.amazon.com/lumberyard/latest/userguide/network-intro.html) libraries. In O3DE, GridMate was entirely removed and replaced by a new modern multiplayer solution contained in [Multiplayer](https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/) gem and [AzNetworking](https://www.o3de.org/docs/user-guide/networking/) library. This document outlines how developers should approach migrating  between the two systems and approximate translation of concepts involved. The audience for this documentation are game multiplayer developers who are using GridMate in LY 1.X and are familiar with general concepts in game multiplayer topics.
+In Lumberyard 1.X, the networking and multiplayer layer was provided through the [GridMate](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/network-intro.md) libraries. In O3DE, GridMate was entirely removed and replaced by a new modern multiplayer solution contained in [Multiplayer](https://www.o3de.org/docs/user-guide/gems/reference/multiplayer/) gem and [AzNetworking](https://www.o3de.org/docs/user-guide/networking/) library. This document outlines how developers should approach migrating  between the two systems and approximate translation of concepts involved. The audience for this documentation are game multiplayer developers who are using GridMate in LY 1.X and are familiar with general concepts in game multiplayer topics.
 
 ## Concepts
 
@@ -51,7 +51,7 @@ See the following links on the documentation:
 
 ## GridMate::DataSet → Network Property in AutoComponent.xml
 
-A DataSet in the legacy system represented a single replicated property. https://docs.aws.amazon.com/lumberyard/latest/userguide/network-replicas-data-sets.html
+A DataSet in the legacy system represented a single replicated property. https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/network-replicas-data-sets.md
 
 In O3DE a single replicated property is defined in XML auto-component using Network Property element. Here is an example at https://github.com/o3de/o3de/blob/5abfb831da4be6da6792fc0f91be377973b5b3ea/Gems/Multiplayer/Code/Source/AutoGen/NetworkTransformComponent.AutoComponent.xml#L16
 
@@ -167,6 +167,6 @@ https://github.com/o3de/o3de/tree/development/Gems/Multiplayer
 https://github.com/o3de/o3de-multiplayersample
 
 Legacy:
-https://docs.aws.amazon.com/lumberyard/latest/userguide/network-intro.html
+https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/network-intro.md
 
 ##### Updated Aug 2022

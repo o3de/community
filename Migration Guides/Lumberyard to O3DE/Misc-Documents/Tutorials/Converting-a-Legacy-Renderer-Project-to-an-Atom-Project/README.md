@@ -117,7 +117,7 @@ See sample output here:
     ...
 
 1. Should there be any issues running automated tests, please manually verify that Atom is working:
-- Atom's Material Editor works
+- Atom's Material Editor works<br>
 ![Image 1](./Images/Image1.png)
 - Editor launches with Atom enabled
 - Atom's Mesh/Material components are functional

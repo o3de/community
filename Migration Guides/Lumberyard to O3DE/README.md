@@ -72,11 +72,14 @@ This document covers high level considerations when transitioning a document fro
 
 ## Tools available to assist with Lumberyard to O3DE conversion
 
-**insert tools here**
+[SerializeContextTools Conversion Scripts](./Misc-Documents/SerializeContextTools-Conversion-Scripts/README.md)<br>
+[Script - convert_physxconfiguration](./Misc-Documents/Scripts/convert_physxconfiguration/README.md)<br>
+[Script - convert_editor_game_xml](./Misc-Documents/Scripts/convert_editor_game_xml/README.md)<br>
+[Slice Converte](./Misc-Documents/Slice-Converter/README.md)<br>
 
-##Lumberyard features with no equivalent in  O3DE
+## Lumberyard features with no equivalent in  O3DE
 
-(Link to /Misc Documents/Lumberyard-Features.md)
+[Lumberyard features](./Misc-Documents/Lumberyard-Features/README.md)
 
 ## Network systems LY to O3DE
 
@@ -90,8 +93,6 @@ See [Networking migration guide](./Networking/README.md) for more details.
 
 ## Material Conversions
 
-**In Progress**
-
 Differences in the Engines (note we should pull the data into the doc)
 [Lumberyard features with no equivalent in O3DE](./Misc-Documents/Lumberyard-Features)
 
@@ -102,7 +103,7 @@ Any Texture and Material will be required to be re-witten due to the change in t
 
 ## EMFX
 
-Link to Document /EMFX/
+[EMFX](./EMFX/)
 
 **Actor Asset**
 The most significant change to the actor asset from Lumberyard 1.28 to O3DE is that `EMotionFX::Mesh` has been deprecated and replaced with the Atom mesh format (`Atom::Model`). Previously in Lumberyard 1.28, all export settings related to actor (skinned mesh) can be found under the actor tab in fbx settings. In O3DE, due to the usage of the atom mesh format, export settings related to the mesh have moved under the mesh tab. This step currently has to be performed manually following the steps below.
@@ -134,21 +135,34 @@ Particle system does not exist in O3DE, therefor you will need to use a 3rd part
 
  Real-time FX solution for particle effects Multi-platform & cross engine for games, films & AR/VR/MR Source code of the gem is available for everyone, can be freely used, modified and shared under the Community License terms.
 
-<u>Website:</u> https://www.popcornfx.com/
-<u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin
-<u>Example Project:</u> https://github.com/PopcornFX/O3DEPopcornFXExamples
-<u>Installation:</u> https://www.popcornfx.com/docs/plugins/o3de-gem/gem-installation/
-<u>Discord:</u> https://discord.gg/4ka27cVrsf
+<u>Website:</u> https://www.popcornfx.com/<br>
+<u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin<br>
+<u>Example Project:</u> https://github.com/PopcornFX/O3DEPopcornFXExamples<br>
+<u>Installation:</u> https://www.popcornfx.com/docs/plugins/o3de-gem/gem-installation/<br>
+<u>Discord:</u> https://discord.gg/4ka27cVrsf<br>
 Version and Specs O3DE Version: 21.11, 21.11.2 or greater
 
 ## Prefabs
 
-**In Progress**
+Slices cannot be used directly in O3DE. Slices were deprecated in favor of a new prefab system called Prefabs. As a result, users will need to migrate content from Slices to Prefabs to use it in O3DE. An unmaintained conversion tool (SerializeContextTools convert-slice) exists that can convert from Slices to Prefabs but it is likely that it will need to be updated to work properly given that O3DE continues to diverge from Lumberyard.
 
-### Pending to add
+**Note**: The code for Slices is still present in O3DE but in an inactive and unmaintained state. Slices can be reenabled in O3DE through a hidden setting (EnablePrefabSystem). 
 
-- Table of contents to other files. 
-- Images
-- Links to other pages.
 
-##### Updated Sept 2022
+## Lumberyard Documentation. 
+
+#### Amazon Lumberyard User Guide
+
+https://github.com/awsdocs/amazon-lumberyard-user-guide
+
+#### Amazon Lumberyard Getting Started Guide
+
+https://github.com/awsdocs/amazon-lumberyard-getting-started-guide
+
+#### Lumberyard Release Notes
+
+https://github.com/awsdocs/amazon-lumberyard-release-notes
+
+
+
+##### Updated Nov. 2022
