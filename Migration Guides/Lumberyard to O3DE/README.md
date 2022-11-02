@@ -79,7 +79,7 @@ This document covers high level considerations when transitioning a document fro
 
 ## Lumberyard features with no equivalent in  O3DE
 
-[Lumberyard features](./Misc Documents/Lumberyard-Features/README.md)
+[Lumberyard features](./Misc-Documents/Lumberyard-Features/README.md)
 
 ## Network systems LY to O3DE
 
