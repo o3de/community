@@ -53,7 +53,7 @@ Nominate somebody (including yourself) by responding to this issue with:
 
 The election will be conducted for one week from YYYY-MM-DD 00:00AM/PM TimeZone and YYYY-MM-DD 00:00AM/PM TimeZone and held through an online poll. Votes will be anonymous and anyone invested in the direction of O3DE and the SIG holding the election may vote. If you choose to vote, we ask that you be familiar with the nominees.
 
-If there is a current interim chair, they will announce the results in the Discord SIG channel as well as the SIG O3DE mailing list no later than 2022-08-08 1:00PM PT. If there is no interim chair, the executive director will announce the results utilizing the same communication channels. At that time if there is a dispute over the result or concern over vote tampering, voting information will be made public to the extent that it can be exported from the polling system and the SIG will conduct an independent audit under the guidance of a higher governing body in the foundation.
+If there is a current interim chair, they will announce the results in the Discord SIG channel as well as the SIG O3DE mailing list no later than YYYY-MM-DD 00:00AM/PM TimeZone. If there is no interim chair, the executive director will announce the results utilizing the same communication channels. At that time if there is a dispute over the result or concern over vote tampering, voting information will be made public to the extent that it can be exported from the polling system and the SIG will conduct an independent audit under the guidance of a higher governing body in the foundation.
 
 The elected chairpersons will begin serving their term on YYYY-MM-DD at 00:00AM/PM TimeZone. Tentatively SIG chairs will be elected on a yearly basis.
 

@@ -59,7 +59,7 @@ In the case where there are 2 candidates at the end of the nomination period, if
 
 Otherwise, the election for chairpersons of sig-docs-community will occur one week after the nominations period closes.
 
-Voting will be performed through an online mechanism TBD, starting 2 days after nominations are closed. The election voting will last for 2 weeks, tentatively scheduled for 2022-08-31 12:00PM PT until 2022-09-14 12:00PM PT.
+Voting will be performed through an online mechanism TBD, starting 2 days after nominations are closed. The election voting will last for 2 weeks, tentatively scheduled for YYYY-MM-DD 00:00AM/PM TimeZone until YYYY-MM-DD 00:00AM/PM TimeZone.
 
 Election results will be announced on or before YYYY-MM-DD 00:00AM/PM TimeZone.
 
