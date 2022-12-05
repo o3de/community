@@ -31,7 +31,7 @@ If submitting code, ensure you've read our coding guidance, which include:
 
 ### Python
 
-Python code should follow the [PEP8](https://peps.python.org/pep-0008/) coding standards/
+Python code should follow the [PEP8](https://peps.python.org/pep-0008/) coding standards.
 
 ## Documentation
 
