@@ -16,15 +16,22 @@ You can also look for the `good-first-issue` label in the [o3de/o3de](https://gi
 
 Learn how to develop on GitHub and the specifics of developing for O3DE in the [GitHub Workflows](https://www.o3de.org/docs/contributing/to-code/git-workflow/) guide.
 
+Understand how [code reviews](/guides/o3de-code-review-guidelines.md) work, along with how to provide constructive feedback.
+
+Finally, read the guidance around [code deprecation](/guides/o3de-deprecation-guidelines.md) to ensure your changes do not impact others. 
+This guide should be used when replacing functionality, renaming public APIs and other potentially breaking changes.
+
+
+### C++
+
 If submitting code, ensure you've read our coding guidance, which include:
 * [C++ Coding Standards](https://github.com/o3de/sig-core/blob/main/governance/Coding-Standards-and-Style-Guide.md)
 * [C++ Best Practices](https://github.com/o3de/sig-core/blob/main/governance/C%2B%2B-Best-Practices-Guide.md)
 * [API reference guidance](https://github.com/o3de/sig-core/blob/main/governance/API-Ref-Guidelines-Update.md) for writing comments that will appear in O3DE’s public-facing C++ API Reference Guide.
 
-Understand how [code reviews](/guides/o3de-code-review-guidelines.md) work, along with how to provide constructive feedback.
+### Python
 
-Finally, read the guidance around [code deprecation](/guides/o3de-deprecation-guidelines.md) to ensure your changes do not impact others. 
-This guide should be used when replacing functionality, renaming public APIs and other potentially breaking changes.
+Python code should follow the [PEP8](https://peps.python.org/pep-0008/) coding standards.
 
 ## Documentation
 
