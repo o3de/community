@@ -653,7 +653,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/shape-collider/#colliders-as-triggers",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/collider/#colliders-as-triggers, https://www.o3de.org/docs/user-guide/components/reference/physx/shape-collider/#colliders-as-triggers",
                 "Notes": "Usability issue with moving static triggers."
             },
             {
