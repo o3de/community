@@ -301,7 +301,7 @@
                 "Performance": "4",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/ragdoll/",
                 "Notes": ""
             },
             {
@@ -353,28 +353,28 @@
                 "Notes": ""
             },
             {
-               "Module": "Full-body IK",
-               "Feature": "3",
-               "Functional": "1",
-               "Content": "2",
-               "Code/API": "1",
-               "Performance": "1",
-               "Platform": "1;",
-               "Link": "",
-               "Doc": "",
-               "Notes": ""
+                "Module": "Full-body IK",
+                "Feature": "3",
+                "Functional": "1",
+                "Content": "2",
+                "Code/API": "1",
+                "Performance": "1",
+                "Platform": "1;",
+                "Link": "",
+                "Doc": "",
+                "Notes": ""
             },
             {
-               "Module": "Live Debugging",
-               "Feature": "3",
-               "Functional": "1",
-               "Content": "2",
-               "Code/API": "1",
-               "Performance": "1",
-               "Platform": "1;",
-               "Link": "",
-               "Doc": "",
-               "Notes": ""
+                "Module": "Live Debugging",
+                "Feature": "3",
+                "Functional": "1",
+                "Content": "2",
+                "Code/API": "1",
+                "Performance": "1",
+                "Platform": "1;",
+                "Link": "",
+                "Doc": "",
+                "Notes": ""
             }
         ],
         "Physics API (minimal, non-backend specific)": [
@@ -387,7 +387,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/#create-a-collision-layer",
                 "Notes": ""
             },
             {
@@ -411,7 +411,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/joint-intro/",
                 "Notes": ""
             },
             {
@@ -423,7 +423,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/rigid-body/",
                 "Notes": ""
             },
             {
@@ -447,7 +447,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/character-controller/",
                 "Notes": "Improvements in backlog/roadmap."
             },
             {
@@ -459,7 +459,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/ragdoll/",
                 "Notes": "Improvements in backlog/roadmap."
             },
             {
@@ -471,7 +471,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/materials/",
                 "Notes": "Major workflow improvements under way."
             },
             {
@@ -495,7 +495,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/heightfield-collider/",
                 "Notes": ""
             },
             {
@@ -507,7 +507,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/learning-guide/tutorials/physx/wind-provider/",
                 "Notes": ""
             },
             {
@@ -519,7 +519,7 @@
                 "Performance": "2",
                 "Platform": "",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/",
                 "Notes": ""
             }
         ],
@@ -533,7 +533,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#system-configuration",
                 "Notes": ""
             },
             {
@@ -545,7 +545,7 @@
                 "Performance": "3",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/rigid-body/",
                 "Notes": ""
             },
             {
@@ -557,7 +557,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#scene-configuration",
                 "Notes": ""
             },
             {
@@ -569,7 +569,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/learning-guide/tutorials/assets/physx-colliders/, https://www.o3de.org/docs/user-guide/assets/scene-settings/physx-tab/",
                 "Notes": ""
             },
             {
@@ -581,7 +581,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/learning-guide/tutorials/assets/physx-colliders/",
                 "Notes": ""
             },
             {
@@ -593,7 +593,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/assets/scene-settings/physx-tab/#primitive-asset",
                 "Notes": ""
             },
             {
@@ -605,7 +605,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/collider/",
                 "Notes": ""
             },
             {
@@ -617,7 +617,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/learning-guide/tutorials/assets/physx-colliders/#physx-collider-assets",
                 "Notes": ""
             },
             {
@@ -629,7 +629,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/shape-collider/",
                 "Notes": "Tube and Disc not yet supported."
             },
             {
@@ -641,7 +641,7 @@
                 "Performance": "3",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/heightfield-collider/",
                 "Notes": ""
             },
             {
@@ -653,7 +653,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/collider/#colliders-as-triggers, https://www.o3de.org/docs/user-guide/components/reference/physx/shape-collider/#colliders-as-triggers",
                 "Notes": "Usability issue with moving static triggers."
             },
             {
@@ -665,7 +665,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/force-region/",
                 "Notes": ""
             },
             {
@@ -677,7 +677,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/learning-guide/tutorials/physx/wind-provider/",
                 "Notes": "Global wind is currently broken with rigid bodies. Ragdolls aren't affected by wind."
             },
             {
@@ -689,7 +689,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/materials/",
                 "Notes": "Major workflow improvements under way."
             },
             {
@@ -701,7 +701,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/#create-a-collision-layer",
                 "Notes": ""
             },
             {
@@ -713,7 +713,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/joint-intro/",
                 "Notes": ""
             },
             {
@@ -737,7 +737,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/character-controller/",
                 "Notes": "Multiple functional improvements planned."
             },
             {
@@ -749,7 +749,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/ragdoll/",
                 "Notes": "Improvements in backlog/roadmap."
             },
             {
@@ -773,7 +773,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/",
                 "Notes": ""
             },
             {
@@ -797,7 +797,7 @@
                 "Performance": "2",
                 "Platform": "2;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/",
                 "Notes": "Remote debugging not heavily tested."
             },
             {
@@ -809,7 +809,7 @@
                 "Performance": "2",
                 "Platform": "2;3;4;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/debugging/#physx-debug-console-variables",
                 "Notes": "Only heavily tested on Windows. Lots of issues with z-fighting etc."
             },
             {
@@ -847,7 +847,7 @@
                 "Performance": "4",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-cloth/meshes/",
                 "Notes": "One optimization pass performed."
             },
             {
@@ -859,7 +859,7 @@
                 "Performance": "4",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-cloth/actors/",
                 "Notes": "Skinned meshes: linear and dual quaternion blending. One optimization pass performed."
             },
             {
@@ -883,7 +883,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-cloth/constraints/",
                 "Notes": "Motion constraints, Backstop, Tether constraints, horizontal/vertical, shearing, bending"
             },
             {
@@ -895,7 +895,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/cloth/#base-properties",
                 "Notes": ""
             },
             {
@@ -907,7 +907,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/cloth/#wind-properties",
                 "Notes": ""
             },
             {
@@ -919,7 +919,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/visualization/animation/character-editor/cloth-colliders/",
                 "Notes": ""
             },
             {
@@ -931,7 +931,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/cloth/#collision-properties",
                 "Notes": ""
             },
             {
@@ -943,7 +943,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/components/reference/physx/cloth/#self-collision-properties",
                 "Notes": ""
             },
             {
@@ -967,7 +967,7 @@
                 "Performance": "2",
                 "Platform": "1;",
                 "Link": "",
-                "Doc": "",
+                "Doc": "https://www.o3de.org/docs/user-guide/interactivity/physics/nvidia-cloth/debugging/",
                 "Notes": ""
             },
             {
@@ -1040,7 +1040,7 @@
                 "Code/API": "3",
                 "Performance": "2",
                 "Platform": "2;",
-                "Link": "",
+                "Link": "https://github.com/o3de/o3de-extras/tree/blast-experimental/Gems/Blast",
                 "Doc": "",
                 "Notes": ""
             },
