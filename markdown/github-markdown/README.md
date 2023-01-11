@@ -28,7 +28,7 @@ This is a guide to assist with anyone who is looking to update their readme file
     + [No Langauage](#no-langauage)
   * [Inline code](#inline-code)
   * [Emoji](#emoji)
-  * [Username `@` mentions](#username-----mentions)
+  * [Username @ mentions](#username-@-mentions)
   * [Issue References](#issue-references)
   * [Hotkey](#hotkey)
   * [Footnotes](#footnotes)
@@ -590,7 +590,7 @@ Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
 
 :+1: :sparkles: :camel: :tada: :rocket: :metal:
 
-## Username `@` mentions
+## Username @ mentions
 Typing an @ symbol, followed by a username, will
 notify that person to come and view the comment.
 This is called an “@mention”, because you’re
