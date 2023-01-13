@@ -220,16 +220,16 @@ Example: [GitHub](http://github.com)
 ## Blockquotes
 
 ```markdown
-As Kanye West said:
+As Bruce Banner said:
 
-> We're living the future so
-> the present is our past.
+> That’s my secret, Captain.
+> I’m always angry.
 ```
 
-As Kanye West said:
+As Bruce Banner said:
 
-> We're living the future so
-> the present is our past.
+> That’s my secret, Captain.
+> I’m always angry.
 
 Blockquotes can be nested.
 
