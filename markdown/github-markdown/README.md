@@ -244,7 +244,7 @@ ______
 ----
 ______
 
-## Tabels 
+## Tables 
 
 ```markdown
 | First Header  | Second Header |
