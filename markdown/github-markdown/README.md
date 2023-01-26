@@ -347,7 +347,7 @@ Markdown also supports raw HTML.
 
 <p>Markdown in HTML does *not* work **well**. Use <i>HTML</i> <b>tags</b> instead.</p>
 
-## Colapsable section
+## Collapsible section
 
 
 <details>
