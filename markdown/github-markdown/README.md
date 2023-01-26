@@ -369,12 +369,12 @@ Markdown also supports raw HTML.
 
 ## Link to the top of the page or a specific section on said page
 
-[Go To TOP](#Table_of_contents)
-<a name="Table_of_contents"></a>
+[Go To TOP](#table-of-contents)
+<a name="table-of-contents"></a>
    
 ```markdown
-[Go To TOP](#Table_of_contents)
-<a name="Table_of_contents"></a>
+[Go To TOP](#table-of-contents)
+<a name="table-of-contents"></a>
 ``` 
 
 ```markdown
