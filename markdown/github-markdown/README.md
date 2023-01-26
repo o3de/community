@@ -378,8 +378,8 @@ Markdown also supports raw HTML.
 ``` 
 
 ```markdown
-[a Name](#Section_ID)
-<a name="Section_ID></a>
+[a Name](#Section-ID)
+<a name="Section-ID></a>
 ```   
   
 
