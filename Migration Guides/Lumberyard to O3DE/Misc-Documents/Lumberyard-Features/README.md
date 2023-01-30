@@ -18,8 +18,6 @@
 
 - [Snow Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-snow.md)<br>
 
-- [Legacy Terrain Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-legacy-terrain.md)<br>
-
 - PhysX Terrain should still function, and can be rendered using a static mesh<br>
 
 - [Lightning Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-lightning.md)<br>
