@@ -18,8 +18,6 @@
 
 - [Snow Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-snow.md)<br>
 
-- PhysX Terrain should still function, and can be rendered using a static mesh<br>
-
 - [Lightning Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-lightning.md)<br>
 
 - [Lightning Arc Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-lightning-arc.md)<br>
@@ -36,8 +34,6 @@
 <u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin<br>
 
 - [Portal Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-portal.md)<br>
-
-- [Render to Texture Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-render-to-texture.md)<br>
 
 - Atom does support a flexible pass system that can be used to create a pass that renders to a render target (which can be used as input to another shader/material), or an alternate scene that renders with the main pipeline, so the equivalent can be achieved, but not without significant effort.<br>
 
