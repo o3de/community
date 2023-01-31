@@ -30,6 +30,9 @@
 
 - [Particle Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-particle.md)<br>
 
+- [Render to Texture Component](https://github.com/awsdocs/amazon-lumberyard-user-guide/blob/master/doc_source/component-render-to-texture.md)<br>
+Render To Texture is not supported as a component. We have it as a low level feature deep in the APIs, but not exposed as Component like Lumberyard.
+
 - Legacy particles and their settings are not supported. Use PopcornFC as a replacement.<br> 
 <u>Asset Repo:</u> https://github.com/PopcornFX/O3DEPopcornFXPlugin<br>
 
