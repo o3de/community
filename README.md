@@ -36,3 +36,10 @@ O3DE also has a number of standing committees that drive improvement and contrib
   - [Technical Steering Committee](https://github.com/o3de/tsc) - The TSC is responsible for all technical oversight of O3DE.
   - [Diversity & Inclusion](https://github.com/o3de/community/tree/main/committee/committee-d-i) - D&I works to ensure O3DE is a welcoming place for all contributors.
   - [Marketing](https://github.com/o3de/community/tree/main/committee/committee-marketing) - Drives all O3DE marketing initiatives.
+
+# Markdown
+
+These documents are created for those who wish to take part in keeping the Readme files or website updated. They are living documents and will be updated as needed. 
+
+[GitHub Markdown](/markdown/github-markdown/README.md)
+[O3DE Website](/markdown/o3de-website/README.md)
