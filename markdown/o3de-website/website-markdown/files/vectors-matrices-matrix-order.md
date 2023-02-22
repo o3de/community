@@ -1,4 +1,5 @@
-```---
+````
+---
 title: "Vectors, Matrices & Matrix Order"
 date: 2023-02-22
 slug: vectors-matrices-matrix-order
@@ -730,4 +731,4 @@ When picking conventions for our vectors and matrices, we can choose any combina
 </table>
 
 Ultimately, it bears repeating that no matter which conventions you pick, be sure to document them and be consistent in their usage!
-```
+````
