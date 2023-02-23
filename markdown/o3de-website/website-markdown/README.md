@@ -11,6 +11,7 @@ This is a guide to assit with common blog formatting and code uses.
     + [Inline Iconss](#ineline-icons)
   * [Admonitions](#admonitions)
   * [Embedding mathematical formulas in TeX and MathML](#embedding-mathematical-formulas-in-teX-and-mathml)
+  * [Resources and Links](#resources-and-links)
 
 # O3DE-Website
 
@@ -187,4 +188,8 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 <img width="824" alt="Example" src="https://user-images.githubusercontent.com/80487462/220468038-58402a20-23c2-4bc0-a41f-314d33157709.PNG">
 
+## Resources and Links
 
+For further learning on blog formatting, check out these links: 
+
+https://www.w3schools.com/html/
