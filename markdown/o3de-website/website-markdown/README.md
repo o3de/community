@@ -3,36 +3,14 @@
 This is a guide to assit with common blog formatting and code uses. 
 
 ## Table Of Contents
-  * [Headers](#headers)
-  * [Emphasis](#emphasis)
-  * [Lists](#lists)
-    + [Unordered](#unordered)
-    + [Ordered](#ordered)
-  * [Images](#images)
-  * [Links](#links)
-  * [Blockquotes](#blockquotes)
-  * [Horizontal Rules](#horizontal-rules)
-  * [Tabels](#tabels)
-  * [Blackslash escape](#blackslash-escape)
-  * [Task Lists](#task-lists)
-  * [Inline HTML](#inline-html)
-  * [Colapsable section](#colapsable-section)
-  * [Link to the top of the page or a specific section on said page](#link-to-the-top-of-the-page-or-a-specific-section-on-said-page)
-  * [Fenced Code Blocks](#fenced-code-blocks)
-  * [Syntax highlighting](#syntax-highlighting)
-    + [No highlighting](#no-highlighting)
-    + [Highlighting](#highlighting)
-    + [JavaScript Syntax](#javascript-syntax)
-    + [Python Syntax](#python-syntax)
-    + [HTML Syntax](#html-syntax)
-    + [No Langauage](#no-langauage)
-  * [Inline code](#inline-code)
-  * [Emoji](#emoji)
-  * [Username `@` mentions](#username-----mentions)
-  * [Issue References](#issue-references)
-  * [Hotkey](#hotkey)
-  * [Footnotes](#footnotes)
-  * [YouTube Videos](#youtube-videos)
+  * [Templates and Examples](#templates-and-examples)
+  * [Blog Headers](#blog-headers)
+  * [Heading levels](#heading-levels)
+  * [Inline elements](#inline-elements)
+    + [Inline text styles](#inline-text-styles)
+    + [Inline Iconss](#ineline-icons)
+  * [Admonitions](#admonitions)
+  * [Embedding mathematical formulas in TeX and MathML](#embedding-mathematical-formulas-in-teX-and-mathml)
 
 # O3DE-Website
 
@@ -129,6 +107,14 @@ other block-level element.
 
 <img width="150" alt="Inline" src="https://user-images.githubusercontent.com/80487462/220466082-1a4cbb09-c3c1-4460-bab9-e4ca4f8ae32b.PNG">
 
+## Inline Icons
+
+You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files are located in `/static/images/icons`.
+
+| Name - Image | Name - Image | Name - Image | Name - Image |
+| :---: | :---: | :---: | :---: |
+| <img width="186" alt="Example" src="https://user-images.githubusercontent.com/80487462/220469734-de8efa54-eaaf-43f5-a7f8-f338edcad7f3.PNG"> | <img width="188" alt="Example2" src="https://user-images.githubusercontent.com/80487462/220469792-bb7a163a-5a65-4f36-a7be-3e68a2275b98.PNG"> | <img width="186" alt="Example3" src="https://user-images.githubusercontent.com/80487462/220469835-6168a599-0fb3-4483-8bea-2b57ac7e5452.PNG"> | <img width="186" alt="Example4" src="https://user-images.githubusercontent.com/80487462/220469861-34a43fcb-0ea3-4f17-8d45-cd68547ffa6f.PNG"> |
+
 ## Admonitions
 
 Admonitions (notes, warnings, etc) use Hugo shortcodes.
@@ -186,14 +172,6 @@ Indicates a known issue with the process described in the docs.
 ```
 
 <img width="820" alt="Admonitions Known Issue" src="https://user-images.githubusercontent.com/80487462/220467125-61ea902a-d96d-4734-96f1-e845065840e8.PNG">
-
-## Inline Icons
-
-You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files are located in `/static/images/icons`.
-
-| Name - Image | Name - Image | Name - Image | Name - Image |
-| :---: | :---: | :---: | :---: |
-| <img width="186" alt="Example" src="https://user-images.githubusercontent.com/80487462/220469734-de8efa54-eaaf-43f5-a7f8-f338edcad7f3.PNG"> | <img width="188" alt="Example2" src="https://user-images.githubusercontent.com/80487462/220469792-bb7a163a-5a65-4f36-a7be-3e68a2275b98.PNG"> | <img width="186" alt="Example3" src="https://user-images.githubusercontent.com/80487462/220469835-6168a599-0fb3-4483-8bea-2b57ac7e5452.PNG"> | <img width="186" alt="Example4" src="https://user-images.githubusercontent.com/80487462/220469861-34a43fcb-0ea3-4f17-8d45-cd68547ffa6f.PNG"> |
 
 ## Embedding mathematical formulas in TeX and MathML
 
