@@ -1,6 +1,6 @@
 # O3DE Blog Cheatsheet
 
-This is a guide to assit with common blog formatting and code uses. 
+This is a manual that provides assistance with typical blog formatting and usage of code.
 
 ## Table Of Contents
   * [Templates and Examples](#templates-and-examples)
@@ -18,10 +18,6 @@ This is a guide to assit with common blog formatting and code uses.
   * [Embedding Youtube videos with the youtube-width shortcode](#embedding-youtube-videos-with-the-youtube-width-shortcode)
   * [Embedding mathematical formulas in TeX and MathML](#embedding-mathematical-formulas-in-tex-and-mathml)
   * [Resources and Links](#resources-and-links)
-
-# O3DE-Website
-
-Here's a guide community members can use to help create blog content. 
 
 ## Templates and Examples
 remoteobjects
