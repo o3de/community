@@ -51,8 +51,8 @@ This manual is produced to assist members who are interested in establishing Git
 
 These resources are available to offer support and direction on optimal approaches for constructing and sustaining blogs for the O3DE Website. This document will be regularly revised to reflect any modifications made over time.
 
-[Blog Process Guide](/markdown/o3de-website/README.md)
-[O3DE Blog Cheatsheet](/markdown/o3de-website/website-markdown/README.md)
+[Blog Process Guide](/markdown/o3de-website/README.md)<br>
+[O3DE Blog Cheatsheet](/markdown/o3de-website/website-markdown/README.md)<br>
 [Templates and Examples](/markdown/o3de-website/website-markdown/files)
 
 ## O3DE Website Maintenance
