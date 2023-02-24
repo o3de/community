@@ -50,7 +50,7 @@ The banner can be found and edited in `layouts/partials/top-banner.html`
 Will render:
 ![image](https://user-images.githubusercontent.com/80487462/221308859-e9765572-1cc0-406a-9575-f1b37dacee12.png)
 
-To edit the colors, these can be accessed in `assets/sass/customsass`
+To edit the colors, these can be accessed in `assets/sass/custom.sass`
 
 
 ## Color Codes
