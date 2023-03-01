@@ -82,7 +82,7 @@ This section provides additional details for each item in the checklist.
         1. **Check the PR**
              If the blog hasn't gone live, check the associated PR. If the PR hasn't been merged, the blog won't go live until it's completed. However, if the PR has been merged, proceed with the next steps. 
         2. **Contact Docs**
-            If the PR has been merged, but the blog isn't live on the intended day, the next step is to contact the Docs & Community SIG. As of the writing of this guide, they're best equipped to assist in getting the blog live. In most cases, the issue can be resolved quickly with just a few clicks. Once the issue is resolved, you can proceed with the next steps.
+            If the PR has been merged, but the blog isn't live on the intended day, the next step is to contact the [Docs & Community SIG](https://github.com/o3de/sig-docs-community/). As of the writing of this guide, they're best equipped to assist in getting the blog live. In most cases, the issue can be resolved quickly with just a few clicks. Once the issue is resolved, you can proceed with the next steps.
     2. **Social Media posting**
          After the blog is live, the next step is to share it on social media platforms such as LinkedIn, Twitter, Discord, and more. These platforms are the best places to reach the largest number of users and keep the community informed and engaged with the latest releases. 
         
