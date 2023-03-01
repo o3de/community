@@ -4,7 +4,9 @@
 
  To ensure a smooth publishing process, it is crucial to keep all relevant parties informed about the scheduled release date and any updates related to it. This includes the author of the blog and other stakeholders, such as the Marketing Committee. Clear communication with all parties involved can prevent any confusion or delays in the publishing process.
 
-Checklist
+## Checklist
+
+The overall process for publishing a blog is broken down to the following items:
 
 - [ ] 1. Identify potential blog
 - [ ] 2. Identify person who will write the blog
