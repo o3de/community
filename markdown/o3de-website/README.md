@@ -43,7 +43,7 @@ This section provides additional details for each item in the checklist.
 1. **Identify potential blog**
     If you're searching for content, it's advisable to focus on the latest additions to the engine. Pay attention to the upcoming features, popular discussion topics, and PRs that are gaining momentum. Additionally, take note of the topics that generate interest during SIG  or TSC meetings. 
 2. **Who is writing the blog?**
-    To find a suitable candidate for writing the blog, begin by identifying the area of the feature you wish to highlight. Determine which SIG it's related to and whether there's a PR with a designated feature owner. Look for an individual who's showcasing the feature or someone on from within their SIG. Start by reaching out to them and asking if they're interested in writing the blog.
+    To find a suitable candidate for writing the blog, begin by identifying the area of the feature you wish to highlight. Determine which SIG it's related to and whether there's a PR with a designated feature owner. Look for an individual who's showcasing the feature or someone from within their SIG. Start by reaching out to them and asking if they're interested in writing the blog.
     
     If the blog is technical in nature, it's crucial that it's written by the engineer responsible for designing the feature. They can best provide a clear representation of what the feature is attempting to showcase.
     
