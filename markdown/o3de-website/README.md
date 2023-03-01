@@ -50,7 +50,7 @@ This section provides additional details for each item in the checklist.
 3. **Plan date for blog arrival**
     Once you've found a blog writer, you'll need to discuss with them their availability to complete the blog. Avoid pressuring them, especially if they have a busy schedule. It's advisable to ask for a deadline and add a few extra days to allow for unexpected delays. 
     1. **Plan allocated time for blog**
-         If the author estimates that they can finish the blog by March 1st, it's typical to plan for the blog to arrive between March 7th to 14th. This provides a buffer in case any unexpected last-minute tasks arise that need to be addressed before the blog can be finalized. 
+         It's good practice to plan for the blog to arrive 1-2 weeks after the author's set date. For example, if the author estimates that they can finish the blog by March 1st, it's typical to plan for the blog to arrive between March 7th to 14th. This provides a buffer in case any unexpected last-minute tasks arise that need to be addressed before the blog can be finalized. 
     2. **Plan soft date for publish**
          Once you have a deadline, it's essential to schedule a soft date on the calendar. This date allows you to plan for other blogs and events around it. Make sure to consider the PR stage and social media while planning. 
         
