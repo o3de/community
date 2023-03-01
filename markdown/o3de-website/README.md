@@ -55,7 +55,7 @@ This section provides additional details for each item in the checklist.
          Once you have a deadline, it's essential to schedule a soft date on the calendar. This date allows you to plan for other blogs and events around it. Make sure to consider the PR stage and social media while planning. 
         
 4. **PR Stage** 
-    This stage involves creating the PR and submitting the blog, and it typically requires the most effort. You'll need to complete the blog in markdown, which entails formatting it correctly and adding any necessary links and images. Make sure to adhere to the Website Markdown guidelines on the following page: https://github.com/o3de/community/tree/main/markdown 
+    This stage involves creating the PR and submitting the blog, and it typically requires the most effort. You'll need to author the blog in markdown, which entails formatting it correctly and adding any necessary links and images. Make sure to adhere to the [Website Markdown guidelines](https://github.com/o3de/community/tree/main/markdown).
     1. **Markdown Design**
         In order for the blog to render properly (Show on the website in proper format), it is required that you follow a few steps. The markdown guide can be found in https://github.com/o3de/community/tree/main/markdown and includes templates, examples and code that can be used to help draft a markdown of the blogs. To view how this would look, refer to step 4 part e. 
     2. **Publish date finalized**
