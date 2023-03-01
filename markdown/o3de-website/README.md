@@ -26,10 +26,13 @@ Checklist
         
         
 
-Terms:
-PR - Pull Request
-SIG - Special Interest Group
-TSC - Technical Steering Committee
+## Terminology
+
+This document uses the following terminology:
+
+- **PR**:  [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- **SIG**: [Special Interest Group](https://github.com/o3de/community#special-interest-groups)
+- **TSC**: [Technical Steering Committee](https://github.com/o3de/tsc)
 
 ## Details
 
