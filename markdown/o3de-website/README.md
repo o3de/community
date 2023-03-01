@@ -69,11 +69,11 @@ This section provides additional details for each item in the checklist.
         
         It is recommended to allow for 1-2 weeks (7 to 14 days) for the blog to be merged from the time of submission into PR. Rushing the process may lead to errors or missing the intended publication date.
     5. **Testing how the blog displays**
-        If you want to test to see how the blog looks before it goes live. This is normally the best practice to ensure that everything renders properly, then you will need to either configure your machine to build the site locally or ask someone to build the site and send images over to you. 
+        It's best practice to test how the blog looks before it goes live to ensure that everything renders properly. To do this you must either configure your machine to build the site locally or ask someone to build the site and send images over to you. 
         
-        If testing locally, the best guide would be the up-to-date date here. https://github.com/o3de/o3de.org, Once you have a working build, to get the blog to show on the list, it would be required to run the following command: 
-        `Hugo Server -F`
-        This ensures that the build of the website is built in the future and will be able to view the blog as if it was publication day. 
+        If testing locally, refer to instructions in the `o3de.org` repo, [Build the website locally](https://github.com/o3de/o3de.org). Once you have a working build, you can find the list of blogs at the `/blog` address of your local web server. For example, `http://localhost:1313/blog/`. However, to get the blog to show in the list, you must rerun with the following command: 
+        `hugo server -f`
+        This ensures that the build of the website shows posts that are scheduled for future publication, allowing you to view the blog as if it was publication day. 
         
 5. **Publication Day**
      After the blog is published, it's crucial to confirm that it's live. If it's not, you'll need to take the necessary steps to address the issue. It's recommended to check on the morning of the blog's release to avoid forgetting about it or potentially affecting the publication of future blogs. 
