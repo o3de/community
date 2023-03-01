@@ -45,7 +45,7 @@ This section provides additional details for each item in the checklist.
 2. **Who is writing the blog?**
     To find a suitable candidate for writing the blog, begin by identifying the area of the feature you wish to highlight. Determine which SIG it's related to and whether there's a PR with a designated feature owner. Look for an individual who's showcasing the feature or someone from within their SIG. Start by reaching out to them and asking if they're interested in writing the blog.
     
-    If the blog is technical in nature, it's crucial that it's written by the engineer responsible for designing the feature. They can best provide a clear representation of what the feature is attempting to showcase.
+    If the blog is technical in nature, it's crucial that it's written by the engineer responsible for designing the feature. They can best provide a clear representation of what the feature is attempting to showcase. However, it's also helpful to read their draft and ask questions where things are unclear, as this can help a wider audience understand the blog as well.
     
 3. **Plan date for blog arrival**
     Once you've found a blog writer, you'll need to discuss with them their availability to complete the blog. Avoid pressuring them, especially if they have a busy schedule. It's advisable to ask for a deadline and add a few extra days to allow for unexpected delays. 
