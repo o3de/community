@@ -31,6 +31,9 @@ PR - Pull Request
 SIG - Special Interest Group
 TSC - Technical Steering Committee
 
+## Details
+
+This section provides additional details for each item in the checklist.
 
 1. **Identify potential blog**
     If you're searching for content, it's advisable to focus on the latest additions to the engine. Pay attention to the upcoming features, popular discussion topics, and PRs that are gaining momentum. Additionally, take note of the topics that generate interest during SIG  or TSC meetings. 
