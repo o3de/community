@@ -1,6 +1,6 @@
 # Blog Process
 
- This guide provides guidance on the process of publishing a blog on the O3DE website. This document covers selecting a topic, identifying an author, designing the blog, and publishing on site. Additionally, it offers troubleshooting tips in case any issues arise during the blog's publication. 
+ This document provides guidance on the process of publishing a blog on the [O3DE website](https://www.o3de.org/community/). It covers selecting a topic, identifying an author, designing the blog, and publishing on the website. Additionally, it offers troubleshooting tips in case any issues arise during the blog's publication. 
 
  To ensure a smooth publishing process, it is crucial to keep all relevant parties informed about the scheduled release date and any updates related to it. This includes the author of the blog and other stakeholders, such as the Marketing Committee. Clear communication with all parties involved can prevent any confusion or delays in the publishing process.
 
