@@ -21,10 +21,10 @@ The overall process for publishing a blog is broken down to the following items:
     - [ ] 4.5. Testing the blog on local machine
 - [ ] 5. Social Media
 - [ ] 6. Blog goes live
-    - [ ] Follow-up
-        - [ ] 7.0. Check to make sure blog is live on day its supposed to. 
-        - [ ] 7.1. Contact Docs if blog has not gone live
-    - [ ] Social Media posting
+    - [ ] 6.1 Follow-up
+        - [ ] 6.1.1. Check to make sure blog is live on day its supposed to. 
+        - [ ] 6.1.2. Contact Docs if blog has not gone live
+    - [ ] 6.2 Social Media posting
         
         
 
