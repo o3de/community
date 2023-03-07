@@ -34,7 +34,7 @@ remoteobjects
 
 Blog headers are essential in every blog. This helps show the website that it is infact a blog, and tells the server how to access that page, and all the top level information. 
 
-<img width="497" alt="Image_1" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/blog-headers.png">
+<img width="497" alt="Image_1" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/blog-headers.PNG">
 
 ```
 ---
@@ -85,7 +85,7 @@ sections show H1-H6.
 ###### This is in an H6 section.
 ```
 
-<img width="374" alt="Headings" src="/process-docs-and-markdown/files/media/heading-levels.png">
+<img width="374" alt="Headings" src="/process-docs-and-markdown/files/media/heading-levels.PNG">
 
 
 ## Inline elements
@@ -108,7 +108,7 @@ other block-level element.
 - **`monospace bold`**
 ```
 
-<img width="150" alt="Inline" src="/process-docs-and-markdown/files/media/inline.png">
+<img width="150" alt="Inline" src="/process-docs-and-markdown/files/media/inline.PNG">
 
 ## Inline Icons
 
@@ -116,7 +116,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 
 | Name - Image | Name - Image | Name - Image | Name - Image |
 | :---: | :---: | :---: | :---: |
-| <img width="186" alt="Example" src="/process-docs-and-markdown/files/media/icons1.png"> | <img width="188" alt="Example2" src="/process-docs-and-markdown/files/media/icons2.png"> | <img width="186" alt="Example3" src="/process-docs-and-markdown/files/media/icons3.png"> | <img width="186" alt="Example4" src="/process-docs-and-markdown/files/media/icons4.png"> |
+| <img width="186" alt="Example" src="/process-docs-and-markdown/files/media/icons1.PNG"> | <img width="188" alt="Example2" src="/process-docs-and-markdown/files/media/icons2.PNG"> | <img width="186" alt="Example3" src="/process-docs-and-markdown/files/media/icons3.PNG"> | <img width="186" alt="Example4" src="/process-docs-and-markdown/files/media/icons4.PNG"> |
 
 ## Admonitions
 
@@ -134,7 +134,7 @@ You can have multiple paragraphs and block-level elements inside an admonition.
 {{< /note >}}
 ```
 
-<img width="827" alt="Admonitions Note" src="/process-docs-and-markdown/files/media/note.png">
+<img width="827" alt="Admonitions Note" src="/process-docs-and-markdown/files/media/note.PNG">
 
 ```
 {{< tip >}}
@@ -142,7 +142,7 @@ Tips draw attention to a shortcut or best practice related to the preceding cont
 {{< /tip >}}
 ```
 
-<img width="823" alt="Admonitions Tip" src="/process-docs-and-markdown/files/media/tip.png">
+<img width="823" alt="Admonitions Tip" src="/process-docs-and-markdown/files/media/tip.PNG">
 
 ```
 {{< caution >}}
@@ -150,7 +150,7 @@ The reader should proceed with caution.
 {{< /caution >}}
 ```
 
-<img width="826" alt="Admonitions Caution" src="/process-docs-and-markdown/files/media/caution.png">
+<img width="826" alt="Admonitions Caution" src="/process-docs-and-markdown/files/media/caution.PNG">
 
 ```
 {{< important >}}
@@ -158,7 +158,7 @@ Important information the reader must heed.
 {{< /important >}}
 ```
 
-<img width="823" alt="Admonitions Important" src="/process-docs-and-markdown/files/media/important.png">
+<img width="823" alt="Admonitions Important" src="/process-docs-and-markdown/files/media/important.PNG">
 
 ```
 {{< todo issue="https://github.com/o3de/o3de.org/issues/432" >}}
@@ -166,7 +166,7 @@ Indicates a section needs work, followed by a description of the task and a link
 {{< /todo >}}
 ```
 
-<img width="824" alt="Admonitions To Do" src="/process-docs-and-markdown/files/media/to-do.png">
+<img width="824" alt="Admonitions To Do" src="/process-docs-and-markdown/files/media/to-do.PNG">
 
 ```
 {{< known-issue >}}
@@ -174,7 +174,7 @@ Indicates a known issue with the process described in the docs.
 {{< /known-issue >}}
 ```
 
-<img width="820" alt="Admonitions Known Issue" src="/process-docs-and-markdown/files/media/known-issue.png">
+<img width="820" alt="Admonitions Known Issue" src="/process-docs-and-markdown/files/media/known-issue.PNG">
 
 ## Links
 
@@ -404,7 +404,7 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 **Example Output**
 
-<img width="824" alt="Example" src="/process-docs-and-markdown/files/media/math.png">
+<img width="824" alt="Example" src="/process-docs-and-markdown/files/media/math.PNG">
 
 ## Resources and Links
 
