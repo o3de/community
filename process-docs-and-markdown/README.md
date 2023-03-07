@@ -6,7 +6,7 @@ The following is a compilation of guides, procedural documents, and illustrative
 
 This manual is produced to assist members who are interested in establishing GitHub repositories or maintaining current ones and seeking to explore their true capabilities, along with step-by-step instructions and illustrative examples.
 
-[GitHub Markdown](/github-markdown.md)
+[GitHub Markdown](/process-docs-and-markdown/github-markdown.md)
 
 ## Blog Process Guides
 
