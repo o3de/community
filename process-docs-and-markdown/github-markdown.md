@@ -640,7 +640,7 @@ You can also use words, to fit your writing style more closely[^note].
 
 Reners to: 
 
-![footnote](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/footer.png)
+![footnote](/process-docs-and-markdown/files/media/footer.png)
 
 
 ## YouTube Videos
