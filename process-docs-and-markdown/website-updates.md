@@ -47,7 +47,7 @@ The banner can be found and edited in `layouts/partials/top-banner.html`
 ```
 
 Will render:
-![image](https://user-images.githubusercontent.com/80487462/221308859-e9765572-1cc0-406a-9575-f1b37dacee12.png)
+![image](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/banner-image.png)
 
 To edit the colors, these can be accessed in `assets/sass/custom.sass`
 
@@ -268,7 +268,7 @@ If we are to take this section, it would represent slider 2
             <div class="partner-logo futurewei-logo"></div>
           </div>
 ```
-![image](https://user-images.githubusercontent.com/80487462/221715032-b75e986c-6e07-4e38-8b92-e67d5893b9fe.png)
+![image](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/member-image.png)
 
 Say we wanted to add more logos and we do not have any more room. To add another slider, you would create the following. 
 

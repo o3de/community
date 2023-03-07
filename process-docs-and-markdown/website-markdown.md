@@ -34,7 +34,7 @@ remoteobjects
 
 Blog headers are essential in every blog. This helps show the website that it is infact a blog, and tells the server how to access that page, and all the top level information. 
 
-<img width="497" alt="Image_1" src="https://user-images.githubusercontent.com/80487462/216458705-b25f96df-6722-441e-8a05-3193afc7c260.PNG">
+<img width="497" alt="Image_1" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/blog-headers.png">
 
 ```
 ---
@@ -85,7 +85,7 @@ sections show H1-H6.
 ###### This is in an H6 section.
 ```
 
-<img width="374" alt="Headings" src="https://user-images.githubusercontent.com/80487462/220471084-3cfeb84c-7821-4eea-a710-edcdd59e5b95.PNG">
+<img width="374" alt="Headings" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/heading-levels.png">
 
 
 ## Inline elements
@@ -108,7 +108,7 @@ other block-level element.
 - **`monospace bold`**
 ```
 
-<img width="150" alt="Inline" src="https://user-images.githubusercontent.com/80487462/220466082-1a4cbb09-c3c1-4460-bab9-e4ca4f8ae32b.PNG">
+<img width="150" alt="Inline" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/inline.png">
 
 ## Inline Icons
 
@@ -116,7 +116,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 
 | Name - Image | Name - Image | Name - Image | Name - Image |
 | :---: | :---: | :---: | :---: |
-| <img width="186" alt="Example" src="https://user-images.githubusercontent.com/80487462/220469734-de8efa54-eaaf-43f5-a7f8-f338edcad7f3.PNG"> | <img width="188" alt="Example2" src="https://user-images.githubusercontent.com/80487462/220469792-bb7a163a-5a65-4f36-a7be-3e68a2275b98.PNG"> | <img width="186" alt="Example3" src="https://user-images.githubusercontent.com/80487462/220469835-6168a599-0fb3-4483-8bea-2b57ac7e5452.PNG"> | <img width="186" alt="Example4" src="https://user-images.githubusercontent.com/80487462/220469861-34a43fcb-0ea3-4f17-8d45-cd68547ffa6f.PNG"> |
+| <img width="186" alt="Example" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/icons1.png"> | <img width="188" alt="Example2" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/icons2.png"> | <img width="186" alt="Example3" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/icons3.png"> | <img width="186" alt="Example4" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/icons4.png"> |
 
 ## Admonitions
 
@@ -134,7 +134,7 @@ You can have multiple paragraphs and block-level elements inside an admonition.
 {{< /note >}}
 ```
 
-<img width="827" alt="Admonitions Note" src="https://user-images.githubusercontent.com/80487462/220466605-88f00ecb-6aa9-4cbf-bb4c-f52981b5546b.PNG">
+<img width="827" alt="Admonitions Note" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/note.png">
 
 ```
 {{< tip >}}
@@ -142,7 +142,7 @@ Tips draw attention to a shortcut or best practice related to the preceding cont
 {{< /tip >}}
 ```
 
-<img width="823" alt="Admonitions Tip" src="https://user-images.githubusercontent.com/80487462/220466741-5addf01f-27b9-4115-84ac-f9537b30a205.PNG">
+<img width="823" alt="Admonitions Tip" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/tip.png">
 
 ```
 {{< caution >}}
@@ -150,7 +150,7 @@ The reader should proceed with caution.
 {{< /caution >}}
 ```
 
-<img width="826" alt="Admonitions Caution" src="https://user-images.githubusercontent.com/80487462/220466819-cc65e88a-3391-4742-a48e-8c3ab54423fa.PNG">
+<img width="826" alt="Admonitions Caution" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/caution.png">
 
 ```
 {{< important >}}
@@ -158,7 +158,7 @@ Important information the reader must heed.
 {{< /important >}}
 ```
 
-<img width="823" alt="Admonitions Important" src="https://user-images.githubusercontent.com/80487462/220466980-93fadb82-b40d-40d5-8116-8064a39b097f.PNG">
+<img width="823" alt="Admonitions Important" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/important.png">
 
 ```
 {{< todo issue="https://github.com/o3de/o3de.org/issues/432" >}}
@@ -166,7 +166,7 @@ Indicates a section needs work, followed by a description of the task and a link
 {{< /todo >}}
 ```
 
-<img width="824" alt="Admonitions To Do" src="https://user-images.githubusercontent.com/80487462/220466902-674f83b9-94b4-4624-9cb4-ee7510b0d471.PNG">
+<img width="824" alt="Admonitions To Do" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/to-do.png">
 
 ```
 {{< known-issue >}}
@@ -174,7 +174,7 @@ Indicates a known issue with the process described in the docs.
 {{< /known-issue >}}
 ```
 
-<img width="820" alt="Admonitions Known Issue" src="https://user-images.githubusercontent.com/80487462/220467125-61ea902a-d96d-4734-96f1-e845065840e8.PNG">
+<img width="820" alt="Admonitions Known Issue" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/known-issue.png">
 
 ## Links
 
@@ -272,7 +272,7 @@ The `image-width` shortcode adds an image with alternate text and restricts the 
 
 `image-width` example output:
 
-![image](https://user-images.githubusercontent.com/80487462/221049482-cb5f90e7-892e-40d5-9d0c-6983d669fc68.png)
+![image](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/image-width.png)
 
 
 An image can also be a link. This time the O3DE icon links to the O3DE website. Outer square brackets enclose
@@ -339,7 +339,7 @@ The are two additional options that are always enabled.
     ```
     Output:
     
-![image](https://user-images.githubusercontent.com/80487462/221039077-d73488e6-4dad-4e2f-bee1-c03d6948d940.png)
+![image](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/video.png)
 
 <br>
 
@@ -351,7 +351,7 @@ The are two additional options that are always enabled.
 
     Output:
 
-![image](https://user-images.githubusercontent.com/80487462/221038969-0d141f10-a78a-4ed5-99a2-d5c632137339.png)
+![image](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/video2.png)
 
 Video File
 https://www.o3de.org/images/contributing/to-docs/TestVideo.mp4
@@ -376,7 +376,7 @@ Embed Youtube videos in your page by using the `youtube-width` shortcode. The `y
 
     Output:
 
-![image](https://user-images.githubusercontent.com/80487462/221039412-c5196302-3d09-4c62-8008-506e26a965d0.png)
+![image](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/video3.png)
 
 
    <br>
@@ -389,7 +389,7 @@ Embed Youtube videos in your page by using the `youtube-width` shortcode. The `y
 
     Output:
 
-![image](https://user-images.githubusercontent.com/80487462/221039496-cebe1c0e-ac35-4939-b7c7-d88ccae9c9c2.png)
+![image](https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/video4.png)
 
 
 ## Embedding mathematical formulas in TeX and MathML
@@ -404,7 +404,7 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 **Example Output**
 
-<img width="824" alt="Example" src="https://user-images.githubusercontent.com/80487462/220468038-58402a20-23c2-4bc0-a41f-314d33157709.PNG">
+<img width="824" alt="Example" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/math.png">
 
 ## Resources and Links
 
