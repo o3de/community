@@ -34,7 +34,7 @@ remoteobjects
 
 Blog headers are essential in every blog. This helps show the website that it is infact a blog, and tells the server how to access that page, and all the top level information. 
 
-<img width="497" alt="Image_1" src="https://github.com/o3de/community/tree/main/process-docs-and-markdown/files/media/blog-headers.PNG">
+<img width="497" alt="Image_1" src="/process-docs-and-markdown/files/media/blog-headers.PNG">
 
 ```
 ---
