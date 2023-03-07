@@ -26,14 +26,14 @@ These resources offer support in generating code, banners, and color schemes for
 
 Info here
 
-[Discord Permission Guide](/process-docs-and-markdown/discord-permissions.md)
-[Discord process Document](/process-docs-and-markdown/discord-process.md)
+[Discord Permission Guide](/process-docs-and-markdown/discord-permissions.md)<br>
+[Discord process Document](/process-docs-and-markdown/discord-process.md)<br>
 [Discord Tips, Tricks and Troubleshooting](/process-docs-and-markdown/discord-tips-tricks-troubleshooting.md)
 
 ### Discord Moderation
 
 Info here
 
-[O3DE Website Updates](/process-docs-and-markdown/discord-moderation-guidelines.md)
+[O3DE Website Updates](/process-docs-and-markdown/discord-moderation-guidelines.md)<br>
 [O3DE Website Updates](/process-docs-and-markdown/discord-moderation-course.md)
 
