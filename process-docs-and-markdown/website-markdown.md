@@ -351,7 +351,7 @@ The are two additional options that are always enabled.
 
     Output:
 
-![image](/process-docs-and-markdown/files/media/video2.png)
+![image](/process-docs-and-markdown/files/media/video2.png) 
 
 Video File
 https://www.o3de.org/images/contributing/to-docs/TestVideo.mp4
