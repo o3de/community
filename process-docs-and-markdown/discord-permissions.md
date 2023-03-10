@@ -1,4 +1,4 @@
-# Discord Permission Guide
+# Discord Permission Guide 
 
 This manual will establish a set of guidelines for best practices when configuring a server that members can adhere to. It encompasses determining access privileges, defining standard roles and their naming conventions.
 
