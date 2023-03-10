@@ -192,4 +192,4 @@ By adding an emoji to a role in Discord, you can make it easier to distinguish s
 Once you've completed these steps, the chosen emoji will be associated with the selected role and will appear next to the role's name in the server member list.
 
 
-##### Updated March 2023
+#### Updated March 2023
