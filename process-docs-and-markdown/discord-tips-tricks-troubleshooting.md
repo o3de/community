@@ -145,6 +145,64 @@ No matter the line! Or is this a lie and really Red or maybe its Blue. No one wi
 
 ## Privacy and Notifications
 
+### Privacy
+
+Discord offers a range of privacy settings to help you control who can see your activity and access your personal information on the platform. In the User Settings section, you can adjust your privacy settings to control who can add you as a friend, message you, or view your online status. You can also control who can see your activity status, including whether you're currently online, idle, or offline. Additionally, Discord allows you to control your server privacy settings, including who can view and participate in the server, and who can access specific channels or roles. By customizing your privacy settings on Discord, you can ensure that your personal information remains secure and that you have control over who can see and interact with you on the platform.
+
+#### Desktop Privacy Settings:
+
+1. Open Discord and click on the gear icon next to your username to access User Settings.
+1. Navigate to the Privacy & Safety section on the left-hand side of the screen.
+1. Here you can customize various privacy settings such as:
+      1. Who can add you as a friend: You can choose to allow anyone to add you as a friend, or limit it to just users who share servers with you.
+      1. Who can message you: You can choose to allow anyone to message you, or limit it to just friends or server members.
+      1. Who can see your online status: You can choose to show your online status to everyone, or limit it to just friends or server members.
+      1. Server Privacy Settings: You can choose who can access and participate in the servers you're a member of, and who can access specific channels or roles.
+1. Once you've adjusted your settings, be sure to click on the Save Changes button at the bottom of the screen.
+
+#### Mobile Privacy Settings:
+
+1. Open the Discord app on your mobile device.
+1. Tap on your profile picture in the bottom-right corner of the screen to access User Settings.
+1. Scroll down and tap on the Privacy & Safety option.
+1. Here you can customize various privacy settings such as:
+      1. Who can add you as a friend: You can choose to allow anyone to add you as a friend, or limit it to just users who share servers with you.
+      1. Who can message you: You can choose to allow anyone to message you, or limit it to just friends or server members.
+      1. Who can see your online status: You can choose to show your online status to everyone, or limit it to just friends or server members.
+      1. Server Privacy Settings: You can choose who can access and participate in the servers you're a member of, and who can access specific channels or roles.
+1. Once you've adjusted your settings, be sure to tap on the Save button in the top-right corner of the screen.
+
+By customizing your privacy settings on both desktop and mobile versions of Discord, you can ensure that your personal information remains secure and that you have control over who can see and interact with you on the platform.
+
+### Notifications
+
+Notifications are an essential part of the platform that keeps you up to date with new messages, mentions, and updates in the servers you're a member of. With customizable notification settings for both desktop and mobile versions of Discord, you can choose which notifications you want to receive and how you want to receive them. By adjusting your notification settings, you can ensure that you only receive notifications for the messages and mentions that are most important to you, and that you receive them in a way that's convenient for you. Whether you want to receive notifications for every message or only for direct messages and mentions, Discord's notification settings can help you stay on top of your conversations without being overwhelmed by notifications.
+
+#### Desktop Notification Settings:
+
+1. Open Discord and click on the gear icon next to your username to access User Settings.
+1. Navigate to the Notifications section on the left-hand side of the screen.
+1. Here you can customize various notification settings such as:
+      1. Enable Desktop Notifications: This will allow you to receive notifications from Discord when you're not actively using it. You can choose to receive notifications for all messages or only for direct messages and mentions.
+      1. Sound and Vibration: You can choose the sound that plays when you receive a notification, as well as whether or not your device vibrates when you receive a notification.
+      1. Server Notification Settings: You can choose which notifications you want to receive for each server you're a member of, such as @mentions, direct messages, or server updates.
+      1. Mobile Push Notifications: If you have the Discord app on your mobile device, you can choose to receive push notifications for new messages and mentions. You can also choose how frequently you want to receive push notifications.
+1. Once you've adjusted your settings, be sure to click on the Save Changes button at the bottom of the screen.
+
+#### Mobile Notification Settings:
+
+1. Open the Discord app on your mobile device.
+1. Tap on your profile picture in the bottom-right corner of the screen to access User Settings.
+1. Scroll down and tap on the Notifications option.
+1. Here you can customize various notification settings such as:
+      1. Push Notifications: You can choose to receive push notifications for new messages and mentions. You can also choose how frequently you want to receive push notifications.
+      1. In-App Notifications: You can choose whether or not to receive notifications for new messages and mentions while you're actively using the app.
+      1. Sound and Vibration: You can choose the sound that plays when you receive a notification, as well as whether or not your device vibrates when you receive a notification.
+      1. Server Notification Settings: You can choose which notifications you want to receive for each server you're a member of, such as @mentions, direct messages, or server updates.
+1. Once you've adjusted your settings, be sure to tap on the Save button in the top-right corner of the screen.
+
+By customizing your notification settings on both desktop and mobile versions of Discord, you can ensure that you only receive notifications for the messages and mentions that are most important to you, and that you receive them in a way that's convenient for you.
+
 ## Error messages
 
 1. When Creating an event on discord and shown with "Missing Permissions", ensure that you have 2FA enabled. 
