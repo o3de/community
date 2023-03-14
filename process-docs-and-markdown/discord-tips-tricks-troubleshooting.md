@@ -70,7 +70,35 @@ https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames
 
 ##  Custom Discord Rich Presence 
 
+Discord-CustomRP is a simple custom Rich Presence manager that allows users to set their own custom "Playing" status on Discord. With this tool, users can set a custom status message and details, including the game they are playing, the current song they are listening to, and much more. The tool is designed to be easy to use, with a simple interface that allows users to quickly customize their status.
 
+Someone would use Discord-CustomRP if they want to customize their Discord status to better reflect their current activity or to add a personal touch to their profile. It's perfect for gamers who want to show off what game they're currently playing or for music lovers who want to share what they're listening to. Additionally, it's a great tool for streamers who want to display their stream information or schedule on their Discord profile. With Discord-CustomRP, users can create a unique and personalized status that showcases their personality and interests.
+
+**Installation:**
+
+1. Make sure you have Node.js installed on your computer.
+1. Download or clone the repository from GitHub: https://github.com/custom-rp/customrp.
+1. Open the command prompt or terminal and navigate to the downloaded folder.
+1. Run npm install to install the required packages.
+
+**Configuration:**
+
+1. Rename the config.example.json file to config.json.
+1. Open the config.json file and replace the placeholders with your Discord application's client ID and the custom status message and details you want to display.
+1. To get your Discord application's client ID, go to the Discord Developer Portal (https://discord.com/developers/applications) and create a new application or select an existing one. Go to the "General Information" section and copy the client ID.
+1. Customize the status message and details in the config.json file. You can use the placeholders provided or enter your own text.
+1. Save the config.json file.
+
+**Running the script:**
+
+1. Open the command prompt or terminal and navigate to the downloaded folder.
+1. Run node index.js to start the script.
+1. Your custom Discord status should now be displayed on your profile.
+
+Note: Keep the command prompt or terminal open while you want the status to be displayed. If you close it, the status will disappear. Also, make sure to update the config.json file whenever you want to change your status message or details.
+
+Alternativly, visit:
+https://docs.customrp.xyz/setting-up
 
 ## Text Formatting
 
@@ -213,3 +241,6 @@ Your message could not be delivered. This is usually because you don't share a s
 ``` 
 This means that you have not added them as a friend. This is normally a setting thats enabled on the other users end to prevent spam. 
 
+
+
+Note, If you have any issues with any of these, ping me on discord Finchy#5545
