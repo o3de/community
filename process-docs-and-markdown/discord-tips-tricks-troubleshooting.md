@@ -41,29 +41,29 @@ That's it! You should now be able to stream your screen or application to your D
 
 To help maintain an organized and consistent member list, please apply the following format if you want to include a title or organization in your username:
 
-*     Option A) If you prefer to use your name: First Name [Organization]
-*     Option B) If you prefer not to use your name: Gamertag [Organization]
-*     Option C) If you want to show your name or Gamertag but hide your work: First Name/Gamertag
+*  Option A) If you prefer to use your name: First Name [Organization]
+*  Option B) If you prefer not to use your name: Gamertag [Organization]
+*  Option C) If you want to show your name or Gamertag but hide your work: First Name/Gamertag
 
 For example, if your current username is AMZN_AmyFinch and you want to change it to adhere to Option A, you would change it to "Amy [Amazon]". If you want to use Option B, you could change it to "Finchy [Developer]". If you want to use Option C, you could change it to "Amy".
 
 Here are the step-by-step instructions to change your username:
 
-1.     Open the Discord app or website and log in to your account.
-2.     On the left-hand side, click on the server where you want to change your username.
-3.     Find your username in the member list or the chat window, and click on it.
-4.     Click on the three dots on the right side of your username, then select "Change Nickname."
-5.     Type in your new username according to the guidelines provided above.
-6.     Click "Save" to update your username.
+1.  Open the Discord app or website and log in to your account.
+2.  On the left-hand side, click on the server where you want to change your username.
+3.  Find your username in the member list or the chat window, and click on it.
+4.  Click on the three dots on the right side of your username, then select "Change Nickname."
+5.  Type in your new username according to the guidelines provided above.
+6.  Click "Save" to update your username.
 
 Please note that some servers may have specific guidelines for usernames, including limitations on the number of characters or how often you can change your username. Be sure to check the server guidelines or contact an administrator if you have any questions or issues.
 
 For reference, here are some examples of usernames that adhere to the recommended format:
 
-*     Royal OBrien [Amazon]
-*     Finchy [Finch Studio]
-*     OBWANDO [Developer]
-*     Finchy
+*  Royal OBrien [Amazon]
+*  Finchy [Finch Studio]
+*  OBWANDO [Developer]
+*  Finchy
 
 https://support.discord.com/hc/en-us/articles/213480948-How-do-I-change-my-Username-
 https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames 
@@ -76,26 +76,25 @@ https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames
 
 Here's a comprehensive list of all the formatting options available in Discord:
 
-1. Bold text: To make text bold, surround it with two asterisks on both sides like this:
-    **Bold Text**
-2. *Italicized text:* To italicize text, surround it with a single asterisk on both sides like this: 
-    *italicized text*
-3. ***Italicized Bold text***: To italicize bold text, surround it with three asterisk on both sides like this: 
-    ***italicized bold text***
-4. Underlined text: To underline text, surround it with two underscores on both sides like this:
-    **Underlined Text**
-5. *_Underlined and Italicized Text:_ *To underline and italicize text, add two underscores along with an asterisk on both sides like this:
-    __*Underlined and Italicized Text*__
-6. **_Underlined and Bolded Text_**: To underline and bold text, add two underscores along with two asterisks on both sides like this:
-    __**Underlined and Bolded Text**__
-7. ***_Underlined, italicize and Bolded Text_***: To underline and bold text, add two underscores along with three asterisks on both sides like this:
-    __***Underlined, italicize and Bolded Text***__
+1. Bold text: To make text bold, surround it with two asterisks on both sides like this:<br>
+    `**Bold Text**`
+2. *Italicized text:* To italicize text, surround it with a single asterisk on both sides like this:<br>
+    `*italicized text*`
+3. ***Italicized Bold text***: To italicize bold text, surround it with three asterisk on both sides like this:<br> 
+    `***italicized bold text***`
+4. Underlined text: To underline text, surround it with two underscores on both sides like this:<br>
+    `**Underlined Text**`
+5. *_Underlined and Italicized Text:_ *To underline and italicize text, add two underscores along with an asterisk on both sides like this:<br>
+    `__*Underlined and Italicized Text*__`
+6. **_Underlined and Bolded Text_**: To underline and bold text, add two underscores along with two asterisks on both sides like this:<br>
+    `__**Underlined and Bolded Text**__`
+7. ***_Underlined, italicize and Bolded Text_***: To underline and bold text, add two underscores along with three asterisks on both sides like this:<br>
+    `__***Underlined, italicize and Bolded Text***__`
 8. __***I want this to be shown in its full glory!***___
-    In case you actually *want* to see your underscores or asterisks in a message (like in an emoji, for example), you can use the backslash ‘\’ key to skip markdown formatting and show the text just like it is. 
-    \_\_\*\*\*I want this to be shown in its full glory!\*\*\*\_\_\_
-9. 
+    In case you actually *want* to see your underscores or asterisks in a message (like in an emoji, for example), you can use the backslash ‘\’ key to skip markdown formatting and show the text just like it is:<br> 
+    `\_\_\*\*\*I want this to be shown in its full glory!\*\*\*\_\_\_`
 10. Strikethrough text: To add a strikethrough to text, surround it with two tildes on either side, like this: 
-    ~~Strikethrough Text~~
+    `~~Strikethrough Text~~`
 11. Formatting on International Keyboard Layouts
     **German:** Shift+[+] (key right of Ü)
     **Spanish:** Shift+[+] (key right of `^ (Spain) or ´¨ (Latin America))
@@ -104,40 +103,45 @@ Here's a comprehensive list of all the formatting options available in Discord:
     **French (Switzerland):** Shift+3
     **Italian:** Shift+[+] (key right of èé)
     **Swedish:** Shift+’ (key right of Ä) 
-12. if you want to hide a message you are showing then spoiler would be the way. This could be a way to avoid giving away the main point or a spoiler of a show someone has not seen. You can create spoiler text like so: 
-    || Spoiler Text ||
+12. if you want to hide a message you are showing then spoiler would be the way. This could be a way to avoid giving away the main point or a spoiler of a show someone has not seen. You can create spoiler text like so:<br> 
+    `|| Spoiler Text ||`
 13. For quoting something, there’s a simple “quote/blockquote” tag implemented in Discord. 
-     You can do this by simply adding the right-carat character ‘>’: 
-    > text here
+     You can do this by simply adding the right-carat character ‘>’:<br> 
+    `> text here`<br>
      You can also quote multiple lines by using the triple right-carat ‘>>>’, or by typing out a line with a single quote ‘>’ and then holding SHIFT+ENTER to create a new line within the same quote block. 
-14. This is an example of a single line code block: When displaying a line of code, file address or anything that needs a section of code or to stand out and is a single line, add a single backtick on both sides
+14. This is an example of a single line code block: When displaying a line of code, file address or anything that needs a section of code or to stand out and is a single line, add a single backtick on both sides<br>
     `This is an example of a single line code block`
 15. To extend this further, if you want to represent multiple lines, then you will add three backticks:
-    ```
-    Stuff
-    goes
-    here
-    ```
+````
+```
+Stuff
+Goes
+Here
+```
+````
 
 ## Color Codes
 
 At present, the use of color codes is quite restricted. Although there are workarounds available, they only function properly when viewed on a PC; mobile devices are unable to display colors. The example below shows how the content would appear with and without markdown:
 
-1. [Image: image.png]
-2. ```diff
-    - Here's some red colored text!
-    + Here's some green colored text!
-    ```
-    ```ini
-    [Here's some blue highlighted text]
-    ```
-    ```fix
-    Everything is yellow in fix --
-    No matter the line! Or is this a lie and really Red or maybe its Blue. No one will ever know!
-    ```
-    ```bash
-    "Here's some nice, light Blue text"
-    ```
+![image](https://user-images.githubusercontent.com/80487462/225159263-55039fe2-3cf7-4575-9ea0-2774c6515076.png)
+
+````
+```diff
+- Here's some red colored text!
++ Here's some green colored text!
+```
+```ini
+[Here's some blue highlighted text]
+```
+```fix
+Everything is yellow in fix --
+No matter the line! Or is this a lie and really Red or maybe its Blue. No one will ever know!
+```
+```bash
+"Here's some nice, light Blue text"
+```
+````
 
 ## Privacy and Notifications
 
