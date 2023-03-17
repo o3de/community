@@ -9,4 +9,4 @@ The O3DE Election guides provide users with a clear and easy-to-follow step-by-s
 
 If your SIG has conducted an election recently or intends to do so in the future, make sure to upload or update the "Election Templates" file. This will help ensure smoother and more efficient elections going forward.
 
-##### Updated March 2023
+**Last updated on March 2023**
