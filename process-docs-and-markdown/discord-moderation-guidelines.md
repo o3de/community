@@ -1,53 +1,38 @@
 # Discord Moderation Guidelines
 
-# Discord Moderation Guidelines
-
-I. Introduction
-
-    Purpose of the Guidelines
-    Overview of Moderation Roles and Responsibilities
-    Overview of Discord's Community Guidelines
-
-II. Discord Community Guidelines
-
-    Prohibited Content and Behaviors
-    Reporting Guidelines and Procedures
-    Consequences for Violations
-
-III. Moderation Policies and Procedures
-
-    Overview of Moderation Policies and Procedures
-    Roles and Responsibilities of Moderators
-    Procedures for Handling Violations
-    Procedures for Escalating Issues to Administrators
-    Procedures for Handling Appeals
-
-IV. Code of Conduct for Moderators
-
-    Conduct Expectations for Moderators
-    Professionalism and Impartiality
-    Confidentiality and Privacy
-    Conflict Resolution and Communication
-
-V. Best Practices for Effective Moderation
-
-    Tips for Effective Moderation
-    Communication Strategies
-    Conflict Resolution Techniques
-    De-escalation Techniques
-    Strategies for Managing Stress and Burnout
-
-VI. Resources and Tools
-
-    Useful Tools for Moderation
-    Helpful Resources and Links
-    Contact Information for Support
-
-VII. Conclusion
-
-    Importance of Effective Moderation
-    Commitment to Upholding Guidelines and Policies
-    Final Remarks
+- [I - Introduction](#i---introduction)
+  * [Purpose of the Guidelines](#purpose-of-the-guidelines)
+  * [Overview of Moderation Roles and Responsibilities](#overview-of-moderation-roles-and-responsibilities)
+  * [Overview of Discord's Community Guidelines](#overview-of-discords-community-guidelines)
+- [II - Discord Community Guidelines](#ii---discord-community-guidelines)
+  * [Prohibited Content and Behaviors](#prohibited-content-and-behaviors)
+  * [Reporting Guidelines and Procedures](#reporting-guidelines-and-procedures)
+  * [Consequences for Violations](#consequences-for-violations)
+- [III. Moderation Policies and Procedures](#iii-moderation-policies-and-procedures)
+  * [Overview of Moderation Policies and Procedures](#overview-of-moderation-policies-and-procedures)
+  * [Roles and Responsibilities of Moderators](#roles-and-responsibilities-of-moderators)
+  * [Procedures for Handling Violations](#procedures-for-handling-violations)
+  * [Procedures for Escalating Issues to Administrators](#procedures-for-escalating-issues-to-administrators)
+  * [Procedures for Handling Appeals](#procedures-for-handling-appeals)
+- [IV. Code of Conduct for Moderators](#iv-code-of-conduct-for-moderators)
+  * [Conduct Expectations for Moderators](#conduct-expectations-for-moderators)
+  * [Professionalism and Impartiality](#professionalism-and-impartiality)
+  * [Confidentiality and Privacy](#confidentiality-and-privacy)
+  * [Conflict Resolution and Communication](#conflict-resolution-and-communication)
+- [V. Best Practices for Effective Moderation](#v-best-practices-for-effective-moderation)
+  * [Tips for Effective Moderation](#tips-for-effective-moderation)
+  * [Communication Strategies](#communication-strategies)
+  * [Conflict Resolution Techniques](#conflict-resolution-techniques)
+  * [De-escalation Techniques](#de-escalation-techniques)
+  * [Strategies for Managing Stress and Burnout](#strategies-for-managing-stress-and-burnout)
+- [VI. Resources and Tools](#vi-resources-and-tools)
+  * [Useful Tools for Moderation](#useful-tools-for-moderation)
+  * [Helpful Resources and Links](#helpful-resources-and-links)
+  * [Contact Information for Support](#contact-information-for-support)
+- [VII. Conclusion](#vii-conclusion)
+  * [Importance of Effective Moderation](#importance-of-effective-moderation)
+  * [Commitment to Upholding Guidelines and Policies](#commitment-to-upholding-guidelines-and-policies)
+  * [Final Remarks](#final-remarks)
 
 
 ##  I - Introduction
