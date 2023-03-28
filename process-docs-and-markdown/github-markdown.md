@@ -28,7 +28,7 @@ This is a guide to assist with anyone who is looking to update their readme file
     + [No Langauage](#no-langauage)
   * [Inline code](#inline-code)
   * [Emoji](#emoji)
-  * [Username @ mentions](#username-@-mentions)
+  * [Username @ mentions](#username--mentions)
   * [Issue References](#issue-references)
   * [Hotkey](#hotkey)
   * [Footnotes](#footnotes)
