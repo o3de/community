@@ -1,7 +1,7 @@
 # Discord Permission Guide 
 
 - [Discord Permission Guide](#discord-permission-guide)
-    + [@Everyone Tag](#--everyone-tag)
+    + [@Everyone Tag](#everyone-tag)
     + [Reward Tiers](#reward-tiers)
     + [Bots](#bots)
     + [Novelty Roles](#novelty-roles)
