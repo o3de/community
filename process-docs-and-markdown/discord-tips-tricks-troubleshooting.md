@@ -1,5 +1,22 @@
 # Discord Tips, Tricks and Troubleshooting
 
+- [Discord Tips, Tricks and Troubleshooting](#discord-tips-tricks-and-troubleshooting)
+  * [Two-Factor Authentication (2FA)](#two-factor-authentication-2fa)
+  * [Screen Sharing](#screen-sharing)
+  * [Change Username on Discord](#change-username-on-discord)
+  * [Custom Discord Rich Presence](#custom-discord-rich-presence)
+  * [Text Formatting](#text-formatting)
+  * [Color Codes](#color-codes)
+  * [Privacy and Notifications](#privacy-and-notifications)
+    + [Privacy](#privacy)
+      - [Desktop Privacy Settings:](#desktop-privacy-settings)
+      - [Mobile Privacy Settings:](#mobile-privacy-settings)
+    + [Notifications](#notifications)
+      - [Desktop Notification Settings:](#desktop-notification-settings)
+      - [Mobile Notification Settings:](#mobile-notification-settings)
+  * [Error messages](#error-messages)
+
+
 ## Two-Factor Authentication (2FA)
 
  Discord has updated their policies to require users to have 2FA enabled in order to perform certain actions on servers. These actions include creating server events, performing moderation actions, managing server settings, and other elevated actions. This policy update is designed to improve server security and prevent unauthorized access to Discord servers. 
