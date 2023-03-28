@@ -10,9 +10,6 @@
     + [Punishment Roles](#punishment-roles)
     + [Emoji on Roles](#emoji-on-roles)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 This manual will establish a set of guidelines for best practices when configuring a server that members can adhere to. It encompasses determining access privileges, defining standard roles and their naming conventions.
 
 It is crucial for new members who join the discord server to understand these roles and who holds them, as they are typically the first things they encounter, here are some general guidelines:
