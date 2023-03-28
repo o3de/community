@@ -1,4 +1,35 @@
-# Discord Moderation Quiz
+# Discord Moderation Guidelines Quiz
+
+- [II. Discord Community Guidelines](#ii-discord-community-guidelines)
+  * [Prohibited Content and Behaviors](#prohibited-content-and-behaviors)
+  * [Reporting Guidelines and Procedures](#reporting-guidelines-and-procedures)
+  * [Consequences for Violations](#consequences-for-violations)
+- [III. Moderation Policies and Procedures](#iii-moderation-policies-and-procedures)
+  * [Overview of Moderation Policies and Procedures](#overview-of-moderation-policies-and-procedures)
+  * [Roles and Responsibilities of Moderators](#roles-and-responsibilities-of-moderators)
+  * [Procedures for Handling Violations](#procedures-for-handling-violations)
+  * [Procedures for Escalating Issues to Administrators](#procedures-for-escalating-issues-to-administrators)
+  * [Procedures for Handling Appeals](#procedures-for-handling-appeals)
+- [IV. Code of Conduct for Moderators](#iv-code-of-conduct-for-moderators)
+  * [Conduct Expectations for Moderators](#conduct-expectations-for-moderators)
+  * [Professionalism and Impartiality](#professionalism-and-impartiality)
+  * [Confidentiality and Privacy](#confidentiality-and-privacy)
+  * [Conflict Resolution and Communication](#conflict-resolution-and-communication)
+- [V. Best Practices for Effective Moderation](#v-best-practices-for-effective-moderation)
+  * [Tips for Effective Moderation](#tips-for-effective-moderation)
+  * [Communication Strategies](#communication-strategies)
+  * [Conflict Resolution Techniques](#conflict-resolution-techniques)
+  * [De-escalation Techniques](#de-escalation-techniques)
+  * [Strategies for Managing Stress and Burnout](#strategies-for-managing-stress-and-burnout)
+- [VI. Resources and Tools](#vi-resources-and-tools)
+  * [Useful Tools for Moderation](#useful-tools-for-moderation)
+  * [Helpful Resources and Links](#helpful-resources-and-links)
+  * [Contact Information for Support](#contact-information-for-support)
+- [VII. Conclusion](#vii-conclusion)
+  * [Importance of Effective Moderation](#importance-of-effective-moderation)
+  * [Commitment to Upholding Guidelines and Policies](#commitment-to-upholding-guidelines-and-policies)
+  * [Final Remarks](#final-remarks)
+
 
 ## II. Discord Community Guidelines
 
@@ -76,7 +107,7 @@ D) Engaging in legal drug use  <br>
 Answer: D) Engaging in legal drug use <br> 
  <br> 
 
-### Reporting Guidelines and Procedures <br> 
+### Reporting Guidelines and Procedures
 
 Which of the following should be included in reporting guidelines and procedures?  <br> 
 A) Information on how to contact the moderation team  <br> 
