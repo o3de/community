@@ -12,7 +12,7 @@
 
 This manual will establish a set of guidelines for best practices when configuring a server that members can adhere to. It encompasses determining access privileges, defining standard roles and their naming conventions.
 
-It is crucial for new members who join the discord server to understand these roles and who holds them, as they are typically the first things they encounter, here are some general guidelines:
+It is crucial for new members who join the discord server to understand these roles and who holds them, as they are typically the first things they encounter. Here are some general guidelines:
 
 
 * **Create separate roles for different levels of access:
