@@ -277,7 +277,7 @@ Be proactive: Anticipate potential issues and address them before they escalate.
 1. **Be fair and consistent**: Apply the community guidelines equally to all users, regardless of their status or position within the community. This helps to build trust and ensure that all users are treated fairly.
 2. **Be transparent**: Communicate moderation decisions and processes clearly and transparently. This helps to build trust with users and promotes a culture of accountability.
 3. **Be responsive**: Respond promptly to user inquiries and reports of violations. This shows that you take the community guidelines seriously and are committed to maintaining a safe and positive community.
-4. B**e collaborative**: Work collaboratively with other moderators and administrators to develop and implement effective moderation policies and procedures. This helps to ensure that all voices are heard and that the moderation process is consistent and fair.
+4. **Be collaborative**: Work collaboratively with other moderators and administrators to develop and implement effective moderation policies and procedures. This helps to ensure that all voices are heard and that the moderation process is consistent and fair.
 5. **Be adaptable**: Be willing to adapt and modify moderation policies and procedures as needed to address emerging issues or changes in the community.
 6. **Be respectful**: Treat all users with respect and dignity, even in difficult or contentious situations. This helps to foster a culture of respect and promotes a positive community environment.
 7. **Be knowledgeable**: As a moderator, it's important to be well-informed about the platform you're moderating, as well as the topics and issues that are relevant to your community. Stay up-to-date on news and trends, and know how to use Discord's features and tools to enforce the community guidelines effectively.
@@ -322,16 +322,16 @@ Effective communication is crucial for successful moderation. Here are some comm
 
 Conflict resolution is an essential skill for moderators. Here are some conflict resolution techniques that can help moderators to manage conflict within the community:
 
-* **Active listening**: This involves giving your full attention to the person speaking, avoiding interruptions and distractions, and asking clarifying questions to ensure you understand their perspective.
+* **Active listening:** This involves giving your full attention to the person speaking, avoiding interruptions and distractions, and asking clarifying questions to ensure you understand their perspective.
 * **Reframe the conflict:** Reframing the conflict involves looking at the issue from a different perspective or in a different light. This can help to shift the focus from the problem to a solution, and can help to identify areas of common ground.
-* Empathy: Empathy is the ability to understand and share the feelings of another person. Showing empathy can help to build trust and rapport with both parties involved in the conflict.
+* **Empathy:** Empathy is the ability to understand and share the feelings of another person. Showing empathy can help to build trust and rapport with both parties involved in the conflict.
 * **Separate the people from the problem**: This technique involves focusing on the issue at hand and not on the people involved. By doing this, you can avoid personal attacks and instead focus on finding a solution to the conflict.
 * **Seek common ground:** Identifying areas of agreement between the parties involved in the conflict can help to build a foundation for a resolution. This technique involves finding shared values or interests that both parties can work towards.
-* **Brainstorm solutions**: Encouraging both parties to come up with potential solutions to the conflict can help to create a sense of ownership and collaboration in the resolution process. This technique involves generating a range of ideas and exploring them together to find the best possible solution.
+* **Brainstorm solutions:** Encouraging both parties to come up with potential solutions to the conflict can help to create a sense of ownership and collaboration in the resolution process. This technique involves generating a range of ideas and exploring them together to find the best possible solution.
 * **Evaluate options:** Evaluating the potential solutions and choosing the one that is most practical and acceptable to both parties involves weighing the pros and cons of each option and selecting the one that meets the needs of all involved.
-* **Communicate the solution**: Clearly communicating the resolution to both parties involves explaining the decision reached and ensuring that both parties understand their roles and responsibilities in maintaining the resolution.
+* **Communicate the solution:** Clearly communicating the resolution to both parties involves explaining the decision reached and ensuring that both parties understand their roles and responsibilities in maintaining the resolution.
 * **Follow up:** Following up with both parties to ensure that the resolution is working involves monitoring the situation and addressing any new issues that arise. This technique helps to ensure that the resolution is effective and sustainable.
-* **Seek outside help**: Seeking the assistance of a mediator or a higher-level administrator to help resolve the issue involves bringing in an impartial third party to help both parties reach a resolution. This technique can be useful in complex or difficult conflicts where the parties are unable to resolve the issue on their own.
+* **Seek outside help:** Seeking the assistance of a mediator or a higher-level administrator to help resolve the issue involves bringing in an impartial third party to help both parties reach a resolution. This technique can be useful in complex or difficult conflicts where the parties are unable to resolve the issue on their own.
 
 ### De-escalation Techniques
 
@@ -380,7 +380,7 @@ Moderating a Discord server can be a demanding and stressful job, and it's essen
 As a Discord moderator, there are several useful tools that can help you carry out your role more effectively. Here are some examples:
 
 * **Discord bots** - Bots can automate tasks like muting, kicking, and banning users, as well as provide helpful features like moderation logs and message filtering.
-* C**hat filters** - These can automatically block messages containing certain words or phrases, making it easier to maintain a clean and respectful chat environment.
+* **Chat filters** - These can automatically block messages containing certain words or phrases, making it easier to maintain a clean and respectful chat environment.
 * **Role permissions** - By assigning different roles to users, you can control who has access to certain channels or commands, and limit the potential for abuse.
 * **Third-party apps** - Tools like Discord Nitro can enhance your Discord experience with additional features like custom emotes, themes, and more.
 * **Screen sharing** - This feature can be helpful for troubleshooting issues or demonstrating how to use a particular feature, and is especially useful for remote teams.
