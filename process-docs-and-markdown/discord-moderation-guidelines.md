@@ -147,7 +147,7 @@ Moderators play a crucial role in maintaining a positive and safe environment on
 2. **Enforcing consequences for violations**: Moderators are responsible for enforcing consequences for users who violate the community guidelines. This may involve issuing warnings, muting or kicking users, or banning users from the server.
 3. **Responding to user reports:** Moderators are responsible for responding to user reports of violations. This may involve investigating the report, communicating with the user who made the report, and taking appropriate action to address the violation.
 4. **Communicating effectively and respectfully**: Moderators are responsible for communicating effectively and respectfully with other moderators and with users. This includes using appropriate language, avoiding personal attacks, and handling conflicts and disagreements in a professional manner.
-5. B**eing knowledgeable about the community guidelines**: Moderators are responsible for being knowledgeable about the community guidelines and ensuring that they are enforced consistently and fairly. This includes staying up-to-date on any changes to the guidelines and communicating those changes to other moderators and users.
+5. **Being knowledgeable about the community guidelines**: Moderators are responsible for being knowledgeable about the community guidelines and ensuring that they are enforced consistently and fairly. This includes staying up-to-date on any changes to the guidelines and communicating those changes to other moderators and users.
 6. **Being impartial**: Moderators are responsible for being impartial and not showing favoritism or bias towards any particular user or group. This helps ensure that all users are held accountable for their actions and that the community remains inclusive and respectful.
 7. **Providing support to users**: Moderators may be responsible for providing support to users who are experiencing difficulties or conflicts on the server. This may involve providing resources, connecting users with support services, or simply listening and providing guidance.
 
@@ -294,7 +294,7 @@ Be proactive: Anticipate potential issues and address them before they escalate.
 18. **Be respectful of diversity**: Discord is home to a diverse range of users from different backgrounds, cultures, and experiences. As a moderator, it's important to respect and value this diversity, and to promote an inclusive and welcoming environment for all users.
 19. **Be aware of power dynamics**: As a moderator, you have a certain level of authority within the community. It's important to use this authority responsibly and avoid using your position to bully, intimidate, or silence users who may have less power or influence.
 20. **Be inclusive**: Strive to create a community that welcomes and supports all users, regardless of their background, identity, or interests. Make sure that your moderation actions are fair and impartial, and avoid showing favoritism or discrimination against certain users or groups.
-21. **Be mindful of biases**: Everyone has unconscious biases that can influence their thoughts and actions. As a moderator, it's important to be aware of your own biases and work to address them in order to avoid unfair treatment of certain users.Be consistent: Apply the guidelines and rules fairly and equally to all users. This helps maintain order and credibility.
+21. **Be mindful of biases**: Everyone has unconscious biases that can influence their thoughts and actions. As a moderator, it's important to be aware of your own biases and work to address them in order to avoid unfair treatment of certain users. Be consistent: Apply the guidelines and rules fairly and equally to all users. This helps maintain order and credibility.
 22. **Stay calm**: Moderation can be a high-pressure job, especially when dealing with heated or emotional situations. Take breaks when needed, and stay calm and level-headed when addressing issues.
 23. **Be responsive**: Respond promptly to reports and inquiries from users. This helps build trust and a sense of security within the community.
 24. **Encourage positive behavior**: Don't just focus on punishing negative behavior. Also, take time to acknowledge and reward positive behavior. This helps promote a positive and healthy community.
@@ -370,7 +370,7 @@ Moderating a Discord server can be a demanding and stressful job, and it's essen
 16. **Learn to say no**: Don't be afraid to say no to additional responsibilities or tasks if you feel overwhelmed or overburdened.
 17. **Take care of your emotional health**: Make sure to take care of your emotional health by seeking support when needed and practicing self-compassion.
 18. **Set realistic goals**: Set realistic goals for yourself and your moderation duties. This can help reduce stress and increase feelings of accomplishment.
-19. S**tay organized**: Staying organized can help reduce stress and increase productivity. Use tools like folders, labels, and tags to help keep things organized.
+19. **Stay organized**: Staying organized can help reduce stress and increase productivity. Use tools like folders, labels, and tags to help keep things organized.
 20. **Take time off**: Finally, remember that it's okay to take time off when needed. Taking a break can help reduce stress and prevent burnout, and can ultimately make you a more effective moderator in the long run.
 
 ## VI. Resources and Tools
@@ -403,7 +403,7 @@ As a Discord moderator, there are several helpful resources and links that can p
 * **Discord Server Templates** - Discord Server Templates are pre-made server configurations that can be used as a starting point for new servers, and may include pre-configured roles, channels, and permissions.
 * **Discord Partnership Program** - The Discord Partnership Program provides benefits and resources to partnered servers, including access to exclusive features, support from Discord staff, and more.
 * **Discord Nitro** - Discord Nitro is a premium subscription service that provides users with additional features like custom emotes, higher quality streaming, and more.
-* **Third-party moderation tools** - There are several third-party moderation tools and services available, like MEE6, Dyno, and Carl-bot, that can enhance the moderation capabilities of a Discord server.
+* **Third-party moderation tools** - There are several third-party moderation tools and services available, like [MEE6](https://mee6.xyz/en), [Dyno](https://dyno.gg/), and [Carl-bot](https://carl.gg/), that can enhance the moderation capabilities of a Discord server.
 
 ### Contact Information for Support
 
@@ -429,7 +429,7 @@ Here are some reasons why effective moderation is important:
 
 1. **Maintaining a Safe Environment** - Moderators are responsible for removing harmful or offensive content and enforcing rules that promote a safe and positive community for all users.
 2. **Preventing Harassment and Abuse** - Moderators play a crucial role in preventing and addressing harassment and abuse within the community. They are responsible for responding to reports of abusive behavior and taking appropriate action to address the issue.
-3. F**ostering Positive Interactions** - Moderators can help create a positive and welcoming community by encouraging users to treat each other with respect and kindness.
+3. **Fostering Positive Interactions** - Moderators can help create a positive and welcoming community by encouraging users to treat each other with respect and kindness.
 4. **Promoting Inclusivity and Diversity** - Moderators can help promote inclusivity and diversity by ensuring that all members of the community feel welcome and included.
 5. **Upholding the Community Standards** - Moderators are responsible for enforcing the community's standards and guidelines. This includes removing content or users that violate the rules and promoting a healthy and positive community.
 
