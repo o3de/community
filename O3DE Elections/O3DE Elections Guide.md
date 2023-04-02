@@ -1,29 +1,27 @@
 # O3DE Elections Guide
 
-### Best Practices
-- 1-3 Election Officials
-	- This allows for 1 to step out if running in an election
-	- Election Officials can not be the current SIG Chair/Co-Chair due to conflict of interest. This will require someone in that SIG to nominate someone to run the election.
-- Set Election Schedule
-	- Elections should be held in groups with other SIGs unless there is an urgent case to change the chairs.
+## Best Practices
+- 1-3 Election Officials:
+ - Having 1-3 Election Officials allows for flexibility in case one of them is running in the election.
+  - However, Election Officials cannot be the current SIG Chair/Co-Chair due to potential conflict of interest. In such cases, someone from the SIG needs to nominate an individual to run the election.
+- Set Election Schedule:
+ - It is recommended to hold elections close or near other SIG Elections. Coordinate with other SIGs to avoid having all of elections at the same time as this can cause confusion from members. 
 
-#### Election Process (same for all SiGs)
+## Election Process
+This election process is the same for all SiGs.
 
-1. Create a draft of the SIG Election for the current SIG Chairs to view and edit changes as needed.
-2. Get dates and timelines in order for the election.
-3. Create Election notice as a GitHub Issue in the SiG
-	1. Example Notice - https://github.com/o3de/sig-release/issues/74
-		1. Update Dates and Sig name as needed
-		1. May want to make an actual Template in the future
-4. In Discord, create an event pointing to the GitHub Issue and using the same issue title to include SiG name, nomination dates, and voting dates.
-5. Post the event in the SiG Channel
-6. During the nomination process, monitor channel for questions, monitor the Issue for nominations and acceptances or declines, answer questions in issue or channel, ping for acceptances in channel and send out date reminders.
-	- If only 1 person is nominated, then extension of the election nominations would extend for 1 to 2 weeks.
-	- If no one is nominated then the one that was suggested would become the chair.
-7. Once you have at least 2 nominations you can start prepping out the voting survey.
-	1. In some cases with 2 candidates, they will decide on chair and co-chair and no vote will be needed.
-	1. If they don't decide on a chair/co-chair then a vote should be configured with the following criteria:
-		1. Vote should be anonymous but allow for only 1 vote per person. Suggestion to use google survey for the voting process
-		1. The candidate with the most votes is chair and the next highest is co-chair
-		1. In the case of a tie candidates have the opportunity to work out chair/co-chair roles first or a run-off will take place (Or a coin flip)
-8. Results are announced in the Issue and on Channel
+1. Draft the SIG Election and share it with the current SIG Chairs for their input and revisions.
+1. Determine the dates and timeline for the election.
+1. Create an Election notice on GitHub as a new issue in the SIG, providing all the necessary details, including the SIG name and updated dates. (Consider creating a template for future elections.)
+   1. On Discord, create an event that links to the GitHub Issue and uses the same issue title, mentioning the nomination and voting dates, and the SIG name.
+   1. Share the event in the SIG Channel, along with the mailing list.
+   1. Monitor the channel during the nomination process, responding to questions, and checking for nominations, acceptances, or declines. 
+   1. Send out reminders as necessary. 
+   1. If there is only one nominee, extend the nomination period by 1-2 weeks. 
+   1. If no one is nominated, the suggested candidate will become the Chair.
+4. Once at least two nominees are confirmed, prepare the voting survey. In some cases, with only two candidates, they may decide on a chair and co-chair, and no vote is required. If they can't decide, set up an anonymous voting survey that allows only one vote per person. The candidate with the most votes is the Chair, and the next highest is the Co-Chair. If there is a tie, the candidates can work out the chair/co-chair roles, or a run-off may be held, or a coin flip can be used.
+5. Announce the results in the Issue and the SIG Channel.
+6. Keep the election issue open for about 1 to 2 weeks in case there is an issue that comes up. 
+
+
+##### Updated march 2023
