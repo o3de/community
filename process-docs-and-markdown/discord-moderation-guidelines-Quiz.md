@@ -937,13 +937,6 @@ D) To delete all server data permanently <br>
 Answer: C) To ensure important information and data are not lost in the event of an accident or technical issue.<br> 
 <br> 
 
-### Helpful Resources and Links
-
-N/A <br> 
-
-### Contact Information for Support
-
-N/A <br> 
 
 ## VII. Conclusion
 
@@ -973,10 +966,3 @@ D) To create a negative and unwelcoming community <br>
 Answer: C) To enforce the community's standards and guidelines <br> 
 <br> 
 
-### Commitment to Upholding Guidelines and Policies
-
-N/A <br> 
-
-### Final Remarks
-
-N/A <br> 
