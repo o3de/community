@@ -86,4 +86,34 @@ This section provides additional details for each item in the checklist.
     2. **Social Media posting**
          After the blog is live, the next step is to share it on social media platforms such as LinkedIn, Twitter, Discord, and more. These platforms are the best places to reach the largest number of users and keep the community informed and engaged with the latest releases. 
         
+## What makes a good O3DE blog post?
 
+Good question! That's really up to the community alongside our established Code of Conduct and Community Tenets. Not sure? Join the O3DE Discord or one of the SIGs, and vet your idea with our members.
+
+Here are some basic "Dos and Don'ts" to help you focus your work and avoid rejection.
+
+### Do
+
+* Discuss O3DE! Go deep! Highly technical blog posts, in particular, establish community credibility and provide a resource for people looking for deeper knowledge beyond the tech docs.
+
+* Discuss algorithms, techniques, technologies, and tools that apply directly to O3DE work. Again, not only is your knowledge and experience useful to capture as a published topic, but it helps the larger industry assess the caliber of the people building O3DE.
+
+* O3DE strategy, **if** you are actively participating in a SIG around feature or product strategy, **and** have the approval of a SIG.
+
+* Interviews with, or profiles of, important and established community members. People put a human face on a technical product, and the world reliably likes to hear humans say what they have to say. In this case, it should be professional observations, knowledge, and commentary&mdash;and should be specifically related to O3DE. Personal opinions, as ever, should be largely technical.
+
+* Write with strong grammar and an eye for easy readability. Rambling monologues may get a gentle request for editorial review and a number of suggestions to "tighten it up." The reader's time is precious, so compressing your thoughts into short, information-dense sentences with regular paragraph breaks is just respectful.
+
+* Include images and diagrams wherever appropriate.
+
+* Consider your audience, which is diverse across many sociocultural and industry axes. Choose your words with respect and care, and be prepared to take feedback sincerely and make changes. No one knows everything about the folks in the community and the industry, so don't let some initially careless wording caught in review bring you down. Make the changes (as appropriate) and keep delivering great content!
+
+### Don't
+
+* Get personal. Do not use the O3DE blog to call out any individuals in a negative way.
+
+* Get political. Politics pervade every part of life, and we all have different backgrounds, ideologies, and reactions to the way in which society shapes itself. The O3DE blog isn't the place for it&mdash;unless you are running a community-approved political initiative and have the blessings of the Linux Foundation.
+
+* Attack or criticize other products, platforms, or companies directly. Showing perf data between O3DE and a similar product/feature pairing is one thing; however, slagging on a similar product or another company is another. The latter will not be tolerated, regardless of how strongly you feel on the subject.
+
+* Exaggerate or overstate your points. Choose your modifiers and adverbs with care to not oversell (or undersell) anything. Favor humble and insightful phrasing and messages over performative or provocative ones. For example, "We've seen a recent increase in users looking for a Physics solution and we're working on a solution" is a little gentler than "The world demands a Physics solution from O3DE and we're here to deliver!" Not sure how to frame your message? Talk to the community in Discord!
