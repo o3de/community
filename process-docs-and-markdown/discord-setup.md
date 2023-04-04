@@ -257,11 +257,10 @@ Discord bots are a great way to enhance your server's functionality, automate re
 10.	YAGPDB - A bot that can perform moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
 11.	Nadeko - A bot that can perform moderation tasks, provide custom commands, and integrate with multiple third-party services such as Twitch and Reddit. <br>
 12.	Discord Dungeons - A bot that can provide a game-like experience for members, where they can battle monsters and earn rewards. <br>
-13.	Serum - A bot that can provide moderation functions, as well as custom commands and utility functions. <br>
-14.	ServerStats - A bot that can track server statistics such as member count, message count, and more. <br>
-15.	GAwesome Bot - A bot that can perform a wide range of moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
-16.	Ticket Tool - A bot that allows users to create support tickets and manage them in Discord. <br>
-17.	Arcane - A bot with features like moderation, logging, and more. <br>
+13.	ServerStats - A bot that can track server statistics such as member count, message count, and more. <br>
+14.	GAwesome Bot - A bot that can perform a wide range of moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
+15.	Ticket Tool - A bot that allows users to create support tickets and manage them in Discord. <br>
+16.	Arcane - A bot with features like moderation, logging, and more. <br>
 
 To add a bot to your server, you will need to create an application on the Discord Developer Portal and then invite the bot to your server using its unique OAuth2 URL. Once the bot is added, you can configure its settings and commands using the bot's dashboard or command interface. Many bots also offer additional features and integrations that can be enabled by connecting to external services or APIs. It is important to ensure that any bots you add to your server are reputable, secure, and comply with Discord's Terms of Service and Community Guidelines.
 
