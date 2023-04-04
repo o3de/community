@@ -20,7 +20,6 @@ This is a manual that provides assistance with typical blog formatting and usage
   * [Resources and Links](#resources-and-links)
 
 ## Templates and Examples
-remoteobjects
 | Markdown  | Live Version |
 | ------------- | ------------- |
 | [Remote object support in Open 3D Engine](/blogs/remoteobjects)  | [Remote object support in Open 3D Engine](https://www.o3de.org/blog/posts/remote-objects/)  |
@@ -32,7 +31,7 @@ remoteobjects
 
 ## Blog Headers
 
-Blog headers are essential in every blog. This helps show the website that it is infact a blog, and tells the server how to access that page, and all the top level information. 
+Blog headers are essential in every blog. This helps informs the website builder that it is in fact a blog, and tells the server how to access that page and all the top level information. 
 
 <img width="497" alt="Image_1" src="/process-docs-and-markdown/files/media/blog-headers.PNG">
 
@@ -48,11 +47,11 @@ full_img: ""
 ```
 
 `title:` Title of the blog. <br>
-`date:` Date would be the date of the blog being released.  The date is NOT todays dates. <br>
+`date:` The date when the blog should released.  The date is NOT today's date. <br>
 `slug:` Slug is the url that the blog would be visited at. For example: https://o3de.org/blog/posts/cmake-essentials-series-part-1/  <br>
 `author:` Author is the person who wrote the blog. This can be First name, first and Last, or anything along those lines.  <br>
-`blog_img:` Blog Image is the image that will show up in the Blog list. This will not show on the Blog it's self. The default value is "/images/blog/announcement_thumbnail.jpg"  <br>
-`full_img:` Full Blog image is the image that will render at the top level of the blog. This is used only when there is a image in the blog that shows at the top.  <br>
+`blog_img:` Blog Image is the image that will show up in the Blog list. This will not show on the Blog itself. The default value is "/images/blog/announcement_thumbnail.jpg"  <br>
+`full_img:` Full Blog image is the image that will render at the top level of the blog. This is used only when there is an image in the blog that shows at the top.  <br>
 
 ## Heading levels
 
@@ -410,4 +409,6 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 For further learning on blog formatting, check out these links: 
 
-https://www.w3schools.com/html/
+- [GitHub Markdown Cheat Sheet](github-markdown.md)
+- https://www.w3schools.com/html/
+- https://www.markdownguide.org/extended-syntax
