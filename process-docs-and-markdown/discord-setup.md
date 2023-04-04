@@ -1,12 +1,35 @@
 # Discord Setup
 
-- [Discord Setup](#discord-setup)
-    + [Test](#test)
+- [Introduction](#introduction)
+- [Explanation of what Discord is and why it's a good platform for community building](#explanation-of-what-discord-is-and-why-its-a-good-platform-for-community-building)
+- [Overview of the main steps involved in setting up a Discord server](#overview-of-the-main-steps-involved-in-setting-up-a-discord-server)
+- [Defining the purpose and goals of the server ](#defining-the-purpose-and-goals-of-the-server-)
+- [Identifying the target audience and their needs](#identifying-the-target-audience-and-their-needs)
+- [Creating a server roadmap and establishing guidelines and rules](#creating-a-server-roadmap-and-establishing-guidelines-and-rules)
+- [Server Setup](#server-setup)
+- [Creating a new server and configuring its basic settings](#creating-a-new-server-and-configuring-its-basic-settings)
+- [Setting up roles and permissions for different user groups](#setting-up-roles-and-permissions-for-different-user-groups)
+- [Creating channels and categories to organize content and discussions](#creating-channels-and-categories-to-organize-content-and-discussions)
+- [Choosing a server icon and background image](#choosing-a-server-icon-and-background-image)
+- [Customizing roles and channels with colors and emojis](#customizing-roles-and-channels-with-colors-and-emojis)
+- [Creating custom welcome messages and announcements](#creating-custom-welcome-messages-and-announcements)
+- [Integrations and Bots](#integrations-and-bots)
+- [Adding useful bots for moderation, announcements, and automation](#adding-useful-bots-for-moderation-announcements-and-automation)
+- [Integrating third-party services like YouTube, Twitter, and GitHub](#integrating-third-party-services-like-youtube-twitter-and-github)
+- [Promotion and Growth](#promotion-and-growth)
+- [Inviting members and promoting the server on social media and other platforms](#inviting-members-and-promoting-the-server-on-social-media-and-other-platforms)
+- [Encouraging member participation and feedback](#encouraging-member-participation-and-feedback)
+- [Moderation and Maintenance](#moderation-and-maintenance)
+- [Establishing a moderation team and guidelines](#establishing-a-moderation-team-and-guidelines)
+- [Monitoring server activity and enforcing rules](#monitoring-server-activity-and-enforcing-rules)
+- [Regularly updating and improving the server based on member feedback and analytics](#regularly-updating-and-improving-the-server-based-on-member-feedback-and-analytics)
+- [Conclusion](#conclusion)
+- [Additional resources and tips for server administration and community management.](#additional-resources-and-tips-for-server-administration-and-community-management)
 
 
 ## Introduction
 
-### Explanation of what Discord is and why it's a good platform for community building
+### What's Discord and why it's a good platform for community building
 
 Discord is a popular communication platform that allows users to chat, voice chat, and share content with others in real-time. Originally designed for gamers, Discord has evolved into a versatile platform that is used by people from all walks of life, including artists, educators, and entrepreneurs. <br>
 
@@ -222,7 +245,7 @@ If you're interested in creating a welcome screen for your Discord community, ch
 
 Discord bots are a great way to enhance your server's functionality, automate repetitive tasks, and keep your community engaged. Some popular bots that you might consider adding to your server include: <br>
 
-1.	MEE6 - A bot that can perform automated moderation tasks such as banning and muting members, logging chat, and running custom commands. <br>
+1.	[MEE6](https://mee6.xyz/en) - A bot that can perform automated moderation tasks such as banning and muting members, logging chat, and running custom commands. <br>
 2.	Dyno - A fully customizable bot that can perform a wide range of moderation tasks, as well as providing utility functions such as role management, auto-moderation, and custom commands. <br>
 3.	Carl-bot - A powerful bot that offers features such as custom commands, automated moderation, and message logging. <br>
 4.	Dank Memer - A fun bot that can generate memes, play games, and provide entertainment for members. <br>
@@ -316,7 +339,7 @@ Once feedback and analytics have been collected, it is important to take action 
 
 Regularly updating and improving the server not only helps to keep the community engaged, but also demonstrates a commitment to listening to member feedback and addressing their concerns. By using feedback and analytics to inform decisions, a community can create a more positive and engaging environment for all members. <br>
 
-One useful tool for managing a large Discord community is Statbot (https://statbot.net/). Statbot provides a range of analytics and moderation features that can help server owners and moderators track server activity, identify trends, and enforce server rules. Some of the key features of Statbot include real-time activity tracking, custom dashboard creation, moderation automation, and detailed reports on server growth and engagement. With these features, Statbot can help server owners and moderators stay on top of their community and make data-driven decisions to improve engagement and support among members. Additionally, Statbot integrates with a range of other Discord bots and tools, making it a versatile and powerful addition to any server management toolkit.
+One useful tool for managing a large Discord community is [Statbot](https://statbot.net/). Statbot provides a range of analytics and moderation features that can help server owners and moderators track server activity, identify trends, and enforce server rules. Some of the key features of Statbot include real-time activity tracking, custom dashboard creation, moderation automation, and detailed reports on server growth and engagement. With these features, Statbot can help server owners and moderators stay on top of their community and make data-driven decisions to improve engagement and support among members. Additionally, Statbot integrates with a range of other Discord bots and tools, making it a versatile and powerful addition to any server management toolkit.
 
 ## Conclusion
 
