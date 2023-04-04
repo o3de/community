@@ -1,20 +1,19 @@
 # Discord Tips, Tricks and Troubleshooting
 
-- [Discord Tips, Tricks and Troubleshooting](#discord-tips-tricks-and-troubleshooting)
-  * [Two-Factor Authentication (2FA)](#two-factor-authentication-2fa)
-  * [Screen Sharing](#screen-sharing)
-  * [Change Username on Discord](#change-username-on-discord)
-  * [Custom Discord Rich Presence](#custom-discord-rich-presence)
-  * [Text Formatting](#text-formatting)
-  * [Color Codes](#color-codes)
-  * [Privacy and Notifications](#privacy-and-notifications)
-    + [Privacy](#privacy)
-      - [Desktop Privacy Settings:](#desktop-privacy-settings)
-      - [Mobile Privacy Settings:](#mobile-privacy-settings)
-    + [Notifications](#notifications)
-      - [Desktop Notification Settings:](#desktop-notification-settings)
-      - [Mobile Notification Settings:](#mobile-notification-settings)
-  * [Error messages](#error-messages)
+- [Two-Factor Authentication (2FA)](#two-factor-authentication-2fa)
+- [Screen Sharing](#screen-sharing)
+- [Change Username on Discord](#change-username-on-discord)
+- [Custom Discord Rich Presence](#custom-discord-rich-presence)
+- [Text Formatting](#text-formatting)
+- [Color Codes](#color-codes)
+- [Privacy and Notifications](#privacy-and-notifications)
+- [Privacy](#privacy)
+    - [Desktop Privacy Settings:](#desktop-privacy-settings)
+    - [Mobile Privacy Settings:](#mobile-privacy-settings)
+- [Notifications](#notifications)
+    - [Desktop Notification Settings:](#desktop-notification-settings)
+    - [Mobile Notification Settings:](#mobile-notification-settings)
+- [Error messages](#error-messages)
 
 
 ## Two-Factor Authentication (2FA)
@@ -41,7 +40,7 @@ https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Au
 
 ## Screen Sharing
 
-To enable streamin on Discord, you will need to follow these steps:
+To enable streaming on Discord, you will need to follow these steps:
 
 1. Open Discord on your Mac and log in to your account.
 2. Click on the gear icon in the bottom left corner of the Discord window to open User Settings.
@@ -77,13 +76,12 @@ Please note that some servers may have specific guidelines for usernames, includ
 
 For reference, here are some examples of usernames that adhere to the recommended format:
 
-*  Royal OBrien [Amazon]
+*  Royal OBrien [LF]
 *  Finchy [Finch Studio]
 *  OBWANDO [Developer]
 *  Finchy
 
-https://support.discord.com/hc/en-us/articles/213480948-How-do-I-change-my-Username-
-https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames 
+For more information, refer to Discord's articles, [How do I change my Username?](https://support.discord.com/hc/en-us/articles/213480948-How-do-I-change-my-Username-) and [Server Nicknames](https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames).
 
 ##  Custom Discord Rich Presence 
 
@@ -121,33 +119,33 @@ https://docs.customrp.xyz/setting-up
 
 Here's a comprehensive list of all the formatting options available in Discord:
 
-1. Bold text: To make text bold, surround it with two asterisks on both sides like this:<br>
+1. **Bold text**: To make text bold, surround it with two asterisks on both sides like this:<br>
     `**Bold Text**`
-2. *Italicized text:* To italicize text, surround it with a single asterisk on both sides like this:<br>
+2. *Italicized text*: To italicize text, surround it with a single asterisk on both sides like this:<br>
     `*italicized text*`
 3. ***Italicized Bold text***: To italicize bold text, surround it with three asterisk on both sides like this:<br> 
     `***italicized bold text***`
 4. Underlined text: To underline text, surround it with two underscores on both sides like this:<br>
-    `**Underlined Text**`
+    `_Underlined Text_`
 5. *_Underlined and Italicized Text:_ *To underline and italicize text, add two underscores along with an asterisk on both sides like this:<br>
     `__*Underlined and Italicized Text*__`
-6. **_Underlined and Bolded Text_**: To underline and bold text, add two underscores along with two asterisks on both sides like this:<br>
-    `__**Underlined and Bolded Text**__`
-7. ***_Underlined, italicize and Bolded Text_***: To underline and bold text, add two underscores along with three asterisks on both sides like this:<br>
-    `__***Underlined, italicize and Bolded Text***__`
+6. **_Underlined and bold text_**: To underline and bold text, add two underscores along with two asterisks on both sides like this:<br>
+    `__**Underlined and bold text**__`
+7. ***_Underlined, italicize and bold text_***: To underline and bold text, add two underscores along with three asterisks on both sides like this:<br>
+    `__***Underlined, italicize and bold text***__`
 8. __***I want this to be shown in its full glory!***___
-    In case you actually *want* to see your underscores or asterisks in a message (like in an emoji, for example), you can use the backslash ‘\’ key to skip markdown formatting and show the text just like it is:<br> 
+    In case you actually *want* to see your underscores or asterisks in a message (like in an emoji, for example), you can use the backslash `\` key to skip markdown formatting and show the text just like it is:<br> 
     `\_\_\*\*\*I want this to be shown in its full glory!\*\*\*\_\_\_`
 10. Strikethrough text: To add a strikethrough to text, surround it with two tildes on either side, like this: 
     `~~Strikethrough Text~~`
 11. Formatting on International Keyboard Layouts
-    **German:** Shift+[+] (key right of Ü)
-    **Spanish:** Shift+[+] (key right of `^ (Spain) or ´¨ (Latin America))
-    **French (France):** * (key right of ù%)
-    **French (Belgium):** Shift+$ (key right of ^¨)
-    **French (Switzerland):** Shift+3
-    **Italian:** Shift+[+] (key right of èé)
-    **Swedish:** Shift+’ (key right of Ä) 
+   - **German:** Shift+[+] (key right of Ü)
+   - **Spanish:** Shift+[+] (key right of `^ (Spain) or ´¨ (Latin America))
+   - **French (France):** * (key right of ù%)
+   - **French (Belgium):** Shift+$ (key right of ^¨)
+   - **French (Switzerland):** Shift+3
+   - **Italian:** Shift+[+] (key right of èé)
+   - **Swedish:** Shift+’ (key right of Ä) 
 12. if you want to hide a message you are showing then spoiler would be the way. This could be a way to avoid giving away the main point or a spoiler of a show someone has not seen. You can create spoiler text like so:<br> 
     `|| Spoiler Text ||`
 13. For quoting something, there’s a simple “quote/blockquote” tag implemented in Discord. 
@@ -250,14 +248,14 @@ By customizing your notification settings on both desktop and mobile versions of
 
 ## Error messages
 
-1. When Creating an event on discord and shown with "Missing Permissions", ensure that you have 2FA enabled. 
+1. When Creating an event on Discord and shown with "Missing Permissions", ensure that you have 2FA enabled. 
 
-2. If you message a member on discord and represented with a message saying it could not be sent like so:
+2. If you message a member on Discord and represented with a message saying it could not be sent like so:
 ```
 Your message could not be delivered. This is usually because you don't share a server with the recipient or the recipient is only accepting direct messages from friends. You can see the full list of reasons here:
 ``` 
-This means that you have not added them as a friend. This is normally a setting thats enabled on the other users end to prevent spam. 
+This means that you have not added them as a friend. This is normally a setting that's enabled on the other users end to prevent spam. 
 
 
 
-Note, If you have any issues with any of these, ping me on discord Finchy#5545
+Note, if you have any issues or further questions, refer to the [Discord Help Center](https://support.discord.com/hc/en-us).
