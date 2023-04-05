@@ -1,6 +1,6 @@
 # O3DE Website Updates
 
-This is a guide to assit with common website updates for banners, color code changes, logo updates, etc. 
+This is a guide to assist with common website updates such as updates for banners, color code changes, and logo updates.
 
 ## Table Of Contents
   * [Banners](#banners)
@@ -10,16 +10,16 @@ This is a guide to assit with common website updates for banners, color code cha
 
 ## Banners
 
-When you want to add banners, you can find an existing banner in the backend that can be enabled and edited. This banner was created for the O3DCon 2022, and you can find the pull request at https://github.com/o3de/o3de.org/pull/1764.
+When you need to add a new banner, edit and enable the existing banner, you can find it in the `partials` directory of the website repository: https://github.com/o3de/o3de.org/blob/development/layouts/partials/top-banner.html. For more information, you can review the pull request that added the O3DCon 2022 banner: https://github.com/o3de/o3de.org/pull/1764.
 
-To activate the banner on any page, simply add `{{ partial "top-banner.html" . }}` to the pages where you want it to appear:
+To activate the banner on any page, simply add `{{ partial "top-banner.html" . }}` to the pages where you want it to appear, for example:
 
    `/layouts/download/section.html` - Top of Download Page
    `/layouts/contribute/section.html` - Top of Contribute Page
    `/layouts/community/section.html` - Top of Community Page
    `/layouts/index.html` - Top of Home/Index Page
 
-To add `{{ partial "top-banner.html" . }}`, you would need to add it to the code like this:
+To add the banner to a page, add `{{ partial "top-banner.html" . }}` to the page's code at the top of the `main` block:
 
 ```php
 {{ define "main" }}
@@ -29,7 +29,7 @@ To add `{{ partial "top-banner.html" . }}`, you would need to add it to the code
 <div class="community-blog d-flex align-items-center text-light">
 ```
 
-The banner can be found and edited in `layouts/partials/top-banner.html`
+The banner can be found and edited at `layouts/partials/top-banner.html` in the o3de.org repository. The following code is the for the O3DCon 2022 banner:
 
 ```html
 <a class="top-banner" href="https://events.linuxfoundation.org/o3decon/" target="_blank">
@@ -46,19 +46,17 @@ The banner can be found and edited in `layouts/partials/top-banner.html`
 </a> 
 ```
 
-Will render:
+The following image shows the banner as it was rendered on the website:
 ![image](/process-docs-and-markdown/files/media/banner-image.png)
 
-To edit the colors, these can be accessed in `assets/sass/custom.sass`
+Colors can be viewed and edited in `assets/sass/custom.sass`.
 
 
 ## Color Codes
 
-To incorporate a new color to the website, the existing colors can be found in the website folder under `assets/sass` in the `custom.sass` file. The color codes are available around line 70 in a section. This section makes it easier to reference the color code instead of looking up the Hex code.
+To incorporate a new color on the website, edit `custom.sass` in the `assets/sass` directory of the website. The color codes are close to line 70 in the file. Color codes are used to ensure site colors are defined in a single location and to provide an easier reference for the defined colors than hex code.```
 
-To add a new color, insert a new line under the `// Variables` section. For example:
-
-If the existing section looks like this:
+To add a new color, insert a new line under the `// Variables` section. For example, if the existing section looks like this:
 
 ```php
 // Variables 
@@ -79,7 +77,9 @@ $o3de-purple: #700AC7
 $o3de-aqua: #0AC1C7
 ```
 
-Add a new line at the bottom and name it, such as `O3DE Pink`. Then, insert the color code for the new color.
+Add a new line at the bottom of the variables section and create a reference to the color's name, such as `$o3de-pink`. Then, provide the hex code for the new color.  The following lines of code show the list of defined variables after o3de-pink was added.
+
+The following code snippet shows the variables section after adding $o3de-pink:
 
 ```php
 // Variables 
@@ -99,9 +99,6 @@ $o3de-green: #58BD61
 $o3de-purple: #700AC7
 $o3de-aqua: #0AC1C7
 $o3de-pink: #f16dbb
-```
-
-As demonstrated, `$o3de-pink: #f16dbb` has been added to the code block. Consequently, one can use o3de-pink while designing, instead of using the Hex code.
 
 After adding the $o3de-pink variable in the custom.sass file, we can use it to replace the color code in the banner section. Here's the updated code:
 
@@ -124,7 +121,7 @@ Now, the banner will use the $o3de-pink color instead of the original color code
 
 ## Member Logos
 
-If you want to add or remove members on the home page, make sure you have transparent logos. If you don't have transparent logos, you can use images with a background that are not too large in size.
+If you want to add or remove members on the home page, you should use transparent logos. If you don't have transparent logos, you can use images with a background that is not substantially larger than the logo itself.
 
 To add a logo, place it in the `static/img/logos/partnerLogos/` folder and take note of the exact spelling and image type for later use.
 
@@ -135,7 +132,7 @@ Next, open the `assets/sass/custom.sass` file and scroll to line 1,000 to locate
     background-image: url('/img/logos/partnerLogos/robotecai.png')
 ```
 
-A few more examples on formatting:
+A few more example logos with formatting:
 ```php
   .caict-logo
     background-image: url('/img/logos/partnerLogos/robotecai.png')
