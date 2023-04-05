@@ -133,7 +133,7 @@ Next, open the `assets/sass/custom.sass` file and scroll to line 1,000 to locate
 ```
 
 A few more example logos with formatting:
-```php
+```css
   .caict-logo
     background-image: url('/img/logos/partnerLogos/robotecai.png')
 	    height: 200px
