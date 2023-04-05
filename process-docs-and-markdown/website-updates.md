@@ -81,7 +81,7 @@ Add a new line at the bottom of the variables section and create a reference to 
 
 The following code snippet shows the variables section after adding $o3de-pink:
 
-```php
+```css
 // Variables 
 
 $font-family-headers: "Open Sans" 
