@@ -58,7 +58,7 @@ To incorporate a new color on the website, edit `custom.sass` in the `assets/sas
 
 To add a new color, insert a new line under the `// Variables` section. For example, if the existing section looks like this:
 
-```php
+```css
 // Variables 
 
 $font-family-headers: "Open Sans" 
