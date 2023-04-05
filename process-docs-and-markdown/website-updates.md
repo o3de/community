@@ -102,7 +102,7 @@ $o3de-pink: #f16dbb
 
 After adding the $o3de-pink variable in the custom.sass file, we can use it to replace the color code in the banner section. Here's the updated code:
 
-```php
+```css
 // banner
 a.top-banner
   color: $o3de-pink
