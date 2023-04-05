@@ -100,7 +100,7 @@ $o3de-purple: #700AC7
 $o3de-aqua: #0AC1C7
 $o3de-pink: #f16dbb
 
-After adding the $o3de-pink variable in the custom.sass file, we can use it to replace the color code in the banner section. Here's the updated code:
+Now, you can use the variable $o3de-pink while designing, instead of the hex code. After adding the $o3de-pink variable in the custom.sass file, use it to replace the color code of the  banner. Here's the updated code:
 
 ```css
 // banner
