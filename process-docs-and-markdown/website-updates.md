@@ -127,7 +127,7 @@ To add a logo, place it in the `static/img/logos/partnerLogos/` folder and take 
 
 Next, open the `assets/sass/custom.sass` file and scroll to line 1,000 to locate the `// layouts/partials/home/partners.html` section. To add the logo, use the following code:
 
-```php
+```css
   .robotecai-logo
     background-image: url('/img/logos/partnerLogos/robotecai.png')
 ```
