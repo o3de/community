@@ -1,30 +1,30 @@
 # Discord Setup
 
 - [Introduction](#introduction)
-- [Explanation of what Discord is and why it's a good platform for community building](#explanation-of-what-discord-is-and-why-its-a-good-platform-for-community-building)
-- [Overview of the main steps involved in setting up a Discord server](#overview-of-the-main-steps-involved-in-setting-up-a-discord-server)
-- [Defining the purpose and goals of the server ](#defining-the-purpose-and-goals-of-the-server-)
-- [Identifying the target audience and their needs](#identifying-the-target-audience-and-their-needs)
-- [Creating a server roadmap and establishing guidelines and rules](#creating-a-server-roadmap-and-establishing-guidelines-and-rules)
+  - [What's Discord and why it's a good platform for community building](#whats-discord-and-why-its-a-good-platform-for-community-building)
+  - [Overview of the main steps involved in setting up a Discord server](#overview-of-the-main-steps-involved-in-setting-up-a-discord-server)
+  - [Defining the purpose and goals of the server ](#defining-the-purpose-and-goals-of-the-server-)
+  - [Identifying the target audience and their needs](#identifying-the-target-audience-and-their-needs)
+  - [Creating a server roadmap and establishing guidelines and rules](#creating-a-server-roadmap-and-establishing-guidelines-and-rules)
 - [Server Setup](#server-setup)
-- [Creating a new server and configuring its basic settings](#creating-a-new-server-and-configuring-its-basic-settings)
-- [Setting up roles and permissions for different user groups](#setting-up-roles-and-permissions-for-different-user-groups)
-- [Creating channels and categories to organize content and discussions](#creating-channels-and-categories-to-organize-content-and-discussions)
-- [Choosing a server icon and background image](#choosing-a-server-icon-and-background-image)
-- [Customizing roles and channels with colors and emojis](#customizing-roles-and-channels-with-colors-and-emojis)
-- [Creating custom welcome messages and announcements](#creating-custom-welcome-messages-and-announcements)
+  - [Creating a new server and configuring its basic settings](#creating-a-new-server-and-configuring-its-basic-settings)
+  - [Setting up roles and permissions for different user groups](#setting-up-roles-and-permissions-for-different-user-groups)
+  - [Creating channels and categories to organize content and discussions](#creating-channels-and-categories-to-organize-content-and-discussions)
+  - [Choosing a server icon and background image](#choosing-a-server-icon-and-background-image)
+  - [Customizing roles and channels with colors and emojis](#customizing-roles-and-channels-with-colors-and-emojis)
+  - [Creating custom welcome messages and announcements](#creating-custom-welcome-messages-and-announcements)
 - [Integrations and Bots](#integrations-and-bots)
-- [Adding useful bots for moderation, announcements, and automation](#adding-useful-bots-for-moderation-announcements-and-automation)
-- [Integrating third-party services like YouTube, Twitter, and GitHub](#integrating-third-party-services-like-youtube-twitter-and-github)
+  - [Adding useful bots for moderation, announcements, and automation](#adding-useful-bots-for-moderation-announcements-and-automation)
+  - [Integrating third-party services like YouTube, Twitter, and GitHub](#integrating-third-party-services-like-youtube-twitter-and-github)
 - [Promotion and Growth](#promotion-and-growth)
-- [Inviting members and promoting the server on social media and other platforms](#inviting-members-and-promoting-the-server-on-social-media-and-other-platforms)
-- [Encouraging member participation and feedback](#encouraging-member-participation-and-feedback)
+  - [Inviting members and promoting the server on social media and other platforms](#inviting-members-and-promoting-the-server-on-social-media-and-other-platforms)
+  - [Encouraging member participation and feedback](#encouraging-member-participation-and-feedback)
 - [Moderation and Maintenance](#moderation-and-maintenance)
-- [Establishing a moderation team and guidelines](#establishing-a-moderation-team-and-guidelines)
-- [Monitoring server activity and enforcing rules](#monitoring-server-activity-and-enforcing-rules)
-- [Regularly updating and improving the server based on member feedback and analytics](#regularly-updating-and-improving-the-server-based-on-member-feedback-and-analytics)
+  - [Establishing a moderation team and guidelines](#establishing-a-moderation-team-and-guidelines)
+  - [Monitoring server activity and enforcing rules](#monitoring-server-activity-and-enforcing-rules)
+  - [Regularly updating and improving the server based on member feedback and analytics](#regularly-updating-and-improving-the-server-based-on-member-feedback-and-analytics)
 - [Conclusion](#conclusion)
-- [Additional resources and tips for server administration and community management.](#additional-resources-and-tips-for-server-administration-and-community-management)
+  - [Additional resources and tips for server administration and community management.](#additional-resources-and-tips-for-server-administration-and-community-management)
 
 
 ## Introduction
@@ -122,12 +122,12 @@ By following these steps, you can create additional rules that address specific 
 
 ### Creating a new server and configuring its basic settings
 
-Sign in to Discord or create a new account if you haven't already. <br>
-Click on the plus (+) icon located on the left side of the Discord app or website. <br>
-Select the "Create a Server" option and choose a name for your server. <br>
-Choose a region for your server (this is the location where the server is hosted). <br>
-Select an icon for your server. This will be the small image that represents your server throughout Discord. <br>
-Click on the "Create" button to finalize the creation of your server. <br>
+1. Sign in to Discord or create a new account if you haven't already. <br>
+1. Click on the plus (+) icon located on the left side of the Discord app or website. <br>
+1. Select the "Create a Server" option and choose a name for your server. <br>
+1. Choose a region for your server (this is the location where the server is hosted). <br>
+1. Select an icon for your server. This will be the small image that represents your server throughout Discord. <br>
+1. Click on the "Create" button to finalize the creation of your server. <br>
 
 ### Setting up roles and permissions for different user groups
 
@@ -246,21 +246,21 @@ If you're interested in creating a welcome screen for your Discord community, ch
 Discord bots are a great way to enhance your server's functionality, automate repetitive tasks, and keep your community engaged. Some popular bots that you might consider adding to your server include: <br>
 
 1.	[MEE6](https://mee6.xyz/en) - A bot that can perform automated moderation tasks such as banning and muting members, logging chat, and running custom commands. <br>
-2.	Dyno - A fully customizable bot that can perform a wide range of moderation tasks, as well as providing utility functions such as role management, auto-moderation, and custom commands. <br>
-3.	Carl-bot - A powerful bot that offers features such as custom commands, automated moderation, and message logging. <br>
-4.	Dank Memer - A fun bot that can generate memes, play games, and provide entertainment for members. <br>
-5.	Rythm - A music bot that can play music from multiple sources such as YouTube and Soundcloud. <br>
-6.	Groovy - Another popular music bot that can play music from multiple sources including Spotify. <br>
-7.	Tatsumaki - A multi-purpose bot that can perform moderation tasks, as well as offering utility functions such as custom commands and server statistics. <br>
-8.	Arcane - A bot that can perform automated moderation tasks such as anti-spam and anti-raid protection, as well as providing custom commands and utility functions. <br>
-9.	ProBot - A bot that can perform automated moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
-10.	YAGPDB - A bot that can perform moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
-11.	Nadeko - A bot that can perform moderation tasks, provide custom commands, and integrate with multiple third-party services such as Twitch and Reddit. <br>
-12.	Discord Dungeons - A bot that can provide a game-like experience for members, where they can battle monsters and earn rewards. <br>
-13.	ServerStats - A bot that can track server statistics such as member count, message count, and more. <br>
-14.	GAwesome Bot - A bot that can perform a wide range of moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
-15.	Ticket Tool - A bot that allows users to create support tickets and manage them in Discord. <br>
-16.	Arcane - A bot with features like moderation, logging, and more. <br>
+2.	[Dyno](https://dyno.gg/) - A fully customizable bot that can perform a wide range of moderation tasks, as well as providing utility functions such as role management, auto-moderation, and custom commands. <br>
+3.	[Carl-bot](https://carl.gg/) - A powerful bot that offers features such as custom commands, automated moderation, and message logging. <br>
+4.	[Dank Memer](https://dankmemer.lol/) - A fun bot that can generate memes, play games, and provide entertainment for members. <br>
+5.	[Rythm](https://rythm.fm/) - A music bot that can play music from multiple sources such as YouTube and Soundcloud. <br>
+6.	[Groovy](https://groovy.bot/) - Another popular music bot that can play music from multiple sources including Spotify. <br>
+7.	[Tatsumaki](https://tatsu.gg/) - A multi-purpose bot that can perform moderation tasks, as well as offering utility functions such as custom commands and server statistics. <br>
+8.	[Arcane](https://arcane.bot/) - A bot that can perform automated moderation tasks such as anti-spam and anti-raid protection, as well as providing custom commands and utility functions. <br>
+9.	[ProBot](https://probot.io/) - A bot that can perform automated moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
+10.	[YAGPDB](https://yagpdb.xyz/) - A bot that can perform moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
+11.	[Nadeko](https://nadeko.bot/) - A bot that can perform moderation tasks, provide custom commands, and integrate with multiple third-party services such as Twitch and Reddit. <br>
+12.	[Discord Dungeons](https://discorddungeons.me/) - A bot that can provide a game-like experience for members, where they can battle monsters and earn rewards. <br>
+13.	[ServerStats](https://serverstatsbot.com/) - A bot that can track server statistics such as member count, message count, and more. <br>
+14.	[GAwesome Bot](https://github.com/GAwesomeBot/bot) - A bot that can perform a wide range of moderation tasks, provide custom commands, and automate server maintenance tasks. <br>
+15.	[Ticket Tool](https://tickettool.xyz/) - A bot that allows users to create support tickets and manage them in Discord. <br>
+
 
 To add a bot to your server, you will need to create an application on the Discord Developer Portal and then invite the bot to your server using its unique OAuth2 URL. Once the bot is added, you can configure its settings and commands using the bot's dashboard or command interface. Many bots also offer additional features and integrations that can be enabled by connecting to external services or APIs. It is important to ensure that any bots you add to your server are reputable, secure, and comply with Discord's Terms of Service and Community Guidelines.
 
