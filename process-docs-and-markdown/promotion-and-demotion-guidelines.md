@@ -94,7 +94,7 @@ Managers oversee the day-to-day operations of the community and ensure that staf
 * Monitoring community metrics and performance
 
 **Admin**<br>
-Admins are the highest-ranking staff members in a community and are responsible for server confirguration. Their responsibilities may include:
+Admins are the highest-ranking staff members in a community and are responsible for server configuration. Their responsibilities may include:
 
 * Same responsibilities as Manager
 * Server Configuration
@@ -146,7 +146,7 @@ If a demotion is considered necessary, community leaders should conduct an inves
 After carefully considering all relevant information and feedback, the staff should reach a decision regarding the demotion. The decision should be based on objective criteria, such as the severity of the issue, its impact on the community, and the staff member's past performance.
 
 **Notify the Staff Member**<br>
-After the investigation is concluded, the community leaders must inform the staff member of the proposed demotion by sending them a private message. This message should include the reasons for the demotion, a clear explanation of the specific actions or behaviors that led to it, and any other relevant information.
+After the investigation concludes, the community leaders must inform the staff member of the proposed demotion by sending them a private message. This message should include the reasons for the demotion, a clear explanation of the specific actions or behaviors that led to it, and any other relevant information.
 
 **Provide Support and Guidance**<br>
 If the staff member remains in the community, the community leaders should provide them with the necessary support and guidance to help them improve and grow. This could involve providing training, mentorship, or resources to help them succeed in their new role.
