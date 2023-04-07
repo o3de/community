@@ -562,11 +562,6 @@ I think you should use an `<addr>` element here instead.
 
 I think you should use an `<addr>` element here instead.
 
-Markdown coverts text with four leading spaces
-into a code block; with GFM you can wrap your code
-with 
-
-
 ## Emoji
 
 Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
