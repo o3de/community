@@ -54,7 +54,7 @@ Colors can be viewed and edited in `assets/sass/custom.sass`.
 
 ## Color Codes
 
-To incorporate a new color on the website, edit `custom.sass` in the `assets/sass` directory of the website. The color codes are close to line 70 in the file. Color codes are used to ensure site colors are defined in a single location and to provide an easier reference for the defined colors than hex code.```
+To incorporate a new color on the website, edit `custom.sass` in the `assets/sass` directory of the website. The color codes are close to line 70 in the file. Color codes are used to ensure site colors are defined in a single location and to provide an easier reference for the defined colors than hex code.
 
 To add a new color, insert a new line under the `// Variables` section. For example, if the existing section looks like this:
 
@@ -149,19 +149,20 @@ A few more example logos with formatting:
     margin: 0 -24px 0 0
 ```
 
-Replace "robotecai" with the name of the logo you are adding, and adjust the image type as needed. If the logo is larger and does not render properly, you may need to adjust the `width`, `margin`, and `height` values.
+If you want to add a new logo to the website follow this procedure.  In the partners section of `custom.sass`, copy and paste the code for an existing logo, this example uses `.robotecai-logo` from above. Replace "robotecai" with the name of the logo you are adding, and adjust the image type as needed. If the logo is larger and does not render properly, you may need to adjust the `width`, `margin`, and `height` values.
 
-Next, open the `layouts/partials/home/partners.html` file. Make sure there is enough room on the current slider section for the new logo. If there is not enough room, you will need to make room.
+Next, open the `layouts/partials/home/partners.html` file. Make sure there is enough space on the current slider section for the new logo. If there is not enough space, you will need to add an additional slider section for the new logo, this is detailed later in the guide.
 
-Here is an example of what the code looks like:
+The logo is used in `layouts\partials\home\partners.html`:
 
 ```html
 <div class="partner-logo robotecai-logo"></div>
 ```
 
-Replace "robotecai" with the name of the logo you added in the previous step. Make sure the new logo is added in the appropriate section of the file.
+Copy and paste the logo's code and replace "robotecai" with the name of the logo you added in the previous step. Make sure the new logo is added in the appropriate section of `layouts\partials\home\partners.html`.
 
-Adjust the `width`, `margin`, and `height` values if needed to ensure that the logo is displayed properly.
+If needed, adjust the `width`, `margin`, and `height` values to ensure that the logo is properly displayed.
+Here is an example of `layouts\partials\home\partners.html`:
 
 ```html
 <section class="home-partners pt-5 pb-5">
@@ -253,7 +254,7 @@ Adjust the `width`, `margin`, and `height` values if needed to ensure that the l
 </section>
 ```
 
-If we are to take this section, it would represent slider 2
+The following section is for the second slider stop:
 
 ```html
           <div class="carousel-item">
@@ -267,28 +268,28 @@ If we are to take this section, it would represent slider 2
 ```
 ![image](/process-docs-and-markdown/files/media/member-image.png)
 
-Say we wanted to add more logos and we do not have any more room. To add another slider, you would create the following. 
+If you need to add a slider stop to fit additional logos, add a new carousel item to `layouts\partials\home\partners.html`: 
 
 ```html
 	            <div class="carousel-item">
           </div>
 ```
 
-Followed by 
+In the next section of `layouts\partials\home\partners.html`, add a new button for the slider stop, the number in `data-slide-to` should be one more than the current slider count:
 
 ```html
 	     <a data-target="#carouselPartnersIndicators" data-slide-to="5" class="btn carousel-btn">
               <i class="fas fa-circle"></i>
             </a>
 ```
-And if we wanted to add the Logo, we would simply add
+To add a logo to a slider, copy and paste the following into the new carousel item `div`:
 
 ```html
 			<div class="partner-logo caict-logo"></div>
 ```
-In this case we would replace `caict-logo` with the logo name we did in the above steps
+In this example, replace `caict-logo` with your logo name.
 
-The file would then look like:
+The following version of `layouts\partials\home\partners.html` shows all of these changes:
 
 ```html
 .......
@@ -346,6 +347,6 @@ The file would then look like:
 
 ## Image Updates
 
-To ensure that the website loads quickly, it's important to use images that are not too large in size. All images should be stored within the `/static/images/` folder. If you are adding images for a new event or series, I suggest creating a new folder to keep everything organized.
+To ensure that the website loads quickly, it's important to use images that are not too large in size. All images should be stored within the `/static/images/` folder. If you are adding images for a new event or series, create a new folder to keep everything organized.
 
-However, if the event happens again or the image is relevant to something else, you can keep those images in their original folder. But if the event is over and you remove the message, post, or banner associated with it, you should also remove the images to prevent stale images from cluttering the site.
+If the event repeats or the image is relevant to something else, you can keep the images in their original folder. But if the event is completely finished and you remove the message, post, or banner associated with it, you should also remove the images to prevent stale images from cluttering the site.
