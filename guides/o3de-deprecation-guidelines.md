@@ -31,6 +31,8 @@ In real life it's often not practical for developers to babysit deprecated code 
 
 Developers rely on the `version` field to catch `MAJOR` compatibility changes that make their code no longer compile.  For more information about how versioning is used in O3DE see the [Engine Versioning](https://www.o3de.org/docs/contributing/release-versioning-and-terms/) and [Gem Versioning](https://www.o3de.org/docs/user-guide/gems/gem-versioning/) documentation.
 
+Related RFC: [Engine, Project and Gem Versions](https://github.com/o3de/sig-core/issues/44)
+
 ### API Deprecation - Examples
 
 - Renaming a function
