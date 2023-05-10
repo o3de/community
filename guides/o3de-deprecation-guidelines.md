@@ -21,7 +21,7 @@
 An overview of how to make breaking API changes/removals.
 
 In the ideal case, API deprecation would happen over 2 O3DE releases which typically happen every 6 months.
-1. In the first release an `O3DE_DEPRECATION_NOTICE` is added, so developers know API  code is being deprecated, but it doesn't cause the compile warnings/errors that `AZ_DEPRECATED` does.
+1. In the first release an `O3DE_DEPRECATION_NOTICE` is added, so developers know API code is being deprecated, but it doesn't cause the compile warnings/errors that `AZ_DEPRECATED` does.
 2. In the second release `version` fields are updated and `AZ_DEPRECATED` macros are added, causing code compile warnings for all developers using the methods that can be ignored with compiler flags.
 3. After the second release, the code is removed and won't exist in the third release.
 
@@ -58,7 +58,7 @@ Related RFC: [Engine, Project and Gem Versions](https://github.com/o3de/sig-core
     // O3DE_DEPRECATION_NOTICE(GHI-1234)
     AZ::Entity* CreateEditorEntity(const char* name) = 0;
     ```
-    - *Note: If you are replacing an API method with new methods, consider incrementing the MINOR version number in the `gem.json` or engine API you are updating so any developers who depend on the API can reference the new version as the point when the new API methods became available.*
+    - *Note: If you are replacing an API method with new methods, consider incrementing the MINOR version number in the `gem.json` or engine API you are updating so any developers who depend on the API can reference the new version at the point when the new API methods became available.*
 
 3. Create a pull request referencing the GitHub issue. Code owners will be notified of this change. (Check the [CODEOWNERS](https://github.com/o3de/o3de/blob/development/.github/CODEOWNERS) file to verify which sig the deprecation applies to).
 
