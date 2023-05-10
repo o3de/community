@@ -20,6 +20,19 @@
 
 An overview of how to make breaking API changes/removals.
 
+In the ideal case, API deprecation would happen over 2 O3DE releases which typically happen every 6 months.
+1. In the first release an `O3DE_DEPRECATION_NOTICE` is added, so developers know API code is being deprecated, but it doesn't cause the compile warnings/errors that `AZ_DEPRECATED` does.
+2. In the second release `version` fields are updated and `AZ_DEPRECATED` macros are added, causing code compile warnings for all developers using the methods that can be ignored with compiler flags.
+3. After the second release, the code is removed and won't exist in the third release.
+
+In real life it's often not practical for developers to babysit deprecated code over a year or longer.  At minimum, developers should: 
+1. Add the `O3DE_DEPRECATION_NOTICE` code comment (see below), so the change can be easily found and added to release notes.
+1. Increment the `MAJOR` and zero out the remaining elements in the `version` field in the `gem.json` if inside a gem or `engine.json` if  inside the engine's `Code` folder.  
+
+Developers rely on the `version` field to catch `MAJOR` compatibility changes that make their code no longer compile.  For more information about how versioning is used in O3DE see the [Engine Versioning](https://www.o3de.org/docs/contributing/release-versioning-and-terms/) and [Gem Versioning](https://www.o3de.org/docs/user-guide/gems/gem-versioning/) documentation.
+
+Related RFC: [Engine, Project and Gem Versions](https://github.com/o3de/sig-core/issues/44)
+
 ### API Deprecation - Examples
 
 - Renaming a function
@@ -45,6 +58,7 @@ An overview of how to make breaking API changes/removals.
     // O3DE_DEPRECATION_NOTICE(GHI-1234)
     AZ::Entity* CreateEditorEntity(const char* name) = 0;
     ```
+    - *Note: If you are replacing an API method with new methods, consider incrementing the MINOR version number in the `gem.json` or engine API you are updating so any developers who depend on the API can reference the new version at the point when the new API methods became available.*
 
 3. Create a pull request referencing the GitHub issue. Code owners will be notified of this change. (Check the [CODEOWNERS](https://github.com/o3de/o3de/blob/development/.github/CODEOWNERS) file to verify which sig the deprecation applies to).
 
@@ -61,6 +75,14 @@ An overview of how to make breaking API changes/removals.
 - Use of the `AZ_DEPRECATED` macro should not be used when first deprecating an API.
   - It is required to first use the comment identifier `O3DE_DEPRECATION_NOTICE`, and as a second pass, add `AZ_DEPRECATED` (applies to mature APIs - see [Stable vs Volatile APIs](#stable-vs-volatile-apis)).
   - Note: In C++ code, `@deprecated` may be used to highlight deprecation changes in the API reference. This is not widely supported and is not a requirement at this time.
+
+### API Deprecation - Final Steps
+
+After the `O3DE_DEPRECATION_NOTICE` comment has been present in the code for one O3DE release (typically 6 months):
+1. Add the `AZ_DEPRECATED` macro to the API methods.
+2. Increment the `MAJOR` element and zero out the other elements in the `version` field in the `gem.json` if gem code or `engine.json` if engine code.
+
+After the `AZ_DEPRECATED` macro has been present in the code for one release, remove the code.
 
 ## System/Feature Deprecation
 
