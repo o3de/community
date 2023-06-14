@@ -31,10 +31,12 @@ Filter the O3DE Backlog for open issues with the "**needs-triage**" label and yo
 
 For each issue:
 
-1.  Ensure the issue is appropriate for your SIG. If it is NOT appropriate for your SIG:
-    1.  Remove your "**sig/**" label, and add a comment to the issue indicating why it is not appropriate for your SIG.
-    2.  If the appropriate SIG is known, assign it to that SIG by applying the appropriate "**sig/**" label (e.g. sig/release, sig/core, sig/presentation, etc.). Otherwise, apply the "**needs-sig**" label (this will send the issue back for SIG assignment).
-    3.  Do NOT remove the "**needs-triage**" label.
+1.  Ensure the issue is appropriate for your SIG. 
+    -  If it is NOT appropriate for your SIG:
+        1.  Remove your "**sig/**" label, and add a comment to the issue indicating why it is not appropriate for your SIG.
+        2.  If the appropriate SIG is known, assign it to that SIG by applying the appropriate "**sig/**" label (e.g. sig/release, sig/core, sig/presentation, etc.). Otherwise, apply the "**needs-sig**" label (this will send the issue back for SIG assignment).
+        3.  Do NOT remove the "**needs-triage**" label.
+    - If it's not appropriate for the repository, you can [transfer the issue to another repo](https://docs.github.com/en/issues/tracking-your-work-with-issues/transferring-an-issue-to-another-repository). For example, if a docs issue is filed against the code repo, then transfer the docs issue to o3de.org repo. 
     
 2.  Review the issue details and comments to determine if the issue should be declined or accepted into your SIG's backlog, or if more information is required prior to making this determination.  
     1.  To accept an issue into your backlog  
