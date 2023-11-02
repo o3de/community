@@ -43,4 +43,5 @@ To become a reviewer or a maintainer for a SIG, see the process in [community-me
 
 * General [GitHub issue triage guide](../sigs/docs/sig-issues-triage-guide.md) for SIG maintainers.
 * How to become a [reviewer or maintainer](../community-membership.md) for a SIG.
+* [SIG governance details](../sigs/docs/sig-governance.md) including roles of Chair(s)
 * [SIG chair elections process](../O3DE%20Elections/O3DE%20Elections%20Guide.md).

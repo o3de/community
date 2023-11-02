@@ -4,7 +4,7 @@ Welcome to the Open 3D Engine! To learn more about contributing to the [O3DE cod
 
 The [O3DE community repo](https://github.com/o3de/community) contains information about how to get started, how the community organizes, and more.
 
-All contrubtors are required to follow our [Code of Conduct](https://github.com/o3de/o3de/blob/development/CODE_OF_CONDUCT.md).
+All contributors are required to follow our [Code of Conduct](https://github.com/o3de/o3de/blob/development/CODE_OF_CONDUCT.md).
 
 ## Contributing to Open 3D Engine
 
